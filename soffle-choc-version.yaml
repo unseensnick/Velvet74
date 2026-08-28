@@ -1,0 +1,104 @@
+units:
+  kx: cx
+  ky: cy
+points:
+  zones:
+    matrix:
+      key:
+        padding: ky
+        spread: kx
+        width: 17.5
+        height: 16.5
+      columns:
+        pinky:
+          key.stagger: 0
+        pinky2:
+          key.stagger: 0
+        ring:
+          key.stagger: 4.0
+        middle:
+          key.stagger: 2.5
+        index:
+          key.stagger: -2.5
+        outer:
+          key.stagger: -2.5
+      rows:
+        fn:
+        number:
+        top:
+        home:
+        bottom:
+    thumb_inner:
+      anchor:
+        ref: matrix_pinky_bottom
+        shift: [29.34, -86.0]
+        rotate: 0
+      key:
+        width: 17.5
+        height: 16.5
+        tags: [thumb]
+      rows:
+        thumb:
+    thumb_inner2:
+      anchor:
+        ref: matrix_pinky2_bottom
+        shift: [29.29, -84.9]
+      key:
+        width: 17.5
+        height: 16.5
+        tags: [thumb]
+      rows:
+        thumb:
+    thumb_middle:
+      anchor:
+        ref: matrix_pinky2_bottom
+        shift: [47.24, -84.9]
+      key:
+        width: 17.5
+        height: 16.5
+        tags: [thumb]
+      rows:
+        thumb:
+    thumb_middle2:
+      anchor:
+        ref: matrix_index_bottom
+        shift: [14.42, -90.8]
+        rotate: -10
+      key:
+        width: 17.5
+        height: 16.5
+        tags: [thumb]
+      rows:
+        thumb:
+    thumb_outer:
+      anchor:
+        ref: matrix_outer_bottom
+        shift: [17.86, -88.8]
+        rotate: -18
+      key:
+        width: 17.5
+        height: 26.5
+        tags: [thumb]
+      rows:
+        thumb:
+    extra:
+      anchor:
+        ref: matrix_outer_fn
+        shift: [kx, 9]
+      key:
+        width: 17.5
+        height: 16.5
+      rows:
+        single:
+    extra2:
+      anchor:
+        ref: matrix_outer_fn
+        shift: [kx, 26]
+      key:
+        width: 17.5
+        height: 16.5
+      rows:
+        single:
+  mirror:
+    ref: matrix_outer_home
+    distance: 85
