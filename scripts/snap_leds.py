@@ -69,4 +69,6 @@ def main():
     print(f'snapped {moved} footprints' + (f'; not found: {", ".join(missing)}' if missing else ''))
 
 
-main()
+# place_from_ergogen.py loads this file for snap() without running it
+if not globals().get('SNAP_LEDS_NO_MAIN'):
+    main()
