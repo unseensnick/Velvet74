@@ -7,6 +7,8 @@ fp-info-cache
 _autosave-*
 *.lck
 \#auto_saved_files#
+# KiCad 10 local history (its own git repository of snapshots)
+.history/
 
 # Ergogen
 ergogen/node_modules/

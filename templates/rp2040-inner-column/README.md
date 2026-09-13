@@ -1,6 +1,6 @@
 # RP2040 Inner Column Module
 
-A KiCad 8 template for a chip-down RP2040 controller that lives on the back of a Choc split keyboard,
+A KiCad 10 template for a chip-down RP2040 controller that lives on the back of a Choc split keyboard,
 in the strip beside the inner key column, the way the Keebart Sofle Choc Pro does it. The layout
 follows the ScottoModules idea: copy the schematic and board into a keyboard project, then wire the
 GPIO labels to the matrix.
@@ -42,13 +42,13 @@ reference designators and LCSC part numbers match the keyboard.
 kicad-cli pcb drc --schematic-parity --severity-error RP2040InnerColumn.kicad_pcb
 ```
 
-At placement: 0 schematic parity issues, no courtyard or clearance errors, 0 silkscreen warnings.
-Known and expected:
+At placement (KiCad 10.0.3): 0 ERC errors, 0 schematic parity issues, 0 footprint field
+mismatches, no courtyard or clearance errors, 0 silkscreen warnings. The only expected item is
+`invalid_outline`: the template has no Edge.Cuts on purpose, and it goes away inside the host board.
 
-- `invalid_outline`: the template has no Edge.Cuts on purpose; it goes away inside the host board.
-- Two errors from the USB-C footprint itself (C2927039, `TYPE-C-SMD_HX-TYPE-C-16PIN`): its GND pads
-  are 0.204 mm from the NPTH peg holes against the board's 0.25 mm hole clearance rule. The same
-  footprint is used on the Sofle board.
+KiCad 8 also reported two hole clearance errors inside the USB-C footprint (C2927039,
+`TYPE-C-SMD_HX-TYPE-C-16PIN`, GND pads 0.204 mm from the NPTH peg holes against a 0.25 mm rule);
+KiCad 10 no longer reports them.
 
 ## Routability
 
@@ -71,7 +71,7 @@ kicad-cli sch export netlist -o module.net templates/rp2040-inner-column/RP2040I
 ```
 
 ```bash
-"C:/Program Files/KiCad/8.0/bin/python.exe" scripts/build_rp2040_module.py module.net
+"%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/build_rp2040_module.py module.net
 ```
 
 ## Bill of materials

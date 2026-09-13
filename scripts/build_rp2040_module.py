@@ -6,7 +6,7 @@ groups, the USB and power module and the RP2040 module, which move as units on t
 Regenerating overwrites templates/rp2040-inner-column/RP2040InnerColumn.kicad_pcb, routing included:
 
     kicad-cli sch export netlist -o module.net templates/rp2040-inner-column/RP2040InnerColumn.kicad_sch
-    "C:/Program Files/KiCad/8.0/bin/python.exe" scripts/build_rp2040_module.py module.net
+    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/build_rp2040_module.py module.net
 """
 import math
 import os
@@ -18,8 +18,11 @@ import pcbnew
 T = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'templates', 'rp2040-inner-column')
 NET = sys.argv[1]
 OUT = os.path.join(T, 'RP2040InnerColumn.kicad_pcb')
-ENV = {'KICAD8_3RD_PARTY': os.path.expanduser(r'~\Documents\KiCad\8.0\3rdparty'),
-       'KICAD8_FOOTPRINT_DIR': r'C:\Program Files\KiCad\8.0\share\kicad\footprints', 'KIPRJMOD': T}
+# KiCad 10 resolves the KiCad 8 era ${KICAD8_3RD_PARTY} in older library tables to its own 3rdparty folder
+THIRD_PARTY = os.path.expanduser(r'~\Documents\KiCad\10.0\3rdparty')
+KICAD_SHARE = os.path.join(os.path.dirname(pcbnew.__file__), '..', '..', '..', 'share', 'kicad')   # bin\Lib\site-packages -> share\kicad
+ENV = {'KICAD10_3RD_PARTY': THIRD_PARTY, 'KICAD8_3RD_PARTY': THIRD_PARTY, 'KIPRJMOD': T,
+       'KICAD10_FOOTPRINT_DIR': os.path.normpath(os.path.join(KICAD_SHARE, 'footprints'))}
 W, H = 19.56, 41.6          # placement area: the strip measured on the Sofle, whose top and right are board edges
 GROUPS = {
     'USB and power': ['J1', 'U4', 'R5', 'R6', 'F1', 'D1', 'U5', 'C9', 'C18', 'C19', 'C20'],
@@ -30,15 +33,24 @@ mm = pcbnew.FromMM
 
 
 def libs():
+    # user table first (KiCad 10 nests the stock libraries as a "Table" row), then the project table wins
     table = {}
-    for path in (os.path.join(os.environ['APPDATA'], r'kicad\8.0\fp-lib-table'), os.path.join(T, 'fp-lib-table')):
-        for name, uri in re.findall(r'\(name "([^"]+)"\)\(type "[^"]+"\)\(uri "([^"]+)"\)', open(path, encoding='utf-8').read()):
-            table[name] = re.sub(r'\$\{(\w+)\}', lambda m: ENV.get(m.group(1), m.group(0)), uri)
+    def read(path):
+        text = open(path, encoding='utf-8').read()
+        for name, kind, uri in re.findall(r'\(name "([^"]+)"\)\s*\(type "([^"]+)"\)\s*\(uri "([^"]+)"\)', text):
+            uri = re.sub(r'\$\{(\w+)\}', lambda m: ENV.get(m.group(1), m.group(0)), uri)
+            if kind == 'Table':
+                read(uri)
+            else:
+                table[name] = uri
+    read(os.path.join(os.environ['APPDATA'], r'kicad\10.0\fp-lib-table'))
+    read(os.path.join(T, 'fp-lib-table'))
     return table
 
 
 def read_netlist(path):
-    text = open(path, encoding='utf-8').read()
+    # KiCad 10 writes one token per indented line; fold the line breaks so both netlist styles parse alike
+    text = re.sub(r'\s+\)', ')', re.sub(r'\s*\n\s*', ' ', open(path, encoding='utf-8').read()))
     comps = {}
     for block in re.findall(r'\(comp \(ref "[^"]+"\).*?\(tstamps "[^"]+"\)\)', text, re.S):
         ref = re.search(r'\(ref "([^"]+)"\)', block).group(1)
@@ -46,7 +58,7 @@ def read_netlist(path):
             value=re.search(r'\(value "([^"]*)"\)', block).group(1),
             footprint=re.search(r'\(footprint "([^"]*)"\)', block).group(1),
             uuid=re.search(r'\(tstamps "([^"]+)"\)', block).group(1),
-            fields=dict(re.findall(r'\(field \(name "([^"]+)"\) "([^"]*)"\)', block)))
+            fields=dict(re.findall(r'\(field \(name "([^"]+)"\)(?: "([^"]*)")?\)', block)))   # empty fields have no value
     nets = {}
     for block in re.split(r'\(net \(code', text)[1:]:
         name = re.search(r'\(name "([^"]*)"\)', block).group(1)
@@ -107,9 +119,11 @@ def main():
         fp.SetFPIDAsString(c['footprint'])
         fp.SetReference(ref); fp.SetValue(c['value'])
         for k, v in c['fields'].items():
-            if k not in ('Reference', 'Value', 'Footprint', 'Datasheet', 'Description'):
+            if k in ('Datasheet', 'Description'):
+                fp.GetField(k).SetText(v)   # built-in hidden fields; KiCad 10 DRC compares them with the symbol
+            elif k not in ('Reference', 'Value', 'Footprint'):
                 fp.SetField(k, v)
-                field = fp.GetFieldByName(k)
+                field = fp.GetField(k)
                 field.SetLayer(pcbnew.F_Fab); field.SetVisible(False)   # SetField defaults to visible silkscreen text
         fp.SetPath(pcbnew.KIID_PATH('/' + c['uuid']))
         fp.SetSheetname('/'); fp.SetSheetfile('RP2040InnerColumn.kicad_sch')

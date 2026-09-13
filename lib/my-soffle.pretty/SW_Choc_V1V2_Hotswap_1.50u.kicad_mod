@@ -1,7 +1,7 @@
 (footprint "SW_Choc_V1V2_Hotswap_1.50u"
-	(version 20240108)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "Kailh Choc V1/V2 hotswap 1.50u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.50u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
 	(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.50u")
@@ -23,18 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "b010fda7-fb7d-4b56-9b93-a6f4640878f6")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -64,6 +52,47 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -7.6 -7.6)
+		(end -7.6 7.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f520e2f7-6e65-4922-8862-f64ccbe4c216")
+	)
+	(fp_line
+		(start -7.6 7.6)
+		(end 7.6 7.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e658d23f-0738-4292-9dfb-985324aeee81")
+	)
+	(fp_line
+		(start 7.6 -7.6)
+		(end -7.6 -7.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "333cedbf-12ba-4b9a-ae29-d06b3c3844a6")
+	)
+	(fp_line
+		(start 7.6 7.6)
+		(end 7.6 -7.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "993986e1-f17e-4953-9e63-94db551f3695")
+	)
 	(fp_line
 		(start -2.416 -7.409)
 		(end -1.479 -8.346)
@@ -343,46 +372,6 @@
 		)
 		(layer "B.SilkS")
 		(uuid "25e74529-18c0-457a-98c7-62321821316f")
-	)
-	(fp_line
-		(start -7.6 -7.6)
-		(end -7.6 7.6)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "f520e2f7-6e65-4922-8862-f64ccbe4c216")
-	)
-	(fp_line
-		(start -7.6 7.6)
-		(end 7.6 7.6)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "e658d23f-0738-4292-9dfb-985324aeee81")
-	)
-	(fp_line
-		(start 7.6 -7.6)
-		(end -7.6 -7.6)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "333cedbf-12ba-4b9a-ae29-d06b3c3844a6")
-	)
-	(fp_line
-		(start 7.6 7.6)
-		(end 7.6 -7.6)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "993986e1-f17e-4953-9e63-94db551f3695")
 	)
 	(fp_line
 		(start -13.5 -8.5)
@@ -1091,7 +1080,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "B.Fab")
 		(uuid "25d22de9-290a-448b-b690-7c10f9fe7099")
 	)
@@ -1203,17 +1192,18 @@
 	(pad "1" smd roundrect
 		(at -3.5 -6)
 		(size 2.55 2.5)
-		(layers "B.Cu" "B.Paste" "B.Mask")
+		(layers "B.Cu" "B.Mask" "B.Paste")
 		(roundrect_rratio 0.1)
 		(uuid "3ade1b20-6d74-4682-8674-6407bd299d05")
 	)
 	(pad "2" smd roundrect
 		(at 8.5 -3.8)
 		(size 2.55 2.5)
-		(layers "B.Cu" "B.Paste" "B.Mask")
+		(layers "B.Cu" "B.Mask" "B.Paste")
 		(roundrect_rratio 0.1)
 		(uuid "2fd2612b-dc93-4090-b64e-1c6c5f589927")
 	)
+	(embedded_fonts no)
 	(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 		(offset
 			(xyz 0 0 0)

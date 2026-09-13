@@ -6,7 +6,7 @@ reference numbers the schematic uses: SWnn -> LEDnn, C1nn, Dnn.
 Inside pcbnew:  Tools > Scripting Console, then
     exec(open(r"<project>/scripts/snap_leds.py").read())
 From a shell (pcbnew closed):
-    "C:/Program Files/KiCad/8.0/bin/python.exe" scripts/snap_leds.py sofle-choc-pro.kicad_pcb
+    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/snap_leds.py sofle-choc-pro.kicad_pcb
 """
 import math
 import re

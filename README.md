@@ -1,7 +1,7 @@
 # my-soffle
 
 A personal Sofle-style split ergonomic keyboard: [Ergogen](https://github.com/ergogen/ergogen) layout
-configs for the key positions and board outline, plus a KiCad 8 project for the onboard RP2040
+configs for the key positions and board outline, plus a KiCad 10 project for the onboard RP2040
 controller.
 
 ## What is in here
@@ -74,5 +74,5 @@ assembly. The `.kicad_pcb` file is still empty: no layout has been done yet.
 ## Requirements
 
 - [Ergogen](https://github.com/ergogen/ergogen) with the ceoloide footprint library available
-- KiCad 8
+- KiCad 10 (files were moved from KiCad 8 at the `kicad8-final` tag; KiCad 8 can no longer open them)
 - The JLCPCB symbol/footprint libraries, installed via the KiCad Plugin and Content Manager

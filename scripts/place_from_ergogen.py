@@ -6,7 +6,7 @@ outline board. Then, with the PCB updated from the schematic:
 Inside pcbnew:  Tools > Scripting Console, then
     exec(open(r"<project>/scripts/place_from_ergogen.py").read())
 From a shell (pcbnew closed):
-    "C:/Program Files/KiCad/8.0/bin/python.exe" scripts/place_from_ergogen.py sofle-choc-pro.kicad_pcb
+    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/place_from_ergogen.py sofle-choc-pro.kicad_pcb
 
 Each run replaces the board-level Edge.Cuts outline, moves every SWnn listed in
 points.json, then snaps LEDs, caps and diodes with snap_leds.py.

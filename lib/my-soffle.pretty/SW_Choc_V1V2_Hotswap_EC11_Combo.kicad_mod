@@ -1,7 +1,7 @@
 (footprint "SW_Choc_V1V2_Hotswap_EC11_Combo"
-	(version 20240108)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "Kailh Choc V1/V2 hotswap position that alternatively takes an Alps EC11E encoder with push switch (knob on key centre), Keebart-style: the Choc footprint (kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u) is untouched and the EC11 legs are bent outward: A/C/B row 0.75 mm out to 8.25 mm, mounting tabs 2.5 mm out to +/-8 mm. Pin offsets per ceoloide/ergogen-footprints (MIT). Solder either the socket or the encoder, not both. Per-key LED only at 0,+4.7 (between the key and the A/C/B row).")
 	(tags "EC11 EC11E Encoder Combo Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
@@ -23,18 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "be2b6703-7da1-4fe5-a3b5-fa1615816548")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -64,6 +52,47 @@
 		)
 	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -7.6 -7.6)
+		(end -7.6 7.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5c8b93be-49b8-4293-b590-696574438eae")
+	)
+	(fp_line
+		(start -7.6 7.6)
+		(end 7.6 7.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2c0c7e4e-7708-43bd-9cdc-38ca88ce8a21")
+	)
+	(fp_line
+		(start 7.6 -7.6)
+		(end -7.6 -7.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f681e9a5-c9d5-4e3e-a5a3-9b3a6e3f3ec8")
+	)
+	(fp_line
+		(start 7.6 7.6)
+		(end 7.6 -7.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "71c51bd2-fa27-48c1-934b-8ac234ffa7e7")
+	)
 	(fp_line
 		(start -2.416 -7.409)
 		(end -1.479 -8.346)
@@ -343,46 +372,6 @@
 		)
 		(layer "B.SilkS")
 		(uuid "a3b38f55-aa55-4a32-a2d2-4ab5555c7d63")
-	)
-	(fp_line
-		(start -7.6 -7.6)
-		(end -7.6 7.6)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "5c8b93be-49b8-4293-b590-696574438eae")
-	)
-	(fp_line
-		(start -7.6 7.6)
-		(end 7.6 7.6)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "2c0c7e4e-7708-43bd-9cdc-38ca88ce8a21")
-	)
-	(fp_line
-		(start 7.6 -7.6)
-		(end -7.6 -7.6)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "f681e9a5-c9d5-4e3e-a5a3-9b3a6e3f3ec8")
-	)
-	(fp_line
-		(start 7.6 7.6)
-		(end 7.6 -7.6)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "71c51bd2-fa27-48c1-934b-8ac234ffa7e7")
 	)
 	(fp_line
 		(start -9 -8.5)
@@ -1091,7 +1080,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "B.Fab")
 		(uuid "394370ce-b544-4c15-ac9b-b0193441973e")
 	)
@@ -1142,7 +1131,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "c0c561f1-fda1-4653-9cd8-8c0d9d98e8a8")
 	)
@@ -1264,7 +1253,7 @@
 	(pad "2" smd roundrect
 		(at 8.5 -3.8)
 		(size 2.55 2.5)
-		(layers "B.Cu" "B.Paste" "B.Mask")
+		(layers "B.Cu" "B.Mask" "B.Paste")
 		(roundrect_rratio 0.1)
 		(uuid "b4521f94-ee83-4c8a-a244-c02dff3253bd")
 	)
@@ -1292,6 +1281,7 @@
 		(remove_unused_layers no)
 		(uuid "95413af7-9aef-48c8-8a4a-9627ed8f034b")
 	)
+	(embedded_fonts no)
 	(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 		(offset
 			(xyz 0 0 0)
