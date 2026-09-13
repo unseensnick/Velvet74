@@ -1,5 +1,8 @@
 """Build the RP2040 inner-column module board from its schematic netlist and place every part (no routing).
 
+The template has no Edge.Cuts: it is pasted into a keyboard board. Like ScottoModules it holds two
+groups, the USB and power module and the RP2040 module, which move as units on the host board.
+
 Regenerating overwrites templates/rp2040-inner-column/RP2040InnerColumn.kicad_pcb, routing included:
 
     kicad-cli sch export netlist -o module.net templates/rp2040-inner-column/RP2040InnerColumn.kicad_sch
@@ -17,7 +20,12 @@ NET = sys.argv[1]
 OUT = os.path.join(T, 'RP2040InnerColumn.kicad_pcb')
 ENV = {'KICAD8_3RD_PARTY': os.path.expanduser(r'~\Documents\KiCad\8.0\3rdparty'),
        'KICAD8_FOOTPRINT_DIR': r'C:\Program Files\KiCad\8.0\share\kicad\footprints', 'KIPRJMOD': T}
-W, H = 19.56, 41.6          # strip measured on the Sofle: right and top are real board edges
+W, H = 19.56, 41.6          # placement area: the strip measured on the Sofle, whose top and right are board edges
+GROUPS = {
+    'USB and power': ['J1', 'U4', 'R5', 'R6', 'F1', 'D1', 'U5', 'C9', 'C18', 'C19', 'C20'],
+    'RP2040': ['U1', 'U3', 'C3', 'X1', 'C1', 'C4', 'R2', 'R7', 'R8', 'C5', 'C6', 'C7', 'C8', 'C10', 'C11',
+               'C12', 'C13', 'C14', 'C15', 'C16', 'C17', 'SW1', 'SW2', 'R4'],
+}
 mm = pcbnew.FromMM
 
 
@@ -92,11 +100,6 @@ def main():
         if name not in netinfo:
             n = pcbnew.NETINFO_ITEM(board, name); board.Add(n); netinfo[name] = n
         return netinfo[name]
-    # outline
-    for (x1, y1), (x2, y2) in (((0, 0), (W, 0)), ((W, 0), (W, H)), ((W, H), (0, H)), ((0, H), (0, 0))):
-        s = pcbnew.PCB_SHAPE(board); s.SetShape(pcbnew.SHAPE_T_SEGMENT); s.SetLayer(pcbnew.Edge_Cuts)
-        s.SetStart(pcbnew.VECTOR2I(mm(x1), mm(y1))); s.SetEnd(pcbnew.VECTOR2I(mm(x2), mm(y2))); s.SetWidth(mm(0.15))
-        board.Add(s)
     fps = {}
     for ref, c in sorted(comps.items()):
         lib, name = c['footprint'].split(':', 1)
@@ -239,8 +242,20 @@ def main():
             break
     else:
         board.Remove(jlc)
+        jlc = None
         print('  JLC marker: NO FREE SPOT on the board, left out')
-    print(f'  JLC marker at ({pcbnew.ToMM(jlc.GetPosition().x):.2f}, {pcbnew.ToMM(jlc.GetPosition().y):.2f})')
+    if jlc:
+        print(f'  JLC marker at ({pcbnew.ToMM(jlc.GetPosition().x):.2f}, {pcbnew.ToMM(jlc.GetPosition().y):.2f})')
+    grouped = {ref for refs in GROUPS.values() for ref in refs}
+    assert grouped == set(fps), f'parts missing from GROUPS: {sorted(set(fps) - grouped)}, unknown: {sorted(grouped - set(fps))}'
+    for name, refs in GROUPS.items():
+        group = pcbnew.PCB_GROUP(board)
+        group.SetName(name)
+        board.Add(group)
+        for ref in refs:
+            group.AddItem(fps[ref])
+        if name == 'RP2040' and jlc:
+            group.AddItem(jlc)
     board.Save(OUT)
     missing = sorted(set(comps) - {r for r, _ in PLACE})
     print(f'placed {len(PLACE)} of {len(comps)} parts; unplaced: {missing}')

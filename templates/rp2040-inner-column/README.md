@@ -10,8 +10,15 @@ reference designators and LCSC part numbers match the keyboard.
 
 ## Board
 
-- 19.56 x 41.6 mm, measured from the free strip on the Sofle board. The top and right edges are real
-  board edges there; the left and bottom meet the key area.
+- No Edge.Cuts: the modules are pasted into an existing keyboard board, which brings its own outline.
+- Two groups, like ScottoModules, each moving as one unit on the host board:
+  - **USB and power**: J1, U4, R5, R6, F1, D1, U5, C9, C18, C19, C20
+  - **RP2040**: U1, the flash U3 with C3, the crystal X1 with C1, C4 and R2, the USB series resistors
+    R7 and R8, all RP2040 decoupling caps, BOOT/RESET (SW1, SW2, R4) and the JLC marker
+- As placed, the two groups fill a 19.56 x 41.6 mm strip measured from the free space on the Sofle
+  board, whose top and right are real board edges; the left and bottom meet the key area. That
+  arrangement is the one the routability check below covers. Pull the groups apart only if the host
+  board needs it, and leave room for the traces between them.
 - Every part is on the back (B.Cu) for single-sided JLCPCB assembly.
 - The RP2040 sits at 45 degrees. USB pins point at the USB-C connector on the top edge, QSPI pins at
   the flash (also at 45 degrees) up and to the right, GP18-29 and GP12-17 fan out to the left and
@@ -35,10 +42,13 @@ reference designators and LCSC part numbers match the keyboard.
 kicad-cli pcb drc --schematic-parity --severity-error RP2040InnerColumn.kicad_pcb
 ```
 
-At placement: 0 schematic parity issues, no courtyard, clearance or edge errors, 0 silkscreen
-warnings. Two known errors come from the USB-C footprint itself (C2927039, `TYPE-C-SMD_HX-TYPE-C-16PIN`):
-its GND pads are 0.204 mm from the NPTH peg holes against the board's 0.25 mm hole clearance rule.
-The same footprint is used on the Sofle board.
+At placement: 0 schematic parity issues, no courtyard or clearance errors, 0 silkscreen warnings.
+Known and expected:
+
+- `invalid_outline`: the template has no Edge.Cuts on purpose; it goes away inside the host board.
+- Two errors from the USB-C footprint itself (C2927039, `TYPE-C-SMD_HX-TYPE-C-16PIN`): its GND pads
+  are 0.204 mm from the NPTH peg holes against the board's 0.25 mm hole clearance rule. The same
+  footprint is used on the Sofle board.
 
 ## Routability
 
