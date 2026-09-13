@@ -50,30 +50,37 @@ def read_netlist(path):
 # ------------------------------------------------------------------ placement (mm, y down, back side)
 # Rotation is applied after flipping to the back. Order matters: earlier parts claim space first.
 # Each entry: ref -> (x, y, rot) preferred spot, or ('pin', ref, pin, distance) to sit outside that pad.
-U1_AT = (8.0, 22.0, 90)   # after the flip, rot 90 puts USB/QSPI on the right side and XIN/XOUT on the left
+# The RP2040 sits at 45 degrees (rot 135 after the flip): USB pins at the top corner toward J1, QSPI on
+# the upper-right side toward the flash, GP18-29 up-left and GP12-17 down-left toward the key area,
+# GP0-11 down-right toward the bottom edge, and the free corners next to the diamond take the caps.
+# Chosen by autorouting shuffled variants with Freerouting (the only one that routed 100%).
+U1_AT = (9.0, 26.0, 135)
 PLACE = [
     ('J1', (W / 2, 5.0, 0)),                 # mouth exactly on the top edge
     ('U1', U1_AT),
-    ('U4', (W / 2, 10.6, 0)),                # ESD right under the D+/D- pads
-    ('C8', ('pin', 'U1', '45', 1.35)), ('C6', ('pin', 'U1', '50', 1.35)), ('C5', ('pin', 'U1', '23', 1.35)),  # 1V1 first
-    ('R7', ('pin', 'U1', '47', 1.9)), ('R8', ('pin', 'U1', '46', 1.9)),   # 27R at the USB pins
-    ('U3', (16.4, 27.0, 180)),               # flash pins 5-8 (DI, CLK, HOLD, VCC) face the QSPI pins
-    ('X1', (1.9, 22.4, 90)),                 # crystal at XIN/XOUT
-    ('C1', ('pin', 'X1', '3', 1.6)), ('C4', ('pin', 'X1', '1', 1.6)), ('R2', ('pin', 'U1', '21', 3.6)),
-    ('C17', ('pin', 'U1', '43', 1.35)), ('C7', ('pin', 'U1', '44', 1.35)),
-    ('C16', ('pin', 'U1', '48', 1.35)), ('C15', ('pin', 'U1', '49', 1.35)),
-    ('C10', ('pin', 'U1', '1', 1.35)), ('C11', ('pin', 'U1', '10', 1.35)), ('C12', ('pin', 'U1', '22', 1.35)),
-    ('C13', ('pin', 'U1', '33', 1.35)), ('C14', ('pin', 'U1', '42', 1.35)),
-    ('C3', ('pin', 'U3', '8', 1.6)),
+    ('R7', ('pin', 'U1', '47', 2.2)), ('R8', ('pin', 'U1', '46', 2.2)),   # 27R at the USB pins, before caps crowd them
+    ('U3', (14.6, 13.4, 315)),               # flash on the QSPI side, turned with the chip
+    ('C3', ('pin', 'U3', '8', 1.8)),         # flash VCC cap
+    ('X1', (4.6, 31.0, 45)),                 # crystal on the XIN/XOUT side
+    ('SW1', (3.6, 38.3, 0)), ('SW2', (16.0, 38.3, 0)),
+    # regulator group in the free corner beside the USB-C shell, out of the GP0-11 corridor on the right
+    ('U5', (17.2, 4.4, 90)), ('C20', ('pin', 'U5', '1', 1.8)), ('C19', ('pin', 'U5', '5', 1.8)),
+    ('C18', (17.4, 9.4, 0)), ('C9', (17.4, 11.2, 0)),
+    ('U4', (6.6, 10.8, 0)),                  # ESD just behind J1's D+/D- pads
+    ('C8', ('pin', 'U1', '45', 2.0)), ('C6', ('pin', 'U1', '50', 2.0)), ('C5', ('pin', 'U1', '23', 2.0)),  # 1V1 first
+    ('C1', ('pin', 'X1', '3', 1.8)), ('C4', ('pin', 'X1', '1', 1.8)), ('R2', ('pin', 'U1', '21', 3.6)),
+    ('C17', ('pin', 'U1', '43', 2.0)), ('C7', ('pin', 'U1', '44', 2.0)),
+    ('C16', ('pin', 'U1', '48', 2.0)), ('C15', ('pin', 'U1', '49', 2.0)),
+    ('C10', ('pin', 'U1', '1', 2.0)), ('C11', ('pin', 'U1', '10', 2.0)), ('C12', ('pin', 'U1', '22', 2.0)),
+    ('C13', ('pin', 'U1', '33', 2.0)), ('C14', ('pin', 'U1', '42', 2.0)),
     ('R5', ('pin', 'J1', 'A5', 2.8)), ('R6', ('pin', 'J1', 'B5', 2.8)),
-    ('F1', (2.2, 11.6, 90)), ('D1', (5.4, 12.2, 90)),
-    ('U5', (2.4, 16.4, 0)), ('C20', ('pin', 'U5', '1', 1.6)), ('C19', ('pin', 'U5', '5', 1.6)),
-    ('C18', (15.8, 16.0, 0)), ('C9', (15.8, 34.2, 0)),
-    ('SW1', (4.4, 38.3, 0)), ('R4', ('pin', 'SW1', '2', 2.0)), ('SW2', (14.9, 38.3, 0)),
+    ('F1', (2.0, 11.0, 90)), ('D1', (2.0, 15.6, 90)),
+    ('R4', ('pin', 'SW1', '2', 2.0)),
 ]
 CLEAR = 0.0       # boxes already include PAD_GAP around every pad
-PAD_GAP = 0.13    # touching boxes keep pads 0.26 mm apart (DRC copper clearance is 0.2)
-EDGE = 0.4        # copper stays at least 0.53 mm off the outline (DRC wants 0.5); J1 sits on the edge on purpose
+PAD_GAP = 0.4     # pads of different parts stay 0.8 mm apart: room for a 0.2 mm track with 0.2 mm clearance
+RING = 1.2        # other parts' pads stay 1.6 mm (RING + PAD_GAP) off U1's pads, room to fan out and drop vias
+EDGE = 0.4        # copper stays off the outline (DRC wants 0.5); J1 sits on the edge on purpose
 
 
 def main():
@@ -108,14 +115,18 @@ def main():
             if (ref, pad.GetNumber()) in nets:
                 pad.SetNet(net(nets[(ref, pad.GetNumber())]))
         fps[ref] = fp
-    def courtyard(fp):
+    def extents(fp, gap, with_courtyard):
         # some JLC footprints draw courtyards tighter than their pads, so take the union with padded pad boxes
-        boxes = [fp.GetCourtyard(l).BBox() for l in (pcbnew.B_CrtYd, pcbnew.F_CrtYd) if fp.GetCourtyard(l).OutlineCount()]
-        edges = [(pcbnew.ToMM(b.GetLeft()), pcbnew.ToMM(b.GetTop()), pcbnew.ToMM(b.GetRight()), pcbnew.ToMM(b.GetBottom())) for b in boxes]
+        edges = []
+        if with_courtyard:
+            for layer in (pcbnew.B_CrtYd, pcbnew.F_CrtYd):
+                if fp.GetCourtyard(layer).OutlineCount():
+                    b = fp.GetCourtyard(layer).BBox()
+                    edges.append((pcbnew.ToMM(b.GetLeft()), pcbnew.ToMM(b.GetTop()), pcbnew.ToMM(b.GetRight()), pcbnew.ToMM(b.GetBottom())))
         for pad in fp.Pads():
             b = pad.GetBoundingBox()
-            edges.append((pcbnew.ToMM(b.GetLeft()) - PAD_GAP, pcbnew.ToMM(b.GetTop()) - PAD_GAP,
-                          pcbnew.ToMM(b.GetRight()) + PAD_GAP, pcbnew.ToMM(b.GetBottom()) + PAD_GAP))
+            edges.append((pcbnew.ToMM(b.GetLeft()) - gap, pcbnew.ToMM(b.GetTop()) - gap,
+                          pcbnew.ToMM(b.GetRight()) + gap, pcbnew.ToMM(b.GetBottom()) + gap))
         return (min(e[0] for e in edges), min(e[1] for e in edges), max(e[2] for e in edges), max(e[3] for e in edges))
     def put(ref, x, y, rot):
         fp = fps[ref]
@@ -123,52 +134,85 @@ def main():
             fp.Flip(fp.GetPosition(), False)
         fp.SetOrientationDegrees(rot)
         fp.SetPosition(pcbnew.VECTOR2I(mm(x), mm(y)))
-        return courtyard(fp)
+    # Parts are rotated rectangles so a 45 degree RP2040 keeps its free corners. Each footprint's box is
+    # measured once unrotated; on these flipped footprints orientation +t turns the board frame by -t.
+    local = {}
+    def box_at_zero(ref, gap, with_courtyard):
+        put(ref, 0, 0, 0)
+        l, t, r, b = extents(fps[ref], gap, with_courtyard)
+        return ((l + r) / 2, (t + b) / 2, (r - l) / 2, (b - t) / 2)
+    def rect(ref, x, y, rot, grow=0.0, key=None):
+        ox, oy, hw, hh = local[key or ref]
+        a = math.radians(-rot)
+        return (x + ox * math.cos(a) - oy * math.sin(a), y + ox * math.sin(a) + oy * math.cos(a), hw + grow, hh + grow, a)
+    def aabb(r):
+        cx, cy, hw, hh, a = r
+        ex, ey = hw * abs(math.cos(a)) + hh * abs(math.sin(a)), hw * abs(math.sin(a)) + hh * abs(math.cos(a))
+        return (cx - ex, cy - ey, cx + ex, cy + ey)
+    def overlap(r1, r2):
+        # separating axis test for two rotated rectangles
+        dx, dy = r2[0] - r1[0], r2[1] - r1[1]
+        for _, _, _, _, a in (r1, r2):
+            for ux, uy in ((math.cos(a), math.sin(a)), (-math.sin(a), math.cos(a))):
+                ext = sum(hw * abs(math.cos(b) * ux + math.sin(b) * uy) + hh * abs(-math.sin(b) * ux + math.cos(b) * uy)
+                          for _, _, hw, hh, b in (r1, r2))
+                if abs(dx * ux + dy * uy) >= ext + CLEAR:
+                    return False
+        return True
     placed = {}
-    def free(box, ref):
-        l, tp, r, b = box
-        if ref != 'J1' and (l < EDGE or tp < EDGE or r > W - EDGE or b > H - EDGE):
+    ring = []
+    def free(r, ref):
+        l, tp, rt, b = aabb(r)
+        if ref != 'J1' and (l < EDGE or tp < EDGE or rt > W - EDGE or b > H - EDGE):
             return False
-        return all(l >= pr + CLEAR or r <= pl - CLEAR or tp >= pb + CLEAR or b <= pt - CLEAR for pl, pt, pr, pb in placed.values())
+        if ref not in ('U1', 'JLC') and ring and overlap(r, ring[0]):
+            return False
+        return not any(overlap(r, other) for other in placed.values())
     report = []
     for ref, spec in PLACE:
+        local[ref] = box_at_zero(ref, PAD_GAP, True)
         if spec[0] == 'pin':
             _, host, pin, dist = spec
-            h = fps[host]; hc = h.GetPosition()
+            h = fps[host]; hc = h.GetPosition(); hrot = h.GetOrientationDegrees()
             pad = next(p for p in h.Pads() if p.GetNumber() == pin)
             pp = pad.GetPosition()
             dx, dy = pcbnew.ToMM(pp.x - hc.x), pcbnew.ToMM(pp.y - hc.y)
-            n = math.hypot(dx, dy) or 1
-            ux, uy = dx / n, dy / n
-            if abs(dx) >= abs(dy):
-                ux, uy, rot = (1 if dx > 0 else -1), 0, 90
-            else:
-                ux, uy, rot = 0, (1 if dy > 0 else -1), 0
+            # which side of the host the pin is on, in the host's own frame, then back to the board frame
+            a = math.radians(-hrot)
+            lx, ly = dx * math.cos(a) + dy * math.sin(a), -dx * math.sin(a) + dy * math.cos(a)
+            nlx, nly = ((1 if lx > 0 else -1), 0) if abs(lx) >= abs(ly) else (0, (1 if ly > 0 else -1))
+            ux, uy = nlx * math.cos(a) - nly * math.sin(a), nlx * math.sin(a) + nly * math.cos(a)
             x0, y0 = pcbnew.ToMM(pp.x) + ux * dist, pcbnew.ToMM(pp.y) + uy * dist
+            rot = (90 - math.degrees(math.atan2(uy, ux))) % 180   # pads stacked along the pin's outward direction
             rots = (rot, (rot + 90) % 180)
         else:
             x0, y0, rot = spec
-            rots = (rot,) if ref in ('J1', 'U1', 'U3', 'SW1', 'SW2') else (rot, (rot + 90) % 180)
+            rots = (rot,) if ref in ('J1', 'U1', 'U3', 'SW1', 'SW2') else (rot, (rot + 90) % 360)
         best = None
         for radius_i in range(0, 41):                       # spiral out to 10 mm in 0.25 mm rings
             rr = radius_i * 0.25
             steps = max(1, int(2 * math.pi * rr / 0.25))
             for s in range(steps):
-                a = 2 * math.pi * s / steps
+                ang = 2 * math.pi * s / steps
                 for rt in rots:
-                    x, y = x0 + rr * math.cos(a), y0 + rr * math.sin(a)
-                    box = put(ref, x, y, rt)
-                    if free(box, ref):
-                        best = (x, y, rt, box, rr)
+                    x, y = x0 + rr * math.cos(ang), y0 + rr * math.sin(ang)
+                    r = rect(ref, x, y, rt)
+                    if free(r, ref):
+                        best = (x, y, rt, r, rr)
                         break
                 if best: break
             if best: break
         if best is None:
             report.append(f'{ref}: NO FREE SPOT near ({x0:.1f},{y0:.1f})')
-            put(ref, x0, y0, rot); placed[ref] = courtyard(fps[ref])
+            put(ref, x0, y0, rot); placed[ref] = rect(ref, x0, y0, rot)
             continue
-        x, y, rt, box, rr = best
-        put(ref, x, y, rt); placed[ref] = box
+        x, y, rt, r, rr = best
+        put(ref, x, y, rt); placed[ref] = r
+        if ref == 'U1':
+            # other parts' padded boxes stay RING off U1's bare pads: room to fan out and drop vias
+            local['U1_pads'] = box_at_zero('U1', 0.0, False)
+            put(ref, x, y, rt)
+            ring[:] = [rect(ref, x, y, rt, grow=RING, key='U1_pads')]
         if rr > 1.0:
             report.append(f'{ref}: moved {rr:.2f} mm from its preferred spot')
     for line in report:
@@ -181,19 +225,21 @@ def main():
     jlc.SetText('JLCJLCJLCJLC'); jlc.SetLayer(pcbnew.B_SilkS); jlc.SetMirrored(True)
     jlc.SetTextSize(pcbnew.VECTOR2I(mm(0.8), mm(0.8))); jlc.SetTextThickness(mm(0.15))
     board.Add(jlc)
-    u1 = courtyard(fps['U1'])
-    for dy in [i * 0.25 for i in range(40)]:
-        for dx in [0] + [s * i * 0.25 for i in range(1, 20) for s in (1, -1)]:
-            jlc.SetPosition(pcbnew.VECTOR2I(mm(U1_AT[0] + dx), mm(u1[3] + 0.6 + dy)))
-            bb = jlc.GetBoundingBox()
-            box = (pcbnew.ToMM(bb.GetLeft()) - 0.15, pcbnew.ToMM(bb.GetTop()) - 0.15, pcbnew.ToMM(bb.GetRight()) + 0.15, pcbnew.ToMM(bb.GetBottom()) + 0.15)
-            if free(box, 'JLC'):
-                break
-        else:
-            continue
-        break
+    # nearest free spot to just below U1, anywhere on the board, horizontal or vertical text
+    u1 = aabb(placed['U1'])
+    target = (U1_AT[0], u1[3] + 1.0)
+    spots = sorted(((i * 0.25, j * 0.25, rot) for i in range(int(W / 0.25) + 1) for j in range(int(H / 0.25) + 1) for rot in (0, 90)),
+                   key=lambda s: math.hypot(s[0] - target[0], s[1] - target[1]))
+    for x, y, rot in spots:
+        jlc.SetTextAngleDegrees(rot)
+        jlc.SetPosition(pcbnew.VECTOR2I(mm(x), mm(y)))
+        bb = jlc.GetBoundingBox()
+        l, t, r, b = (pcbnew.ToMM(bb.GetLeft()) - 0.15, pcbnew.ToMM(bb.GetTop()) - 0.15, pcbnew.ToMM(bb.GetRight()) + 0.15, pcbnew.ToMM(bb.GetBottom()) + 0.15)
+        if free(((l + r) / 2, (t + b) / 2, (r - l) / 2, (b - t) / 2, 0.0), 'JLC'):
+            break
     else:
-        print('  JLC marker: NO FREE SPOT below U1')
+        board.Remove(jlc)
+        print('  JLC marker: NO FREE SPOT on the board, left out')
     print(f'  JLC marker at ({pcbnew.ToMM(jlc.GetPosition().x):.2f}, {pcbnew.ToMM(jlc.GetPosition().y):.2f})')
     board.Save(OUT)
     missing = sorted(set(comps) - {r for r, _ in PLACE})

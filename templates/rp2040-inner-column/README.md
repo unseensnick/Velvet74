@@ -13,12 +13,20 @@ reference designators and LCSC part numbers match the keyboard.
 - 19.56 x 41.6 mm, measured from the free strip on the Sofle board. The top and right edges are real
   board edges there; the left and bottom meet the key area.
 - Every part is on the back (B.Cu) for single-sided JLCPCB assembly.
-- USB-C mouth sits on the top edge, ESD array directly behind it, then the RP2040. The flash faces
-  the QSPI pins, the crystal sits at XIN/XOUT, and BOOT/RESET are along the bottom edge.
-- Decoupling caps are within 1.5 mm of their pins where the space allows (all 1V1 caps are); the
-  worst 3.3 V cap is 4.3 mm away.
-- Silkscreen holds only the footprint outlines and a `JLCJLCJLCJLC` marker below the RP2040, which
-  JLCPCB replaces with the order number. Reference designators are on B.Fab.
+- The RP2040 sits at 45 degrees. USB pins point at the USB-C connector on the top edge, QSPI pins at
+  the flash (also at 45 degrees) up and to the right, GP18-29 and GP12-17 fan out to the left and
+  bottom-left, and GP0-11 run straight down to the bottom edge. BOOT/RESET are along the bottom edge
+  and the regulator group sits beside the USB-C shell.
+- Routing room is built in: pads of different parts are at least 0.6 mm apart (mostly 0.8 mm), and
+  other parts keep 1.6 mm off the RP2040 pins for fanout and vias.
+- The price of that room: decoupling caps are 2.4 to 6.7 mm from their pins (3.9 mm on average), the
+  crystal is 2.9 mm from XIN, the 27 ohm USB resistors are within 3.7 mm, and the longest flash line
+  (SS) is about 15 mm.
+- Silkscreen holds only the footprint outlines and a `JLCJLCJLCJLC` marker, which JLCPCB replaces with
+  the order number. Reference designators are on B.Fab.
+- `RP2040InnerColumn.kicad_dru` allows 0.15 mm clearance inside the RP2040 and USB-C courtyards
+  (0.4 and 0.5 mm pitch pins); 0.2 mm applies everywhere else. JLCPCB's standard 2-layer minimum is
+  0.127 mm.
 - **Parts are placed, not routed.**
 
 ## Checks
@@ -31,6 +39,17 @@ At placement: 0 schematic parity issues, no courtyard, clearance or edge errors,
 warnings. Two known errors come from the USB-C footprint itself (C2927039, `TYPE-C-SMD_HX-TYPE-C-16PIN`):
 its GND pads are 0.204 mm from the NPTH peg holes against the board's 0.25 mm hole clearance rule.
 The same footprint is used on the Sofle board.
+
+## Routability
+
+The placement was chosen by autorouting many variants (RP2040 straight or at 45 degrees, positions,
+flash and USB resistor placement, spacing) with Freerouting, on a copy of the board with every GPIO
+forced out to a pad in a 3 mm strip on the left and bottom edges, where the key area continues.
+This placement was the only one that routed completely on 2 layers. The autorouted copy was
+imported back into KiCad and checked there at 0.15 mm clearance: every signal and power net
+connected with no clearance errors. With GND pours on both layers and stitching vias, all GND pads
+joined except the GND pads of C6 and C11, where the autorouter's traces left no room for a via.
+When routing by hand, drop a GND via beside each decoupling cap before routing the signals.
 
 ## Rebuilding the placement
 
