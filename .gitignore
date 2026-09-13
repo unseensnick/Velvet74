@@ -7,3 +7,7 @@ fp-info-cache
 _autosave-*
 *.lck
 \#auto_saved_files#
+
+# Ergogen
+ergogen/node_modules/
+ergogen/output/

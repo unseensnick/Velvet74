@@ -1,0 +1,182 @@
+# my-soffle left half: key geometry, board outline and case.
+# Ergogen owns geometry only. Parts, nets and JLC data live in the KiCad schematic;
+# scripts/place_from_ergogen.py moves the schematic's footprints onto these points.
+#
+# Geometry source: Keebart Sofle Choc Pro firmware layout (keyboard.json) at Choc
+# spacing, plus an F-row on top and a second encoder above Keebart's knob.
+# Every key carries row_code/col_index so SW<row_code><col_index> is its schematic reference,
+# and led: north|east|south|west for the side of the key its per-key LED sits on.
+
+meta:
+  engine: 4.2.1
+  name: my-soffle
+
+units:
+  kx: cx # 18
+  ky: cy # 17
+  # Keebart column heights relative to pinky, from keyboard.json (0.125u steps)
+  # pinky and pinky2 sit a little higher than Keebart's firmware layout on the real board
+  pinky_lift: 1.5
+  stagger_ring: 0.25 ky - pinky_lift
+  stagger_middle: 0.125 ky
+  stagger_index: -0.125 ky
+  stagger_outer: -0.125 ky
+
+points:
+  zones:
+    matrix:
+      key:
+        padding: ky
+        spread: kx
+        width: kx
+        height: ky
+        led: north
+      columns:
+        pinky:
+          key.col_index: 0
+        pinky2:
+          key.col_index: 1
+        ring:
+          key.col_index: 2
+          key.stagger: stagger_ring
+        middle:
+          key.col_index: 3
+          key.stagger: stagger_middle
+        index:
+          key.col_index: 4
+          key.stagger: stagger_index
+        outer:
+          key.col_index: 5
+          key.stagger: stagger_outer
+      # Ergogen stacks rows bottom-up; row_code matches the schematic (F=1 N=2 T=3 H=4 B=5)
+      rows:
+        bottom:
+          row_code: 5
+        home:
+          row_code: 4
+        top:
+          row_code: 3
+        number:
+          row_code: 2
+        fn:
+          row_code: 1
+
+    # thumb row and inner column, placed from Keebart's key centres relative to matrix_pinky_bottom
+    thumb0:
+      anchor: {ref: matrix_pinky_bottom, shift: [1.5 kx, -1 ky - pinky_lift + 1]} # SW60 up 1 mm with the pinky side
+      key: {row_code: 6, col_index: 0, width: kx, height: ky, led: north}
+    thumb1:
+      anchor: {ref: matrix_pinky_bottom, shift: [2.5 kx, -0.875 ky - pinky_lift]}
+      key: {row_code: 6, col_index: 1, width: kx, height: ky, led: north}
+    thumb2:
+      anchor: {ref: matrix_pinky_bottom, shift: [3.5 kx, -0.875 ky - pinky_lift]}
+      key: {row_code: 6, col_index: 2, width: kx, height: ky, led: north}
+    thumb3: # fitted to caliper measurements on the user's Keebart board: keycap corners 1.54 mm (bottom) and
+      # 3.75 mm (top) from TH2's corners; height kept from the firmware layout
+      anchor: {ref: matrix_pinky_bottom, shift: [4.5 kx + 1.876, -1 ky - pinky_lift], rotate: -8.06}
+      key: {row_code: 6, col_index: 3, width: kx, height: ky, led: north}
+    thumb4: # 1.5u tall key, LED west like Keebart's. Fitted to caliper measurements on the user's board: bottom corner
+      # 1.40 mm from TH3's, TH3's top corner 4.60 mm from it, top corner 7.20 mm from encoder 1's metal body at
+      # Keebart's spot. The user preferred this over the corner-to-side refit and fine-tunes it in KiCad.
+      anchor: {ref: matrix_pinky_bottom, shift: [103.640, -17.628 - pinky_lift], rotate: -19.63}
+      key: {row_code: 6, col_index: 4, width: kx, height: 1.5 ky, led: west}
+    encoder1: # Keebart's knob position moved 3.5 mm down for knob room (SW65); further would bring a Choc cap
+      # here within 0.5 mm of TH4's cap. Electrically thumb row column 5.
+      anchor: {ref: matrix_pinky_bottom, shift: [6 kx, 0.625 ky - 3.5 - pinky_lift]}
+      key: {row_code: 6, col_index: 5, width: kx, height: ky, combo: true, led: north}
+    encoder2: # above encoder 1 (SW16), 21.5 mm apart. Never closer than 18: at 17 the combo footprints short,
+      # and turning one 180 instead shorts its socket pad into the outer column key's socket
+      anchor: {ref: matrix_pinky_bottom, shift: [6 kx, 0.625 ky + 18 - pinky_lift]}
+      key: {row_code: 1, col_index: 6, width: kx, height: ky, combo: true, led: north}
+
+outlines:
+  # Upper half of the board outline: the earlier key-rectangle outline (1.5 mm past the key pitch, enough for socket
+  # pads and combo tab slots at 9.8 mm from key centre), whose offset steps the user preferred along the top
+  # thumbs are left out: the drawn lower half owns them, and TH4's rectangle would leave a hairline sliver along it
+  _keycaps:
+    - what: rectangle
+      where: /^(matrix|encoder)/
+      size: [kx + 3, ky + 3]
+  # inner column from encoder 1 up to the top: encoders, display, controller and USB-C live here
+  # its top is anchored to the outer column's F-row key so the long top edge stays level with it
+  _inner:
+    - what: polygon
+      points:
+        - {ref: matrix_outer_fn, shift: [9, 10]}
+        - {ref: matrix_outer_fn, shift: [kx + 10.5, 10]}
+        - {ref: encoder1, shift: [10.5, -10]}
+        - {ref: encoder1, shift: [-9, -10]}
+  _raw:
+    - what: outline
+      name: _keycaps
+    - operation: add
+      what: outline
+      name: _inner
+  # morphological closing (grow 3 mm, shrink 3 mm) fills the slivers the overlapping key rectangles
+  # leave at stagger steps, which would otherwise be milled as holes
+  _closed:
+    - what: outline
+      name: _raw
+      expand: 3
+      joints: pointy
+  _stepped:
+    - what: outline
+      name: _closed
+      expand: -3
+      joints: pointy
+  # Lower half of the board outline, drawn by the user: straight right edge
+  # down to TH4, along TH4's outer and bottom edges, a straight bottom under the thumbs and a chamfer up to the
+  # pinky column. Margin is 1.5 mm past the 18 x 17 key pitch. Corners on keys are anchored to them; the three
+  # marked "fitted" points are where edges cross and were computed for the current thumb positions, so
+  # recompute them if TH0-TH4 or the encoder column move.
+  _shape:
+    - what: polygon
+      points:
+        - {ref: matrix_pinky_fn, shift: [-10.5, 10]}
+        - {ref: matrix_pinky2_fn, shift: [9, 10]}
+        - {ref: matrix_ring_fn, shift: [-9, 10]}
+        - {ref: matrix_ring_fn, shift: [9, 10]}
+        - {ref: matrix_middle_fn, shift: [-9, 10]}
+        - {ref: matrix_middle_fn, shift: [9, 10]}
+        - {ref: matrix_index_fn, shift: [-9, 10]}
+        - {ref: matrix_index_fn, shift: [9, 10]}
+        - {ref: matrix_outer_fn, shift: [-9, 10]}
+        - {ref: matrix_outer_fn, shift: [kx + 10.5, 10]}
+        - {ref: matrix_pinky_bottom, shift: [118.500, -8.720]} # fitted: right edge meets TH4's outer edge
+        - {ref: thumb4, shift: [10.5, -14.25]}
+        - {ref: matrix_pinky_bottom, shift: [91.349, -29.873]} # fitted: TH4's bottom edge meets the bottom line
+        - {ref: matrix_pinky_bottom, shift: [16.500, -29.873]} # fitted: bottom line under TH3's lowest corner
+        - {ref: matrix_pinky_bottom, shift: [-10.5, -10]}
+  # Board outline (PCB edge and case): the stepped top of _stepped combined with the drawn lower half
+  board:
+    - what: outline
+      name: _stepped
+    - operation: add
+      what: outline
+      name: _shape
+  # switch plate cutouts for a plate case (Choc plate hole 13.8 mm)
+  _switch_holes:
+    - what: rectangle
+      where: true
+      size: [13.8, 13.8]
+
+cases:
+  bottom:
+    - what: outline
+      name: board
+      extrude: 2
+  plate:
+    - what: outline
+      name: board
+      extrude: 1.2
+    - what: outline
+      name: _switch_holes
+      extrude: 1.2
+      operation: subtract
+
+pcbs:
+  outline_only:
+    template: kicad8
+    outlines:
+      edge:
+        outline: board

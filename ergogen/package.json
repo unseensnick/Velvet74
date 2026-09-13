@@ -1,0 +1,11 @@
+{
+  "name": "my-soffle-ergogen",
+  "private": true,
+  "description": "Pinned local Ergogen for generating key placement, outlines and case",
+  "scripts": {
+    "build": "ergogen . --output output --clean --debug && node export_points.js"
+  },
+  "devDependencies": {
+    "ergogen": "4.2.1"
+  }
+}
