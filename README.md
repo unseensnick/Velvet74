@@ -15,6 +15,7 @@ controller.
 | `sofle-choc-pro.kicad_sch` | RP2040 controller schematic |
 | `sofle-choc-pro.kicad_pcb` | Board layout (empty, not started yet) |
 | `sofle-choc-pro-backups/` | KiCad's own auto-generated project snapshots |
+| `templates/rp2040-inner-column/` | Reusable RP2040 controller module (schematic plus placed board), see its README |
 
 ## Layout
 

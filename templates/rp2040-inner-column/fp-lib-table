@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "PCM_JLCPCB")(type "KiCad")(uri "${KICAD8_3RD_PARTY}/footprints/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.pretty")(options "")(descr "CDFER JLCPCB library (PCM install)"))
+  (lib (name "rp2040_module")(type "KiCad")(uri "${KIPRJMOD}/lib/rp2040_module.pretty")(options "")(descr "Module parts not in the JLC PCM library"))
+)
