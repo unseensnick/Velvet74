@@ -256,7 +256,12 @@ def main():
             group.AddItem(fps[ref])
         if name == 'RP2040' and jlc:
             group.AddItem(jlc)
+    # BOARD.Save also rewrites the .kicad_pro beside it with default settings, wiping the net classes
+    pro = os.path.splitext(OUT)[0] + '.kicad_pro'
+    kept = open(pro, 'rb').read() if os.path.exists(pro) else None
     board.Save(OUT)
+    if kept is not None:
+        open(pro, 'wb').write(kept)
     missing = sorted(set(comps) - {r for r, _ in PLACE})
     print(f'placed {len(PLACE)} of {len(comps)} parts; unplaced: {missing}')
 
