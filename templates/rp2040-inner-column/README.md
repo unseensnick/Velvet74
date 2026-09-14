@@ -31,10 +31,14 @@ reference designators and LCSC part numbers match the keyboard.
   (SS) is about 15 mm.
 - Silkscreen holds only the footprint outlines and a `JLCJLCJLCJLC` marker, which JLCPCB replaces with
   the order number. Reference designators are on B.Fab.
-- `RP2040InnerColumn.kicad_dru` allows 0.15 mm clearance inside the RP2040 and USB-C courtyards
-  (0.4 and 0.5 mm pitch pins); 0.2 mm applies everywhere else. JLCPCB's standard 2-layer minimum is
-  0.127 mm.
-- **Parts are placed, not routed.**
+- **Routed** on 2 layers: most signals on B.Cu with the parts, a GND pour on F.Cu. Design rules are
+  JLCPCB's standard 2-layer floor, which the routing needs: 0.127 mm clearance and track, 0.45/0.2 mm
+  vias, 0.2 mm hole to hole. Net classes still set the default widths (Power5V 0.5 mm, Power3.3V
+  0.3 mm, USB 0.2 mm); tracks neck down near the fine-pitch pins.
+- Every GPIO (GP0-29) is routed out from the RP2040 and ends on the strip's left or bottom edge, ready
+  to continue into the key area on the host board.
+- Three internal nets briefly leave the strip on the left or bottom: +3.3V (up to 2.2 mm), RUN
+  (2.2 mm) and +1V1 (0.7 mm). Keep that margin free of copper on the host board, or reroute them.
 
 ## Checks
 
@@ -42,9 +46,17 @@ reference designators and LCSC part numbers match the keyboard.
 kicad-cli pcb drc --schematic-parity --severity-error RP2040InnerColumn.kicad_pcb
 ```
 
-At placement (KiCad 10.0.3): 0 ERC errors, 0 schematic parity issues, 0 footprint field
-mismatches, no courtyard or clearance errors, 0 silkscreen warnings. The only expected item is
-`invalid_outline`: the template has no Edge.Cuts on purpose, and it goes away inside the host board.
+Routed (KiCad 10.0.3): 0 schematic parity issues, 0 footprint field mismatches, no clearance,
+courtyard, via or hole errors. Expected items:
+
+- `invalid_outline`: the template has no Edge.Cuts on purpose; it goes away inside the host board.
+- 30 `track_dangling` warnings: the GPIO traces end at the strip edge until the host board continues
+  them.
+- 1 `track_dangling` warning on +3.3V at (67.05, 58.9): that track ends on the middle of another +3.3V
+  track, which KiCad flags although the copper is connected.
+- 1 unconnected GND item between the GND pads of C13 and C14: that piece of the F.Cu pour is closed in
+  by GPIO traces and joined the rest of the GND pour only through the key area. It rejoins once the
+  host board's GND pour continues past the strip edge; standalone, it needs a GND via or track.
 
 KiCad 8 also reported two hole clearance errors inside the USB-C footprint (C2927039,
 `TYPE-C-SMD_HX-TYPE-C-16PIN`, GND pads 0.204 mm from the NPTH peg holes against a 0.25 mm rule);
@@ -61,10 +73,14 @@ connected with no clearance errors. With GND pours on both layers and stitching 
 joined except the GND pads of C6 and C11, where the autorouter's traces left no room for a via.
 When routing by hand, drop a GND via beside each decoupling cap before routing the signals.
 
+The routing itself was done with KiCad Routing Tools (QFN fanout, GND pour, then every net) on the
+same test board, finished by hand in KiCad 10, and copied onto the template with
+`scripts/transfer_module_routing.py`, which cuts each GPIO at the strip edge and drops the test pads.
+
 ## Rebuilding the placement
 
 `scripts/build_rp2040_module.py` generates the board from the schematic netlist. It overwrites the
-board file, routing included, so only run it before routing:
+board file, **routing included**, so running it now discards the routing:
 
 ```bash
 kicad-cli sch export netlist -o module.net templates/rp2040-inner-column/RP2040InnerColumn.kicad_sch

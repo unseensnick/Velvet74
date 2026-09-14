@@ -1,8 +1,0 @@
-(version 1)
-
-# The RP2040 (0.4 mm pitch) and USB-C (0.5 mm pitch) pads are only 0.2 mm apart, so the board-wide
-# 0.2 mm clearance leaves no way out of a pin. Allow 0.15 mm around those two parts only
-# (JLCPCB's standard 2-layer minimum is 0.127 mm).
-(rule "fine pitch fanout"
-  (condition "A.intersectsCourtyard('U1') || A.intersectsCourtyard('J1')")
-  (constraint clearance (min 0.15mm)))
