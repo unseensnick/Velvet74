@@ -1,0 +1,8 @@
+(version 1)
+
+# Net classes keep 0.2 mm clearance. The RP2040 (0.4 mm pitch) and the USB-C connectors (0.5 mm
+# pitch) cannot be escaped at 0.2 mm, so copper touching their courtyards may go down to JLCPCB's
+# standard 2-layer minimum of 0.127 mm.
+(rule "fine pitch fanout"
+  (condition "A.intersectsCourtyard('U1') || A.intersectsCourtyard('J1') || A.intersectsCourtyard('J2')")
+  (constraint clearance (min 0.127mm)))

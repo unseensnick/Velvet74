@@ -18,9 +18,13 @@ import pcbnew
 # with DRC against the plain hotswap footprint, the Choc/EC11 combo footprint and
 # neighbouring keys at 18 x 17 mm pitch. The LED must stay at 0,+4.7: the socket
 # holes block the other side and the combo's bent A/C/B row sits just beyond it.
+# Keys sit at 180 degrees with the LED north, so local +x is the key's left and +y its top.
+# The diode offsets were scanned against every key's pads, holes and courtyards (0.3 mm gap).
 LED = (0.0, 4.7)
 CAP = (4.6, 4.7)     # 0402 standing vertical, beside the LED
-DIODE = (-6.0, 8.0)  # SOD-123 lying horizontal, below-left of the LED
+DIODE = (7.6, 2.0)   # SOD-123 standing vertical, top-left of the key (as seen from the front)
+DIODE_COMBO = (7.5, 5.0)   # combo keys: the EC11 tab slot at x 8 pushes the diode higher
+DIODE_ROTATION = 90
 
 
 def _local_to_board(sw, offset):
@@ -48,7 +52,8 @@ def snap(board):
         if not m:
             continue
         n = m.group(1)
-        for other, offset, rotation in ((f'LED{n}', LED, 0), (f'C1{n}', CAP, 90), (f'D{n}', DIODE, 0)):
+        diode = DIODE_COMBO if 'EC11_Combo' in sw.GetFPIDAsString() else DIODE
+        for other, offset, rotation in ((f'LED{n}', LED, 0), (f'C1{n}', CAP, 90), (f'D{n}', diode, DIODE_ROTATION)):
             if other in by_ref:
                 _put(by_ref[other], sw, offset, rotation)
                 moved += 1
