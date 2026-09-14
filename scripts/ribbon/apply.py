@@ -14,8 +14,8 @@ pro = dst.replace('.kicad_pcb', '.kicad_pro')
 shutil.copy(src.replace('.kicad_pcb', '.kicad_pro'), pro)
 b = pcbnew.LoadBoard(src)
 r = json.load(open(routes))
-for s, x1, y1, x2, y2, net in r['tracks']:
-    t = pcbnew.PCB_TRACK(b); t.SetLayer(pcbnew.F_Cu if s == 'F' else pcbnew.B_Cu); t.SetWidth(mm(0.2))
+for s, x1, y1, x2, y2, net, *w in r['tracks']:
+    t = pcbnew.PCB_TRACK(b); t.SetLayer(pcbnew.F_Cu if s == 'F' else pcbnew.B_Cu); t.SetWidth(mm(w[0] if w else 0.2))
     t.SetStart(pcbnew.VECTOR2I(mm(x1), mm(y1))); t.SetEnd(pcbnew.VECTOR2I(mm(x2), mm(y2)))
     b.Add(t); t.SetNet(b.FindNet(net))
 for x, y, net in r['vias']:

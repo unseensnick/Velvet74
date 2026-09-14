@@ -11,6 +11,7 @@ is recomputed after each link, so a routed trace becomes lane 0's wall for the n
 import heapq
 import json
 import math
+import os
 import sys
 import time
 from collections import defaultdict
@@ -20,11 +21,12 @@ from shapely import STRtree
 from shapely.geometry import LineString, Point, Polygon, box
 from shapely.ops import unary_union
 
-W, PITCH = 0.2, 0.4
+W = float(os.environ.get('W', '0.2'))            # track width for this run (power runs use wider)
+PITCH = float(os.environ.get('PITCH', '0.4'))    # lane spacing: width plus 0.2 mm gap
 CLR, HCLR, ECLR = 0.205, 0.26, 0.5          # small margins over the DRC 0.2/0.25: pads are polygonised
 VIA_R, VIA_COST = 0.225, 8.0
 LANES, CLOSE, STEP = 5, 1.0, 0.2
-WINDOW = float(__import__("os").environ.get("WINDOW", "6.0"))
+WINDOW = float(os.environ.get('WINDOW', '6.0'))
 TURN, LANE_COST = 0.35, 0.12
 LAYER_MULT = {'F': 1.0, 'B': 1.25}
 MITRE = dict(join_style='mitre', mitre_limit=3.0)
@@ -395,7 +397,7 @@ def commit(net, runs, vias):
         routed[s].append((copper, net, CLR))
         free[s] = free[s].difference(ln.buffer(W / 2 + CLR + W / 2, cap_style='square', **MITRE))
         for a, b in zip(pts, pts[1:]):
-            out['tracks'].append([s, a[0], a[1], b[0], b[1], net])
+            out['tracks'].append([s, a[0], a[1], b[0], b[1], net, W])
     for v in vias:
         g = Point(v).buffer(VIA_R)
         for s in 'FB':
@@ -409,11 +411,12 @@ def commit(net, runs, vias):
 if len(sys.argv) > 4:
     # earlier routes as fixed obstacles, so a few links can be added without rerouting everything
     prior = json.load(open(sys.argv[4]))
-    for s, x1, y1, x2, y2, net in prior['tracks']:
+    for s, x1, y1, x2, y2, net, *tw in prior['tracks']:
+        tw = tw[0] if tw else 0.2
         ln = LineString([(x1, y1), (x2, y2)])
-        routed[s].append((ln.buffer(W / 2), net, CLR))
-        free[s] = free[s].difference(ln.buffer(W / 2 + CLR + W / 2, cap_style='square', **MITRE))
-        out['tracks'].append([s, x1, y1, x2, y2, net])
+        routed[s].append((ln.buffer(tw / 2), net, CLR))
+        free[s] = free[s].difference(ln.buffer(tw / 2 + CLR + W / 2, cap_style='square', **MITRE))
+        out['tracks'].append([s, x1, y1, x2, y2, net, tw])
     for x, y, net in prior['vias']:
         for s in 'FB':
             routed[s].append((Point(x, y).buffer(VIA_R), net, CLR))
