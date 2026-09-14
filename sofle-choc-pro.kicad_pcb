@@ -49344,7 +49344,7 @@
 			(at -0.25 2.5 270)
 			(size 0.3 1.4)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "GP12")
+			(net "LINK_DATA")
 			(pinfunction "D+")
 			(pintype "bidirectional")
 			(uuid "e4587670-54ec-4a95-96df-dc33a98e3ad8")
@@ -49371,7 +49371,7 @@
 			(at 2.4 2.5 270)
 			(size 0.5 1.4)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "+5V")
+			(net "LINK_VBUS")
 			(pinfunction "VBUS")
 			(pintype "passive")
 			(uuid "7ab8a8dc-29cd-44de-9b21-c19c2597d73c")
@@ -49398,7 +49398,7 @@
 			(at 0.75 2.5 270)
 			(size 0.3 1.4)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "GP12")
+			(net "LINK_DATA")
 			(pinfunction "D+")
 			(pintype "bidirectional")
 			(uuid "18ce0e0a-ef28-427b-8eb2-a47e3c30e5fa")
@@ -49425,7 +49425,7 @@
 			(at -2.4 2.5 270)
 			(size 0.5 1.4)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "+5V")
+			(net "LINK_VBUS")
 			(pinfunction "VBUS")
 			(pintype "passive")
 			(uuid "8e292af9-55d1-41cf-a024-49507e1d4ee8")
@@ -51532,7 +51532,7 @@
 			(size 0.53 1.07)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(U4-I{slash}O-Pad3)")
+			(net "unconnected-(U4-I/O-Pad3)")
 			(pinfunction "I/O")
 			(pintype "unspecified+no_connect")
 			(uuid "beace669-f057-4e43-82ef-761b4ebe7a71")
@@ -51542,7 +51542,7 @@
 			(size 0.53 1.07)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(U4-I{slash}O-Pad4)")
+			(net "unconnected-(U4-I/O-Pad4)")
 			(pinfunction "I/O")
 			(pintype "unspecified+no_connect")
 			(uuid "939dd221-829b-4060-8c76-9184a77fa099")
@@ -54259,6 +54259,255 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Fuse:Fuse_1206_3216Metric"
+		(layer "B.Cu")
+		(uuid "24fd01b2-e156-48d6-94d5-aac4d23938e8")
+		(at 167.7 96 90)
+		(descr "Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "fuse")
+		(property "Reference" "F2"
+			(at 0 1.82 270)
+			(layer "B.SilkS")
+			(uuid "7a8a5308-4efd-46cc-86a6-48df45cc35b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "500mA"
+			(at 0 -1.82 270)
+			(layer "B.Fab")
+			(uuid "cfebd306-698b-4475-9c84-4acaaaaae5db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C163512"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5b88b419-c73b-403b-91e1-b83d18aa8e17")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9bf9f2d3-a670-4c80-910d-216e2310d504")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C163512"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2954fa2f-50b3-4e28-a3cf-b64b150dc13f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" "Littelfuse"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "794c8abe-640d-4c82-8394-8d60c37b48f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part" "1206L050YR"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "499d5677-834c-411d-9eb6-2758a47d337c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "*polyfuse* *PTC*")
+		(path "/c06ac0ed-1cf2-443d-be9b-8422cc1fa14f")
+		(sheetname "Root")
+		(sheetfile "sofle-choc-pro.kicad_sch")
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.602064 -0.91)
+			(end 0.602064 -0.91)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "60f6be28-7225-4eee-b876-5e062b6afda7")
+		)
+		(fp_line
+			(start -0.602064 0.91)
+			(end 0.602064 0.91)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "4bbf5682-5758-4fda-9eb0-57a55b86598b")
+		)
+		(fp_line
+			(start 2.28 -1.12)
+			(end -2.28 -1.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "aaaa2513-6d26-4e19-927d-3424bfcf2074")
+		)
+		(fp_line
+			(start -2.28 -1.12)
+			(end -2.28 1.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "c8a07cac-0443-45b3-bb4b-2b5696923c43")
+		)
+		(fp_line
+			(start 2.28 1.12)
+			(end 2.28 -1.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1a9847ce-21d5-42bc-b270-4459ac633e4b")
+		)
+		(fp_line
+			(start -2.28 1.12)
+			(end 2.28 1.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "84e9a962-083c-461e-b389-c1e84d24c0d9")
+		)
+		(fp_line
+			(start 1.6 -0.8)
+			(end -1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "b729132e-6058-4ac9-a0e3-d7aeed20e8f3")
+		)
+		(fp_line
+			(start -1.6 -0.8)
+			(end -1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "0bde2e60-8bf0-4327-a461-8b41e46b7bef")
+		)
+		(fp_line
+			(start 1.6 0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "ca16af6a-8202-4545-8194-27963886d419")
+		)
+		(fp_line
+			(start -1.6 0.8)
+			(end 1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "f451d15f-c52a-49f2-bf62-14addfbd260f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 270)
+			(layer "B.Fab")
+			(uuid "845956f2-86aa-44ec-a877-ca16dc52f25d")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.399999 0 90)
+			(size 1.25 1.75)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.2)
+			(net "LINK_VBUS")
+			(pintype "passive")
+			(uuid "aed83eb1-09eb-42b7-a716-0a1c55e134e5")
+		)
+		(pad "2" smd roundrect
+			(at 1.399999 0 90)
+			(size 1.25 1.75)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.2)
+			(net "+5V")
+			(pintype "passive")
+			(uuid "06017b19-f5da-4067-81c5-1065999e8a1e")
+		)
+		(embedded_fonts no)
+		(model "${KICAD8_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -58445,6 +58694,406 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/LED-SMD_4P-L3.2-W2.8-LS5.9_SK6812MINI-E.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "PCM_JLCPCB:R_0402"
+		(layer "B.Cu")
+		(uuid "3500563f-81a4-4e53-bc57-70b5422c9f6c")
+		(at 164.478015 88.560462)
+		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "resistor")
+		(property "Reference" "R16"
+			(at -1.05 0.85 180)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "4e6183f4-56fc-45a4-abee-8365f229d38b")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify left mirror)
+			)
+		)
+		(property "Value" "120Ω"
+			(at 0 -0.199999 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b825d2fc-7c09-42f0-9afa-39960511e342")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF1200TCE_C25079.pdf"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "02972327-4f0e-4698-8207-fbbdc8e3b202")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 120Ω 0402 Chip Resistor - Surface Mount ROHS"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cb7b4935-f6ca-4be4-a8b8-ab29bf7f3cdb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C25079"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6c839383-07ad-45fe-8fdd-0d70bf7bd91c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Stock" "370600"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "51d172b9-a58f-413e-acc8-aaa653f78b52")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "62b1998e-6a6a-4918-9e4d-a956572f8694")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Process" "SMT"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "34c0aa8d-6aea-4978-8a54-eb99e3245223")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "79d7163a-9e37-44f6-b45b-2d6455d38285")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "17d10386-71d3-4cdb-936d-f3f137730e63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c7d9ba26-9559-412b-a3d0-61961737bfef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f144efc2-3487-4d48-bfb6-15706e0e1d0d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9fd37ecf-ec12-4721-b5bc-ec740a163d80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part" "0402WGF1200TCE"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "56c569b3-2707-4712-bca9-9888385c3247")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Resistance" "120Ω"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "acad6483-b072-4c03-b2e9-ae8cf08ee4fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "76087f0a-21ba-439d-88b4-e77b332b507f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6dfe46c4-ea0c-46b1-af52-5c17a44c8c7a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f14698c0-4046-4640-97e4-df8554905fd1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "effbb6ec-e5ee-48ad-9eb8-9ca3364bc89d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8f0dbb23-f169-4e36-b3ec-e1fe5c531a0e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "009a2812-5b75-41c3-9d39-0c79e7bf54e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Field21" "${REFERENCE}"
+			(at 0 0.25 180)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "88c74d18-ea69-4dd1-ab59-e678b5c16bab")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/c38144ff-900d-491a-a4f5-b096131d976f")
+		(sheetname "Root")
+		(sheetfile "sofle-choc-pro.kicad_sch")
+		(solder_mask_margin 0.038)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.9 0.4)
+			(end -0.9 -0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "8d0cc904-ef10-465d-9fad-0f67478737a7")
+		)
+		(fp_line
+			(start -0.9 0.4)
+			(end 0.9 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "18c3f4da-710d-4da3-95e7-2329fb2cd391")
+		)
+		(fp_line
+			(start 0.9 -0.4)
+			(end -0.9 -0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "3ffcdb97-0629-4648-a8dd-06dec30a3470")
+		)
+		(fp_line
+			(start 0.9 0.4)
+			(end 0.9 -0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "59646485-8dc5-4134-a4c4-08bf5b136e73")
+		)
+		(fp_poly
+			(pts
+				(xy 0.53 0.27) (xy -0.53 0.27) (xy -0.53 -0.27) (xy 0.53 -0.27)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "c745d26c-0c4d-4583-b15c-00f49f7b0b35")
+		)
+		(pad "1" smd roundrect
+			(at -0.499999 0)
+			(size 0.56 0.62)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.25)
+			(net "LINK_DATA")
+			(pintype "passive")
+			(uuid "7cf86cd5-9848-49b8-921f-985d7449a18a")
+		)
+		(pad "2" smd roundrect
+			(at 0.499999 0)
+			(size 0.56 0.62)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.25)
+			(net "GP12")
+			(pintype "passive")
+			(uuid "335256ad-93a7-453a-a98f-016a879e5bfa")
+		)
+		(embedded_fonts no)
+		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -68322,7 +68971,7 @@
 				(justify left mirror)
 			)
 		)
-		(property "Value" "15kΩ"
+		(property "Value" "10kΩ"
 			(at 0 -0.2 270)
 			(layer "B.Fab")
 			(hide yes)
@@ -68335,7 +68984,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1502TCE_C25756.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -68349,7 +68998,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 15kΩ 0402 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -68363,7 +69012,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C25756"
+		(property "LCSC" "C25744"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -68377,7 +69026,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Stock" "671055"
+		(property "Stock" "24372091"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -68489,7 +69138,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part" "0402WGF1502TCE"
+		(property "Part" "0402WGF1002TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -68503,7 +69152,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Resistance" "15kΩ"
+		(property "Resistance" "10kΩ"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -70048,6 +70697,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -70058,6 +70708,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -84324,7 +84975,7 @@
 			(size 0.53 1.07)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "GP12")
+			(net "LINK_DATA")
 			(pinfunction "I/O")
 			(pintype "unspecified")
 			(uuid "cf4b09cc-3beb-4b05-a949-74f1b8927952")
@@ -84344,7 +84995,7 @@
 			(size 0.53 1.07)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(U2-I{slash}O-Pad3)")
+			(net "unconnected-(U2-I/O-Pad3)")
 			(pinfunction "I/O")
 			(pintype "unspecified+no_connect")
 			(uuid "2d328b5c-8983-453e-b364-25097f307d16")
@@ -84374,7 +85025,7 @@
 			(size 0.53 1.07)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(U2-I{slash}O-Pad6)")
+			(net "unconnected-(U2-I/O-Pad6)")
 			(pinfunction "I/O")
 			(pintype "unspecified+no_connect")
 			(uuid "9663417f-3c65-4ee1-b943-e54c30dc2276")
@@ -87659,7 +88310,7 @@
 				(justify left mirror)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "5.1kΩ"
 			(at 0 -0.2 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -87672,7 +88323,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -87686,7 +88337,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 5.1kΩ 0402 Chip Resistor - Surface Mount ROHS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -87700,7 +88351,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25905"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -87826,7 +88477,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part" "0402WGF1002TCE"
+		(property "Part" "0402WGF5101TCE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -87840,7 +88491,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Resistance" "10kΩ"
+		(property "Resistance" "5.1kΩ"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -106393,6 +107044,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -106403,6 +107055,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -109165,6 +109818,30 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "f739c4da-2082-4491-8a01-43f961913434")
+	)
+	(gr_text "HOST"
+		(at 163.2 69.579999 0)
+		(layer "B.SilkS")
+		(uuid "7b5c1b77-f4e0-4c9c-b810-ba61304c181f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "LINK"
+		(at 173.2 100.8 0)
+		(layer "B.SilkS")
+		(uuid "551fc9c7-e1f0-4fe9-9022-9b4e882a2b63")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
 	)
 	(zone
 		(net "GND")
