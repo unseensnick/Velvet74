@@ -21155,7 +21155,7 @@
 				)
 			)
 		)
-		(property "Footprint" "my-soffle:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "my-soffle:SW_Push_1P1T_XUNPU_TS-1088-AR02016"
 			(at 24.13 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -21188,7 +21188,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C318884"
+		(property "LCSC" "C720477"
 			(at 24.13 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -21199,7 +21199,7 @@
 				)
 			)
 		)
-		(property "Part" "TS-1187A-B-A-B"
+		(property "Part" "TS-1088-AR02016"
 			(at 24.13 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -23405,7 +23405,7 @@
 				)
 			)
 		)
-		(property "Footprint" "my-soffle:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "my-soffle:SW_Push_1P1T_XUNPU_TS-1088-AR02016"
 			(at 254 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -23438,7 +23438,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C318884"
+		(property "LCSC" "C720477"
 			(at 254 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -23449,7 +23449,7 @@
 				)
 			)
 		)
-		(property "Part" "TS-1187A-B-A-B"
+		(property "Part" "TS-1088-AR02016"
 			(at 254 86.36 0)
 			(hide yes)
 			(show_name no)
