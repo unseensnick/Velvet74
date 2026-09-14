@@ -29,8 +29,8 @@ Ship the current changes through commit, push, and PR creation. Confirm with the
 
 ## Step 2: Stage and commit
 
-- Propose which files to stage. **Never stage**:
-  - Backups: `*-backups/` folders and KiCad backup zips (including untracked ones in `sofle-choc-pro-backups/`), `.history/`
+- Propose which files to stage. New KiCad backup zips in `*-backups/` are tracked on purpose: list them and stage them when the user agrees. **Never stage**:
+  - KiCad local history: `.history/`
   - Local and generated: `Handoff.md`, `*.kicad_prl`, `fp-info-cache`, `ergogen/output/`, `ergogen/node_modules/`, `__pycache__/`
   - Secrets: `.env*`, `*.pem`, `*.key`, `credentials.json`
   - `ergogen/package-lock.json` unless the dependency change is intended
@@ -59,6 +59,6 @@ Ship the current changes through commit, push, and PR creation. Confirm with the
 
 - NEVER skip a confirmation step.
 - NEVER force-push. NEVER merge.
-- NEVER commit backups, `Handoff.md`, secrets or credential files.
+- NEVER commit `.history/`, `Handoff.md`, secrets or credential files.
 - If the user says "skip" at any step, skip it and move to the next.
 - If $ARGUMENTS is provided, use it as the commit message / PR title.
