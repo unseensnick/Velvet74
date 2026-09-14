@@ -1,0 +1,6 @@
+{
+  "name": "block reading a .pfx certificate bundle with Get-Content",
+  "stdin": { "tool_input": { "command": "Get-Content -Raw signing.pfx" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", "secret file"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ask when git restore --staged also touches the worktree",
+  "stdin": { "tool_input": { "command": "git restore --staged --worktree ." } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

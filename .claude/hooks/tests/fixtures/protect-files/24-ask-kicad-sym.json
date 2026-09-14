@@ -1,0 +1,6 @@
+{
+  "name": "ask before editing the symbol library",
+  "stdin": { "tool_input": { "file_path": "lib/my-soffle.kicad_sym" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

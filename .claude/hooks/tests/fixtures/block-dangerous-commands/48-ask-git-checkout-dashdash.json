@@ -1,0 +1,6 @@
+{
+  "name": "ask before git checkout -- discards a board edit",
+  "stdin": { "tool_input": { "command": "git checkout -- sofle-choc-pro.kicad_pcb" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask", "discard"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "block editing generated Ergogen output",
+  "stdin": { "tool_input": { "file_path": "ergogen/output/points.json" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", "generated"]
+}

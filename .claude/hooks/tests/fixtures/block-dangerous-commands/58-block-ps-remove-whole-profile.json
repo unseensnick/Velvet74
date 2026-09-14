@@ -1,0 +1,13 @@
+{
+  "name": "block PowerShell recursive delete of a whole user profile",
+  "stdin": {
+    "tool_input": {
+      "command": "Remove-Item -Recurse -Force C:\\Users\\unseensnick"
+    }
+  },
+  "expect_exit": 2,
+  "expect_stdout_contains": [
+    "deny",
+    "system directory"
+  ]
+}

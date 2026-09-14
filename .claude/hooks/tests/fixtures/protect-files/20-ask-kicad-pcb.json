@@ -1,0 +1,6 @@
+{
+  "name": "ask before editing the board file as text",
+  "stdin": { "tool_input": { "file_path": "sofle-choc-pro.kicad_pcb" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask", "KiCad"]
+}

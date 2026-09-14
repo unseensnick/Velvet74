@@ -1,0 +1,6 @@
+{
+  "name": "ask before editing a footprint, extension case-insensitive",
+  "stdin": { "tool_input": { "file_path": "lib\\my-soffle.pretty\\SW_Choc_V1V2_Hotswap_1.00u.KICAD_MOD" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "block PowerShell delete of C:/Users itself",
+  "stdin": {
+    "tool_input": {
+      "command": "Remove-Item C:\\Users\\*"
+    }
+  },
+  "expect_exit": 2,
+  "expect_stdout_contains": [
+    "deny",
+    "system directory"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "allow editing the Ergogen config",
+  "stdin": { "tool_input": { "file_path": "ergogen\\config.yaml" } },
+  "expect_exit": 0,
+  "expect_stdout_not_contains": ["ask", "deny"]
+}

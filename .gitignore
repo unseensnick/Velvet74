@@ -13,3 +13,9 @@ _autosave-*
 # Ergogen
 ergogen/node_modules/
 ergogen/output/
+
+# Claude Code (per-machine settings and session state)
+.claude/settings.local.json
+.claude/worktrees/
+.claude/launch.json
+Handoff.md

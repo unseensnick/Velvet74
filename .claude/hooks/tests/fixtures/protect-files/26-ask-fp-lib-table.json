@@ -1,0 +1,6 @@
+{
+  "name": "ask before editing fp-lib-table",
+  "stdin": { "tool_input": { "file_path": "templates/rp2040-inner-column/fp-lib-table" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

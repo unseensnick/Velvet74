@@ -1,0 +1,6 @@
+{
+  "name": "ask before editing custom design rules",
+  "stdin": { "tool_input": { "file_path": "sofle-choc-pro.kicad_dru" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

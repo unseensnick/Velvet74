@@ -1,0 +1,6 @@
+{
+  "name": "ask before editing sym-lib-table",
+  "stdin": { "tool_input": { "file_path": "sym-lib-table" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

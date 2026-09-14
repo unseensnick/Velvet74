@@ -1,0 +1,6 @@
+{
+  "name": "ask when editing settings.local.json given a backslash path",
+  "stdin": { "tool_input": { "file_path": "C:\\repo\\.claude\\settings.local.json" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

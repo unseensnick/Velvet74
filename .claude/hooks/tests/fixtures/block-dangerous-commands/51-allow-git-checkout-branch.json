@@ -1,0 +1,6 @@
+{
+  "name": "allow creating and switching branches with git checkout",
+  "stdin": { "tool_input": { "command": "git checkout -b feat/inner-column && git checkout main" } },
+  "expect_exit": 0,
+  "expect_stdout_not_contains": ["ask", "deny"]
+}

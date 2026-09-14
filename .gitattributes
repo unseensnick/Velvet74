@@ -1,0 +1,18 @@
+* text=auto
+
+# Shell scripts and git hooks must run under bash on any OS, so never check them out with CRLF.
+*.sh text eol=lf
+.githooks/* text eol=lf
+
+# KiCad writes LF on every platform and every committed blob is LF already, so checking these out as
+# LF stops the "LF will be replaced by CRLF" warnings after each save without changing any blob.
+*.kicad_* text eol=lf
+fp-lib-table text eol=lf
+sym-lib-table text eol=lf
+# Large and machine-written, so GitHub collapses them in PR diffs. Local git diff is unaffected.
+*.kicad_pcb linguist-generated=true
+
+# 3D models: STEP is text but unreadable as a diff; keep its line-ending handling, drop the diff.
+*.step -diff
+*.wrl text
+*.zip binary

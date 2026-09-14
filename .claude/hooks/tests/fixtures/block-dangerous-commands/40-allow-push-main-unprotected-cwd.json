@@ -1,0 +1,6 @@
+{
+  "name": "allow push to main when the session sits in an unprotected repo",
+  "stdin": { "cwd": "C:\\Users\\me\\notes-repo", "tool_input": { "command": "git push origin main" } },
+  "env": { "CLAUDE_UNPROTECTED_REPOS": "notes-repo" },
+  "expect_exit": 0
+}

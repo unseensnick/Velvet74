@@ -1,0 +1,6 @@
+{
+  "name": "ask before checking a KiCad file out of another ref without --",
+  "stdin": { "tool_input": { "command": "git checkout HEAD~1 templates/rp2040-inner-column/RP2040InnerColumn.kicad_pcb" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

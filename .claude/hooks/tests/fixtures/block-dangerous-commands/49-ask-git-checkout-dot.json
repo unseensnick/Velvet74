@@ -1,0 +1,6 @@
+{
+  "name": "ask before git checkout . discards the whole tree",
+  "stdin": { "tool_input": { "command": "git checkout ." } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

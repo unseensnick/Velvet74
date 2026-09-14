@@ -1,0 +1,5 @@
+{
+  "name": "ordinary script allowed",
+  "stdin": { "tool_input": { "file_path": "scripts/snap_leds.py" } },
+  "expect_exit": 0
+}

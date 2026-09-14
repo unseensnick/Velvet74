@@ -1,0 +1,6 @@
+{
+  "name": "allow editing a placement script",
+  "stdin": { "tool_input": { "file_path": "C:\\Users\\unseensnick\\Desktop\\projects\\my-soffle\\scripts\\place_from_ergogen.py" } },
+  "expect_exit": 0,
+  "expect_stdout_not_contains": ["ask", "deny"]
+}

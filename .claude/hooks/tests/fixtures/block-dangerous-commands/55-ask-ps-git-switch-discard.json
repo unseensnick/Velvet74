@@ -1,0 +1,6 @@
+{
+  "name": "ask before git switch --discard-changes from PowerShell",
+  "stdin": { "tool_input": { "command": "Set-Location C:\repo; git switch --discard-changes main" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

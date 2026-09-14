@@ -1,0 +1,9 @@
+{
+  "name": "allow PowerShell delete of a file deep inside a user profile (the repo and scratchpad live there)",
+  "stdin": {
+    "tool_input": {
+      "command": "Remove-Item C:\\Users\\UNSEEN~1\\AppData\\Local\\Temp\\claude\\scratch\\routed_test.kicad_pcb"
+    }
+  },
+  "expect_exit": 0
+}

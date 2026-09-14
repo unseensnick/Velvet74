@@ -1,0 +1,6 @@
+{
+  "name": "block ergogen/package-lock.json",
+  "stdin": { "tool_input": { "file_path": "ergogen/package-lock.json" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny"]
+}

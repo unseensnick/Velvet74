@@ -1,0 +1,5 @@
+{
+  "name": "block writing into .venv/",
+  "stdin": { "tool_input": { "file_path": ".venv/lib/site.py" } },
+  "expect_exit": 2
+}

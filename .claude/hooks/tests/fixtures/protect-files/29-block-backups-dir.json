@@ -1,0 +1,6 @@
+{
+  "name": "block writing into sofle-choc-pro-backups/",
+  "stdin": { "tool_input": { "file_path": "sofle-choc-pro-backups/notes.txt" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", "backups"]
+}

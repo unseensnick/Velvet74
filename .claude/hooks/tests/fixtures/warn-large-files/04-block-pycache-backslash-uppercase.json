@@ -1,0 +1,6 @@
+{
+  "name": "block writing into __pycache__ given a backslash path in mixed case",
+  "stdin": { "tool_input": { "file_path": "Scripts\\__PYCACHE__\\snap_leds.cpython-311.pyc" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny"]
+}

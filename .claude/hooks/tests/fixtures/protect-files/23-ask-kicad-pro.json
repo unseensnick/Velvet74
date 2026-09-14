@@ -1,0 +1,6 @@
+{
+  "name": "ask before editing the project file (net classes live here)",
+  "stdin": { "tool_input": { "file_path": "sofle-choc-pro.kicad_pro" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

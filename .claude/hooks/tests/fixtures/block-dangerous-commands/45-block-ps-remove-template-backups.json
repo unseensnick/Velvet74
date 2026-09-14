@@ -1,0 +1,6 @@
+{
+  "name": "block PowerShell delete of a template backups folder given a backslash path",
+  "stdin": { "tool_input": { "command": "Remove-Item -Recurse -Force templates\\rp2040-inner-column\\RP2040InnerColumn-backups" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", "KiCad backups"]
+}

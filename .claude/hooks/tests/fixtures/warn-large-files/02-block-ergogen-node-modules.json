@@ -1,0 +1,6 @@
+{
+  "name": "block writing into ergogen/node_modules/",
+  "stdin": { "tool_input": { "file_path": "ergogen/node_modules/ergogen/src/cli.js" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", "node_modules"]
+}

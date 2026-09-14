@@ -1,0 +1,13 @@
+{
+  "name": "block PowerShell delete of backup zips by absolute profile path",
+  "stdin": {
+    "tool_input": {
+      "command": "Remove-Item C:\\Users\\unseensnick\\Desktop\\projects\\my-soffle\\sofle-choc-pro-backups\\*.zip"
+    }
+  },
+  "expect_exit": 2,
+  "expect_stdout_contains": [
+    "deny",
+    "KiCad backups"
+  ]
+}

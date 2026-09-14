@@ -1,0 +1,5 @@
+{
+  "name": "allow reading a file with .key in the middle of its name",
+  "stdin": { "tool_input": { "command": "cat lib/switch.key.kicad_mod" } },
+  "expect_exit": 0
+}

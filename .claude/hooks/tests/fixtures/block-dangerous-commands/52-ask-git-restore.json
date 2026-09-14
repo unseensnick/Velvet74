@@ -1,0 +1,6 @@
+{
+  "name": "ask before git restore discards working tree changes",
+  "stdin": { "tool_input": { "command": "git restore sofle-choc-pro.kicad_sch" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask", "git restore"]
+}

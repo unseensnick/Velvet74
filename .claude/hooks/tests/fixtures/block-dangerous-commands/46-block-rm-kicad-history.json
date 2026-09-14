@@ -1,0 +1,6 @@
+{
+  "name": "block deleting the KiCad local history repo",
+  "stdin": { "tool_input": { "command": "rm -r .history" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", "local history"]
+}

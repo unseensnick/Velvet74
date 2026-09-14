@@ -1,0 +1,5 @@
+{
+  "name": "allow deleting a scratch board file outside the recovery folders",
+  "stdin": { "tool_input": { "command": "rm scratch/routed_test.kicad_pcb" } },
+  "expect_exit": 0
+}

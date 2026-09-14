@@ -1,0 +1,6 @@
+{
+  "name": "ask before editing a template schematic",
+  "stdin": { "tool_input": { "file_path": "templates/rp2040-inner-column/RP2040InnerColumn.kicad_sch" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

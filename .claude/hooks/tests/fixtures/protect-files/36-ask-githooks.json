@@ -1,0 +1,6 @@
+{
+  "name": "ask before editing the commit-msg git hook",
+  "stdin": { "tool_input": { "file_path": ".githooks/commit-msg" } },
+  "expect_exit": 0,
+  "expect_stdout_contains": ["ask"]
+}

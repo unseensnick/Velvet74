@@ -1,0 +1,6 @@
+{
+  "name": "block writing into a template backups folder given a backslash path",
+  "stdin": { "tool_input": { "file_path": "C:\\Users\\unseensnick\\Desktop\\projects\\my-soffle\\templates\\rp2040-inner-column\\RP2040InnerColumn-backups\\x.kicad_pcb" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", "backups"]
+}

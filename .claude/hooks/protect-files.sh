@@ -1,0 +1,96 @@
+#!/usr/bin/env bash
+# Blocks edits to sensitive or generated files.
+# PreToolUse hook for Edit|Write operations.
+# Exit 2 = block (deny). Exit 0 = allow, or ask when it prints an "ask" decision.
+
+set -uo pipefail
+
+emit() {
+  # $1 = decision (deny|ask) ; $2 = reason
+  local decision="$1"
+  local reason="${2//\"/\\\"}"
+  printf '{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"%s","permissionDecisionReason":"%s"}}\n' "$decision" "$reason"
+  # Exit 2 blocks whatever the JSON says, so an "ask" has to exit 0 or it hard-blocks instead of
+  # prompting. A deny exits 2 either way, and Claude Code still takes its reason from the JSON.
+  [ "$decision" = "ask" ] && exit 0
+  exit 2
+}
+
+if ! command -v jq >/dev/null 2>&1; then
+  emit deny "jq is required for file protection hooks but is not installed."
+fi
+
+INPUT=$(cat)
+FILE_PATH=$(printf '%s' "$INPUT" | jq -r '.tool_input.file_path // empty' 2>/dev/null || true)
+[ -z "$FILE_PATH" ] && exit 0
+# On Windows the tools pass backslash paths, which no directory pattern below would match.
+FILE_PATH=${FILE_PATH//\\//}
+
+BASENAME=$(basename -- "$FILE_PATH")
+# Case-insensitive comparison copy
+BASENAME_LC=$(printf '%s' "$BASENAME" | tr '[:upper:]' '[:lower:]')
+PATH_LC=$(printf '%s' "$FILE_PATH" | tr '[:upper:]' '[:lower:]')
+
+# Protected basename patterns. Matched case-insensitively via BASENAME_LC.
+PROTECTED_PATTERNS=(
+  ".env"
+  ".env.*"
+  "*.pem"
+  "*.key"
+  "*.crt"
+  "*.p12"
+  "*.pfx"
+  "id_rsa"
+  "id_ed25519"
+  "credentials.json"
+  ".npmrc"
+  ".pypirc"
+  "package-lock.json"
+  "yarn.lock"
+  "pnpm-lock.yaml"
+  "*.gen.ts"
+  "*.generated.*"
+  "*.min.js"
+  "*.min.css"
+)
+
+shopt -s nocasematch 2>/dev/null || true
+for pattern in "${PROTECTED_PATTERNS[@]}"; do
+  # Using bash case with nocasematch for case-insensitive glob match.
+  case "$BASENAME_LC" in
+    $pattern)
+      emit deny "Protected file: $BASENAME matches pattern '$pattern'"
+      ;;
+  esac
+done
+
+# Sensitive directories (use lower-cased path for case-insensitive on mac/Windows).
+case "$PATH_LC" in
+  .git/*|*/.git/*)
+    emit deny "Cannot edit files inside .git/" ;;
+  secrets/*|*/secrets/*)
+    emit deny "Cannot edit files inside secrets/" ;;
+  .env|.env.*|*/.env|*/.env.*)
+    emit deny "Cannot edit .env files" ;;
+  .claude/hooks/*|*/.claude/hooks/*)
+    emit deny "Cannot edit hook scripts. These enforce security boundaries." ;;
+  *-backups/*)
+    emit deny "Cannot edit KiCad backups. They are the recovery point for the design files." ;;
+  .history/*|*/.history/*)
+    emit deny "Cannot edit KiCad's local history (.history/). It is KiCad's own snapshot repository." ;;
+  ergogen/output/*|*/ergogen/output/*)
+    emit deny "Cannot edit ergogen/output/. It is generated: change ergogen/config.yaml and run npm run build." ;;
+  .claude/settings.json|*/.claude/settings.json|.claude/settings.local.json|*/.claude/settings.local.json)
+    emit ask "Editing settings.json. This controls permissions and hooks. Confirm this change." ;;
+  .githooks/*|*/.githooks/*)
+    emit ask "Editing a git hook. It enforces the commit standard. Confirm this change." ;;
+esac
+
+# KiCad design files: a text edit can silently corrupt a board or schematic that KiCad (or a pcbnew
+# script) should own, so every Edit/Write asks. Scripts that save through pcbnew are not affected.
+case "$BASENAME_LC" in
+  *.kicad_pcb|*.kicad_sch|*.kicad_pro|*.kicad_sym|*.kicad_mod|*.kicad_dru|fp-lib-table|sym-lib-table)
+    emit ask "Editing KiCad design file $BASENAME as text. KiCad or a pcbnew script normally owns it. Confirm this change." ;;
+esac
+
+exit 0

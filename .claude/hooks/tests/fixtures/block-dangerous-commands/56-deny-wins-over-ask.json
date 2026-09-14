@@ -1,0 +1,6 @@
+{
+  "name": "a deny later in the chain still blocks when a discard ask would also match",
+  "stdin": { "tool_input": { "command": "git checkout -- . && git push --force origin feature" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", "force push"]
+}

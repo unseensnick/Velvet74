@@ -1,0 +1,6 @@
+{
+  "name": "block editing a board inside KiCad local history, deny wins over the KiCad ask",
+  "stdin": { "tool_input": { "file_path": ".history/sofle-choc-pro.kicad_pcb" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", ".history"]
+}

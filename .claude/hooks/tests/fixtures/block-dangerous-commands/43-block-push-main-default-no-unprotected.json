@@ -1,0 +1,6 @@
+{
+  "name": "with CLAUDE_UNPROTECTED_REPOS unset, a push to main is blocked from any cwd",
+  "stdin": { "cwd": "C:\\Users\\me\\notes-repo", "tool_input": { "command": "git push origin main" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", "protected branch"]
+}

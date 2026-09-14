@@ -1,0 +1,6 @@
+{
+  "name": "block reading a private key through the shell",
+  "stdin": { "tool_input": { "command": "cat ~/.ssh/id_ed25519" } },
+  "expect_exit": 2,
+  "expect_stdout_contains": ["deny", "secret file"]
+}
