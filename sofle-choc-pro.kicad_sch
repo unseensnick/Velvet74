@@ -17677,7 +17677,7 @@
 			)
 		)
 	)
-	(global_label "LINK_DATA"
+	(global_label "LINK_D_P"
 		(shape input)
 		(at 69.85 271.78 0)
 		(fields_autoplaced yes)
@@ -18721,7 +18721,7 @@
 			)
 		)
 	)
-	(global_label "LINK_DATA"
+	(global_label "LINK_D_P"
 		(shape input)
 		(at 127 269.24 0)
 		(fields_autoplaced yes)
@@ -19304,7 +19304,7 @@
 			)
 		)
 	)
-	(global_label "SPLIT_D_N"
+	(global_label "LINK_D_N"
 		(shape input)
 		(at 33.02 261.62 180)
 		(fields_autoplaced yes)
@@ -19913,7 +19913,7 @@
 			)
 		)
 	)
-	(global_label "SPLIT_D_N"
+	(global_label "LINK_D_N"
 		(shape input)
 		(at 127 264.16 0)
 		(fields_autoplaced yes)
@@ -20192,7 +20192,7 @@
 			)
 		)
 	)
-	(global_label "LINK_DATA"
+	(global_label "LINK_D_P"
 		(shape input)
 		(at 156.21 280.67 180)
 		(fields_autoplaced yes)
@@ -20253,6 +20253,54 @@
 		(uuid "e12e998d-7174-468a-ac92-b506b7c76adf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.134 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "USB_MCU_N"
+		(shape input)
+		(at 161.29 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "538c1b1e-1969-4e99-ad08-277f687cf8df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 169.234 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "USB_MCU_P"
+		(shape input)
+		(at 161.29 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b11f4016-51ee-4efc-81db-401c34b5e1e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 169.234 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -69546,7 +69594,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:SOIC-8_L5.3-W5.3-P1.27-LS8.0-BL"
+		(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4mm"
 			(at 55.88 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -69558,7 +69606,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811142111_Winbond-Elec-W25Q128JVSIQ_C97521.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811151432_Winbond-Elec-W25Q128JVPIQ_C190862.pdf"
 			(at 53.594 171.323 0)
 			(hide yes)
 			(show_name no)
@@ -69581,7 +69629,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C97521"
+		(property "LCSC" "C190862"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -69680,7 +69728,7 @@
 				)
 			)
 		)
-		(property "Part" "W25Q128JVSIQ"
+		(property "Part" "W25Q128JVPIQ"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)

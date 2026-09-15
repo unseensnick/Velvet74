@@ -610,7 +610,11 @@
       },
       {
         "netclass": "USB",
-        "pattern": "SPLIT_D_*"
+        "pattern": "USB_MCU_*"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "LINK_D_*"
       }
     ]
   },

@@ -6,3 +6,12 @@
 (rule "fine pitch fanout"
   (condition "A.intersectsCourtyard('U1') || A.intersectsCourtyard('J1') || A.intersectsCourtyard('J2')")
   (constraint clearance (min 0.127mm)))
+
+# USB-C data lines are differential pairs (net names ending _P/_N): D_USB (J1 to R7/R8), USB_MCU (R7/R8 to
+# U1) and LINK_D (J2 link). DRC holds each pair's two lines to the same length and keeps them coupled.
+# USB full speed does not need controlled impedance at these lengths, so the USB net class keeps 0.2/0.2.
+(rule "usb diff pair matching"
+  (condition "A.inDiffPair('D_USB') || A.inDiffPair('USB_MCU') || A.inDiffPair('LINK_D')")
+  (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.25mm))
+  (constraint diff_pair_uncoupled (max 3mm))
+  (constraint skew (max 0.1mm)))
