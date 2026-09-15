@@ -42,7 +42,12 @@ The detail behind the traps listed in `CLAUDE.md`. Every point here cost a sessi
 - ERC: `kicad-cli sch erc --severity-error --exit-code-violations <file>.kicad_sch`
 - DRC: `kicad-cli pcb drc --schematic-parity --severity-error --exit-code-violations <file>.kicad_pcb`. The template has known expected items (listed in its `README.md` under Checks); compare against that list instead of treating every violation as new.
 - Ergogen: `npm run build` in `ergogen/` must finish and write `output/points.json`.
-- **DRC-clean is not routable.** A placement handed to the user for routing needs at least 0.8 mm between pads of different parts, a ~2 mm fanout ring around fine-pitch ICs, and proof with Freerouting (score several shuffled DSN orders and take the best; results swing a lot with order alone). The first RP2040 placement passed DRC and could not be routed.
+- **DRC-clean is not routable.** The first RP2040 placement passed DRC and could not be routed: parts sat across other pins' escapes. What works, measured on the RP2040 Community Edition controllers (Splinky, Frood, Sea-Picro, Helios in `keyboard-refs`):
+  - Every signal pin keeps a straight escape lane. USB (46/47) and QSPI (51-56) always stay clear.
+  - Each supply pin gets its own cap in line with that pin, about 0.5-1.7 mm from the package edge. Corners take the pin 1 cap, the pin 42 cap, VREG_VOUT, flash and the boot/reset parts.
+  - Support parts may be 0.3-0.5 mm apart; the old blanket 0.8 mm gap is dropped (the user confirmed it was never their rule).
+  - Signal vias may go in the ring between the exposed pad and the pin ring.
+  - Prove routability by routing a copy (the ribbon router, KiCad Routing Tools, or Freerouting; Freerouting results swing a lot with DSN order, so score several shuffled orders).
 
 ## Machine load
 
