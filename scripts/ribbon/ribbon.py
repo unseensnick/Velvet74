@@ -2,8 +2,12 @@
 
     python ribbon.py board.json links.json out.json [prior_routes.json]
 
-links.json: [{"net": .., "a": [ref, pad], "b": [ref, pad]}, ...] routed in order.
+links.json: [{"net": .., "a": [ref, pad], "b": [ref, pad]}, ...] routed in order. Optional per link:
+"layers" ('F', 'B' or 'FB'), "mult" (layer cost overrides), "via_cost", "drop": true (pad to a nearby via, no "b").
 out.json: {"tracks": [[layer, x1, y1, x2, y2, net]], "vias": [[x, y, net]], "failed": [...]}
+
+Links whose pads are already joined are skipped; a link may tee off copper already joined to its pad, and a
+route much longer than the straight distance is retried with relaxed settings.
 
 Lanes are the boundaries of the free space shrunk by k * PITCH (mitre joins keep them octilinear). Free space
 is recomputed after each link, so a routed trace becomes lane 0's wall for the next one.
@@ -26,9 +30,11 @@ PITCH = float(os.environ.get('PITCH', '0.4'))    # lane spacing: width plus 0.2 
 CLR, HCLR, ECLR = 0.205, 0.26, 0.5          # small margins over the DRC 0.2/0.25: pads are polygonised
 VIA_R, VIA_COST = 0.225, 8.0
 LANES, CLOSE, STEP = 5, 1.0, 0.2
+GRID = 0.8            # open-space grid pitch beyond the lanes
 WINDOW = float(os.environ.get('WINDOW', '6.0'))
 TURN, LANE_COST = 0.35, 0.12
 LAYER_MULT = {'F': 1.0, 'B': 1.25}
+CUR_LAYERS, CUR_MULT, CUR_VIA = 'FB', LAYER_MULT, VIA_COST      # per-link overrides set in route()
 MITRE = dict(join_style='mitre', mitre_limit=3.0)
 EPS = 1e-3
 
@@ -47,16 +53,28 @@ via_inside = edge.buffer(-(ECLR + VIA_R)).difference(cut.buffer(ECLR + VIA_R))
 shapely.prepare(via_inside)
 
 pads = {}
+pad_nets, net_pads = [], defaultdict(list)
 static = {'F': [], 'B': []}          # (geom, net, clearance to its copper)
 for p in d['pads']:
     if len(p['poly']) < 3:
         continue
     g = Polygon(p['poly']).buffer(0)
     key = (p['ref'], p['num'])
-    pads.setdefault(key, []).append({'geom': g, 'layers': p['layers']})        # one entry per physical pad
+    item = {'geom': g, 'layers': p['layers'], 'id': ('P', len(pad_nets))}
+    pads.setdefault(key, []).append(item)        # one entry per physical pad
+    pad_nets.append(p['net'])
+    net_pads[p['net']].append(item)
     for s in p['layers']:
         static[s].append((g, p['net'], HCLR if p['drill'] else CLR))
+# keep-outs from the board JSON: {"poly": [[x, y], ...], "layers": "FB", "nets": [allowed nets]}
+for k in d.get('keepouts', []):
+    for s in k['layers']:
+        static[s].append((Polygon(k['poly']), '__KO__' + '|'.join(k['nets']), 0.0))
 static_tree = {s: STRtree([o[0] for o in static[s]]) for s in 'FB'}
+# the board's .kicad_dru allows 0.127 mm copper clearance inside these courtyards (fine-pitch escape)
+FINE_REFS, FINE_CLR = ('U1', 'J1', 'J2'), 0.13
+fine = unary_union([box(*d['fps'][r]['crtyd']) for r in FINE_REFS if 'crtyd' in d['fps'].get(r, {})])
+shapely.prepare(fine)
 
 
 def cells_for(side):
@@ -82,6 +100,37 @@ def oct_hull(g):
 
 free = {s: inside[s].difference(cells_for(s)) for s in 'FB'}
 routed = {'F': [], 'B': []}           # (geom, net, clearance)
+parent = {}                           # union-find over pads and routed copper, per net
+copper = defaultdict(list)            # net -> [(id, polygon, sides, sample points)]
+
+
+def find(i):
+    parent.setdefault(i, i)
+    while parent[i] != i:
+        parent[i] = parent[parent[i]]
+        i = parent[i]
+    return i
+
+
+def add_copper(net, poly, sides, samples):
+    """Register routed copper and join it to every same-net pad or copper it touches."""
+    cid = ('C', net, len(copper[net]))
+    find(cid)
+    for item in net_pads[net]:
+        if set(sides) & set(item['layers']) and poly.distance(item['geom']) < 0.01:
+            parent[find(cid)] = find(item['id'])
+    for oid, opoly, osides, _ in copper[net]:
+        if set(sides) & set(osides) and poly.distance(opoly) < 0.01:
+            parent[find(cid)] = find(oid)
+    copper[net].append((cid, poly, sides, samples))
+
+
+def track_samples(pts, step=0.5):
+    out = []
+    for a, b in zip(pts, pts[1:]):
+        n = max(1, int(math.dist(a, b) / step))
+        out += [(a[0] + (b[0] - a[0]) * k / n, a[1] + (b[1] - a[1]) * k / n) for k in range(n + 1)]
+    return out
 routed_tree = {'F': None, 'B': None}
 out = {'tracks': [], 'vias': [], 'failed': []}
 
@@ -91,8 +140,15 @@ def blocked(geom, side, net, radius):
     for items, tree in ((static[side], static_tree[side]), (routed[side], routed_tree[side])):
         if tree is None:
             continue
+        in_fine = not fine.is_empty and fine.intersects(geom)
         for i in tree.query(geom, predicate='dwithin', distance=HCLR + radius):
             g, onet, cl = items[i]
+            if in_fine and cl == CLR:
+                cl = FINE_CLR
+            if onet.startswith('__KO__'):
+                if net not in onet[6:].split('|') and geom.distance(g) < radius:
+                    return True
+                continue
             if onet != net and geom.distance(g) < cl + radius - EPS:
                 return True
     return False
@@ -135,7 +191,7 @@ class Graph:
         self.adj = defaultdict(list)          # i -> [(j, length)]
         self.hash = defaultdict(list)
         wbox = box(*win)
-        for s in 'FB':
+        for s in CUR_LAYERS:
             fw = free[s].intersection(wbox)
             if fw.is_empty:
                 continue
@@ -152,6 +208,38 @@ class Graph:
                         L = math.dist(self.xy[a], self.xy[b])
                         self.adj[a].append((b, L)); self.adj[b].append((a, L))
             self.hops(s, chk)
+            self.open_grid(s, fw, chk)
+
+    def open_grid(self, s, fw, chk):
+        """Coarse octilinear grid in open space beyond the lanes, so a route can cross an open area instead of
+        following its contours all the way round."""
+        inner = fw.buffer(-LANES * PITCH, **MITRE)
+        if inner.is_empty:
+            return
+        shapely.prepare(inner)
+        x0, y0, x1, y1 = inner.bounds
+        cell = {}
+        gx = int((x1 - x0) / GRID) + 1
+        gy = int((y1 - y0) / GRID) + 1
+        for i in range(gx):
+            for j in range(gy):
+                x, y = x0 + i * GRID, y0 + j * GRID
+                if shapely.contains_xy(inner, x, y):
+                    cell[(i, j)] = self.node(s, 1, (x, y))
+        for (i, j), a in cell.items():
+            for di, dj in ((1, 0), (0, 1), (1, 1), (1, -1)):
+                b = cell.get((i + di, j + dj))
+                if b is not None:
+                    mx, my = (self.xy[a][0] + self.xy[b][0]) / 2, (self.xy[a][1] + self.xy[b][1]) / 2
+                    if shapely.contains_xy(chk, mx, my):
+                        L = math.dist(self.xy[a], self.xy[b])
+                        self.adj[a].append((b, L)); self.adj[b].append((a, L))
+        # join the grid to the outermost lane ring nodes nearby
+        for a in cell.values():
+            for q in self.near(s, self.xy[a], GRID * 1.2):
+                if self.lane[q] >= LANES - 1 and self.side[q] == s:
+                    L = math.dist(self.xy[a], self.xy[q])
+                    self.adj[a].append((q, L)); self.adj[q].append((a, L))
 
     def node(self, s, k, c):
         i = len(self.xy)
@@ -200,22 +288,60 @@ def rings(g):
         yield from q.interiors
 
 
-def attach(G, key, net, hint, radius=4.0, limit=10):
+def escape_points(s, c, key, net):
+    """Fine-pitch pads (FINE_REFS) first leave straight along the line from the part centre through the pad,
+    so the stub clears the neighbouring pins before it turns; returns the clear escape ends, farthest first."""
+    fp = d['fps'][key[0]]
+    ang = math.atan2(c[1] - fp['y'], c[0] - fp['x'])
+    ang = round(ang / (math.pi / 4)) * (math.pi / 4)
+    ux, uy = math.cos(ang), math.sin(ang)
+    ends = []
+    for k in range(4, 40):
+        e = (c[0] + ux * 0.1 * k, c[1] + uy * 0.1 * k)
+        if not seg_ok(s, c, e, net):
+            break
+        ends.append(e)
+    return ends[::-4][:4]
+
+
+def attach(G, key, net, hint, toward, radius=4.0, limit=10):
     """Stub options from a pad to lane nodes: [(node, cost, points pad->node)]."""
     c, item = pad_center(key, hint)
     res = []
     for s in item['layers']:
-        cand = sorted(G.near(s, c, radius), key=lambda q: math.dist(G.xy[q], c))
-        tried = 0
-        for q in cand:
-            if tried >= limit * 4 or len(res) >= limit * 2:
+        if s not in CUR_LAYERS:
+            continue
+        starts = [[c]]
+        if key[0] in FINE_REFS:
+            starts = [[c, e] for e in escape_points(s, c, key, net)] + starts
+        # copper already joined to this pad (a fanout stub, an earlier link): tee off it where it is closest to
+        # the other end, so same-net links share a route instead of running side by side
+        root = find(item['id'])
+        tees = sorted((pt for cid, _, sides, samples in copper[net] if s in sides and find(cid) == root for pt in samples),
+                      key=lambda pt: math.dist(pt, toward))
+        picked = []
+        for pt in tees:
+            if all(math.dist(pt, q) > 1.0 for q in picked):
+                picked.append(pt)
+            if len(picked) == 4:
                 break
-            tried += 1
-            for pts in stub_paths(c, G.xy[q]):
-                if all(seg_ok(s, pts[i], pts[i + 1], net) for i in range(len(pts) - 1)):
-                    L = sum(math.dist(pts[i], pts[i + 1]) for i in range(len(pts) - 1))
-                    res.append((q, L * 1.5 + 0.3 * (len(pts) - 2), pts))
+        starts = [[pt] for pt in picked] + starts
+        for head in starts:
+            o = head[-1]
+            cand = sorted(G.near(s, o, radius), key=lambda q: math.dist(G.xy[q], o))
+            tried = 0
+            for q in cand:
+                if tried >= limit * 4 or len(res) >= limit * 2:
                     break
+                tried += 1
+                for tail in stub_paths(o, G.xy[q]):
+                    pts = head[:-1] + tail
+                    if all(seg_ok(s, pts[i], pts[i + 1], net) for i in range(len(pts) - 1)):
+                        L = sum(math.dist(pts[i], pts[i + 1]) for i in range(len(pts) - 1))
+                        res.append((q, L * 1.5 + 0.3 * (len(pts) - 2), pts))
+                        break
+            if res:
+                break
     return res
 
 
@@ -225,15 +351,22 @@ def via_ok(pt, net):
 
 
 def route(link):
+    global CUR_LAYERS, CUR_MULT, CUR_VIA
+    CUR_LAYERS = link.get('layers', 'FB')
+    CUR_VIA = link.get('via_cost', VIA_COST)
+    CUR_MULT = {**LAYER_MULT, **link.get('mult', {})}
     net = link['net']
     ka, kb = tuple(link['a']), tuple(link['b'])
     cb, _ = pad_center(kb, link.get('bxy') or pad_center(ka, link.get('axy'))[0])
     ca, _ = pad_center(ka, link.get('axy') or cb)
     win = (min(ca[0], cb[0]) - WINDOW, min(ca[1], cb[1]) - WINDOW, max(ca[0], cb[0]) + WINDOW, max(ca[1], cb[1]) + WINDOW)
+    ia, ib = pad_center(ka, ca)[1]['id'], pad_center(kb, cb)[1]['id']
+    if find(ia) == find(ib):
+        return ([], []), None                 # already joined by earlier copper
     G = Graph(win)
-    starts = attach(G, ka, net, ca)
+    starts = attach(G, ka, net, ca, cb)
     goals = {}
-    for q, cost, pts in attach(G, kb, net, cb):
+    for q, cost, pts in attach(G, kb, net, cb, ca):
         if q not in goals or cost < goals[q][0]:
             goals[q] = (cost, pts)
     if not starts or not goals:
@@ -275,7 +408,7 @@ def route(link):
                 edge_ok[ek] = seg_ok(s, G.xy[i], G.xy[j], net)
             if not edge_ok[ek]:
                 continue
-            nc = cost + L * LAYER_MULT[s] * (1 + LANE_COST * G.lane[j]) + TURN * diff + (2.0 if off > 0.1 else 0)
+            nc = cost + L * CUR_MULT[s] * (1 + LANE_COST * G.lane[j]) + TURN * diff + (2.0 if off > 0.1 else 0)
             ns = (j, o2)
             if nc < best.get(ns, 1e18):
                 best[ns] = nc; came[ns] = (st, None)
@@ -283,7 +416,7 @@ def route(link):
         # via to the other layer, then a short stub onto its lanes
         if i not in via_cache:
             via_cache[i] = via_ok(G.xy[i], net)
-        if via_cache[i]:
+        if via_cache[i] and len(CUR_LAYERS) == 2:
             other = 'B' if s == 'F' else 'F'
             for j in G.near(other, G.xy[i], 1.0):
                 for pts in stub_paths(G.xy[i], G.xy[j]):
@@ -298,7 +431,7 @@ def route(link):
                             o2, vdiff = o, 0
                         if vdiff > 2:
                             break
-                        nc = cost + VIA_COST + L * 1.5 + TURN * vdiff
+                        nc = cost + CUR_VIA + L * 1.5 + TURN * vdiff
                         ns = (j, o2)
                         if nc < best.get(ns, 1e18):
                             best[ns] = nc; came[ns] = (st, ('via', pts))
@@ -393,17 +526,19 @@ def commit(net, runs, vias):
         if len(pts) < 2:
             continue
         ln = LineString(pts)
-        copper = ln.buffer(W / 2, cap_style='round', join_style='round')
-        routed[s].append((copper, net, CLR))
+        copper_poly = ln.buffer(W / 2, cap_style='round', join_style='round')
+        routed[s].append((copper_poly, net, CLR))
         free[s] = free[s].difference(ln.buffer(W / 2 + CLR + W / 2, cap_style='square', **MITRE))
         for a, b in zip(pts, pts[1:]):
             out['tracks'].append([s, a[0], a[1], b[0], b[1], net, W])
+        add_copper(net, copper_poly, s, track_samples(pts))
     for v in vias:
         g = Point(v).buffer(VIA_R)
         for s in 'FB':
             routed[s].append((g, net, CLR))
             free[s] = free[s].difference(Point(v).buffer(VIA_R + CLR + W / 2))
         out['vias'].append([v[0], v[1], net])
+        add_copper(net, g, 'FB', [tuple(v)])
     for s in 'FB':
         routed_tree[s] = STRtree([o[0] for o in routed[s]]) if routed[s] else None
 
@@ -417,24 +552,55 @@ if len(sys.argv) > 4:
         routed[s].append((ln.buffer(tw / 2), net, CLR))
         free[s] = free[s].difference(ln.buffer(tw / 2 + CLR + W / 2, cap_style='square', **MITRE))
         out['tracks'].append([s, x1, y1, x2, y2, net, tw])
+        add_copper(net, ln.buffer(tw / 2), s, track_samples([(x1, y1), (x2, y2)]))
     for x, y, net in prior['vias']:
         for s in 'FB':
             routed[s].append((Point(x, y).buffer(VIA_R), net, CLR))
             free[s] = free[s].difference(Point(x, y).buffer(VIA_R + CLR + W / 2))
         out['vias'].append([x, y, net])
+        add_copper(net, Point(x, y).buffer(VIA_R), 'FB', [(x, y)])
     for s in 'FB':
         routed_tree[s] = STRtree([o[0] for o in routed[s]]) if routed[s] else None
 
+def drop(link):
+    """Short octilinear stub from a pad to the nearest clear via spot (power pads down to a pour)."""
+    net, key = link['net'], tuple(link['a'])
+    c, item = pad_center(key, link.get('axy'))
+    s = item['layers'][0]
+    fp = d['fps'][key[0]]
+    out_ang = math.degrees(math.atan2(c[1] - fp['y'], c[0] - fp['x']))
+    # try directions pointing away from the part first: a via beside the part blocks the signals that reach it
+    angles = sorted(range(0, 360, 45), key=lambda a: abs((a - out_ang + 180) % 360 - 180))
+    for ang in angles:
+        for r in [0.9 + 0.1 * k for k in range(15)]:
+            pt = (c[0] + r * math.cos(math.radians(ang)), c[1] + r * math.sin(math.radians(ang)))
+            if via_ok(pt, net) and seg_ok(s, c, pt, net):
+                return ([(s, [c, pt])], [pt]), None
+    return None, 'no via spot'
+
+
 for n, link in enumerate(links):
     t0 = time.time()
-    res, why = route(link)
+    res, why = drop(link) if link.get('drop') else route(link)
+    if res and not link.get('drop') and res[0]:
+        ca = pad_center(tuple(link['a']), link.get('axy'))[0]
+        cb = pad_center(tuple(link['b']), link.get('bxy'))[0]
+        length = lambda r: sum(math.dist(p, q) for _, pts in r[0] for p, q in zip(pts, pts[1:]))
+        if length(res) > 2.0 * math.dist(ca, cb) + 6.0:
+            # a long detour: retry with both layers, cheaper vias and a wider search, keep the shorter route
+            global_window = WINDOW
+            WINDOW = global_window * 2
+            alt, _ = route({**link, 'layers': 'FB', 'mult': {}, 'via_cost': 3.0})
+            WINDOW = global_window
+            if alt and length(alt) < length(res):
+                res = alt
     if not res:
         out['failed'].append(link)
-        print(f"[{n}] {link['net']} {link['a']}->{link['b']} FAILED {why} ({time.time() - t0:.1f}s)", flush=True)
+        print(f"[{n}] {link['net']} {link['a']}->{link.get('b')} FAILED {why} ({time.time() - t0:.1f}s)", flush=True)
         continue
     runs, vias = res
     commit(link['net'], runs, vias)
-    print(f"[{n}] {link['net']} {link['a']}->{link['b']} ok, {len(vias)} vias ({time.time() - t0:.1f}s)", flush=True)
+    print(f"[{n}] {link['net']} {link['a']}->{link.get('b')} ok, {len(vias)} vias ({time.time() - t0:.1f}s)", flush=True)
     json.dump(out, open(sys.argv[3], 'w'))
 json.dump(out, open(sys.argv[3], 'w'))
 print('failed', len(out['failed']))
