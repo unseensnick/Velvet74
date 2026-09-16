@@ -14079,16 +14079,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 269.24) (xy 40.64 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dcad591-4503-4c6b-ac8d-d2fc5a595bec")
-	)
-	(wire
-		(pts
 			(xy 546.1 162.56) (xy 543.56 162.56)
 		)
 		(stroke
@@ -17141,28 +17131,6 @@
 		(uuid "4b79d34a-dd1f-4985-9eca-b1a6692aa8a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 342.9 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "LINK_D_N"
-		(shape input)
-		(at 40.64 269.24 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4d47e780-dc69-4ad9-accd-5eee2f195621")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71715,4 +71683,8 @@
 		)
 	)
 	(embedded_fonts no)
+	(no_connect
+		(at 45.72 269.24)
+		(uuid "899d7351-bcb2-4f10-b752-d0dc9dca143b")
+	)
 )

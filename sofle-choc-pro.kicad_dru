@@ -11,11 +11,11 @@
 # The host USB data lines are the only real pairs, named per segment so each side of R7/R8 is its own net:
 # D+/D- (J1 to R7/R8) and USB_P/USB_N (R7/R8 to U1). One rule per pair, because a shared rule puts both pairs in
 # one skew group and KiCad then compares D+ against a net from the other pair.
-# Spacing is checked outside the fan-out only: inside J1 and U1 the pad geometry sets it, not the routing.
+# Spacing is checked outside the fan-out only: inside J1, U4 and U1 the pad geometry sets it, not the routing.
 # Length matching is checked over the whole net, since excluding the fan-out would compare unequal leftovers.
 # Full speed needs no impedance control at these lengths, so the gap limits are loose.
 (rule "usb pair D spacing"
-  (condition "A.inDiffPair('D') && !A.intersectsCourtyard('J1')")
+  (condition "A.inDiffPair('D') && !A.intersectsCourtyard('J1') && !A.intersectsCourtyard('U4')")
   (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
   (constraint diff_pair_uncoupled (max 6mm)))
 
