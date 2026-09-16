@@ -4593,7 +4593,7 @@
 					)
 				)
 			)
-			(property "Footprint" "PCM_JLCPCB:TYPE-C-SMD_HX-TYPE-C-16PIN"
+			(property "Footprint" "my-soffle:USB_C_Receptacle_HRO_TYPE-C-31-M-12_MergedPads"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4605,7 +4605,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220920/0EF8F885FCCEA71F60E9E85152155021.pdf"
+			(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948"
 				(at -2.286 0.127 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4628,7 +4628,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C2927039"
+			(property "LCSC" "C165948"
 				(at 2.54 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7330,6 +7330,323 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PCM_JLCPCB-Resistors:0402,120Ω"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "120Ω"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:R_0402"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF1200TCE_C25079.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 120Ω 0402 Chip Resistor - Surface Mount ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C25079"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "370600"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" "0.004USD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "10"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Basic Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Resistors,Chip Resistor - Surface Mount"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "0402WGF1200TCE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Resistance" "120Ω"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Power(Watts)" "62.5mW"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Type" "Thick Film Resistors"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Overload Voltage (Max)" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Operating Temperature Range" "-55°C~+155°C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Temperature Coefficient" "±100ppm/°C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0402,120Ω_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0402,120Ω_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_JLCPCB-Resistors:0402,15kΩ"
 			(pin_numbers
 				(hide yes)
@@ -9549,6 +9866,469 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Power_Protection:USBLC6-2P6"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0.635 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "USBLC6-2P6"
+				(at 0.635 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-666"
+				(at 1.016 -6.731 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+				(at 1.016 -8.636 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-666"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "usb ethernet video"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?666*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "USBLC6-2P6_0_0"
+				(circle
+					(center -1.524 0)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.508 2.032)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.508 -4.572)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.508 2.032)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.508 -4.572)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.524 -2.54)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "USBLC6-2P6_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.508) (xy -1.016 0.508) (xy -1.524 1.524) (xy -2.032 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -3.048) (xy -1.016 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.524) (xy -2.032 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy -2.032 -4.064) (xy -1.524 -3.048) (xy -1.016 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -1.143) (xy -0.508 -0.762) (xy 0.508 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -0.508 2.032) (xy 0.508 2.032) (xy 0 1.524) (xy 0 -4.064) (xy -0.508 -4.572) (xy 0.508 -4.572)
+						(xy 0 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.778) (xy -0.508 -1.778) (xy 0 -0.762) (xy 0.508 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.524) (xy 2.032 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -3.048) (xy 2.032 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0.508) (xy 1.016 0.508) (xy 1.524 1.524) (xy 2.032 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -4.064) (xy 1.016 -4.064) (xy 1.524 -3.048) (xy 2.032 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "USBLC6-2P6_1_1"
+				(rectangle
+					(start -2.54 2.794)
+					(end 2.54 -5.334)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.032) (xy -1.524 2.032) (xy -1.524 -4.572) (xy -0.508 -4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -4.572) (xy 1.524 -4.572) (xy 1.524 2.032) (xy 0.508 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Regulator_Linear:AP2112K-3.3"
 			(pin_names
 				(offset 0.254)
@@ -11486,24 +12266,12 @@
 		(uuid "0997baca-8638-436c-8611-5e0f1ab6ec9e")
 	)
 	(no_connect
-		(at 212.09 125.73)
-		(uuid "0cd4f7cd-ef06-4496-ab04-60a483e10dd3")
-	)
-	(no_connect
 		(at 41.91 55.88)
 		(uuid "214bfa9a-557f-4eb4-a95e-27d4a24c4e08")
 	)
 	(no_connect
 		(at 121.92 278.13)
 		(uuid "49e99d40-e14c-4952-b6a3-bcc6460ea224")
-	)
-	(no_connect
-		(at 63.5 212.09)
-		(uuid "4c3a3822-dc36-487d-84eb-a00f64059438")
-	)
-	(no_connect
-		(at 212.09 133.35)
-		(uuid "520cf807-fcea-4b0d-9cdc-cb392f0fe631")
 	)
 	(no_connect
 		(at 161.29 151.13)
@@ -11514,28 +12282,20 @@
 		(uuid "6a343a7d-326d-499e-a6b2-1c73b63837a1")
 	)
 	(no_connect
-		(at 38.1 212.09)
-		(uuid "756a0fef-b2ea-464d-91a0-3cf1e4e02788")
+		(at 212.09 82.55)
+		(uuid "7e9822cb-5d69-4d74-a93c-99e31f37e966")
 	)
 	(no_connect
 		(at 121.92 255.27)
 		(uuid "895216dc-d468-42b8-82a8-ad0185d707e7")
 	)
 	(no_connect
-		(at 212.09 123.19)
-		(uuid "b172f765-e407-414c-a1c8-a077049568db")
+		(at 212.09 97.79)
+		(uuid "ac4a790f-2699-42f2-b426-d479a93d29e9")
 	)
 	(no_connect
 		(at 41.91 53.34)
 		(uuid "b1c296c0-8513-4c16-9ecf-105269f10e77")
-	)
-	(no_connect
-		(at 38.1 271.78)
-		(uuid "bf6f8cf6-d1f6-45c6-ac87-44312242174b")
-	)
-	(no_connect
-		(at 63.5 261.62)
-		(uuid "cded5552-b0dc-4fae-a606-f47d11522240")
 	)
 	(no_connect
 		(at 436.88 415.29)
@@ -11544,6 +12304,10 @@
 	(no_connect
 		(at 212.09 105.41)
 		(uuid "e354b778-1bae-4899-bf2a-d42537344ce6")
+	)
+	(no_connect
+		(at 212.09 85.09)
+		(uuid "eae38265-7052-4e06-b078-ffc49ffd8208")
 	)
 	(no_connect
 		(at 161.29 148.59)
@@ -11615,6 +12379,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 217.17) (xy 40.64 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06ac3171-58f9-498d-8fdb-86714e979f75")
+	)
+	(wire
+		(pts
 			(xy 179.07 212.09) (xy 170.18 212.09)
 		)
 		(stroke
@@ -11662,6 +12436,16 @@
 			(type default)
 		)
 		(uuid "0cb22135-60dc-4858-ac81-20b9f7dd963f")
+	)
+	(wire
+		(pts
+			(xy 45.72 219.71) (xy 40.64 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ddd4c87-5cfc-4e4a-90df-ec20593257bd")
 	)
 	(wire
 		(pts
@@ -11815,26 +12599,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 250.19) (xy 137.16 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16edef52-eed1-4edc-8f98-f1eaf9815c3c")
-	)
-	(wire
-		(pts
-			(xy 33.02 222.25) (xy 38.1 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "172c0d43-6d8b-42ae-a248-a01f755672b4")
-	)
-	(wire
-		(pts
 			(xy 355.6 101.6) (xy 353.06 101.6)
 		)
 		(stroke
@@ -11855,6 +12619,26 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 261.62) (xy 50.8 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19abd84c-50e8-46ac-9e6c-c917888ff26c")
+	)
+	(wire
+		(pts
+			(xy 50.8 212.09) (xy 50.8 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19fbc5bb-0fa5-408e-9a09-90d6a77c068b")
+	)
+	(wire
+		(pts
 			(xy 152.4 212.09) (xy 143.51 212.09)
 		)
 		(stroke
@@ -11862,16 +12646,6 @@
 			(type default)
 		)
 		(uuid "1a65e551-de72-436b-9e86-8ca6d742652c")
-	)
-	(wire
-		(pts
-			(xy 69.85 217.17) (xy 63.5 217.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ae06348-b7a5-438a-b70a-7e292a54a30a")
 	)
 	(wire
 		(pts
@@ -12162,6 +12936,16 @@
 			(type default)
 		)
 		(uuid "29fc09b6-8ef2-4469-861b-d2926cc6dc3e")
+	)
+	(wire
+		(pts
+			(xy 55.88 266.7) (xy 60.96 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a1778a9-9add-48bb-a7e9-a95f0e6b2e37")
 	)
 	(wire
 		(pts
@@ -12715,16 +13499,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 222.25) (xy 69.85 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5780b87a-e453-4b86-913c-223a3ff0f484")
-	)
-	(wire
-		(pts
 			(xy 83.82 25.4) (xy 92.71 25.4)
 		)
 		(stroke
@@ -12872,6 +13646,16 @@
 			(type default)
 		)
 		(uuid "6500c76a-138c-471e-8a93-f51824b3d5bb")
+	)
+	(wire
+		(pts
+			(xy 133.35 250.19) (xy 137.16 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "658070e3-ecea-4574-88a5-f15a68116ec9")
 	)
 	(wire
 		(pts
@@ -13075,16 +13859,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 266.7) (xy 63.5 266.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73bf7269-920c-47cf-9b22-e1812c7b44df")
-	)
-	(wire
-		(pts
 			(xy 320.04 35.56) (xy 309.88 35.56)
 		)
 		(stroke
@@ -13095,6 +13869,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 250.19) (xy 125.73 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "759b616d-d4dc-471d-846d-74f3c3146ea0")
+	)
+	(wire
+		(pts
 			(xy 414.02 200.66) (xy 414.02 203.2)
 		)
 		(stroke
@@ -13102,16 +13886,6 @@
 			(type default)
 		)
 		(uuid "78a79fdf-45e0-4616-9afd-7c8666c2fffa")
-	)
-	(wire
-		(pts
-			(xy 63.5 271.78) (xy 69.85 271.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a4351da-da3b-4441-8f49-fdd1137e5d23")
 	)
 	(wire
 		(pts
@@ -13162,6 +13936,16 @@
 			(type default)
 		)
 		(uuid "811303fb-864c-4b97-8be2-a7ec3f2b2546")
+	)
+	(wire
+		(pts
+			(xy 45.72 266.7) (xy 40.64 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8121e231-f64f-4a0e-a4cf-f6142b419d1b")
 	)
 	(wire
 		(pts
@@ -13345,6 +14129,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 224.79) (xy 50.8 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b5c9e1-2c7d-41cd-b39b-b5fc492f7fc0")
+	)
+	(wire
+		(pts
 			(xy 365.76 162.56) (xy 375.92 162.56)
 		)
 		(stroke
@@ -13362,16 +14156,6 @@
 			(type default)
 		)
 		(uuid "9285047a-1638-47a0-a020-8184dca2f1c5")
-	)
-	(wire
-		(pts
-			(xy 33.02 217.17) (xy 38.1 217.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92c6e160-07a7-45b2-a83e-6a36f5d8f750")
 	)
 	(wire
 		(pts
@@ -13665,16 +14449,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 266.7) (xy 38.1 266.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af0d41cb-710a-4aed-8a8e-83a346ee256a")
-	)
-	(wire
-		(pts
 			(xy 436.88 308.61) (xy 444.5 308.61)
 		)
 		(stroke
@@ -13855,6 +14629,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 217.17) (xy 60.96 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb75bc03-cd7e-4f3b-97d3-ea55562bf63b")
+	)
+	(wire
+		(pts
 			(xy 452.12 48.26) (xy 452.12 50.8)
 		)
 		(stroke
@@ -13872,6 +14656,16 @@
 			(type default)
 		)
 		(uuid "bc5095b9-1a25-46e9-9a44-06a4124a6e81")
+	)
+	(wire
+		(pts
+			(xy 55.88 269.24) (xy 60.96 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc78fa0d-46ed-4eed-83b0-ad6327d9694d")
 	)
 	(wire
 		(pts
@@ -13962,16 +14756,6 @@
 			(type default)
 		)
 		(uuid "c419ecd8-0adc-425e-b6d8-0fa3a5d75be9")
-	)
-	(wire
-		(pts
-			(xy 33.02 261.62) (xy 38.1 261.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4766c43-3c1c-445a-9474-554861cbcc14")
 	)
 	(wire
 		(pts
@@ -14072,6 +14856,16 @@
 			(type default)
 		)
 		(uuid "cd22f568-bbbc-449e-9f2b-f9404fafa5a5")
+	)
+	(wire
+		(pts
+			(xy 50.8 274.32) (xy 50.8 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cddce0d6-aee4-4c57-91e5-e1b15d59cd75")
 	)
 	(wire
 		(pts
@@ -14252,6 +15046,16 @@
 			(type default)
 		)
 		(uuid "dbd310a1-f2dc-47da-aca3-bdd8c43c829e")
+	)
+	(wire
+		(pts
+			(xy 55.88 219.71) (xy 60.96 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbeca76b-7656-454d-8e1a-b6e7351db275")
 	)
 	(wire
 		(pts
@@ -14773,6 +15577,30 @@
 		)
 		(uuid "ff991612-6932-4701-bc30-8361cff87d69")
 	)
+	(global_label "LINK_D_P"
+		(shape input)
+		(at 156.21 280.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0218fe4d-cf25-43a7-af27-6f778870bc94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 164.154 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "LED_D33"
 		(shape bidirectional)
 		(at 642.62 379.73 0)
@@ -14796,9 +15624,9 @@
 			)
 		)
 	)
-	(global_label "D_USB_N"
+	(global_label "D-"
 		(shape input)
-		(at 153.67 92.71 180)
+		(at 143.51 95.25 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14808,7 +15636,7 @@
 		)
 		(uuid "052a5ff0-dbb7-453e-b3d3-846a0d06f085")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.1167 92.71 0)
+			(at 143.51 101.0776 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14820,7 +15648,7 @@
 			)
 		)
 	)
-	(global_label "GP3"
+	(global_label "GP19"
 		(shape bidirectional)
 		(at 452.12 172.72 270)
 		(fields_autoplaced yes)
@@ -14889,7 +15717,29 @@
 			)
 		)
 	)
-	(global_label "GP19"
+	(global_label "D-"
+		(shape input)
+		(at 40.64 219.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0a23438e-f9f5-4f10-b14d-7c1975978951")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.64 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GP25"
 		(shape bidirectional)
 		(at 505.46 71.12 180)
 		(fields_autoplaced yes)
@@ -14912,7 +15762,7 @@
 			)
 		)
 	)
-	(global_label "GP27"
+	(global_label "GP29"
 		(shape bidirectional)
 		(at 353.06 101.6 180)
 		(fields_autoplaced yes)
@@ -14925,6 +15775,29 @@
 		(uuid "0bbd1dbd-b4d0-47f7-88ef-26ee614467d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 353.06 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GP16"
+		(shape bidirectional)
+		(at 212.09 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0e958c9f-a2aa-4e57-938e-5c9326c8861f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 212.09 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14958,7 +15831,7 @@
 			)
 		)
 	)
-	(global_label "GP26"
+	(global_label "GP28"
 		(shape bidirectional)
 		(at 391.16 193.04 180)
 		(fields_autoplaced yes)
@@ -14981,7 +15854,7 @@
 			)
 		)
 	)
-	(global_label "GP21"
+	(global_label "GP2"
 		(shape bidirectional)
 		(at 325.12 69.85 270)
 		(fields_autoplaced yes)
@@ -15004,7 +15877,7 @@
 			)
 		)
 	)
-	(global_label "GP24"
+	(global_label "GP26"
 		(shape bidirectional)
 		(at 467.36 162.56 180)
 		(fields_autoplaced yes)
@@ -15050,7 +15923,7 @@
 			)
 		)
 	)
-	(global_label "GP25"
+	(global_label "GP27"
 		(shape bidirectional)
 		(at 429.26 132.08 180)
 		(fields_autoplaced yes)
@@ -15073,7 +15946,7 @@
 			)
 		)
 	)
-	(global_label "D_USB_P"
+	(global_label "D+"
 		(shape input)
 		(at 46.99 44.45 0)
 		(fields_autoplaced yes)
@@ -15120,7 +15993,7 @@
 			)
 		)
 	)
-	(global_label "GP4"
+	(global_label "GP18"
 		(shape bidirectional)
 		(at 528.32 203.2 270)
 		(fields_autoplaced yes)
@@ -15143,7 +16016,7 @@
 			)
 		)
 	)
-	(global_label "GP1"
+	(global_label "GP21"
 		(shape bidirectional)
 		(at 566.42 111.76 270)
 		(fields_autoplaced yes)
@@ -15212,7 +16085,7 @@
 			)
 		)
 	)
-	(global_label "GP6"
+	(global_label "GP23"
 		(shape bidirectional)
 		(at 375.92 50.8 270)
 		(fields_autoplaced yes)
@@ -15328,7 +16201,7 @@
 			)
 		)
 	)
-	(global_label "GP2"
+	(global_label "GP20"
 		(shape bidirectional)
 		(at 414.02 142.24 270)
 		(fields_autoplaced yes)
@@ -15374,7 +16247,29 @@
 			)
 		)
 	)
-	(global_label "GP1"
+	(global_label "D+"
+		(shape input)
+		(at 60.96 217.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2543c78e-73da-4f38-9961-a4abe6bef201")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GP21"
 		(shape bidirectional)
 		(at 452.12 111.76 270)
 		(fields_autoplaced yes)
@@ -15397,7 +16292,7 @@
 			)
 		)
 	)
-	(global_label "GP24"
+	(global_label "GP26"
 		(shape bidirectional)
 		(at 467.36 101.6 180)
 		(fields_autoplaced yes)
@@ -15420,7 +16315,7 @@
 			)
 		)
 	)
-	(global_label "GP23"
+	(global_label "GP4"
 		(shape bidirectional)
 		(at 546.1 203.2 270)
 		(fields_autoplaced yes)
@@ -15466,7 +16361,7 @@
 			)
 		)
 	)
-	(global_label "GP3"
+	(global_label "GP19"
 		(shape bidirectional)
 		(at 414.02 172.72 270)
 		(fields_autoplaced yes)
@@ -15512,7 +16407,7 @@
 			)
 		)
 	)
-	(global_label "GP25"
+	(global_label "GP27"
 		(shape bidirectional)
 		(at 429.26 193.04 180)
 		(fields_autoplaced yes)
@@ -15525,6 +16420,29 @@
 		(uuid "2b35792e-2100-48f5-8594-5c84537d973f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 429.26 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GP20"
+		(shape bidirectional)
+		(at 212.09 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c6061d9-5458-4582-93e1-9658e7cef8fe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 212.09 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15558,7 +16476,7 @@
 			)
 		)
 	)
-	(global_label "GP4"
+	(global_label "GP18"
 		(shape bidirectional)
 		(at 375.92 203.2 270)
 		(fields_autoplaced yes)
@@ -15571,6 +16489,28 @@
 		(uuid "2f3e61a4-ee4e-40af-a3c9-190fd4057041")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 375.92 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "LINK_D_P"
+		(shape input)
+		(at 40.64 266.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2f65abeb-afc7-43f8-8fbe-64c23ace2bf6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.64 266.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15604,7 +16544,7 @@
 			)
 		)
 	)
-	(global_label "GP2"
+	(global_label "GP20"
 		(shape bidirectional)
 		(at 452.12 142.24 270)
 		(fields_autoplaced yes)
@@ -15627,7 +16567,7 @@
 			)
 		)
 	)
-	(global_label "GP26"
+	(global_label "GP28"
 		(shape bidirectional)
 		(at 391.16 132.08 180)
 		(fields_autoplaced yes)
@@ -15650,7 +16590,29 @@
 			)
 		)
 	)
-	(global_label "GP6"
+	(global_label "D-"
+		(shape input)
+		(at 60.96 219.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34478255-bb0b-4356-8924-c8c2af0c9159")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GP23"
 		(shape bidirectional)
 		(at 452.12 50.8 270)
 		(fields_autoplaced yes)
@@ -15742,7 +16704,7 @@
 			)
 		)
 	)
-	(global_label "GP0"
+	(global_label "GP22"
 		(shape bidirectional)
 		(at 490.22 81.28 270)
 		(fields_autoplaced yes)
@@ -15765,7 +16727,7 @@
 			)
 		)
 	)
-	(global_label "GP3"
+	(global_label "GP19"
 		(shape bidirectional)
 		(at 566.42 172.72 270)
 		(fields_autoplaced yes)
@@ -15834,7 +16796,30 @@
 			)
 		)
 	)
-	(global_label "GP24"
+	(global_label "GP17"
+		(shape bidirectional)
+		(at 212.09 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3e9f6785-ed84-4522-baa8-cd9d98c47e4b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 212.09 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GP26"
 		(shape bidirectional)
 		(at 467.36 40.64 180)
 		(fields_autoplaced yes)
@@ -15880,7 +16865,7 @@
 			)
 		)
 	)
-	(global_label "GP1"
+	(global_label "GP21"
 		(shape bidirectional)
 		(at 414.02 111.76 270)
 		(fields_autoplaced yes)
@@ -15973,7 +16958,7 @@
 			)
 		)
 	)
-	(global_label "GP4"
+	(global_label "GP18"
 		(shape bidirectional)
 		(at 414.02 203.2 270)
 		(fields_autoplaced yes)
@@ -15996,7 +16981,29 @@
 			)
 		)
 	)
-	(global_label "GP0"
+	(global_label "LINK_D_N"
+		(shape input)
+		(at 60.96 269.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4381af3d-ea80-438c-81d1-cb1545840687")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GP22"
 		(shape bidirectional)
 		(at 375.92 81.28 270)
 		(fields_autoplaced yes)
@@ -16019,7 +17026,7 @@
 			)
 		)
 	)
-	(global_label "GP19"
+	(global_label "GP25"
 		(shape bidirectional)
 		(at 505.46 162.56 180)
 		(fields_autoplaced yes)
@@ -16042,7 +17049,7 @@
 			)
 		)
 	)
-	(global_label "GP4"
+	(global_label "GP18"
 		(shape bidirectional)
 		(at 452.12 203.2 270)
 		(fields_autoplaced yes)
@@ -16088,7 +17095,7 @@
 			)
 		)
 	)
-	(global_label "GP1"
+	(global_label "GP21"
 		(shape bidirectional)
 		(at 375.92 111.76 270)
 		(fields_autoplaced yes)
@@ -16180,7 +17187,7 @@
 			)
 		)
 	)
-	(global_label "GP27"
+	(global_label "GP29"
 		(shape bidirectional)
 		(at 353.06 71.12 180)
 		(fields_autoplaced yes)
@@ -16203,7 +17210,7 @@
 			)
 		)
 	)
-	(global_label "GP24"
+	(global_label "GP26"
 		(shape bidirectional)
 		(at 467.36 193.04 180)
 		(fields_autoplaced yes)
@@ -16226,7 +17233,7 @@
 			)
 		)
 	)
-	(global_label "GP19"
+	(global_label "GP25"
 		(shape bidirectional)
 		(at 505.46 101.6 180)
 		(fields_autoplaced yes)
@@ -16272,7 +17279,31 @@
 			)
 		)
 	)
-	(global_label "GP3"
+	(global_label "USB_N"
+		(shape input)
+		(at 143.51 87.63 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "538c1b1e-1969-4e99-ad08-277f687cf8df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.51 78.5367 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GP19"
 		(shape bidirectional)
 		(at 490.22 172.72 270)
 		(fields_autoplaced yes)
@@ -16318,7 +17349,7 @@
 			)
 		)
 	)
-	(global_label "GP28"
+	(global_label "GP16"
 		(shape bidirectional)
 		(at 271.78 147.32 180)
 		(fields_autoplaced yes)
@@ -16364,7 +17395,7 @@
 			)
 		)
 	)
-	(global_label "GP19"
+	(global_label "GP25"
 		(shape bidirectional)
 		(at 505.46 193.04 180)
 		(fields_autoplaced yes)
@@ -16433,7 +17464,7 @@
 			)
 		)
 	)
-	(global_label "GP26"
+	(global_label "GP28"
 		(shape bidirectional)
 		(at 391.16 40.64 180)
 		(fields_autoplaced yes)
@@ -16469,29 +17500,6 @@
 		(uuid "60e6ddd3-8fa0-42d0-bd15-9e3c6c783cf6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 541.02 275.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GP6"
-		(shape bidirectional)
-		(at 212.09 97.79 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "611e0833-4aad-4468-9e00-cab9b5008156")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.09 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16548,7 +17556,7 @@
 			)
 		)
 	)
-	(global_label "GP6"
+	(global_label "GP23"
 		(shape bidirectional)
 		(at 414.02 50.8 270)
 		(fields_autoplaced yes)
@@ -16571,7 +17579,7 @@
 			)
 		)
 	)
-	(global_label "GP27"
+	(global_label "GP29"
 		(shape bidirectional)
 		(at 353.06 162.56 180)
 		(fields_autoplaced yes)
@@ -16594,7 +17602,7 @@
 			)
 		)
 	)
-	(global_label "GP25"
+	(global_label "GP27"
 		(shape bidirectional)
 		(at 429.26 71.12 180)
 		(fields_autoplaced yes)
@@ -16614,6 +17622,30 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+	)
+	(global_label "USB_N"
+		(shape input)
+		(at 161.29 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6b994806-8681-4114-a0d1-2aae250ea5dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.1967 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -16778,7 +17810,7 @@
 			)
 		)
 	)
-	(global_label "GP25"
+	(global_label "GP27"
 		(shape bidirectional)
 		(at 429.26 162.56 180)
 		(fields_autoplaced yes)
@@ -16847,7 +17879,7 @@
 			)
 		)
 	)
-	(global_label "GP24"
+	(global_label "GP26"
 		(shape bidirectional)
 		(at 467.36 132.08 180)
 		(fields_autoplaced yes)
@@ -16916,7 +17948,7 @@
 			)
 		)
 	)
-	(global_label "GP19"
+	(global_label "GP25"
 		(shape bidirectional)
 		(at 505.46 40.64 180)
 		(fields_autoplaced yes)
@@ -16962,7 +17994,7 @@
 			)
 		)
 	)
-	(global_label "GP2"
+	(global_label "GP20"
 		(shape bidirectional)
 		(at 528.32 142.24 270)
 		(fields_autoplaced yes)
@@ -17008,7 +18040,7 @@
 			)
 		)
 	)
-	(global_label "GP0"
+	(global_label "GP22"
 		(shape bidirectional)
 		(at 414.02 81.28 270)
 		(fields_autoplaced yes)
@@ -17031,7 +18063,7 @@
 			)
 		)
 	)
-	(global_label "GP19"
+	(global_label "GP25"
 		(shape bidirectional)
 		(at 505.46 132.08 180)
 		(fields_autoplaced yes)
@@ -17078,7 +18110,7 @@
 			)
 		)
 	)
-	(global_label "GP6"
+	(global_label "GP23"
 		(shape bidirectional)
 		(at 528.32 50.8 270)
 		(fields_autoplaced yes)
@@ -17101,7 +18133,7 @@
 			)
 		)
 	)
-	(global_label "GP24"
+	(global_label "GP26"
 		(shape bidirectional)
 		(at 467.36 71.12 180)
 		(fields_autoplaced yes)
@@ -17147,7 +18179,7 @@
 			)
 		)
 	)
-	(global_label "GP27"
+	(global_label "GP29"
 		(shape bidirectional)
 		(at 353.06 193.04 180)
 		(fields_autoplaced yes)
@@ -17216,7 +18248,7 @@
 			)
 		)
 	)
-	(global_label "GP1"
+	(global_label "GP21"
 		(shape bidirectional)
 		(at 528.32 111.76 270)
 		(fields_autoplaced yes)
@@ -17262,7 +18294,7 @@
 			)
 		)
 	)
-	(global_label "GP18"
+	(global_label "GP24"
 		(shape bidirectional)
 		(at 543.56 71.12 180)
 		(fields_autoplaced yes)
@@ -17331,7 +18363,7 @@
 			)
 		)
 	)
-	(global_label "GP0"
+	(global_label "GP22"
 		(shape bidirectional)
 		(at 528.32 81.28 270)
 		(fields_autoplaced yes)
@@ -17354,31 +18386,7 @@
 			)
 		)
 	)
-	(global_label "GP12"
-		(shape input)
-		(at 69.85 271.78 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "80d02c73-a9a3-4d48-90b4-8824d0e265fe")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.7942 271.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "GP25"
+	(global_label "GP27"
 		(shape bidirectional)
 		(at 429.26 101.6 180)
 		(fields_autoplaced yes)
@@ -17447,7 +18455,7 @@
 			)
 		)
 	)
-	(global_label "GP26"
+	(global_label "GP28"
 		(shape bidirectional)
 		(at 391.16 162.56 180)
 		(fields_autoplaced yes)
@@ -17493,7 +18501,7 @@
 			)
 		)
 	)
-	(global_label "GP29"
+	(global_label "GP17"
 		(shape bidirectional)
 		(at 292.1 46.99 270)
 		(fields_autoplaced yes)
@@ -17516,7 +18524,7 @@
 			)
 		)
 	)
-	(global_label "GP27"
+	(global_label "GP29"
 		(shape bidirectional)
 		(at 353.06 40.64 180)
 		(fields_autoplaced yes)
@@ -17563,7 +18571,7 @@
 			)
 		)
 	)
-	(global_label "GP4"
+	(global_label "GP18"
 		(shape bidirectional)
 		(at 566.42 203.2 270)
 		(fields_autoplaced yes)
@@ -17609,7 +18617,7 @@
 			)
 		)
 	)
-	(global_label "GP18"
+	(global_label "GP24"
 		(shape bidirectional)
 		(at 538.48 193.04 180)
 		(fields_autoplaced yes)
@@ -17632,7 +18640,7 @@
 			)
 		)
 	)
-	(global_label "GP6"
+	(global_label "GP23"
 		(shape bidirectional)
 		(at 604.52 50.8 270)
 		(fields_autoplaced yes)
@@ -17748,7 +18756,7 @@
 			)
 		)
 	)
-	(global_label "GP18"
+	(global_label "GP24"
 		(shape bidirectional)
 		(at 543.56 101.6 180)
 		(fields_autoplaced yes)
@@ -17771,7 +18779,29 @@
 			)
 		)
 	)
-	(global_label "D_USB_N"
+	(global_label "LINK_D_P"
+		(shape input)
+		(at 60.96 266.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93109464-4b60-4372-91bb-1ee3f69c2c74")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "D-"
 		(shape input)
 		(at 46.99 39.37 0)
 		(fields_autoplaced yes)
@@ -17795,7 +18825,7 @@
 			)
 		)
 	)
-	(global_label "GP18"
+	(global_label "GP24"
 		(shape bidirectional)
 		(at 543.56 162.56 180)
 		(fields_autoplaced yes)
@@ -17910,7 +18940,7 @@
 			)
 		)
 	)
-	(global_label "GP26"
+	(global_label "GP28"
 		(shape bidirectional)
 		(at 391.16 71.12 180)
 		(fields_autoplaced yes)
@@ -17933,7 +18963,7 @@
 			)
 		)
 	)
-	(global_label "GP0"
+	(global_label "GP22"
 		(shape bidirectional)
 		(at 566.42 81.28 270)
 		(fields_autoplaced yes)
@@ -17956,7 +18986,7 @@
 			)
 		)
 	)
-	(global_label "GP18"
+	(global_label "GP24"
 		(shape bidirectional)
 		(at 543.56 40.64 180)
 		(fields_autoplaced yes)
@@ -18048,7 +19078,7 @@
 			)
 		)
 	)
-	(global_label "GP6"
+	(global_label "GP23"
 		(shape bidirectional)
 		(at 566.42 50.8 270)
 		(fields_autoplaced yes)
@@ -18117,29 +19147,6 @@
 			)
 		)
 	)
-	(global_label "GP0"
-		(shape bidirectional)
-		(at 212.09 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a640e824-bfb5-44ca-a313-21e5487fe97c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.09 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "LED_D14"
 		(shape bidirectional)
 		(at 342.9 311.15 180)
@@ -18176,6 +19183,28 @@
 		(uuid "a897c4f7-84e5-4158-94a8-23cd192ed390")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 309.88 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "D+"
+		(shape input)
+		(at 40.64 217.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a8ae601f-734a-496d-b507-2474dad92ce6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.64 217.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18232,7 +19261,31 @@
 			)
 		)
 	)
-	(global_label "GP2"
+	(global_label "USB_P"
+		(shape input)
+		(at 140.97 87.63 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b11f4016-51ee-4efc-81db-401c34b5e1e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 140.97 78.5972 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GP20"
 		(shape bidirectional)
 		(at 490.22 142.24 270)
 		(fields_autoplaced yes)
@@ -18324,7 +19377,7 @@
 			)
 		)
 	)
-	(global_label "GP18"
+	(global_label "GP24"
 		(shape bidirectional)
 		(at 543.56 132.08 180)
 		(fields_autoplaced yes)
@@ -18394,7 +19447,7 @@
 			)
 		)
 	)
-	(global_label "GP28"
+	(global_label "GP16"
 		(shape bidirectional)
 		(at 279.4 46.99 270)
 		(fields_autoplaced yes)
@@ -18417,7 +19470,7 @@
 			)
 		)
 	)
-	(global_label "GP12"
+	(global_label "LINK_D_P"
 		(shape input)
 		(at 127 269.24 0)
 		(fields_autoplaced yes)
@@ -18441,7 +19494,7 @@
 			)
 		)
 	)
-	(global_label "GP29"
+	(global_label "GP17"
 		(shape bidirectional)
 		(at 271.78 121.92 180)
 		(fields_autoplaced yes)
@@ -18464,7 +19517,7 @@
 			)
 		)
 	)
-	(global_label "GP4"
+	(global_label "GP18"
 		(shape bidirectional)
 		(at 490.22 203.2 270)
 		(fields_autoplaced yes)
@@ -18605,7 +19658,7 @@
 			)
 		)
 	)
-	(global_label "GP2"
+	(global_label "GP20"
 		(shape bidirectional)
 		(at 375.92 142.24 270)
 		(fields_autoplaced yes)
@@ -18721,7 +19774,7 @@
 			)
 		)
 	)
-	(global_label "GP26"
+	(global_label "GP28"
 		(shape bidirectional)
 		(at 391.16 101.6 180)
 		(fields_autoplaced yes)
@@ -18744,7 +19797,7 @@
 			)
 		)
 	)
-	(global_label "GP3"
+	(global_label "GP19"
 		(shape bidirectional)
 		(at 375.92 172.72 270)
 		(fields_autoplaced yes)
@@ -18837,7 +19890,7 @@
 			)
 		)
 	)
-	(global_label "GP22"
+	(global_label "GP3"
 		(shape bidirectional)
 		(at 556.26 203.2 270)
 		(fields_autoplaced yes)
@@ -19000,30 +20053,6 @@
 			)
 		)
 	)
-	(global_label "SPLIT_D_N"
-		(shape input)
-		(at 33.02 261.62 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d4d42522-92b8-4374-a69a-507ee785ffb6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.4191 261.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "LED_BUF"
 		(shape bidirectional)
 		(at 330.2 110.49 90)
@@ -19047,7 +20076,7 @@
 			)
 		)
 	)
-	(global_label "GP3"
+	(global_label "GP19"
 		(shape bidirectional)
 		(at 528.32 172.72 270)
 		(fields_autoplaced yes)
@@ -19139,6 +20168,30 @@
 			)
 		)
 	)
+	(global_label "LINK_VBUS"
+		(shape input)
+		(at 123.19 250.19 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e12e998d-7174-468a-ac92-b506b7c76adf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 131.134 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "LED_D13"
 		(shape bidirectional)
 		(at 708.66 273.05 0)
@@ -19208,7 +20261,7 @@
 			)
 		)
 	)
-	(global_label "GP1"
+	(global_label "GP21"
 		(shape bidirectional)
 		(at 490.22 111.76 270)
 		(fields_autoplaced yes)
@@ -19254,7 +20307,7 @@
 			)
 		)
 	)
-	(global_label "GP0"
+	(global_label "GP22"
 		(shape bidirectional)
 		(at 452.12 81.28 270)
 		(fields_autoplaced yes)
@@ -19300,30 +20353,6 @@
 			)
 		)
 	)
-	(global_label "D_USB_P"
-		(shape input)
-		(at 69.85 222.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e8b0f60e-eca7-4a44-a213-61376fb067b4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.1204 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "LED_D19"
 		(shape bidirectional)
 		(at 642.62 308.61 0)
@@ -19347,7 +20376,7 @@
 			)
 		)
 	)
-	(global_label "GP6"
+	(global_label "GP23"
 		(shape bidirectional)
 		(at 490.22 50.8 270)
 		(fields_autoplaced yes)
@@ -19370,9 +20399,9 @@
 			)
 		)
 	)
-	(global_label "D_USB_P"
+	(global_label "D+"
 		(shape input)
-		(at 153.67 90.17 180)
+		(at 140.97 95.25 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19382,7 +20411,7 @@
 		)
 		(uuid "ea184d2a-2362-4107-adec-29ad02a4a6ff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.1772 90.17 0)
+			(at 140.97 101.0776 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19407,6 +20436,30 @@
 		(uuid "ea8769a3-4792-4d96-99f6-0690b072a516")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 36.5058 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "USB_P"
+		(shape input)
+		(at 161.29 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eca0558b-e57f-4066-b818-ada93d7eeca2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.2572 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19488,30 +20541,7 @@
 			)
 		)
 	)
-	(global_label "GP1"
-		(shape bidirectional)
-		(at 212.09 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ef97d228-c295-40c7-81a8-ba9de3fd60ee")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.09 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GP2"
+	(global_label "GP20"
 		(shape bidirectional)
 		(at 566.42 142.24 270)
 		(fields_autoplaced yes)
@@ -19604,31 +20634,7 @@
 			)
 		)
 	)
-	(global_label "D_USB_N"
-		(shape input)
-		(at 33.02 222.25 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f461ed29-e6be-4ca1-b167-0199681340d4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.6891 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SPLIT_D_N"
+	(global_label "LINK_D_N"
 		(shape input)
 		(at 127 264.16 0)
 		(fields_autoplaced yes)
@@ -19861,7 +20867,31 @@
 			)
 		)
 	)
-	(global_label "GP27"
+	(global_label "GP12"
+		(shape input)
+		(at 163.83 280.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fd917710-7670-419d-8bde-523c59cfc586")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 171.774 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GP29"
 		(shape bidirectional)
 		(at 353.06 132.08 180)
 		(fields_autoplaced yes)
@@ -19884,7 +20914,7 @@
 			)
 		)
 	)
-	(global_label "GP25"
+	(global_label "GP27"
 		(shape bidirectional)
 		(at 429.26 40.64 180)
 		(fields_autoplaced yes)
@@ -21898,7 +22928,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:TYPE-C-SMD_HX-TYPE-C-16PIN"
+		(property "Footprint" "my-soffle:USB_C_Receptacle_HRO_TYPE-C-31-M-12_MergedPads"
 			(at 26.67 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -21910,7 +22940,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220920/0EF8F885FCCEA71F60E9E85152155021.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948"
 			(at 24.384 40.513 0)
 			(hide yes)
 			(show_name no)
@@ -21933,7 +22963,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2927039"
+		(property "LCSC" "C165948"
 			(at 29.21 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -22374,7 +23404,7 @@
 				)
 			)
 		)
-		(property "Value" "500mA"
+		(property "Value" "1.1A"
 			(at 72.39 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22396,7 +23426,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/C163512"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C126818"
 			(at 72.39 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -22418,7 +23448,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C163512"
+		(property "LCSC" "C126818"
 			(at 72.39 25.4 90)
 			(hide yes)
 			(show_name no)
@@ -22440,7 +23470,7 @@
 				)
 			)
 		)
-		(property "Part" "1206L050YR"
+		(property "Part" "1206L110THYR"
 			(at 72.39 25.4 90)
 			(hide yes)
 			(show_name no)
@@ -23959,85 +24989,6 @@
 			(project "sofle-choc-pro"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 69.85 266.7 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1c1eaff4-7fae-43ad-9b7c-2f7a9ea2006c")
-		(property "Reference" "#PWR4"
-			(at 76.2 266.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 73.66 266.6999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 266.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 266.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 266.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3b04a397-6555-4c6c-bc1f-2f7aeab4894b")
-		)
-		(instances
-			(project "sofle-choc-pro"
-				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
-					(reference "#PWR4")
 					(unit 1)
 				)
 			)
@@ -31565,7 +32516,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:TYPE-C-SMD_HX-TYPE-C-16PIN"
+		(property "Footprint" "my-soffle:USB_C_Receptacle_HRO_TYPE-C-31-M-12_MergedPads"
 			(at 106.68 275.59 0)
 			(hide yes)
 			(show_name no)
@@ -31577,7 +32528,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220920/0EF8F885FCCEA71F60E9E85152155021.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948"
 			(at 104.394 265.303 0)
 			(hide yes)
 			(show_name no)
@@ -31600,7 +32551,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2927039"
+		(property "LCSC" "C165948"
 			(at 109.22 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -32489,6 +33440,83 @@
 			(project "sofle-choc-pro"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 276.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3e574f99-61e0-44f5-847b-8536eac7aad5")
+		(property "Reference" "#PWR6206"
+			(at 416.56 273.05 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 411.1 273.05 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 416.56 273.05 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 416.56 273.05 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 416.56 273.05 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1eb4c3e8-58b0-4386-ad8a-ebef17be8e24")
+		)
+		(instances
+			(project "sofle-choc-pro"
+				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
+					(reference "#PWR6206")
 					(unit 1)
 				)
 			)
@@ -35579,8 +36607,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Diode-Packages:Package, SRV05-4A_C20615829")
-		(at 50.8 217.17 90)
+		(lib_id "Power_Protection:USBLC6-2P6")
+		(at 50.8 217.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -35600,7 +36628,7 @@
 				)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "USBLC6-2P6"
 			(at 50.8 204.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35610,7 +36638,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
 			(at 60.96 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -35622,7 +36650,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/C2836319"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C49451919"
 			(at 50.673 219.456 0)
 			(hide yes)
 			(show_name no)
@@ -35645,7 +36673,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2836319"
+		(property "LCSC" "C49451919"
 			(at 50.8 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -39453,85 +40481,6 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 33.02 266.7 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60f058b3-01eb-4bf6-9fbb-574d7d500752")
-		(property "Reference" "#PWR3"
-			(at 36.83 266.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 29.21 266.6999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 266.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 266.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 33.02 266.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cf756d87-55ed-446e-931c-ae5bcaf33939")
-		)
-		(instances
-			(project "sofle-choc-pro"
-				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
-					(reference "#PWR3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
 		(at 426.72 251.46 0)
 		(unit 1)
 		(body_style 1)
@@ -42296,7 +43245,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,33Ω")
-		(at 157.48 90.17 90)
+		(at 140.97 91.44 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -42306,7 +43255,7 @@
 		(dnp no)
 		(uuid "679ee657-e091-439d-a4e7-e3b771950713")
 		(property "Reference" "R7"
-			(at 157.48 87.63 90)
+			(at 138.43 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42316,7 +43265,7 @@
 			)
 		)
 		(property "Value" "27Ω"
-			(at 157.48 90.17 90)
+			(at 140.97 91.44 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -42326,7 +43275,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0402"
-			(at 157.48 91.948 90)
+			(at 142.748 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42337,7 +43286,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/partdetail/C25100"
-			(at 157.48 90.17 0)
+			(at 140.97 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42348,7 +43297,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 157.48 90.17 0)
+			(at 140.97 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42359,7 +43308,7 @@
 			)
 		)
 		(property "LCSC" "C25100"
-			(at 157.48 90.17 0)
+			(at 140.97 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42370,7 +43319,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 157.48 90.17 0)
+			(at 140.97 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42381,7 +43330,7 @@
 			)
 		)
 		(property "Part" "0402WGF270JTCE"
-			(at 157.48 90.17 0)
+			(at 140.97 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43184,7 +44133,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,33Ω")
-		(at 157.48 92.71 90)
+		(at 143.51 91.44 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -43194,7 +44143,7 @@
 		(dnp no)
 		(uuid "6cc4c875-947d-42d1-94ae-573fc6479dc3")
 		(property "Reference" "R8"
-			(at 157.48 95.25 90)
+			(at 146.05 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43204,7 +44153,7 @@
 			)
 		)
 		(property "Value" "27Ω"
-			(at 157.48 92.71 90)
+			(at 143.51 91.44 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -43214,7 +44163,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0402"
-			(at 157.48 94.488 90)
+			(at 145.288 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43225,7 +44174,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/partdetail/C25100"
-			(at 157.48 92.71 0)
+			(at 143.51 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43236,7 +44185,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 157.48 92.71 0)
+			(at 143.51 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43247,7 +44196,7 @@
 			)
 		)
 		(property "LCSC" "C25100"
-			(at 157.48 92.71 0)
+			(at 143.51 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43258,7 +44207,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 157.48 92.71 0)
+			(at 143.51 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43269,7 +44218,7 @@
 			)
 		)
 		(property "Part" "0402WGF270JTCE"
-			(at 157.48 92.71 0)
+			(at 143.51 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43295,7 +44244,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0402,15kΩ")
+		(lib_id "PCM_JLCPCB-Resistors:0402,10kΩ")
 		(at 254 48.26 0)
 		(unit 1)
 		(body_style 1)
@@ -43316,7 +44265,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15kΩ"
+		(property "Value" "10kΩ"
 			(at 256.54 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43338,7 +44287,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1502TCE_C25756.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 254 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -43349,7 +44298,7 @@
 				)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 15kΩ 0402 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS"
 			(at 254 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -43360,7 +44309,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25756"
+		(property "LCSC" "C25744"
 			(at 254 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -43371,7 +44320,7 @@
 				)
 			)
 		)
-		(property "Stock" "671055"
+		(property "Stock" "24372091"
 			(at 254 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -43459,7 +44408,7 @@
 				)
 			)
 		)
-		(property "Part" "0402WGF1502TCE"
+		(property "Part" "0402WGF1002TCE"
 			(at 254 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -43470,7 +44419,7 @@
 				)
 			)
 		)
-		(property "Resistance" "15kΩ"
+		(property "Resistance" "10kΩ"
 			(at 254 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -47183,85 +48132,6 @@
 			(project "sofle-choc-pro"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 33.02 217.17 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "83c17a20-50c3-4275-af99-f01693d49f6e")
-		(property "Reference" "#PWR18"
-			(at 36.83 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 29.21 217.1699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 33.02 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f034092-db47-49bb-b48c-967162c5340c")
-		)
-		(instances
-			(project "sofle-choc-pro"
-				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
-					(reference "#PWR18")
 					(unit 1)
 				)
 			)
@@ -51449,6 +52319,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 50.8 259.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9de37906-1676-4f43-8cca-5b7e9fb36876")
+		(property "Reference" "#PWR7580"
+			(at 701.04 311.15 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 706.5 311.15 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 701.04 311.15 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 701.04 311.15 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 701.04 311.15 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "88b9859d-a1ba-4dae-98dd-06ba8be2cb8f")
+		)
+		(instances
+			(project "sofle-choc-pro"
+				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
+					(reference "#PWR7580")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0402,100nF")
 		(at 756.92 326.39 0)
 		(unit 1)
@@ -53626,6 +54573,83 @@
 			(project "sofle-choc-pro"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 50.8 209.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aa79b0c5-f261-4bc0-81d6-2767e4b28f60")
+		(property "Reference" "#PWR6816"
+			(at 701.04 311.15 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 706.5 311.15 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 701.04 311.15 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 701.04 311.15 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 701.04 311.15 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d4bd6a43-422a-4675-ad3e-37f605c57998")
+		)
+		(instances
+			(project "sofle-choc-pro"
+				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
+					(reference "#PWR6816")
 					(unit 1)
 				)
 			)
@@ -58044,6 +59068,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 129.54 250.19 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c06ac0ed-1cf2-443d-be9b-8422cc1fa14f")
+		(property "Reference" "F2"
+			(at 129.54 243.84 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.1A"
+			(at 129.54 246.38 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 134.62 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C126818"
+			(at 129.54 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 129.54 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C126818"
+			(at 129.54 250.19 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Littelfuse"
+			(at 129.54 250.19 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "1206L110THYR"
+			(at 129.54 250.19 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3aafd5a9-8697-427a-941c-88881ed781f3")
+		)
+		(pin "1"
+			(uuid "38d73f6c-9bd2-4d78-ba39-995ad6af028b")
+		)
+		(instances
+			(project "sofle-choc-pro"
+				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0402,100nF")
 		(at 690.88 255.27 0)
 		(unit 1)
@@ -58637,6 +59775,274 @@
 			(project "sofle-choc-pro"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C150")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0402,120Ω")
+		(at 160.02 280.67 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c38144ff-900d-491a-a4f5-b096131d976f")
+		(property "Reference" "R16"
+			(at 162.56 279.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "120Ω"
+			(at 162.56 281.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0402"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF1200TCE_C25079.pdf"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 120Ω 0402 Chip Resistor - Surface Mount ROHS"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25079"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "370600"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF1200TCE"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "120Ω"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 160.02 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61b14cd3-bedb-47aa-a858-3ba19d46a3e1")
+		)
+		(pin "2"
+			(uuid "406e9ef4-418d-4e47-816d-42c0e7adaf19")
+		)
+		(instances
+			(project "sofle-choc-pro"
+				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -60899,8 +62305,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Diode-Packages:Package, SRV05-4A_C20615829")
-		(at 50.8 266.7 90)
+		(lib_id "Power_Protection:USBLC6-2P6")
+		(at 50.8 266.7 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -60920,7 +62326,7 @@
 				)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "USBLC6-2P6"
 			(at 50.8 254 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -60930,7 +62336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
 			(at 60.96 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -60942,7 +62348,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/C2836319"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C49451919"
 			(at 50.673 268.986 0)
 			(hide yes)
 			(show_name no)
@@ -60965,7 +62371,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2836319"
+		(property "LCSC" "C49451919"
 			(at 50.8 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -62581,7 +63987,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0402,10kΩ")
+		(lib_id "PCM_JLCPCB-Resistors:0402,5.1kΩ")
 		(at 254 40.64 0)
 		(unit 1)
 		(body_style 1)
@@ -62602,7 +64008,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "5.1kΩ"
 			(at 256.54 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62624,7 +64030,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -62635,7 +64041,7 @@
 				)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 5.1kΩ 0402 Chip Resistor - Surface Mount ROHS"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -62646,7 +64052,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25905"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -62745,7 +64151,7 @@
 				)
 			)
 		)
-		(property "Part" "0402WGF1002TCE"
+		(property "Part" "0402WGF5101TCE"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -62756,7 +64162,7 @@
 				)
 			)
 		)
-		(property "Resistance" "10kΩ"
+		(property "Resistance" "5.1kΩ"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -65227,6 +66633,83 @@
 			(project "sofle-choc-pro"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 227.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e89ab38e-2105-4d38-b784-ebbe6ca8ea43")
+		(property "Reference" "#PWR4608"
+			(at 416.56 273.05 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 411.1 273.05 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 416.56 273.05 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 416.56 273.05 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 416.56 273.05 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3074b8ad-47fd-4758-9f7a-5031fa75169f")
+		)
+		(instances
+			(project "sofle-choc-pro"
+				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
+					(reference "#PWR4608")
 					(unit 1)
 				)
 			)
@@ -68720,85 +70203,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 69.85 217.17 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9ed720d-f842-4937-9eb9-d65582b65f57")
-		(property "Reference" "#PWR17"
-			(at 76.2 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 73.66 217.1699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "228a7cc3-50c7-4d38-9291-75b5cbcb6a47")
-		)
-		(instances
-			(project "sofle-choc-pro"
-				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
-					(reference "#PWR17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0402,100nF")
 		(at 426.72 290.83 0)
 		(unit 1)
@@ -69179,7 +70583,7 @@
 				)
 			)
 		)
-		(property "Value" "W25Q128"
+		(property "Value" "W25Q128JVPIQ"
 			(at 55.88 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -69189,7 +70593,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:SOIC-8_L5.3-W5.3-P1.27-LS8.0-BL"
+		(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4mm"
 			(at 55.88 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -69201,7 +70605,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811142111_Winbond-Elec-W25Q128JVSIQ_C97521.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811151432_Winbond-Elec-W25Q128JVPIQ_C190862.pdf"
 			(at 53.594 171.323 0)
 			(hide yes)
 			(show_name no)
@@ -69224,7 +70628,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C97521"
+		(property "LCSC" "C190862"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -69323,7 +70727,7 @@
 				)
 			)
 		)
-		(property "Part" "W25Q128JVSIQ"
+		(property "Part" "W25Q128JVPIQ"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -70277,5 +71681,10 @@
 		(path "/"
 			(page "1")
 		)
+	)
+	(embedded_fonts no)
+	(no_connect
+		(at 45.72 269.24)
+		(uuid "899d7351-bcb2-4f10-b752-d0dc9dca143b")
 	)
 )

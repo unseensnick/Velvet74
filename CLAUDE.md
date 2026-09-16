@@ -20,7 +20,7 @@ Full detail and the reasons are in [.claude/rules/kicad.md](.claude/rules/kicad.
 3. **Close KiCad** (or at least the file) before a script saves a board, and check `git status` first.
 4. **`pcbnew.BOARD.Save` rewrites the neighbouring `.kicad_pro` with defaults** (net classes gone). Scripts that save a board inside a project back up and restore the `.kicad_pro`.
 5. **KiCad 10.0.3 only.** Use `%LOCALAPPDATA%\Programs\KiCad\10.0\bin\kicad-cli.exe` and `python.exe`. KiCad 8.0.9 is still installed but cannot open these files (tag `kicad8-final` is the last KiCad 8 state). API changes are in the rule file.
-6. **Placements must be proven routable**, not only DRC-clean: pads of different parts at least 0.8 mm apart, a fanout ring around fine-pitch ICs, Freerouting proof.
+6. **Placements must be proven routable**, not only DRC-clean: every signal pin of a fine-pitch IC keeps a straight escape lane, support parts sit in line with the pin they serve (not across other pins' escapes), and routability is checked by routing a copy.
 7. **Keep the machine usable**: at most 6 idle-priority, single-threaded heavy jobs (autorouting, renders) at once.
 8. **Never edit or delete** `*-backups/` or `.history/`: they are the only way back from a bad script run.
 

@@ -16,7 +16,7 @@
 	)
 	(property "Value" "LED-SMD_4P-L3.2-W2.8-LS5.9_SK6812MINI-E"
 		(at 0 4.725 0)
-		(layer "F.Fab")
+		(layer "F.SilkS")
 		(uuid "e3b24e1c-4404-4313-bd17-6fac6773d331")
 		(effects
 			(font
@@ -70,7 +70,7 @@
 			(width 0.25)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "fa21ccd4-673d-4a3c-92d6-aa64f3a981f9")
 	)
 	(fp_line
@@ -80,7 +80,7 @@
 			(width 0.25)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "074e100c-8598-45a5-9ef6-8ece85e8bc13")
 	)
 	(fp_line
@@ -90,7 +90,7 @@
 			(width 0.25)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "22573cf8-d0ac-4195-bddc-78422fcb51f9")
 	)
 	(fp_line
@@ -100,7 +100,7 @@
 			(width 0.25)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "214ae729-711b-4bc6-b021-bd01c90f6014")
 	)
 	(fp_line
@@ -110,7 +110,7 @@
 			(width 0.25)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "e286c5b4-b682-429c-ac9f-a901789bc626")
 	)
 	(fp_line
@@ -120,7 +120,7 @@
 			(width 0.25)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "1e854029-6a4e-41bf-9c7e-9bc982c91fc6")
 	)
 	(fp_line
@@ -130,7 +130,7 @@
 			(width 0.25)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "5f1e65bd-807e-4c2e-8764-7d55c8e6f9d7")
 	)
 	(fp_line
@@ -140,7 +140,7 @@
 			(width 0.25)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "1579beb7-d7d9-451b-8fc6-1c7f0b3b97e1")
 	)
 	(fp_circle
@@ -151,7 +151,7 @@
 			(type solid)
 		)
 		(fill no)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "066b19d0-2436-4edd-8ab3-fabc6097707f")
 	)
 	(fp_poly
@@ -163,7 +163,7 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "e012978b-724b-4b7a-9300-4f7d8de8b23d")
 	)
 	(fp_rect
@@ -219,7 +219,7 @@
 	)
 	(fp_text user "GND"
 		(at -4.92 1 0)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "0b64d763-2286-44c1-a3e3-ea1e35ebc783")
 		(effects
 			(font

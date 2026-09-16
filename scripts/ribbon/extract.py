@@ -22,6 +22,10 @@ for f in b.GetFootprints():
     ref = f.GetReference()
     out['fps'][ref] = {'x': T(f.GetPosition().x), 'y': T(f.GetPosition().y), 'rot': f.GetOrientationDegrees(),
                        'side': 'B' if f.IsFlipped() else 'F', 'fp': f.GetFPID().GetLibItemName().wx_str()}
+    cy = f.GetCourtyard(pcbnew.B_CrtYd if f.IsFlipped() else pcbnew.F_CrtYd)
+    if cy.OutlineCount():
+        bb = cy.BBox()
+        out['fps'][ref]['crtyd'] = [T(bb.GetLeft()), T(bb.GetTop()), T(bb.GetRight()), T(bb.GetBottom())]
     for p in f.Pads():
         drill = p.GetDrillSize().x > 0
         layers = 'FB' if drill else ('B' if p.IsOnLayer(pcbnew.B_Cu) else 'F' if p.IsOnLayer(pcbnew.F_Cu) else '')

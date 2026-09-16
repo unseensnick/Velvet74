@@ -1,8 +1,36 @@
 (version 1)
 
-# Net classes keep 0.2 mm clearance. The RP2040 (0.4 mm pitch) and the USB-C connectors (0.5 mm
-# pitch) cannot be escaped at 0.2 mm, so copper touching their courtyards may go down to JLCPCB's
-# standard 2-layer minimum of 0.127 mm.
+# Three track widths: 0.2 mm signal, 0.5 mm power, and 0.127 mm only as a short neck-down at RP2040 pins (two
+# neighbours bent 45 deg at 0.2 mm sit 0.08 mm apart). Net classes keep 0.2 mm clearance; copper touching the
+# RP2040 (0.4 mm pitch), USB-C (0.5 mm) or the SOT-563 ESD arrays (0.15 mm pad gaps) may go down to 0.127 mm,
+# which is still above JLCPCB's 0.09 mm minimum.
 (rule "fine pitch fanout"
-  (condition "A.intersectsCourtyard('U1') || A.intersectsCourtyard('J1') || A.intersectsCourtyard('J2')")
+  (condition "A.intersectsCourtyard('U1') || A.intersectsCourtyard('J1') || A.intersectsCourtyard('J2') || A.intersectsCourtyard('U2') || A.intersectsCourtyard('U4')")
   (constraint clearance (min 0.127mm)))
+
+# The host USB data lines are the only real pairs, named per segment so each side of R7/R8 is its own net:
+# D+/D- (J1 to R7/R8) and USB_P/USB_N (R7/R8 to U1). One rule per pair, because a shared rule puts both pairs in
+# one skew group and KiCad then compares D+ against a net from the other pair.
+# Spacing is checked outside the fan-out only: inside J1, U4 and U1 the pad geometry sets it, not the routing.
+# Length matching is checked over the whole net, since excluding the fan-out would compare unequal leftovers.
+# Full speed needs no impedance control at these lengths, so the gap limits are loose.
+(rule "usb pair D spacing"
+  (condition "A.inDiffPair('D') && !A.intersectsCourtyard('J1') && !A.intersectsCourtyard('U4')")
+  (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
+  (constraint diff_pair_uncoupled (max 6mm)))
+
+(rule "usb pair D length"
+  (condition "A.inDiffPair('D')")
+  (constraint skew (max 0.1mm)))
+
+(rule "usb pair USB spacing"
+  (condition "A.inDiffPair('USB') && !A.intersectsCourtyard('U1')")
+  (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
+  (constraint diff_pair_uncoupled (max 6mm)))
+
+(rule "usb pair USB length"
+  (condition "A.inDiffPair('USB')")
+  (constraint skew (max 0.1mm)))
+
+# No LINK_D rule: the link between halves is one-wire serial. LINK_D_N reaches only J2's two data pins and the
+# ESD array, never the MCU, so the two link nets are not a pair and pair rules on them are meaningless.
