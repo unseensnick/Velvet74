@@ -19,3 +19,6 @@ ergogen/output/
 .claude/worktrees/
 .claude/launch.json
 Handoff.md
+
+# Python
+__pycache__/
