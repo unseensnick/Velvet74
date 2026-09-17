@@ -12,7 +12,8 @@
 # D+/D- (J1 to R7/R8) and USB_P/USB_N (R7/R8 to U1). One rule per pair, because a shared rule puts both pairs in
 # one skew group and KiCad then compares D+ against a net from the other pair.
 # Spacing is checked outside the fan-out only: inside J1, U4 and U1 the pad geometry sets it, not the routing.
-# Length matching is checked over the whole net, since excluding the fan-out would compare unequal leftovers.
+# Length matching skips J1 only: its pin-swap bridges are stubs the signal never runs through, but KiCad counts
+# them in net length. Excluding U4 as well compared unequal leftovers, so U4 stays in.
 # Full speed needs no impedance control at these lengths, so the gap limits are loose.
 (rule "usb pair D spacing"
   (condition "A.inDiffPair('D') && !A.intersectsCourtyard('J1') && !A.intersectsCourtyard('U4')")
@@ -20,7 +21,7 @@
   (constraint diff_pair_uncoupled (max 6mm)))
 
 (rule "usb pair D length"
-  (condition "A.inDiffPair('D')")
+  (condition "A.inDiffPair('D') && !A.intersectsCourtyard('J1')")
   (constraint skew (max 0.1mm)))
 
 (rule "usb pair USB spacing"
