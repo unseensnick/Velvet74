@@ -27,8 +27,8 @@ from shapely.ops import unary_union
 
 W = float(os.environ.get('W', '0.2'))            # track width for this run (power runs use wider)
 PITCH = float(os.environ.get('PITCH', '0.4'))    # lane spacing: width plus 0.2 mm gap
-CLR, HCLR, ECLR = 0.205, 0.26, 0.5          # small margins over the DRC 0.2/0.25: pads are polygonised
-VIA_R, VIA_COST = 0.225, 8.0
+CLR, HCLR, ECLR = 0.205, 0.36, 0.5          # small margins over the JLCPCB-recommended 0.2 / 0.35 hole-to-copper: pads are polygonised
+VIA_R, VIA_COST = 0.3, 8.0                  # 0.6/0.3 vias: the board's smallest pre-defined size, no JLCPCB surcharge
 LANES, CLOSE, STEP = 5, 1.0, 0.2
 GRID = 0.8            # open-space grid pitch beyond the lanes
 WINDOW = float(os.environ.get('WINDOW', '6.0'))
@@ -72,7 +72,7 @@ for k in d.get('keepouts', []):
         static[s].append((Polygon(k['poly']), '__KO__' + '|'.join(k['nets']), 0.0))
 static_tree = {s: STRtree([o[0] for o in static[s]]) for s in 'FB'}
 # the board's .kicad_dru allows 0.127 mm copper clearance inside these courtyards (fine-pitch escape)
-FINE_REFS, FINE_CLR = ('U1', 'J1', 'J2'), 0.13
+FINE_REFS, FINE_CLR = ('U1', 'J1', 'J2', 'U2', 'U4'), 0.13
 fine = unary_union([box(*d['fps'][r]['crtyd']) for r in FINE_REFS if 'crtyd' in d['fps'].get(r, {})])
 shapely.prepare(fine)
 

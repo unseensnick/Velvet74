@@ -16,8 +16,8 @@ from shapely import STRtree
 from shapely.geometry import LineString, Point, Polygon
 from shapely.ops import unary_union
 
-CLR, HCLR, ECLR, FINE_CLR, VIA_R = 0.205, 0.26, 0.5, 0.13, 0.225
-FINE_REFS = ('U1', 'J1', 'J2')
+CLR, HCLR, ECLR, FINE_CLR, VIA_R = 0.205, 0.36, 0.5, 0.13, 0.3     # same values as ribbon.py
+FINE_REFS = ('U1', 'J1', 'J2', 'U2', 'U4')
 EPS = 1e-3
 
 d = json.load(open(sys.argv[1]))
@@ -38,6 +38,9 @@ for k in d.get('keepouts', []):
 key = lambda pt: (round(pt[0], 3), round(pt[1], 3))
 segs = [list(t) for t in r['tracks']]
 vias = {key((v[0], v[1])) for v in r['vias']}
+# a pad where two links meet has degree 2 like a mid-run bend: stop runs there too, or tightening drags the joint off the pad
+pad_tree = STRtree([Polygon(p['poly']).buffer(0) for p in d['pads'] if len(p['poly']) > 2])
+stops = vias | {key(pt) for t in r['tracks'] for pt in (t[1:3], t[3:5]) if len(pad_tree.query(Point(pt), predicate='intersects'))}
 
 
 def build_runs():
@@ -57,7 +60,7 @@ def build_runs():
             for direction in (0, 1):
                 cur = i
                 end = key(segs[cur][3:5]) if direction == 0 else key(segs[cur][1:3])
-                while len(deg[end]) == 2 and end not in vias:
+                while len(deg[end]) == 2 and end not in stops:
                     nxt = [j for j in deg[end] if j != cur][0]
                     if nxt in used:
                         break
