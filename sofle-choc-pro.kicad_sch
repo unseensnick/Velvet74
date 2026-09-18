@@ -36638,7 +36638,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
+		(property "Footprint" "my-soffle:SOT-563_USBLC6-2P6"
 			(at 60.96 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -62336,7 +62336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
+		(property "Footprint" "my-soffle:SOT-563_USBLC6-2P6"
 			(at 60.96 266.7 0)
 			(hide yes)
 			(show_name no)

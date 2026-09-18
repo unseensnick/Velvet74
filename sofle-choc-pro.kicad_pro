@@ -222,6 +222,8 @@
         0.25,
         0.3,
         0.35,
+        0.4,
+        0.45,
         0.5
       ],
       "tuning_pattern_settings": {
@@ -634,6 +636,10 @@
       {
         "netclass": "Power5V",
         "pattern": "VBUS"
+      },
+      {
+        "netclass": "Power5V",
+        "pattern": "LINK_VBUS"
       },
       {
         "netclass": "Power3.3V",
