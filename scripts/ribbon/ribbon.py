@@ -29,6 +29,7 @@ W = float(os.environ.get('W', '0.2'))            # track width for this run (pow
 PITCH = float(os.environ.get('PITCH', '0.4'))    # lane spacing: width plus 0.2 mm gap
 CLR, HCLR, ECLR = 0.205, 0.36, 0.5          # small margins over the JLCPCB-recommended 0.2 / 0.35 hole-to-copper: pads are polygonised
 VIA_R, VIA_COST = 0.3, 8.0                  # 0.6/0.3 vias: the board's smallest pre-defined size, no JLCPCB surcharge
+DROP_GAP = 0.2                              # copper gap between a drop via and the pad it serves
 LANES, CLOSE, STEP = 5, 1.0, 0.2
 GRID = 0.8            # open-space grid pitch beyond the lanes
 WINDOW = float(os.environ.get('WINDOW', '6.0'))
@@ -572,8 +573,13 @@ def drop(link):
     # try directions pointing away from the part first: a via beside the part blocks the signals that reach it
     angles = sorted(range(0, 360, 45), key=lambda a: abs((a - out_ang + 180) % 360 - 180))
     for ang in angles:
-        for r in [0.9 + 0.1 * k for k in range(15)]:
+        for r in [0.9 + 0.1 * k for k in range(20)]:
             pt = (c[0] + r * math.cos(math.radians(ang)), c[1] + r * math.sin(math.radians(ang)))
+            # the via sits beside the pad on a short stub, never on it or on any same-net pad (via_ok() only checks
+            # other nets): at a fixed radius it landed on the SK6812MINI-E pads and the LED caps next to them
+            p = Point(pt)
+            if any(it['geom'].distance(p) < VIA_R + DROP_GAP for it in net_pads[net]):
+                continue
             if via_ok(pt, net) and seg_ok(s, c, pt, net):
                 return ([(s, [c, pt])], [pt]), None
     return None, 'no via spot'
