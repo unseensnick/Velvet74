@@ -1,9 +1,18 @@
 (version 1)
 
-# Three track widths: 0.2 mm signal, 0.5 mm power, and 0.127 mm only as a short neck-down at RP2040 pins (two
-# neighbours bent 45 deg at 0.2 mm sit 0.08 mm apart). Net classes keep 0.2 mm clearance; copper touching the
-# RP2040 (0.4 mm pitch), USB-C (0.5 mm) or the SOT-563 ESD arrays (0.15 mm pad gaps) may go down to 0.127 mm,
-# which is still above JLCPCB's 0.09 mm minimum.
+# Track widths: 0.2 mm for signals, +3.3V and +1V1 (under 100 mA each: RP2040 datasheet p.156/p.624; IPC-2221
+# needs 0.3 mm only at 1 A), 0.5 mm for +5V/VBUS (up to about 1 A of LEDs), and 0.127 mm only as a short
+# neck-down at RP2040 pins. Net classes keep 0.2 mm clearance. Later rules win in KiCad, so the broad controller
+# rule comes first and the fine-pitch rule overrides it at the pads.
+
+# Controller strip (rule area "controller"): 0.15 mm, as on Raspberry Pi's RP2040 minimal design, so 0.2 mm lanes
+# at 0.4 mm pitch can bend without violations. Zones keep their own clearances.
+(rule "controller clearance"
+  (condition "A.intersectsArea('controller') && A.Type != 'Zone' && B.Type != 'Zone'")
+  (constraint clearance (min 0.15mm)))
+
+# Copper touching the RP2040 (0.4 mm pitch), USB-C (0.5 mm) or the SOT-563 ESD arrays (0.15 mm pad gaps) may go
+# down to 0.127 mm, JLCPCB's standard (0.09 mm minimum).
 (rule "fine pitch fanout"
   (condition "A.intersectsCourtyard('U1') || A.intersectsCourtyard('J1') || A.intersectsCourtyard('J2') || A.intersectsCourtyard('U2') || A.intersectsCourtyard('U4')")
   (constraint clearance (min 0.127mm)))
