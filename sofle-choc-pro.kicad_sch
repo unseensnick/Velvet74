@@ -22783,6 +22783,17 @@
 				)
 			)
 		)
+		(property "FT Position Offset" "0,1.394"
+			(at 29.21 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "B8"
 			(uuid "2c237cde-0962-4db9-8451-a54b75fa2181")
 		)
@@ -23313,7 +23324,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "1116966e-b483-4446-845c-a56c22fec02c")
 		(property "Reference" "SW54"
@@ -23546,7 +23557,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "127f5372-6c26-4825-bfbc-c80915c0b5dc")
 		(property "Reference" "SW16"
@@ -25124,7 +25135,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "1f192543-593a-44eb-8e98-e311845aa934")
 		(property "Reference" "SW35"
@@ -25589,7 +25600,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "23baea92-7ce7-4ff4-8afe-fbf7a1e4382b")
 		(property "Reference" "SW20"
@@ -27097,7 +27108,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "260265d9-0b9a-49f1-9cc4-ad7bb8cfffde")
 		(property "Reference" "SW65"
@@ -29157,7 +29168,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2e4356c5-f4de-41b7-81ef-1272f5197c44")
 		(property "Reference" "SW12"
@@ -30190,7 +30201,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "352ca53e-202b-42f6-b62c-2a2dc0f962aa")
 		(property "Reference" "SW63"
@@ -30269,7 +30280,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "356ff786-0695-42c5-84dc-716e26caa64d")
 		(property "Reference" "SW24"
@@ -30348,7 +30359,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "37526195-f3d1-41b2-bc3b-290ee3906254")
 		(property "Reference" "SW10"
@@ -32289,6 +32300,17 @@
 				)
 			)
 		)
+		(property "FT Position Offset" "0,1.394"
+			(at 109.22 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "A12B1"
 			(uuid "694fba02-4586-46e5-ac9e-11ec20fbb54f")
 		)
@@ -33763,7 +33785,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "42377441-99cb-4b70-a062-5f2a4b3191bb")
 		(property "Reference" "SW25"
@@ -34356,7 +34378,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "449bb25d-b57a-4d78-8edd-e5788e9c0b13")
 		(property "Reference" "SW52"
@@ -36306,7 +36328,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "4A 15V 80W 6V Unidirectional 5V SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS"
+		(property "Description" "USB ESD protection, 2 data lines and VBUS, SOT-563"
 			(at 50.8 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -36318,6 +36340,17 @@
 			)
 		)
 		(property "LCSC" "C49451919"
+			(at 50.8 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "270"
 			(at 50.8 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -36383,7 +36416,7 @@
 				)
 			)
 		)
-		(property "Class" "Preferred Component"
+		(property "Class" "Extended Component"
 			(at 50.8 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -36405,7 +36438,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "MSKSEMI"
+		(property "Manufacturer" "R+O"
 			(at 50.8 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -36416,7 +36449,7 @@
 				)
 			)
 		)
-		(property "Part" "SRV05-4"
+		(property "Part" "USBLC6-2P6"
 			(at 50.8 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -37006,7 +37039,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "4cf51cbd-0ad2-4fdb-a9fc-86ac604a5b90")
 		(property "Reference" "SW33"
@@ -37911,7 +37944,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "55f28545-0694-4273-971c-220cf0bc6b6a")
 		(property "Reference" "SW40"
@@ -38298,7 +38331,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "58efb8ac-6790-4365-bc92-6752561a2998")
 		(property "Reference" "SW61"
@@ -38583,7 +38616,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "5a64621a-af54-40c4-ad5b-edb7d87b51cc")
 		(property "Reference" "SW64"
@@ -39532,7 +39565,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "5e377362-e79d-4151-9bdf-81a8e899eb1f")
 		(property "Reference" "SW45"
@@ -40444,7 +40477,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "61b0d6d6-6570-4242-bf59-68f2515a5e0e")
 		(property "Reference" "SW50"
@@ -44232,6 +44265,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "180"
+			(at 299.72 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6e446c39-c88b-422f-bc10-35768541d412")
 		)
@@ -44264,7 +44308,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "6ee6e558-4051-4f99-9954-873542a361ed")
 		(property "Reference" "SW15"
@@ -44697,7 +44741,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "72798a8b-99a3-4cc3-92e2-679078962469")
 		(property "Reference" "SW43"
@@ -44776,7 +44820,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "72caa35f-2c52-40a6-92a9-c8bb8a4d20da")
 		(property "Reference" "SW44"
@@ -47219,7 +47263,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "82c487d2-5c29-4d02-aab1-28ffd5965753")
 		(property "Reference" "SW32"
@@ -49399,7 +49443,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "8c5e4b0e-7dab-4b76-8aa5-33e788fa1f57")
 		(property "Reference" "J3"
@@ -49484,7 +49528,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "8e391d32-2dfa-4471-aa13-6710814bcf09")
 		(property "Reference" "SW51"
@@ -49972,7 +50016,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "93251474-5d6e-4ff1-8e86-44170f3a7136")
 		(property "Reference" "SW41"
@@ -51466,7 +51510,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "9b99e8f8-bf2b-42d1-80c2-15cec373f3a6")
 		(property "Reference" "SW21"
@@ -52279,7 +52323,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "a06a13c4-4881-4ac7-9702-64726295b472")
 		(property "Reference" "SW34"
@@ -55786,7 +55830,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "b23a064d-99b0-4b02-9e7e-bb2ae5b92388")
 		(property "Reference" "SW53"
@@ -56509,7 +56553,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "b4f78257-6967-4f83-889a-3dd9daa13ca4")
 		(property "Reference" "SW14"
@@ -58240,7 +58284,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "bdee83f4-9259-45d4-84e4-a177d256180f")
 		(property "Reference" "SW22"
@@ -60773,7 +60817,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "cd742b74-5e72-4816-8115-f9f65b33b203")
 		(property "Reference" "SW42"
@@ -61318,7 +61362,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "d309e9bb-fc70-461b-918b-b76f66fb3af5")
 		(property "Reference" "SW13"
@@ -61397,7 +61441,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "d3bbc9db-24b0-44ee-9575-17a84765aae5")
 		(property "Reference" "JP1"
@@ -61656,7 +61700,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "4A 15V 80W 6V Unidirectional 5V SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS"
+		(property "Description" "USB ESD protection, 2 data lines and VBUS, SOT-563"
 			(at 50.8 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -61668,6 +61712,17 @@
 			)
 		)
 		(property "LCSC" "C49451919"
+			(at 50.8 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "270"
 			(at 50.8 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -61733,7 +61788,7 @@
 				)
 			)
 		)
-		(property "Class" "Preferred Component"
+		(property "Class" "Extended Component"
 			(at 50.8 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -61755,7 +61810,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "MSKSEMI"
+		(property "Manufacturer" "R+O"
 			(at 50.8 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -61766,7 +61821,7 @@
 				)
 			)
 		)
-		(property "Part" "SRV05-4"
+		(property "Part" "USBLC6-2P6"
 			(at 50.8 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -63211,7 +63266,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "dd11f967-a8ce-4462-a308-7d7ceaa0b0ea")
 		(property "Reference" "SW31"
@@ -63283,7 +63338,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0402,5.1kΩ")
+		(lib_id "PCM_JLCPCB-Resistors:0402,10kΩ")
 		(at 254 40.64 0)
 		(unit 1)
 		(body_style 1)
@@ -63304,7 +63359,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.1kΩ"
+		(property "Value" "10kΩ"
 			(at 256.54 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -63326,7 +63381,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -63337,7 +63392,7 @@
 				)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 5.1kΩ 0402 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -63348,7 +63403,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25905"
+		(property "LCSC" "C25744"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -63447,7 +63502,7 @@
 				)
 			)
 		)
-		(property "Part" "0402WGF5101TCE"
+		(property "Part" "0402WGF1002TCE"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -63458,7 +63513,7 @@
 				)
 			)
 		)
-		(property "Resistance" "5.1kΩ"
+		(property "Resistance" "10kΩ"
 			(at 254 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -65086,7 +65141,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "e34c6550-03ae-46a9-8fd4-4ebb2a20f4f1")
 		(property "Reference" "SW23"
@@ -65294,7 +65349,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "e7529be2-deb3-4865-9e94-a935e329854e")
 		(property "Reference" "SW11"
@@ -65863,7 +65918,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "e7e96cff-2f88-42bb-b8ce-a7a844a46e29")
 		(property "Reference" "SW55"
@@ -66822,7 +66877,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "ecbcc2b8-b832-48de-bd56-eee9f30e6794")
 		(property "Reference" "SW62"
@@ -67654,7 +67709,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f2a26c09-5acf-43f0-bc13-864a19229a3b")
 		(property "Reference" "SW60"
@@ -68046,7 +68101,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f2dbb060-c549-45a6-9b48-f13f3f05fb96")
 		(property "Reference" "SW30"
@@ -69657,6 +69712,17 @@
 			)
 		)
 		(property "LCSC" "C190862"
+			(at 55.88 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "270"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)

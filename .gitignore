@@ -22,3 +22,6 @@ Handoff.md
 
 # Python
 __pycache__/
+
+# Fabrication Toolkit keeps copies of earlier runs here
+production/backups/

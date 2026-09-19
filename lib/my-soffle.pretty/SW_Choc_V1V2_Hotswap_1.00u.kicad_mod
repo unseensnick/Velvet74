@@ -1192,14 +1192,14 @@
 	(pad "1" smd roundrect
 		(at -3.5 -6)
 		(size 2.55 2.5)
-		(layers "B.Cu" "B.Mask" "B.Paste")
+		(layers "B.Cu" "B.Mask")
 		(roundrect_rratio 0.1)
 		(uuid "a2b46498-d983-4034-842f-46fad15b57df")
 	)
 	(pad "2" smd roundrect
 		(at 8.5 -3.8)
 		(size 2.55 2.5)
-		(layers "B.Cu" "B.Mask" "B.Paste")
+		(layers "B.Cu" "B.Mask")
 		(roundrect_rratio 0.1)
 		(uuid "64f02a66-ced7-428f-bd94-79d25a1fcbaa")
 	)
