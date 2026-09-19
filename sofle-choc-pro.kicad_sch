@@ -15900,7 +15900,7 @@
 			)
 		)
 	)
-	(global_label "LED_D4"
+	(global_label "LED_D5"
 		(shape bidirectional)
 		(at 576.58 237.49 0)
 		(fields_autoplaced yes)
@@ -16842,7 +16842,7 @@
 			)
 		)
 	)
-	(global_label "LED_D9"
+	(global_label "LED_D1"
 		(shape bidirectional)
 		(at 444.5 273.05 0)
 		(fields_autoplaced yes)
@@ -16935,7 +16935,7 @@
 			)
 		)
 	)
-	(global_label "LED_D1"
+	(global_label "LED_D2"
 		(shape bidirectional)
 		(at 408.94 240.03 180)
 		(fields_autoplaced yes)
@@ -17072,7 +17072,7 @@
 			)
 		)
 	)
-	(global_label "LED_D6"
+	(global_label "LED_D7"
 		(shape bidirectional)
 		(at 708.66 237.49 0)
 		(fields_autoplaced yes)
@@ -17118,7 +17118,7 @@
 			)
 		)
 	)
-	(global_label "LED_D0"
+	(global_label "LED_D1"
 		(shape bidirectional)
 		(at 342.9 240.03 180)
 		(fields_autoplaced yes)
@@ -17372,7 +17372,7 @@
 			)
 		)
 	)
-	(global_label "LED_D7"
+	(global_label "LED_D8"
 		(shape bidirectional)
 		(at 774.7 237.49 0)
 		(fields_autoplaced yes)
@@ -18202,7 +18202,7 @@
 			)
 		)
 	)
-	(global_label "LED_D8"
+	(global_label "LED_D0"
 		(shape bidirectional)
 		(at 408.94 275.59 180)
 		(fields_autoplaced yes)
@@ -18432,7 +18432,7 @@
 			)
 		)
 	)
-	(global_label "LED_D3"
+	(global_label "LED_D4"
 		(shape bidirectional)
 		(at 541.02 240.03 180)
 		(fields_autoplaced yes)
@@ -19032,7 +19032,7 @@
 			)
 		)
 	)
-	(global_label "LED_D2"
+	(global_label "LED_D3"
 		(shape bidirectional)
 		(at 444.5 237.49 0)
 		(fields_autoplaced yes)
@@ -19055,7 +19055,7 @@
 			)
 		)
 	)
-	(global_label "LED_D6"
+	(global_label "LED_D7"
 		(shape bidirectional)
 		(at 739.14 240.03 180)
 		(fields_autoplaced yes)
@@ -19101,7 +19101,7 @@
 			)
 		)
 	)
-	(global_label "LED_D4"
+	(global_label "LED_D5"
 		(shape bidirectional)
 		(at 607.06 240.03 180)
 		(fields_autoplaced yes)
@@ -19215,7 +19215,7 @@
 			)
 		)
 	)
-	(global_label "LED_D5"
+	(global_label "LED_D6"
 		(shape bidirectional)
 		(at 673.1 240.03 180)
 		(fields_autoplaced yes)
@@ -19331,7 +19331,7 @@
 			)
 		)
 	)
-	(global_label "LED_D1"
+	(global_label "LED_D2"
 		(shape bidirectional)
 		(at 378.46 237.49 0)
 		(fields_autoplaced yes)
@@ -19564,7 +19564,7 @@
 			)
 		)
 	)
-	(global_label "LED_D8"
+	(global_label "LED_D9"
 		(shape bidirectional)
 		(at 378.46 273.05 0)
 		(fields_autoplaced yes)
@@ -20215,7 +20215,7 @@
 			)
 		)
 	)
-	(global_label "LED_D5"
+	(global_label "LED_D6"
 		(shape bidirectional)
 		(at 642.62 237.49 0)
 		(fields_autoplaced yes)
@@ -20330,7 +20330,7 @@
 			)
 		)
 	)
-	(global_label "LED_D7"
+	(global_label "LED_D8"
 		(shape bidirectional)
 		(at 342.9 275.59 180)
 		(fields_autoplaced yes)
@@ -20518,7 +20518,7 @@
 			)
 		)
 	)
-	(global_label "LED_D3"
+	(global_label "LED_D4"
 		(shape bidirectional)
 		(at 510.54 237.49 0)
 		(fields_autoplaced yes)
@@ -20797,7 +20797,7 @@
 			)
 		)
 	)
-	(global_label "LED_D2"
+	(global_label "LED_D3"
 		(shape bidirectional)
 		(at 474.98 240.03 180)
 		(fields_autoplaced yes)
