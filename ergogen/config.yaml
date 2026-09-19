@@ -33,13 +33,14 @@ units:
   port_margin: 0.75  # slack around the connector so a plug nose enters without fouling the wall
   port_h: usbc_h + 2 port_margin
   port_z: floor + standoff - usbc_h - port_margin
-  # 0.91 inch OLED 128x32 (SSD1306) soldered flat on J3: module PCB is 38 x 12 mm and reaches from the
-  # header row toward the top edge. The plate opening clears the module body past the pins, so the glass
-  # sits in the 1.2 mm plate. Centre is in Ergogen coordinates (KiCad x - 60, 140 - KiCad y).
-  display_w: 12.5    # across the header row, module is 12 mm
-  display_l: 32      # along the module, from 4 mm past the pins to 36 mm
-  display_cx: 108.98 # J3 pin row centre, KiCad x 168.98
-  display_cy: 59.1   # midway along the opening, KiCad y 80.9
+  # 0.91 inch OLED 128x32 (SSD1306) soldered flat on the 4-pin J3, face up, reaching from the header row
+  # toward the top edge. Module drawing (lcdwiki MC091GX): PCB 38 x 12 mm, pin row 1.5 mm from one short end,
+  # glass 30 x 11.5 mm from 3.5 to 33.5 mm past the pin row. The opening clears the glass by 0.5 mm all
+  # round, so the glass sits in the 1.2 mm plate. Centre is in Ergogen coordinates (KiCad x - 60, 140 - KiCad y).
+  display_w: 12.5    # across the header row, glass is 11.5 mm
+  display_l: 31      # along the module, from 3.0 mm past the pins to 34.0 mm
+  display_cx: 110.25 # J3 pin row centre, KiCad x 170.25
+  display_cy: 57.6   # 18.5 mm past the pin row (KiCad y 100.9), KiCad y 82.4
 
 points:
   zones:
