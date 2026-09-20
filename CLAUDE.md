@@ -36,9 +36,12 @@ Full detail and the reasons are in [.claude/rules/kicad.md](.claude/rules/kicad.
 | `soffle-*.yaml` (root) | Older standalone Ergogen configs described in `README.md` |
 | `scripts/place_from_ergogen.py` | Moves SWnn onto `ergogen/output/points.json`, runs `snap_leds.py`, **replaces Edge.Cuts** |
 | `scripts/snap_leds.py` | Snaps LEDnn, C1nn, Dnn onto each switch (back side) |
+| `scripts/place_mounting_holes.py` | Puts a `MountingHole_2.2mm_M2` at each point in `screws.json`, marked `board_only`; re-running moves the existing H* rather than duplicating them; restores `.kicad_pro` |
 | `scripts/render_keycaps.py` | Stdlib SVG render of keycaps and knobs from Ergogen output (read-only for the board) |
+| `scripts/strip_signals.py` | **Deletes every track and via that is not on GND, +5V, +3.3V, +1V1, VBUS or LINK_VBUS**, to clear a board for hand routing; zones are untouched; restores `.kicad_pro` |
 | `scripts/build_rp2040_module.py` | Rebuilds the template board from a netlist and places parts; **overwrites the template board, routing included**; restores `.kicad_pro` |
 | `scripts/transfer_module_routing.py` | Copies routing from a routed test board onto the template; **writes the template board** |
+| `scripts/ribbon/` | Parked experiment: an octilinear router for the parallel-lane look, with its own pipeline and `README.md`. No script in it writes the project board (`apply.py` writes a copy) |
 | `sofle-choc-pro-backups/`, `templates/rp2040-inner-column/RP2040InnerColumn-backups/` | KiCad's project backup zips, tracked in git on purpose (the user wants them kept) |
 
 Run KiCad scripts from a shell with KiCad closed: `"%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/<script>.py <args>` (each docstring has the exact form). Plain-Python tooling: `uv run --no-project python`.
