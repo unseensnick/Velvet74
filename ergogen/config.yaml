@@ -23,22 +23,52 @@ units:
   stagger_outer: -0.125 ky
   # tray case: the PCB drops in from the top, parts face the floor, the switch plate closes it
   wall: 2            # side wall thickness
-  floor: 2           # floor thickness under the PCB
+  # 8.2 mm total. Thicknesses measured off a Keebart Sofle Choc Pro BT: FR4 plate 0.75, printed spacer 1.6,
+  # PCB 1.6. The USB-C is mid-mount, so it no longer sets the standoff. floor is the balancing term.
+  floor: 2.05        # floor thickness under the PCB
   fit: 0.2           # clearance between the PCB edge and the wall
-  standoff: 4.5      # gap under the PCB: the USB-C body is 3.26 mm and is the tallest part down there
   pcb_t: 1.6
-  plate_t: 1.2       # FR4 switch plate
-  case_h: floor + standoff + pcb_t + plate_t   # wall runs up past the plate, so the plate sits flush in the case
-  usbc_h: 3.26       # HRO TYPE-C-31-M-12 body height above the PCB surface (its own datasheet)
+  socket_h: 1.85     # Kailh Choc hotswap socket: the tallest thing under the board once the USB-C is sunk
+  standoff: 2.2      # gap under the PCB, set by socket_h with 0.35 mm of slack
+  # J3's OLED header and the two EC11 encoders (SW16, SW65) sit body-up on F and push their leads into this
+  # gap. With only 2.2 mm there they must be cropped flush; untrimmed they reach about 3 mm and will foul.
+  # The spacer's thickness is set by the OLED module: the plate rests on the module's glass, so module
+  # PCB + glass must come to spacer_t. Confirm the module's total thickness before printing one.
+  spacer_t: 1.6      # 3D printed spacer between PCB and plate; the OLED module lies in a pocket in it
+  # 0.75 mm is too thin to retain a Choc switch by its clips, so the switch is held by its hotswap socket
+  # and the plate is a cover rather than a structural switch plate. That is how the measured board does it.
+  plate_t: 0.75      # FR4 top plate
+  # M2 countersunk screws down through the plate into a pillar or threaded insert in the case. Countersunk
+  # because a proud head has nowhere to sit: keycaps cover 79% of the board, so only a flush head clears them.
+  screw_d: 2.2       # M2 clearance hole
+  screw_r: screw_d / 2
+  # Boss under each screw. With the standoff down to 2.2 mm there is only 0.35 mm of clear height below the
+  # hotswap sockets, so a stepped boss with a wide base no longer fits: it is a plain pillar that threads
+  # between the sockets. Radius is set by the tightest screw (H2, 2.61 mm to the nearest copper). Too narrow
+  # for a heat-set insert, so the screw is self-tapping in plastic and tapped M2 in aluminium; it engages
+  # standoff + floor = 4.2 mm of material.
+  boss_r: 1.75
+  pilot_r: 0.85      # M2 self-tapping pilot; drill 0.8 and tap M2 for the aluminium version
+  case_h: floor + standoff + pcb_t + spacer_t + plate_t
+  # Mid-mount USB-C: the board sits pcb_t into the connector, so the 3.26 mm body straddles it and only
+  # usbc_below hangs under the board. This is what takes the connector out of the standoff budget and lets
+  # the whole stack reach 8.2 mm. Needs a routed cutout in the PCB and a mid-mount part, not the plain
+  # vertical HRO TYPE-C-31-M-12 currently in the schematic.
+  usbc_h: 3.26
+  usbc_below: (usbc_h - pcb_t) / 2
   port_margin: 0.75  # slack around the connector so a plug nose enters without fouling the wall
   port_h: usbc_h + 2 port_margin
-  port_z: floor + standoff - usbc_h - port_margin
+  port_z: floor + standoff - usbc_below - port_margin
   # 0.91 inch OLED 128x32 (SSD1306) soldered flat on the 4-pin J3, face up, reaching from the header row
   # toward the top edge. Module drawing (lcdwiki MC091GX): PCB 38 x 12 mm, pin row 1.5 mm from one short end,
-  # glass 30 x 11.5 mm from 3.5 to 33.5 mm past the pin row. The opening clears the glass by 0.5 mm all
-  # round, so the glass sits in the 1.2 mm plate. Centre is in Ergogen coordinates (KiCad x - 60, 140 - KiCad y).
-  display_w: 12.5    # across the header row, glass is 11.5 mm
-  display_l: 31      # along the module, from 3.0 mm past the pins to 34.0 mm
+  # glass 30 x 11.5 mm from 3.5 to 33.5 mm past the pin row. Centre is in Ergogen coordinates (KiCad x - 60,
+  # 140 - KiCad y).
+  # The plate OVERLAPS the glass by a 0.75 mm lip and rests on it, which is the dip you see around the screen
+  # on the Keebart board. So the opening is smaller than the glass, not larger. It still has to clear the
+  # active area (about 22.4 x 5.6 mm on this panel), which it does with room to spare.
+  display_lip: 0.75
+  display_w: 11.5 - 2 display_lip   # across the header row, glass is 11.5 mm
+  display_l: 30 - 2 display_lip     # along the module, glass is 30 mm
   display_cx: 110.25 # J3 pin row centre, KiCad x 170.25
   display_cy: 57.6   # 18.5 mm past the pin row (KiCad y 100.9), KiCad y 82.4
 
@@ -103,6 +133,25 @@ points:
       # the thumb cluster; x stays on encoder 2's column. Electrically thumb row column 5.
       anchor: {ref: matrix_pinky_bottom, shift: [6 kx, 0.625 ky - 2.875 - pinky_lift]}
       key: {row_code: 6, col_index: 5, width: kx, height: ky, combo: true, led: north}
+    # M2 screw points: four around the key field plus an optional centre, picked on a render of the placed
+    # board. Each keeps 1.0 mm of plate web to the nearest 13.8 mm switch cutout and 0.4 mm to the nearest
+    # copper. They are points rather than bare shifts so they mirror with every other point for the right half.
+    screw_tr:
+      anchor: {ref: matrix_pinky_bottom, shift: [80.990, 60.970]}
+      key: {mount_ref: H2}
+    screw_tl:
+      anchor: {ref: matrix_pinky_bottom, shift: [8.710, 59.190]}
+      key: {mount_ref: H1}
+    screw_mid: # optional: the user was unsure whether the plate needs a centre fixing
+      anchor: {ref: matrix_pinky_bottom, shift: [45.020, 29.520]}
+      key: {mount_ref: H3}
+    screw_br:
+      anchor: {ref: matrix_pinky_bottom, shift: [94.840, -9.820]}
+      key: {mount_ref: H5}
+    screw_bl:
+      anchor: {ref: matrix_pinky_bottom, shift: [17.080, -10.280]}
+      key: {mount_ref: H4}
+
     encoder2: # above encoder 1 (SW16), 21.5 mm apart. Never closer than 18: at 17 the combo footprints short,
       # and turning one 180 instead shorts its socket pad into the outer column key's socket
       anchor: {ref: matrix_pinky_bottom, shift: [6 kx, 0.625 ky + 18 - pinky_lift]}
@@ -173,11 +222,33 @@ outlines:
     - operation: add
       what: outline
       name: _shape
-  # switch plate cutouts for a plate case (Choc plate hole 13.8 mm)
+  # switch plate cutouts for a plate case (Choc plate hole 13.8 mm). Keys only: "where: true" would put a
+  # 13.8 mm cutout on each screw point too.
   _switch_holes:
     - what: rectangle
-      where: true
+      where: /^(matrix|thumb|encoder)/
       size: [13.8, 13.8]
+  # M2 clearance holes through the plate. The PCB gets its own NPTH holes from the schematic's H1-H5
+  # mounting-hole footprints, placed on these same points, so plate and board cannot drift apart.
+  _screw_holes:
+    - what: circle
+      where: /^screw/
+      radius: screw_r
+  _boss:
+    - what: circle
+      where: /^screw/
+      radius: boss_r
+  _pilot:
+    - what: circle
+      where: /^screw/
+      radius: pilot_r
+  # the whole OLED module, not just its glass: it lies in a pocket through the printed spacer, which is why
+  # spacer_t matches the module's 1.2 mm PCB. The FR4 plate above only opens for the glass (_display_hole).
+  _display_module:
+    - what: rectangle
+      where:
+        shift: [display_cx, display_cy - 2.5]
+      size: [13, 39]
 
   # case shell outlines. Port rectangles are centred on the board edge at each USB-C, in Ergogen
   # coordinates (KiCad x - 60, 140 - KiCad y). Recompute them if J1/J2 move on the board.
@@ -210,6 +281,25 @@ cases:
     - what: outline
       name: board
       extrude: 2
+  # printed spacer that holds the FR4 plate off the PCB. Same outline as the board, opened for the switches,
+  # the screws and a pocket the OLED module drops into.
+  spacer:
+    - what: outline
+      name: board
+      extrude: spacer_t
+    - what: outline
+      name: _switch_holes
+      extrude: spacer_t
+      operation: subtract
+    - what: outline
+      name: _screw_holes
+      extrude: spacer_t
+      operation: subtract
+    - what: outline
+      name: _display_module
+      extrude: spacer_t
+      operation: subtract
+
   plate:
     - what: outline
       name: board
@@ -220,6 +310,10 @@ cases:
       operation: subtract
     - what: outline
       name: _display_hole
+      extrude: plate_t
+      operation: subtract
+    - what: outline
+      name: _screw_holes
       extrude: plate_t
       operation: subtract
 
@@ -243,6 +337,18 @@ cases:
       name: _port_link
       extrude: port_h
       shift: [0, 0, port_z]
+      operation: subtract
+    # Screw pillars, added after the cavity or it would cut them away again. A plain cylinder from the floor
+    # to the PCB underside, threading between the hotswap sockets. The pilot runs the full pillar and on
+    # through the floor, giving standoff + floor = 4.2 mm of engagement.
+    - what: outline
+      name: _boss
+      extrude: standoff
+      shift: [0, 0, floor]
+      operation: add
+    - what: outline
+      name: _pilot
+      extrude: standoff + floor
       operation: subtract
 
 pcbs:

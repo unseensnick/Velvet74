@@ -3,7 +3,8 @@
   "private": true,
   "description": "Pinned local Ergogen for generating key placement, outlines and case",
   "scripts": {
-    "build": "ergogen . --output output --clean --debug && node export_points.js"
+    "build": "ergogen . --output output --clean --debug && node export_points.js",
+    "build:right": "node make_right.js && ergogen config.right.yaml --output output-right --clean --debug && node export_points.js output-right"
   },
   "devDependencies": {
     "ergogen": "4.2.1"

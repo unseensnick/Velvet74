@@ -12519,7 +12519,7 @@
 			)
 			(justify left)
 		)
-		(uuid "bb1b4a51-a104-4c59-b3a1-4a541267a408")
+		(uuid "94721b02-7d08-43a7-88e9-efb3580218f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 220.0342 82.55 0)
 			(hide yes)
@@ -12559,7 +12559,7 @@
 			)
 			(justify left)
 		)
-		(uuid "dff5f97f-c832-4be7-8c67-ceee01f8d447")
+		(uuid "1dfd6a2c-5b74-4be1-a027-eb5454572148")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 220.0342 102.87 0)
 			(hide yes)
@@ -12583,7 +12583,7 @@
 			)
 			(justify left)
 		)
-		(uuid "14d27e3a-f262-4c8b-a9ed-d8cece98b0e1")
+		(uuid "aad5901e-4ead-4652-b4f4-3009d37d54b4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 220.0342 85.09 0)
 			(hide yes)
@@ -17988,7 +17988,7 @@
 	)
 	(no_connect
 		(at 212.09 140.97)
-		(uuid "6d6e9c62-06aa-487b-bfb0-2afef2f0046e")
+		(uuid "b1cfd2f3-da4e-4c5e-9ddb-4f114baca50b")
 	)
 	(global_label "GP25"
 		(shape bidirectional)
@@ -19656,7 +19656,7 @@
 	)
 	(no_connect
 		(at 212.09 135.89)
-		(uuid "37a9b7d6-dcfe-41e7-88b4-74f94c269996")
+		(uuid "5f3e80a6-78da-43fd-bebe-a6fb5d0e6038")
 	)
 	(global_label "LED_D22"
 		(shape bidirectional)
@@ -20613,7 +20613,7 @@
 	)
 	(no_connect
 		(at 212.09 138.43)
-		(uuid "fa4d4d2e-461a-4d33-9d68-f0acef28b583")
+		(uuid "a6576ddc-8e87-44cb-9f6a-2b687d4a1029")
 	)
 	(global_label "SD0"
 		(shape input)
@@ -20894,7 +20894,7 @@
 			(uuid "d8eaaeb5-3101-4fbc-80fa-b509805fe293")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR108")
 					(unit 1)
@@ -20971,7 +20971,7 @@
 			(uuid "ceb999e2-9dfc-40b9-94b5-aa39d14b2246")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR109")
 					(unit 1)
@@ -21206,7 +21206,7 @@
 			(uuid "183ecbc4-046e-4706-8aea-a1a14aecb406")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C132")
 					(unit 1)
@@ -21283,7 +21283,7 @@
 			(uuid "19426b5c-c2fd-49fe-a073-252393198737")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR195")
 					(unit 1)
@@ -21360,7 +21360,7 @@
 			(uuid "49a5645f-2769-4256-8246-55fa433b1da6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR150")
 					(unit 1)
@@ -21438,7 +21438,7 @@
 			(uuid "d76732ae-f703-46df-a94b-81cf350fc3d0")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR27")
 					(unit 1)
@@ -21515,7 +21515,7 @@
 			(uuid "a54dc374-c5f8-42c9-9309-8f00151a8f3f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR164")
 					(unit 1)
@@ -21592,7 +21592,7 @@
 			(uuid "bb1ec0be-f438-4b82-9ca3-25e24c32baa7")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR153")
 					(unit 1)
@@ -21721,7 +21721,7 @@
 			(uuid "84f6991a-a2ab-43db-8cb2-6c77d0fed78b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED52")
 					(unit 1)
@@ -21956,7 +21956,7 @@
 			(uuid "cba65402-c539-42a0-928b-e8fc2674ee2c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C162")
 					(unit 1)
@@ -22058,7 +22058,7 @@
 			(uuid "84b21745-008f-42f7-b698-303652889ae5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW1")
 					(unit 1)
@@ -22135,7 +22135,7 @@
 			(uuid "9b34af4c-cbe2-4006-8cf0-f21009f73255")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR208")
 					(unit 1)
@@ -22212,7 +22212,7 @@
 			(uuid "d82379bc-6f21-436e-96b6-78f08b076f04")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR107")
 					(unit 1)
@@ -22467,7 +22467,7 @@
 			(uuid "701e7a0b-2e2a-48e7-a6eb-0ba409f7d362")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D43")
 					(unit 1)
@@ -22544,7 +22544,7 @@
 			(uuid "40fb709e-1f57-4bd8-82dc-654751068261")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR215")
 					(unit 1)
@@ -22621,7 +22621,7 @@
 			(uuid "c9b38fcc-635e-4fcc-b704-a9775ac75f6e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR137")
 					(unit 1)
@@ -22698,7 +22698,7 @@
 			(uuid "d15cce55-df0a-421d-8311-1f04814f8ad8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR116")
 					(unit 1)
@@ -22836,7 +22836,7 @@
 			(uuid "6d732189-4fd0-483f-9695-666adccf5c80")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "J1")
 					(unit 1)
@@ -22913,7 +22913,7 @@
 			(uuid "efc9e85b-f7a4-4aab-89c4-a373fa5a4363")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR237")
 					(unit 1)
@@ -22990,7 +22990,7 @@
 			(uuid "43192838-bd91-47a8-9c0a-1c7c2bd3ca4f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR216")
 					(unit 1)
@@ -23119,7 +23119,7 @@
 			(uuid "79681239-f77e-468d-85fe-81b95a8b6a81")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED43")
 					(unit 1)
@@ -23196,7 +23196,7 @@
 			(uuid "74215ff1-e1c0-4239-ad15-80d23d460188")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR221")
 					(unit 1)
@@ -23310,7 +23310,7 @@
 			(uuid "4fa4a722-db99-4eba-8d14-8aa916c63ae8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "F1")
 					(unit 1)
@@ -23389,7 +23389,7 @@
 			(uuid "c87cf259-2958-4218-8cd0-bf45f9386f85")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW54")
 					(unit 1)
@@ -23466,7 +23466,7 @@
 			(uuid "4cb329a6-be45-41d8-8c72-876da9015b33")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR227")
 					(unit 1)
@@ -23543,7 +23543,7 @@
 			(uuid "01737d46-6c50-4c5c-9b0a-577815fd1fe4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR264")
 					(unit 1)
@@ -23631,7 +23631,7 @@
 			(uuid "39c0e5b4-507b-47b8-b32d-d06390e3dda5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW16")
 					(unit 1)
@@ -23886,7 +23886,7 @@
 			(uuid "64526f41-4a01-4314-b465-73fcc4ca6572")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D12")
 					(unit 1)
@@ -23963,7 +23963,7 @@
 			(uuid "fa2164ac-958f-4c66-ac07-09bccd672f57")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR158")
 					(unit 1)
@@ -24218,7 +24218,7 @@
 			(uuid "fe08c176-38d0-4918-a957-8791ec23c59e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D44")
 					(unit 1)
@@ -24319,7 +24319,7 @@
 			(uuid "4119720b-31d5-46b7-ab17-5d20beac55cf")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW2")
 					(unit 1)
@@ -24396,7 +24396,7 @@
 			(uuid "3fc1b638-b106-4fdc-ad2d-49bf2c986fca")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR111")
 					(unit 1)
@@ -24475,7 +24475,7 @@
 			(uuid "8252e40b-ad69-48a8-8b1a-d4a1cd64f609")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR10")
 					(unit 1)
@@ -24553,7 +24553,7 @@
 			(uuid "f295296b-1750-4096-8ec2-49ec80e073d2")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR14")
 					(unit 1)
@@ -24808,7 +24808,7 @@
 			(uuid "d7ac3c53-a77e-46d7-8b99-6c3c82174ecb")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D55")
 					(unit 1)
@@ -25044,7 +25044,7 @@
 			(uuid "72af55ce-ddd6-4922-90a4-9a46339faff3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C7")
 					(unit 1)
@@ -25121,7 +25121,7 @@
 			(uuid "926c8eb6-14be-47f9-8608-59511ec47e45")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR166")
 					(unit 1)
@@ -25200,7 +25200,7 @@
 			(uuid "ed0fde6c-3150-4b31-afba-f3f7b2e1a712")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW35")
 					(unit 1)
@@ -25277,7 +25277,7 @@
 			(uuid "e7c9c7ea-60a7-4166-86c0-47a2c161a199")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR200")
 					(unit 1)
@@ -25354,7 +25354,7 @@
 			(uuid "972604cb-f4cf-4889-872c-4da205828e22")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR229")
 					(unit 1)
@@ -25431,7 +25431,7 @@
 			(uuid "bc51f363-86e6-4a8e-926e-9a3fc5aff34a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR113")
 					(unit 1)
@@ -25509,7 +25509,7 @@
 			(uuid "6424eea8-e09e-40bf-88ad-826e25278dfe")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR13")
 					(unit 1)
@@ -25586,7 +25586,7 @@
 			(uuid "6912c32e-e0c5-43ea-bbf7-2ded81c0fdf1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR206")
 					(unit 1)
@@ -25665,7 +25665,7 @@
 			(uuid "fa881ab2-bb83-4f13-818a-a892cf0c1eb6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW20")
 					(unit 1)
@@ -25742,7 +25742,7 @@
 			(uuid "23cffa68-3568-4f1d-9cab-9865dbcce4b4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR236")
 					(unit 1)
@@ -25997,7 +25997,7 @@
 			(uuid "4601317e-e7ad-4fad-a1bc-038dcf4d9312")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D34")
 					(unit 1)
@@ -26252,7 +26252,7 @@
 			(uuid "f3392a59-a909-426b-a440-396b32a0a658")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D20")
 					(unit 1)
@@ -26507,7 +26507,7 @@
 			(uuid "2a4b4df7-84a0-49ec-914a-1499c3cea6f3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D22")
 					(unit 1)
@@ -26584,7 +26584,7 @@
 			(uuid "d5465d6f-39d3-48eb-9d6d-58d7ecf7fbe5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR152")
 					(unit 1)
@@ -26839,7 +26839,7 @@
 			(uuid "6ddb4bbd-349d-4dfc-9360-d49657be2eca")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D21")
 					(unit 1)
@@ -27094,7 +27094,7 @@
 			(uuid "2d2df16e-9e15-41e2-a59f-165980aa2540")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D10")
 					(unit 1)
@@ -27182,7 +27182,7 @@
 			(uuid "776aa342-bc75-409e-816f-77830c90c778")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW65")
 					(unit 1)
@@ -27259,7 +27259,7 @@
 			(uuid "db63b5b0-c9a7-4f1a-b467-481443bdd403")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR189")
 					(unit 1)
@@ -27495,7 +27495,7 @@
 			(uuid "1715a26a-7dc2-4a72-bf7b-0f13d5c97cea")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C12")
 					(unit 1)
@@ -27573,7 +27573,7 @@
 			(uuid "a65bf1af-cc5f-42f4-9f69-1e5b43d606a5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR7")
 					(unit 1)
@@ -27806,7 +27806,7 @@
 			(uuid "88e18944-f931-43d3-9b52-9f62f0d1b2c8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C1")
 					(unit 1)
@@ -28041,7 +28041,7 @@
 			(uuid "d1eb34aa-924e-4cf1-b9f4-0a6912676f3f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C145")
 					(unit 1)
@@ -28120,7 +28120,7 @@
 			(uuid "539db816-d732-4b25-bc78-f07a6ac6f23d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR1")
 					(unit 1)
@@ -28197,7 +28197,7 @@
 			(uuid "4f2faedf-9073-4ed6-b761-3b447cd5c299")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR204")
 					(unit 1)
@@ -28326,7 +28326,7 @@
 			(uuid "00ae112c-6eb2-47ef-9ad1-471268873500")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED25")
 					(unit 1)
@@ -28455,7 +28455,7 @@
 			(uuid "5042ba1a-d1ae-4852-babe-ea5aef2fa2da")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED60")
 					(unit 1)
@@ -28532,7 +28532,7 @@
 			(uuid "51e3f57b-4d05-44a2-9b6f-4452af375b4a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR262")
 					(unit 1)
@@ -28661,7 +28661,7 @@
 			(uuid "d9b69d51-6552-4d0f-af25-7b838c0d339b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED34")
 					(unit 1)
@@ -28896,7 +28896,7 @@
 			(uuid "74a88874-3ae4-4657-bb8b-d7a23237e30a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C131")
 					(unit 1)
@@ -29025,7 +29025,7 @@
 			(uuid "1f1324d5-53e9-4134-89c4-5778bb73bf77")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED12")
 					(unit 1)
@@ -29154,7 +29154,7 @@
 			(uuid "8f23f201-f2f5-4f6f-852d-a89a90564919")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED45")
 					(unit 1)
@@ -29233,7 +29233,7 @@
 			(uuid "0dcb163f-a5e7-448d-8b14-64b37fbe5820")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW12")
 					(unit 1)
@@ -29311,7 +29311,7 @@
 			(uuid "4921ea27-b269-4a0d-93f3-8ec4607b73c6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR26")
 					(unit 1)
@@ -29388,7 +29388,7 @@
 			(uuid "929721ed-10ee-4434-9001-b99986ebd2f3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR168")
 					(unit 1)
@@ -29465,7 +29465,7 @@
 			(uuid "5c6420e0-2a2b-40e9-8fc0-864faa8a87f8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR234")
 					(unit 1)
@@ -29542,7 +29542,7 @@
 			(uuid "7f53fc00-f68a-4496-ab87-fc9c1014c5ef")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR191")
 					(unit 1)
@@ -29797,7 +29797,7 @@
 			(uuid "bc27ba78-8027-4462-9beb-91e36a64a349")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D64")
 					(unit 1)
@@ -29874,7 +29874,7 @@
 			(uuid "957276a7-6c27-48b2-b794-e84f1993218e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR162")
 					(unit 1)
@@ -29951,7 +29951,7 @@
 			(uuid "f619ec85-95d6-4091-87e3-f88c90a9fdd3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR231")
 					(unit 1)
@@ -30187,7 +30187,7 @@
 			(uuid "82fa8963-08e3-4b08-b217-d62a0b76b403")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C17")
 					(unit 1)
@@ -30266,7 +30266,7 @@
 			(uuid "2f946f9e-156e-4457-9836-0114da7e8e66")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW63")
 					(unit 1)
@@ -30345,7 +30345,7 @@
 			(uuid "02206771-4481-4089-b2f9-46f25ac87254")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW24")
 					(unit 1)
@@ -30424,7 +30424,7 @@
 			(uuid "c8089963-2f5d-46a7-8b56-fe0a5b05577e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW10")
 					(unit 1)
@@ -30659,7 +30659,7 @@
 			(uuid "94740b2c-18cf-425d-8ff3-4a7367ed4ff6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C144")
 					(unit 1)
@@ -30894,7 +30894,7 @@
 			(uuid "6e4c07f3-ea52-4e20-a3b0-7eef28b59da1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C143")
 					(unit 1)
@@ -31129,7 +31129,7 @@
 			(uuid "784d5110-48bb-4520-a702-ed2900d4daa3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C163")
 					(unit 1)
@@ -31365,7 +31365,7 @@
 			(uuid "399d24bb-8d98-4a78-a781-a83515519f0d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C14")
 					(unit 1)
@@ -31600,7 +31600,7 @@
 			(uuid "d98f7e1f-bd09-4af8-ba1b-b684884792e5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C165")
 					(unit 1)
@@ -31677,7 +31677,7 @@
 			(uuid "30d77449-448a-4945-a5ad-e11e246739e9")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR187")
 					(unit 1)
@@ -31932,7 +31932,7 @@
 			(uuid "9f2fdddd-73a2-40df-8b91-7c8cc86bfe7d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D53")
 					(unit 1)
@@ -32009,7 +32009,7 @@
 			(uuid "9c44c164-8de9-4783-993b-e0daa1ad5966")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR210")
 					(unit 1)
@@ -32138,7 +32138,7 @@
 			(uuid "c06e4432-f01e-4c3d-b359-565f3266c7d3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED65")
 					(unit 1)
@@ -32215,7 +32215,7 @@
 			(uuid "160f9b4c-82a2-4992-bff8-7d06ee30ffc3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR230")
 					(unit 1)
@@ -32353,7 +32353,7 @@
 			(uuid "1e7119e4-fbe3-4988-92e8-10f5f13d6d73")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "J2")
 					(unit 1)
@@ -32588,7 +32588,7 @@
 			(uuid "10b0a7fc-6b69-4d31-98e9-365455ed2226")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C153")
 					(unit 1)
@@ -32717,7 +32717,7 @@
 			(uuid "edefd74e-9ac8-4704-82c8-7bb60fddd038")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED24")
 					(unit 1)
@@ -32794,7 +32794,7 @@
 			(uuid "aa36e75a-30fe-4379-b879-06e0d361f389")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR148")
 					(unit 1)
@@ -32871,7 +32871,7 @@
 			(uuid "2372c116-0da5-4afa-88af-ed68c9eefa48")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR117")
 					(unit 1)
@@ -33106,7 +33106,7 @@
 			(uuid "e527591c-e819-4e28-9cfb-7a26d2b5f92e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C19")
 					(unit 1)
@@ -33183,7 +33183,7 @@
 			(uuid "1eb4c3e8-58b0-4386-ad8a-ebef17be8e24")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR6206")
 					(unit 1)
@@ -33260,7 +33260,7 @@
 			(uuid "8203652e-fc79-43c6-827a-964919be4634")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR134")
 					(unit 1)
@@ -33337,7 +33337,7 @@
 			(uuid "92d2ff0a-e81c-4737-9275-ef2f074f2022")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR175")
 					(unit 1)
@@ -33414,7 +33414,7 @@
 			(uuid "cb7b3556-a9a4-4219-86c2-07e10eb0681d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR184")
 					(unit 1)
@@ -33649,7 +33649,7 @@
 			(uuid "50537325-2a8b-4a07-8a4c-9a96993da3f3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C112")
 					(unit 1)
@@ -33771,7 +33771,7 @@
 			(uuid "79a5250a-3cd5-4804-a6fa-24407d3ff9d1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "U5")
 					(unit 1)
@@ -33850,7 +33850,7 @@
 			(uuid "aba3ef14-9c82-4dc6-9524-fa97c5628d88")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW25")
 					(unit 1)
@@ -33927,7 +33927,7 @@
 			(uuid "022d70c4-1f3c-4d84-90de-438791dcbce2")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR121")
 					(unit 1)
@@ -34004,7 +34004,7 @@
 			(uuid "3c3cebde-305d-451b-8660-dd91c191eafc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR259")
 					(unit 1)
@@ -34081,7 +34081,7 @@
 			(uuid "c622dd9f-0c42-4869-bd1b-4a34ff6196b5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR252")
 					(unit 1)
@@ -34210,7 +34210,7 @@
 			(uuid "3e54654c-dbdb-4ab4-a68a-4d1e0994dbb4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED41")
 					(unit 1)
@@ -34287,7 +34287,7 @@
 			(uuid "78fb6f9e-7441-4262-ac52-b75c971bd6f6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR213")
 					(unit 1)
@@ -34364,7 +34364,7 @@
 			(uuid "3fc24a4e-b7f0-4bba-8640-161d66370b4c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR141")
 					(unit 1)
@@ -34443,7 +34443,7 @@
 			(uuid "9b700cbd-1115-4d45-9c0c-d3efdfb57992")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW52")
 					(unit 1)
@@ -34520,7 +34520,7 @@
 			(uuid "564a6efa-ba93-4dd2-bf94-ebc63deccaf5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR142")
 					(unit 1)
@@ -34649,7 +34649,7 @@
 			(uuid "0d5b7f71-ff4a-4362-b7a7-6dea415f982a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED40")
 					(unit 1)
@@ -34726,7 +34726,7 @@
 			(uuid "4db2c4c4-2f8e-4cd7-9fd1-d884ddf17897")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR193")
 					(unit 1)
@@ -34803,7 +34803,7 @@
 			(uuid "18f2bbc9-1356-4b5e-bfa4-4c15f397754f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR179")
 					(unit 1)
@@ -34880,7 +34880,7 @@
 			(uuid "3bb78968-cd5c-4ac1-a190-b15bd597c10a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR222")
 					(unit 1)
@@ -34958,7 +34958,7 @@
 			(uuid "2fb300ff-7ae1-4d05-bddb-516b2efa58a6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR6")
 					(unit 1)
@@ -35213,7 +35213,7 @@
 			(uuid "481df84a-8461-44c8-a4d9-a0bc2a2b78c1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D51")
 					(unit 1)
@@ -35468,7 +35468,7 @@
 			(uuid "f1a14799-439c-4279-8a0e-f1ed4ff154b4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D62")
 					(unit 1)
@@ -35704,7 +35704,7 @@
 			(uuid "edb5565f-ceab-4524-8c5c-001d09ddb2da")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C16")
 					(unit 1)
@@ -35781,7 +35781,7 @@
 			(uuid "97833b9b-9d17-4cc4-8d0d-937077f9dd12")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR131")
 					(unit 1)
@@ -35858,7 +35858,7 @@
 			(uuid "993bfaa8-38ee-4aaf-bb1e-752df850a63d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR155")
 					(unit 1)
@@ -35935,7 +35935,7 @@
 			(uuid "f067c77d-edf7-48b1-bce3-068de5617e30")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR147")
 					(unit 1)
@@ -36012,7 +36012,7 @@
 			(uuid "9f2e6122-66ce-4c5c-8aea-5b6f5bc7d5bc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR220")
 					(unit 1)
@@ -36267,7 +36267,7 @@
 			(uuid "16cad98a-088a-4d62-bdc8-4558b6903e61")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D52")
 					(unit 1)
@@ -36481,7 +36481,7 @@
 			(uuid "563ef499-46af-4471-bb55-f3cc19927f02")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "U4")
 					(unit 1)
@@ -36716,7 +36716,7 @@
 			(uuid "ba3cdd90-0a3f-44a3-8382-cf4c0a9a42c7")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C120")
 					(unit 1)
@@ -36793,7 +36793,7 @@
 			(uuid "d93f1154-07c7-4dbd-bedf-d165d6767de0")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR160")
 					(unit 1)
@@ -36870,7 +36870,7 @@
 			(uuid "77acf9bc-0438-4bfd-9d73-8d796e594257")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR110")
 					(unit 1)
@@ -36948,7 +36948,7 @@
 			(uuid "33d74a4d-73ce-4d6f-addc-dbecbddffe6f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR9")
 					(unit 1)
@@ -37025,7 +37025,7 @@
 			(uuid "ad7942e0-a871-4c91-996c-b3d97058d499")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR196")
 					(unit 1)
@@ -37104,7 +37104,7 @@
 			(uuid "d06bf217-16b5-4dbd-9cbe-67624923d837")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW33")
 					(unit 1)
@@ -37181,7 +37181,7 @@
 			(uuid "a50d5008-158c-4ae2-89e0-bb0e68a5c877")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR157")
 					(unit 1)
@@ -37258,7 +37258,7 @@
 			(uuid "a0191111-53bb-4140-9443-08832f88b823")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR244")
 					(unit 1)
@@ -37493,7 +37493,7 @@
 			(uuid "bb92ee15-87a4-4505-b64a-583822c1e434")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C133")
 					(unit 1)
@@ -37570,7 +37570,7 @@
 			(uuid "5d700adf-e60d-4452-ba69-52b8c2ca81c2")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR226")
 					(unit 1)
@@ -37699,7 +37699,7 @@
 			(uuid "7cb89f46-b713-4a05-bd87-e312fb6e5e66")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED22")
 					(unit 1)
@@ -37776,7 +37776,7 @@
 			(uuid "5cb33f13-d04a-4bca-a7e5-769cc8efc0fe")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR159")
 					(unit 1)
@@ -37853,7 +37853,7 @@
 			(uuid "25d4b1df-84e5-47b7-ab3d-1279a3ae01d7")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR218")
 					(unit 1)
@@ -37930,7 +37930,7 @@
 			(uuid "18a59552-2d45-4089-9695-b487734a86dc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR156")
 					(unit 1)
@@ -38009,7 +38009,7 @@
 			(uuid "97505dfc-a2bc-4242-87a4-5732cc5a2d81")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW40")
 					(unit 1)
@@ -38086,7 +38086,7 @@
 			(uuid "3c84bf01-ac6b-4693-918d-c4e13e80dbe1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR211")
 					(unit 1)
@@ -38163,7 +38163,7 @@
 			(uuid "14a0c28e-f62a-42bb-9275-199320f61f80")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR207")
 					(unit 1)
@@ -38240,7 +38240,7 @@
 			(uuid "fbde1c8c-99da-49bb-a088-dab8b176af6a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR154")
 					(unit 1)
@@ -38317,7 +38317,7 @@
 			(uuid "0705770c-936a-4b9f-9145-22cebae9140e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR225")
 					(unit 1)
@@ -38396,7 +38396,7 @@
 			(uuid "1c56f501-e9c7-4669-a811-98389655e602")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW61")
 					(unit 1)
@@ -38473,7 +38473,7 @@
 			(uuid "ef1cd2d0-b1a3-4dc2-a38e-4c7bdb416fcd")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR180")
 					(unit 1)
@@ -38602,7 +38602,7 @@
 			(uuid "b0179f82-0ba6-4126-a44b-dc5d4dbb1ae7")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED63")
 					(unit 1)
@@ -38681,7 +38681,7 @@
 			(uuid "fd1c90d4-fc35-49c4-ac97-ea04fcfaac71")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW64")
 					(unit 1)
@@ -38758,7 +38758,7 @@
 			(uuid "e639a5ed-8fd1-4fb2-8f3b-2a4c8c9bf402")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR125")
 					(unit 1)
@@ -39013,7 +39013,7 @@
 			(uuid "34d477e2-1a33-42ea-bac7-758b965e69dc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D65")
 					(unit 1)
@@ -39090,7 +39090,7 @@
 			(uuid "1781c976-7657-4a1f-b784-177d429c24a8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR140")
 					(unit 1)
@@ -39219,7 +39219,7 @@
 			(uuid "ed014160-2764-4d0e-949f-bd60a6de8745")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED61")
 					(unit 1)
@@ -39296,7 +39296,7 @@
 			(uuid "89173cb2-7d77-4ba3-b945-14b2f617f848")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR251")
 					(unit 1)
@@ -39551,7 +39551,7 @@
 			(uuid "91113f55-1f8b-45b7-bc20-374b1425b343")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D41")
 					(unit 1)
@@ -39630,7 +39630,7 @@
 			(uuid "da5d0f4e-5278-4ccc-875a-573e34297af4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW45")
 					(unit 1)
@@ -39707,7 +39707,7 @@
 			(uuid "54b8b45b-a77e-4a40-b1da-e001a22a67ae")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR257")
 					(unit 1)
@@ -39836,7 +39836,7 @@
 			(uuid "f6215c4e-0ef7-4a60-8375-cd499699581c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED23")
 					(unit 1)
@@ -40071,7 +40071,7 @@
 			(uuid "43349074-4d6d-4928-b709-47bdfc9dec15")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C154")
 					(unit 1)
@@ -40150,7 +40150,7 @@
 			(uuid "803fe8cc-a7b2-480d-9d8a-05b699d658fd")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR8")
 					(unit 1)
@@ -40227,7 +40227,7 @@
 			(uuid "1231d2b9-afc2-4b9c-b848-878ff1e3a454")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR124")
 					(unit 1)
@@ -40463,7 +40463,7 @@
 			(uuid "92974eb2-58c4-42f0-99f1-49985fa7366d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C10")
 					(unit 1)
@@ -40542,7 +40542,7 @@
 			(uuid "247da39c-03c1-4dbf-a31b-0c9c54f28ae5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW50")
 					(unit 1)
@@ -40797,7 +40797,7 @@
 			(uuid "80ba937c-7094-4a72-a623-24245bc0986c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D33")
 					(unit 1)
@@ -41052,7 +41052,7 @@
 			(uuid "34b231f4-b179-4555-ac63-3554eb8c53c6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D60")
 					(unit 1)
@@ -41319,7 +41319,7 @@
 			(uuid "bcb27105-4590-41dd-8e86-bae0682ba9f6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "R4")
 					(unit 1)
@@ -41396,7 +41396,7 @@
 			(uuid "b217f96a-1f2c-405d-9edc-ad177f9f1ed6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR214")
 					(unit 1)
@@ -41473,7 +41473,7 @@
 			(uuid "c1d14852-3027-45d4-81f7-67a8cdf38a68")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR165")
 					(unit 1)
@@ -41728,7 +41728,7 @@
 			(uuid "aa13e10a-627f-4307-9bf9-bac46f8e5d65")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D63")
 					(unit 1)
@@ -41983,7 +41983,7 @@
 			(uuid "0db81da1-cdea-4416-9853-761e6d211efc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D61")
 					(unit 1)
@@ -42061,7 +42061,7 @@
 			(uuid "8d9f28e4-9cb6-463b-a25c-db53b8d1a58a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR2")
 					(unit 1)
@@ -42296,7 +42296,7 @@
 			(uuid "9deaa73c-ab7c-477f-b228-9627478fa140")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C151")
 					(unit 1)
@@ -42373,7 +42373,7 @@
 			(uuid "50bf8385-6893-4434-8ea8-0fa3029f48a9")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR205")
 					(unit 1)
@@ -42502,7 +42502,7 @@
 			(uuid "b4f9a073-ee18-4cc2-8141-ac4c0dd1f991")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED14")
 					(unit 1)
@@ -42631,7 +42631,7 @@
 			(uuid "6e15d432-55b4-4cf3-9404-f8558c88dad5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED15")
 					(unit 1)
@@ -42708,7 +42708,7 @@
 			(uuid "6aa35f19-f9b2-4918-873d-dbbe17181591")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR247")
 					(unit 1)
@@ -42785,7 +42785,7 @@
 			(uuid "51b47b50-68d3-45ec-820f-966f88f66072")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR120")
 					(unit 1)
@@ -42914,7 +42914,7 @@
 			(uuid "48a9e331-8d35-477b-a0be-e384a936aca0")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED62")
 					(unit 1)
@@ -43026,7 +43026,7 @@
 			(uuid "08d9223c-1f6c-4758-ab89-385bf45d13e7")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "R7")
 					(unit 1)
@@ -43103,7 +43103,7 @@
 			(uuid "90c75627-f3c5-4e4e-ad26-204e661fedd3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR232")
 					(unit 1)
@@ -43180,7 +43180,7 @@
 			(uuid "90bcbf1f-8488-4c51-bafa-a8303c835ea2")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR241")
 					(unit 1)
@@ -43257,7 +43257,7 @@
 			(uuid "533df8fc-7d10-4403-8354-e00e45180c39")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR128")
 					(unit 1)
@@ -43334,7 +43334,7 @@
 			(uuid "2d6e36c7-0b62-45e2-8d0a-192af830ee1b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR182")
 					(unit 1)
@@ -43413,7 +43413,7 @@
 			(uuid "b74adec9-855e-4944-9d9c-e7ab1466c3f4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR21")
 					(unit 1)
@@ -43648,7 +43648,7 @@
 			(uuid "1082a9b9-bae1-4965-9398-3e79b7148d1e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C110")
 					(unit 1)
@@ -43725,7 +43725,7 @@
 			(uuid "5988f0ff-a483-494a-a580-af3a62933ead")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR132")
 					(unit 1)
@@ -43802,7 +43802,7 @@
 			(uuid "e0606fbd-cb8b-47ec-b1f9-085001f0e175")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR249")
 					(unit 1)
@@ -43914,7 +43914,7 @@
 			(uuid "928243e9-4a87-4ea6-be53-5844a936b9f2")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "R8")
 					(unit 1)
@@ -44182,7 +44182,7 @@
 			(uuid "902caa0e-d174-4890-b6e5-3ecce6804cd4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "R11")
 					(unit 1)
@@ -44294,7 +44294,7 @@
 			(uuid "ace30190-a81a-47b7-b593-90fb44ac197a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "U6")
 					(unit 1)
@@ -44373,7 +44373,7 @@
 			(uuid "ab96d68d-59fb-4bec-9380-f67375beddc6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW15")
 					(unit 1)
@@ -44450,7 +44450,7 @@
 			(uuid "fc439b2e-6e86-44ab-b158-6e432158fe9c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR212")
 					(unit 1)
@@ -44527,7 +44527,7 @@
 			(uuid "705b76b4-8cd9-4020-b88d-fc155887a49e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR126")
 					(unit 1)
@@ -44604,7 +44604,7 @@
 			(uuid "dd47b141-91f0-40c4-a60f-3fc762e05eb4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR190")
 					(unit 1)
@@ -44727,7 +44727,7 @@
 			(uuid "b14f582c-3fd2-42dc-b821-32ea8962cf1f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "R6")
 					(unit 1)
@@ -44806,7 +44806,7 @@
 			(uuid "41265e45-63ac-4790-bf29-7c11699b41d6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW43")
 					(unit 1)
@@ -44885,7 +44885,7 @@
 			(uuid "86a56b83-a7e9-4ca0-b817-573816cde5c0")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW44")
 					(unit 1)
@@ -44962,7 +44962,7 @@
 			(uuid "7f1e753a-a944-483e-a8d3-46fa580d7996")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR255")
 					(unit 1)
@@ -45039,7 +45039,7 @@
 			(uuid "8ea542bc-06da-4560-b38f-258d60cb8004")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR186")
 					(unit 1)
@@ -45168,7 +45168,7 @@
 			(uuid "7d28e246-fc7b-4081-a9d5-d3ffcdd179a5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED53")
 					(unit 1)
@@ -45245,7 +45245,7 @@
 			(uuid "ade7bbdf-2f51-46f4-a675-d1133c705574")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR149")
 					(unit 1)
@@ -45323,7 +45323,7 @@
 			(uuid "3f2ec90e-c56c-41ed-b31c-0c83e4c97b2b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR20")
 					(unit 1)
@@ -45559,7 +45559,7 @@
 			(uuid "fa5d5751-d7f2-47f9-ba6b-2557fb732d07")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C13")
 					(unit 1)
@@ -45636,7 +45636,7 @@
 			(uuid "d98dadec-ccca-4a35-8a52-c68b35e2dd6a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR261")
 					(unit 1)
@@ -45713,7 +45713,7 @@
 			(uuid "56a78c2f-30cf-48e5-8376-31c928464522")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR181")
 					(unit 1)
@@ -45790,7 +45790,7 @@
 			(uuid "1623e76d-a4e0-4e5a-8ad5-4fcc0d5821be")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR135")
 					(unit 1)
@@ -46025,7 +46025,7 @@
 			(uuid "988e2881-3f90-488e-a1aa-2898a8a05372")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C160")
 					(unit 1)
@@ -46102,7 +46102,7 @@
 			(uuid "d3ba0085-ee98-4447-b8e1-424ee38e3a12")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR103")
 					(unit 1)
@@ -46179,7 +46179,7 @@
 			(uuid "7f91d905-ef1b-4826-988e-76853c585fd3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR199")
 					(unit 1)
@@ -46256,7 +46256,7 @@
 			(uuid "4e598caf-295c-4cae-b78a-363743a4039f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR248")
 					(unit 1)
@@ -46333,7 +46333,7 @@
 			(uuid "5ec7d6d7-3d32-4ad4-a8da-4bc072cd5bbc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR173")
 					(unit 1)
@@ -46600,7 +46600,7 @@
 			(uuid "d7ec123b-cba2-4cc9-b7cd-4aa2d533783a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "R2")
 					(unit 1)
@@ -46678,7 +46678,7 @@
 			(uuid "721b1e89-0d7e-4542-abe0-17ff5c43384b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR23")
 					(unit 1)
@@ -46914,7 +46914,7 @@
 			(uuid "33137f59-5c89-41ba-8c48-19d53c13e0a2")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C8")
 					(unit 1)
@@ -47172,7 +47172,7 @@
 			(uuid "8c2bc45b-272b-4be6-982c-ed0b8d126a48")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "U1")
 					(unit 1)
@@ -47249,7 +47249,7 @@
 			(uuid "25ab09a0-5264-4350-af28-9822d0328e3f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR178")
 					(unit 1)
@@ -47328,7 +47328,7 @@
 			(uuid "43e0367a-c87f-4b79-a506-11f17290b6c6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW32")
 					(unit 1)
@@ -47564,7 +47564,7 @@
 			(uuid "6ce5ae75-a87b-4de3-a4fe-8dd989b43478")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C4")
 					(unit 1)
@@ -47819,7 +47819,7 @@
 			(uuid "fff1ed49-1dc2-4e11-8aff-625a037f92a1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D45")
 					(unit 1)
@@ -48054,7 +48054,7 @@
 			(uuid "eef6ce11-789f-44a6-b3ab-4f9d21d5f546")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C123")
 					(unit 1)
@@ -48289,7 +48289,7 @@
 			(uuid "22991464-f07b-4689-be3d-2f79ab63a93a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C142")
 					(unit 1)
@@ -48366,7 +48366,7 @@
 			(uuid "9d8dcb51-8ed2-4e4e-b30a-e262ad809792")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR114")
 					(unit 1)
@@ -48601,7 +48601,7 @@
 			(uuid "53899b7c-1a12-4bf6-b79d-2788fb249fe8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C141")
 					(unit 1)
@@ -48679,7 +48679,7 @@
 			(uuid "d552edc0-d8e4-4333-943c-262c805cf2d6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR19")
 					(unit 1)
@@ -48966,7 +48966,7 @@
 			(uuid "9f80b3b2-17f0-46b2-b848-60479aae5f9a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "X1")
 					(unit 1)
@@ -49044,7 +49044,7 @@
 			(uuid "3a4ed19e-2b5d-44ad-95c3-d7713639efec")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#FLG2")
 					(unit 1)
@@ -49121,7 +49121,7 @@
 			(uuid "7077d961-62a7-41d2-ac5d-8d647d2d1a9a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR177")
 					(unit 1)
@@ -49198,7 +49198,7 @@
 			(uuid "2b420c21-a52f-490e-9224-a330c957cc81")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR223")
 					(unit 1)
@@ -49275,7 +49275,7 @@
 			(uuid "b904ffc8-27a3-431a-95f9-d38f3f4a8c60")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR260")
 					(unit 1)
@@ -49352,7 +49352,7 @@
 			(uuid "e30b6596-50a1-4552-83f7-1c906080837b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR263")
 					(unit 1)
@@ -49429,7 +49429,7 @@
 			(uuid "e2b47940-c756-4810-8a0c-df7122cf0391")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR250")
 					(unit 1)
@@ -49514,7 +49514,7 @@
 			(uuid "6f1744e4-be1b-46f0-9263-a63701bd439c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "J3")
 					(unit 1)
@@ -49593,7 +49593,7 @@
 			(uuid "c8109597-bfae-4c34-a157-f1aa91b85e25")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW51")
 					(unit 1)
@@ -49848,7 +49848,7 @@
 			(uuid "9b7a4c45-dea9-418f-973d-888bc1acfd7d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D35")
 					(unit 1)
@@ -49925,7 +49925,7 @@
 			(uuid "a905ce7f-7dd8-4199-8b2b-e8750c028589")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR198")
 					(unit 1)
@@ -50002,7 +50002,7 @@
 			(uuid "396bd698-7f37-460b-b33e-e546a92afccc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR228")
 					(unit 1)
@@ -50081,7 +50081,7 @@
 			(uuid "f742ada3-0094-42ad-ba49-fd364a86e36d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW41")
 					(unit 1)
@@ -50160,7 +50160,7 @@
 			(uuid "9a38459a-95b4-4b14-80f7-accfd052fb1c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR12")
 					(unit 1)
@@ -50237,7 +50237,7 @@
 			(uuid "1b0ffddc-9a22-4d6c-ac06-9b9fd78e3a55")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR245")
 					(unit 1)
@@ -50492,7 +50492,7 @@
 			(uuid "1e4fe357-d831-458c-8414-8b42a4adbacf")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D54")
 					(unit 1)
@@ -50747,7 +50747,7 @@
 			(uuid "fdd846c1-b8bc-47b3-b27c-31b9b07b43f8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D16")
 					(unit 1)
@@ -50824,7 +50824,7 @@
 			(uuid "0b22a32a-d58c-4545-91e8-5b631057659e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR202")
 					(unit 1)
@@ -50953,7 +50953,7 @@
 			(uuid "6c9d8283-9f5b-4b7b-b23f-b08436e46463")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED20")
 					(unit 1)
@@ -51030,7 +51030,7 @@
 			(uuid "270fd626-b3c6-46ed-8676-e24cfbf33599")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR246")
 					(unit 1)
@@ -51107,7 +51107,7 @@
 			(uuid "1a36f053-e994-4daf-b5b4-4ad4ff538951")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR118")
 					(unit 1)
@@ -51184,7 +51184,7 @@
 			(uuid "f8711df0-2fd6-4f04-93c9-37b9716a1eb6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR171")
 					(unit 1)
@@ -51419,7 +51419,7 @@
 			(uuid "638d96f5-89b8-4ce4-9ea3-ad72c302c57d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C111")
 					(unit 1)
@@ -51496,7 +51496,7 @@
 			(uuid "036afd90-423b-4e94-94d9-7cb16cecb3f0")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR203")
 					(unit 1)
@@ -51575,7 +51575,7 @@
 			(uuid "6779891f-17f8-48dd-8e26-26e34335fbfc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW21")
 					(unit 1)
@@ -51698,7 +51698,7 @@
 			(uuid "41fada2b-06fb-4b37-81f3-0e041760a8b1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "R5")
 					(unit 1)
@@ -51775,7 +51775,7 @@
 			(uuid "62d7501d-8477-4466-88d3-c16facfb67a7")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR197")
 					(unit 1)
@@ -51997,7 +51997,7 @@
 			(uuid "d0d2cad1-ab8d-4a23-95ea-3c95257d41f4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D1")
 					(unit 1)
@@ -52074,7 +52074,7 @@
 			(uuid "88b9859d-a1ba-4dae-98dd-06ba8be2cb8f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR7580")
 					(unit 1)
@@ -52309,7 +52309,7 @@
 			(uuid "4e4fcd63-7909-4576-a268-91744dcb95d8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C113")
 					(unit 1)
@@ -52388,7 +52388,7 @@
 			(uuid "58e1f605-40f8-44e4-a3e7-f8abb3e755ff")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW34")
 					(unit 1)
@@ -52465,7 +52465,7 @@
 			(uuid "333f636b-1bbe-444f-b280-7af45dc81894")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR129")
 					(unit 1)
@@ -52542,7 +52542,7 @@
 			(uuid "03469174-6d50-477c-8f51-ab98985f5f31")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR219")
 					(unit 1)
@@ -52671,7 +52671,7 @@
 			(uuid "644fb093-2e5e-4807-abc1-4c2d386c383d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED13")
 					(unit 1)
@@ -52748,7 +52748,7 @@
 			(uuid "84bd2e49-3bad-44df-9281-6c61846de732")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR130")
 					(unit 1)
@@ -52826,7 +52826,7 @@
 			(uuid "a47a7636-3f36-4086-9f4e-a512e7e2eafc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR16")
 					(unit 1)
@@ -52903,7 +52903,7 @@
 			(uuid "02e65004-fef1-402c-bac4-b18d139e90f6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR144")
 					(unit 1)
@@ -52980,7 +52980,7 @@
 			(uuid "a64882a4-086d-4de0-8a46-78023b06e8b6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR209")
 					(unit 1)
@@ -53216,7 +53216,7 @@
 			(uuid "1459882d-1ba3-4a8f-b22f-caaa2a5826ca")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C15")
 					(unit 1)
@@ -53471,7 +53471,7 @@
 			(uuid "6cf44926-16e7-428f-b79c-ac8ccf7702d1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D14")
 					(unit 1)
@@ -53548,7 +53548,7 @@
 			(uuid "45740e06-02e8-4a88-a225-0e47df632af7")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR122")
 					(unit 1)
@@ -53625,7 +53625,7 @@
 			(uuid "b167868c-d118-4fca-a53e-c181a98ee7bc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR253")
 					(unit 1)
@@ -53860,7 +53860,7 @@
 			(uuid "d2175130-63c5-4fee-9b2b-3f92150d77a4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C164")
 					(unit 1)
@@ -53989,7 +53989,7 @@
 			(uuid "773a2b82-6d42-4dcd-bf33-968505e24137")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED35")
 					(unit 1)
@@ -54066,7 +54066,7 @@
 			(uuid "d4bd6a43-422a-4675-ad3e-37f605c57998")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR6816")
 					(unit 1)
@@ -54195,7 +54195,7 @@
 			(uuid "a756baba-e1e1-4a7a-8e66-d4783269928b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED55")
 					(unit 1)
@@ -54273,7 +54273,7 @@
 			(uuid "83c95150-f150-4482-ac97-3cabaadfa630")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR5")
 					(unit 1)
@@ -54350,7 +54350,7 @@
 			(uuid "639fcba0-61bf-41bb-b388-20db3a8cc3e4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR123")
 					(unit 1)
@@ -54427,7 +54427,7 @@
 			(uuid "9132b1d8-bd84-4751-8bf1-53968984c8fc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR101")
 					(unit 1)
@@ -54504,7 +54504,7 @@
 			(uuid "543920ab-4015-4db4-94b4-12ef07c0eec0")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR240")
 					(unit 1)
@@ -54581,7 +54581,7 @@
 			(uuid "582f3936-a51e-4259-8393-4e127c360997")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR161")
 					(unit 1)
@@ -54836,7 +54836,7 @@
 			(uuid "00f2e89d-11e0-41e5-a9ab-83db7c1bae36")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D32")
 					(unit 1)
@@ -55071,7 +55071,7 @@
 			(uuid "88ed4d48-3581-400d-a90d-6c5c7512fb01")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C115")
 					(unit 1)
@@ -55326,7 +55326,7 @@
 			(uuid "83bedb9c-f4fb-4062-979d-4d13c765a4b9")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D13")
 					(unit 1)
@@ -55561,7 +55561,7 @@
 			(uuid "bd3abb12-5885-438b-8f29-74f2314e9dc9")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C134")
 					(unit 1)
@@ -55816,7 +55816,7 @@
 			(uuid "aca3e9cb-e873-48b7-b43b-6b74cc87d181")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D50")
 					(unit 1)
@@ -55895,7 +55895,7 @@
 			(uuid "5eae039f-cc4a-4444-90e9-a36f93dd75c2")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW53")
 					(unit 1)
@@ -56130,7 +56130,7 @@
 			(uuid "750cb9d9-e6da-4e26-b878-34e8ddad45e9")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C121")
 					(unit 1)
@@ -56385,7 +56385,7 @@
 			(uuid "612c25b9-9b32-44a5-9366-12d33c2670a1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D40")
 					(unit 1)
@@ -56462,7 +56462,7 @@
 			(uuid "37429f05-9dd2-417a-b478-dbab9465d4a4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR139")
 					(unit 1)
@@ -56539,7 +56539,7 @@
 			(uuid "acda774b-75b8-4f26-9caf-9d221aa884ed")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR176")
 					(unit 1)
@@ -56618,7 +56618,7 @@
 			(uuid "755b6a37-a8b9-42eb-9837-2e0cbd85c719")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW14")
 					(unit 1)
@@ -56853,7 +56853,7 @@
 			(uuid "4e8f9e08-f731-431e-a3b1-324cc008e1d8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C155")
 					(unit 1)
@@ -56982,7 +56982,7 @@
 			(uuid "79f57e84-5b94-49b4-bccc-41e18fac3b19")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED50")
 					(unit 1)
@@ -57237,7 +57237,7 @@
 			(uuid "1ec798e3-a372-4130-8893-43afe972683c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D25")
 					(unit 1)
@@ -57314,7 +57314,7 @@
 			(uuid "f7fc8455-5cb1-4bcf-a85c-3a4e36a77e79")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR235")
 					(unit 1)
@@ -57391,7 +57391,7 @@
 			(uuid "645e19dc-a284-4b16-a20e-06f10201ee3e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR188")
 					(unit 1)
@@ -57627,7 +57627,7 @@
 			(uuid "09893aa8-24f8-40da-ae5b-5e14e7b75caf")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C9")
 					(unit 1)
@@ -57882,7 +57882,7 @@
 			(uuid "6c34c075-bc12-4c96-b082-f8ca90d486a4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D23")
 					(unit 1)
@@ -57960,7 +57960,7 @@
 			(uuid "e2cbd52b-82ed-40a1-b758-95dca6b7b3cf")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#FLG1")
 					(unit 1)
@@ -58037,7 +58037,7 @@
 			(uuid "1b213fc5-baf3-44d2-a112-8ff35fd19314")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR112")
 					(unit 1)
@@ -58114,7 +58114,7 @@
 			(uuid "5eef1b43-af95-4e46-9178-1b2785b3c302")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR119")
 					(unit 1)
@@ -58191,7 +58191,7 @@
 			(uuid "35e118b7-2826-4a93-9a8d-6c7d7382cffc")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR138")
 					(unit 1)
@@ -58270,7 +58270,7 @@
 			(uuid "33e03a63-abbf-48ba-a24d-9f170da54363")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#FLG3")
 					(unit 1)
@@ -58349,7 +58349,7 @@
 			(uuid "dc661334-28cf-4fe5-8a75-aa454592b157")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW22")
 					(unit 1)
@@ -58478,7 +58478,7 @@
 			(uuid "961060a8-f5e8-4416-ae8a-9c6297b087de")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED64")
 					(unit 1)
@@ -58592,7 +58592,7 @@
 			(uuid "38d73f6c-9bd2-4d78-ba39-995ad6af028b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "F2")
 					(unit 1)
@@ -58827,7 +58827,7 @@
 			(uuid "149216f0-01d5-4cc6-8047-76726523fb35")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C135")
 					(unit 1)
@@ -58956,7 +58956,7 @@
 			(uuid "2a1fdff9-e5c2-4d74-afe8-d653ec57cc0e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED32")
 					(unit 1)
@@ -59191,7 +59191,7 @@
 			(uuid "56fdfddc-e665-4b99-9074-feea5563966a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C150")
 					(unit 1)
@@ -59459,7 +59459,7 @@
 			(uuid "406e9ef4-418d-4e47-816d-42c0e7adaf19")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "R16")
 					(unit 1)
@@ -59536,7 +59536,7 @@
 			(uuid "3fa27795-a64e-4a2b-8dce-0f7e4cf609a1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR172")
 					(unit 1)
@@ -59613,7 +59613,7 @@
 			(uuid "7267efdb-c1dd-4846-9711-045cafb244f2")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR102")
 					(unit 1)
@@ -59691,7 +59691,7 @@
 			(uuid "af4a483a-68a5-45a4-a706-c33920e6de04")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR24")
 					(unit 1)
@@ -59924,7 +59924,7 @@
 			(uuid "f4d56a36-0f0a-46cb-b8bc-5db73525282c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C3")
 					(unit 1)
@@ -60001,7 +60001,7 @@
 			(uuid "71f11e98-a70c-484c-b0c1-76f8bfdb743a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR167")
 					(unit 1)
@@ -60078,7 +60078,7 @@
 			(uuid "ac3f2a9f-7eff-4452-b57e-db64e7029149")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR170")
 					(unit 1)
@@ -60155,7 +60155,7 @@
 			(uuid "96ff7f20-50ac-4b3f-819f-3ccd227832c1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR183")
 					(unit 1)
@@ -60284,7 +60284,7 @@
 			(uuid "4a2c7c00-f620-4357-a25e-ed112f9296c7")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED30")
 					(unit 1)
@@ -60413,7 +60413,7 @@
 			(uuid "4639ee84-9132-4b88-9530-4d5c5c04b9b3")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED44")
 					(unit 1)
@@ -60648,7 +60648,7 @@
 			(uuid "e5411899-f602-4578-a769-49d9b815a6fd")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C30")
 					(unit 1)
@@ -60725,7 +60725,7 @@
 			(uuid "5953b56d-9905-42a7-8b91-1d41b6c08056")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR233")
 					(unit 1)
@@ -60803,7 +60803,7 @@
 			(uuid "f0399a48-c3d9-4c9f-b999-e73b696839e0")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR22")
 					(unit 1)
@@ -60882,7 +60882,7 @@
 			(uuid "e5cd2d81-506a-471b-840c-1ac27dcc231f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW42")
 					(unit 1)
@@ -60959,7 +60959,7 @@
 			(uuid "73d88512-accd-43bc-863a-54c9d7bddc9c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR174")
 					(unit 1)
@@ -61036,7 +61036,7 @@
 			(uuid "fdbb7eaa-d189-4735-afe7-c926a7f4c49a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR217")
 					(unit 1)
@@ -61271,7 +61271,7 @@
 			(uuid "cd18895b-7155-4eae-a957-f6267e33746d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C152")
 					(unit 1)
@@ -61348,7 +61348,7 @@
 			(uuid "ff39f80d-c7d7-440e-87cd-9725899af8b0")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR265")
 					(unit 1)
@@ -61427,7 +61427,7 @@
 			(uuid "188083da-cd79-450b-9762-89bad9975e1a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW13")
 					(unit 1)
@@ -61509,7 +61509,7 @@
 			(uuid "5f60c047-9c54-4f56-a804-98e25b70cf1b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "JP1")
 					(unit 1)
@@ -61638,7 +61638,7 @@
 			(uuid "6fe5d960-2ea7-4573-b8c3-d85c39d6c78c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED11")
 					(unit 1)
@@ -61853,7 +61853,7 @@
 			(uuid "2bd98987-24af-4a5b-91d2-63dc927b8671")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "U2")
 					(unit 1)
@@ -61930,7 +61930,7 @@
 			(uuid "242635de-6f23-4027-a9f8-7aba2322a79a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR145")
 					(unit 1)
@@ -62166,7 +62166,7 @@
 			(uuid "64a3a4a6-5b58-49a9-ac56-9757f898223d")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C6")
 					(unit 1)
@@ -62421,7 +62421,7 @@
 			(uuid "b735fbc9-e9d0-423d-a566-bfbe8546701f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D24")
 					(unit 1)
@@ -62498,7 +62498,7 @@
 			(uuid "1df9a4e3-8c22-4622-a41c-75105b676c5f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR169")
 					(unit 1)
@@ -62753,7 +62753,7 @@
 			(uuid "ed2b32fb-ad01-4cda-8d13-084daa06803e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D42")
 					(unit 1)
@@ -62830,7 +62830,7 @@
 			(uuid "bff947ed-956b-4180-a96a-752ca7f7f5a7")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR242")
 					(unit 1)
@@ -63098,7 +63098,7 @@
 			(uuid "cc3a2cba-911b-4ba2-8b1c-488819497405")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "R15")
 					(unit 1)
@@ -63175,7 +63175,7 @@
 			(uuid "26733b9f-e353-4199-9e08-f21ecfb1bc7b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR201")
 					(unit 1)
@@ -63252,7 +63252,7 @@
 			(uuid "843e77fe-a803-4a6e-bf52-47d2352b81e2")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR239")
 					(unit 1)
@@ -63331,7 +63331,7 @@
 			(uuid "d2704696-e119-45f1-be67-d4b104dc4cec")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW31")
 					(unit 1)
@@ -63599,7 +63599,7 @@
 			(uuid "338faebf-f243-45c0-9f36-93bb401615ce")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "R10")
 					(unit 1)
@@ -63728,7 +63728,7 @@
 			(uuid "dc529074-dee2-4f01-8f55-d53c3cf6e290")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED31")
 					(unit 1)
@@ -63805,7 +63805,7 @@
 			(uuid "179e120f-5fae-48bc-bbec-28ae30d09872")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR256")
 					(unit 1)
@@ -63934,7 +63934,7 @@
 			(uuid "b001d5f6-ea9c-4724-a949-10c2cb95abe1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED16")
 					(unit 1)
@@ -64063,7 +64063,7 @@
 			(uuid "c8f03958-4094-418d-ae5b-4329b9062fd4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED33")
 					(unit 1)
@@ -64140,7 +64140,7 @@
 			(uuid "e86d3f3f-c11c-4aaf-9406-b4a00d849ac0")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR136")
 					(unit 1)
@@ -64217,7 +64217,7 @@
 			(uuid "74e2899e-0242-426b-81df-797f44fda846")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR115")
 					(unit 1)
@@ -64294,7 +64294,7 @@
 			(uuid "d88d9946-0d5d-415a-9792-411775cd9f6b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR143")
 					(unit 1)
@@ -64371,7 +64371,7 @@
 			(uuid "672047c8-c474-4747-a7f1-d462c8de4da8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR192")
 					(unit 1)
@@ -64449,7 +64449,7 @@
 			(uuid "c58527eb-4e03-4343-b7fc-9a7bffad90ff")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR11")
 					(unit 1)
@@ -64578,7 +64578,7 @@
 			(uuid "928a751e-58c7-4e2b-83ee-b854b95d7f3c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED21")
 					(unit 1)
@@ -64814,7 +64814,7 @@
 			(uuid "7659922a-daa0-4cd9-8a94-923546525e43")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C11")
 					(unit 1)
@@ -64891,7 +64891,7 @@
 			(uuid "87706d19-da80-4ab8-8d05-e7131996d0f8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR146")
 					(unit 1)
@@ -65127,7 +65127,7 @@
 			(uuid "456d1a01-b877-40c4-917b-2a83258ca2ca")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C5")
 					(unit 1)
@@ -65206,7 +65206,7 @@
 			(uuid "368b8401-e887-438c-be15-af454e0b0a57")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW23")
 					(unit 1)
@@ -65335,7 +65335,7 @@
 			(uuid "6cc47e9b-8d30-49e5-a04a-fcbc0662b99e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED51")
 					(unit 1)
@@ -65414,7 +65414,7 @@
 			(uuid "9f1e1a37-124f-445e-b4b5-7efd81563f59")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW11")
 					(unit 1)
@@ -65669,7 +65669,7 @@
 			(uuid "2b4116eb-1bbc-421d-9e3a-7b2c53b88456")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D11")
 					(unit 1)
@@ -65904,7 +65904,7 @@
 			(uuid "4bb81011-536d-444e-9e5b-27a75d98ae4c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C20")
 					(unit 1)
@@ -65983,7 +65983,7 @@
 			(uuid "5d436ae9-2fd6-4cfa-bf77-2716359db4b4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW55")
 					(unit 1)
@@ -66060,7 +66060,7 @@
 			(uuid "3074b8ad-47fd-4758-9f7a-5031fa75169f")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR4608")
 					(unit 1)
@@ -66295,7 +66295,7 @@
 			(uuid "29268706-323d-443b-894b-636adfbdc22e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C161")
 					(unit 1)
@@ -66373,7 +66373,7 @@
 			(uuid "c7cb51b7-6fee-4800-9e63-aa814e7d19b6")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR25")
 					(unit 1)
@@ -66628,7 +66628,7 @@
 			(uuid "425aa9cc-868d-4feb-8573-1b2a1e616662")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D30")
 					(unit 1)
@@ -66863,7 +66863,7 @@
 			(uuid "0acfc13c-bd69-4dc5-85e7-d6f46fbae86e")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C130")
 					(unit 1)
@@ -66942,7 +66942,7 @@
 			(uuid "94ea9fc4-46e2-4e64-92d4-2402ea6a00e1")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW62")
 					(unit 1)
@@ -67019,7 +67019,7 @@
 			(uuid "3121538b-7dcb-43db-9682-fa1044d5cbb7")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR133")
 					(unit 1)
@@ -67148,7 +67148,7 @@
 			(uuid "935f71cb-2362-4cad-b188-40b1f40f6e80")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED42")
 					(unit 1)
@@ -67383,7 +67383,7 @@
 			(uuid "b43714bf-8f88-4f10-814f-2cb1fd9af8de")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C140")
 					(unit 1)
@@ -67618,7 +67618,7 @@
 			(uuid "d57439f1-7e0b-43d9-adc7-c459b28427b2")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C125")
 					(unit 1)
@@ -67695,7 +67695,7 @@
 			(uuid "529ed416-2f25-44c8-a3f8-a8029ea262c4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR243")
 					(unit 1)
@@ -67774,7 +67774,7 @@
 			(uuid "9fe980c2-06a7-4574-826a-e7d65109c47a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW60")
 					(unit 1)
@@ -68009,7 +68009,7 @@
 			(uuid "233d34b6-6901-4a5d-9b4a-919bb3077a56")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C122")
 					(unit 1)
@@ -68087,7 +68087,7 @@
 			(uuid "4fb79029-c01a-4d87-a7d6-14f66e93712b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR15")
 					(unit 1)
@@ -68166,7 +68166,7 @@
 			(uuid "e3197c17-272e-422c-945b-06a0cd133681")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "SW30")
 					(unit 1)
@@ -68401,7 +68401,7 @@
 			(uuid "15bbdad8-531f-4183-bf45-2946ae9ce75a")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C124")
 					(unit 1)
@@ -68636,7 +68636,7 @@
 			(uuid "49807c0b-f25f-4a8c-a46d-35fd4066a2cf")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C114")
 					(unit 1)
@@ -68765,7 +68765,7 @@
 			(uuid "897a7fc7-59f0-490d-9745-21b60f421c27")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED10")
 					(unit 1)
@@ -68842,7 +68842,7 @@
 			(uuid "c41cd691-3ed9-4716-846c-7ba0cff5c797")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR185")
 					(unit 1)
@@ -68919,7 +68919,7 @@
 			(uuid "ab72f911-003f-49c8-98a2-1b28c51c4e11")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR258")
 					(unit 1)
@@ -68996,7 +68996,7 @@
 			(uuid "7d139dd9-ce61-4f29-a65d-2fb876e86f7b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR238")
 					(unit 1)
@@ -69073,7 +69073,7 @@
 			(uuid "731ee2eb-ba55-401f-96b8-fc0a211a0930")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR163")
 					(unit 1)
@@ -69202,7 +69202,7 @@
 			(uuid "fef7538b-dc6a-41a6-8388-c18f989aee1b")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "LED54")
 					(unit 1)
@@ -69279,7 +69279,7 @@
 			(uuid "efa37ce7-bada-4ffd-8d2c-8f115b0f9aa5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR194")
 					(unit 1)
@@ -69514,7 +69514,7 @@
 			(uuid "c117ba6f-08de-4ff7-8477-46c22d4f01d5")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C116")
 					(unit 1)
@@ -69638,7 +69638,7 @@
 			(uuid "ab87f426-afe0-4742-a9a4-d731d78203a8")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "C18")
 					(unit 1)
@@ -69870,7 +69870,7 @@
 			(uuid "9aa01d3e-1068-4bf2-8d83-148193160a01")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "U3")
 					(unit 1)
@@ -69947,7 +69947,7 @@
 			(uuid "b667e16a-de4e-4cd2-a193-4b6ea3821196")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR104")
 					(unit 1)
@@ -70202,7 +70202,7 @@
 			(uuid "f907cfe6-ab4c-46e2-acd7-e66773f9ca90")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D31")
 					(unit 1)
@@ -70279,7 +70279,7 @@
 			(uuid "1bc4919b-52c6-4e51-8bfe-9abd41b08b4c")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR151")
 					(unit 1)
@@ -70356,7 +70356,7 @@
 			(uuid "dce131e9-eb58-4828-a769-9ae3b2f1f528")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR127")
 					(unit 1)
@@ -70433,7 +70433,7 @@
 			(uuid "0a4504c2-cfdf-4573-bad3-af463b34c8a4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR254")
 					(unit 1)
@@ -70510,7 +70510,7 @@
 			(uuid "d630f645-f256-4689-9ad2-137ef26446b4")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "#PWR224")
 					(unit 1)
@@ -70765,7 +70765,7 @@
 			(uuid "6d6f60ac-78b4-4b64-b08a-8a8b3ad7f433")
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "sofle-choc-pro-right"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(reference "D15")
 					(unit 1)

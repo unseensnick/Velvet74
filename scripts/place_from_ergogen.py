@@ -7,6 +7,8 @@ Inside pcbnew:  Tools > Scripting Console, then
     exec(open(r"<project>/scripts/place_from_ergogen.py").read())
 From a shell (pcbnew closed):
     "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/place_from_ergogen.py sofle-choc-pro.kicad_pcb
+Right half (after `npm run build:right`), naming the Ergogen output folder:
+    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/place_from_ergogen.py sofle-choc-pro-right.kicad_pcb output-right
 
 Each run replaces the board-level Edge.Cuts outline, moves every SWnn listed in
 points.json, then snaps LEDs, caps and diodes with snap_leds.py.
@@ -30,7 +32,7 @@ except NameError:  # exec() from the scripting console has no __file__
     HERE = os.path.dirname(os.path.abspath(pcbnew.GetBoard().GetFileName()))
     HERE = os.path.join(HERE, 'scripts')
 PROJECT = os.path.dirname(HERE)
-ERGOGEN_OUT = os.path.join(PROJECT, 'ergogen', 'output')
+ERGOGEN_OUT = os.path.join(PROJECT, 'ergogen', sys.argv[2] if len(sys.argv) > 2 else 'output')
 
 
 def _mm(x, y):
