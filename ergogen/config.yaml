@@ -50,12 +50,18 @@ units:
   boss_r: 1.75
   pilot_r: 0.85      # M2 self-tapping pilot; drill 0.8 and tap M2 for the aluminium version
   case_h: floor + standoff + pcb_t + spacer_t + plate_t
-  # Mid-mount USB-C: the board sits pcb_t into the connector, so the 3.26 mm body straddles it and only
-  # usbc_below hangs under the board. This is what takes the connector out of the standoff budget and lets
-  # the whole stack reach 8.2 mm. Needs a routed cutout in the PCB and a mid-mount part, not the plain
-  # vertical HRO TYPE-C-31-M-12 currently in the schematic.
+  # Mid-mount USB-C, Hong Cheng HC-TYPE-C-16P-C16B (LCSC C19274022). The body sinks usbc_sink below the
+  # board top, which on a 1.6 mm PCB leaves nothing hanging underneath and takes the connector out of the
+  # standoff budget: that is what lets the whole stack reach 8.2 mm. It needs the 9.24 x 5.75 mm edge
+  # cutout that board_pcb subtracts (_port_slots).
+  # The sink is dimensioned on the manufacturer drawing; the overall height is not, and 3.26 is scaled off
+  # it (the drawing's 2.56 is the mating cavity, not the body). C10B and C08B sink 1.0 and 0.8 instead.
   usbc_h: 3.26
-  usbc_below: (usbc_h - pcb_t) / 2
+  usbc_sink: 1.6
+  usbc_below: usbc_sink - pcb_t   # hang below the board underside: 0 here, so the standoff is free of it
+  usbc_above: usbc_h - usbc_sink  # 1.66 proud of the board top, which is why the spacer is pocketed
+  usbc_body_w: 11.24
+  usbc_body_l: 6.5
   port_margin: 0.75  # slack around the connector so a plug nose enters without fouling the wall
   port_h: usbc_h + 2 port_margin
   port_z: floor + standoff - usbc_below - port_margin
@@ -215,6 +221,20 @@ outlines:
         - {ref: matrix_pinky_bottom, shift: [93.745, -29.223]} # fitted: TH4's bottom edge meets the bottom line
         - {ref: matrix_pinky_bottom, shift: [16.500, -29.223]} # fitted: bottom line under TH3's lowest corner
         - {ref: matrix_pinky_bottom, shift: [-10.5, -10]}
+  # The two mid-mount USB-C cutouts. They have to be part of the board outline rather than Edge.Cuts
+  # inside the connector footprint: a notch drawn in the footprint only T-joins the edge, and KiCad
+  # rejects that as a malformed outline and falls back to the bounding box. Each rectangle runs past
+  # the edge so the notch opens onto it. Recompute the shifts if J1/J2 move on the board.
+  _port_slots:
+    - what: rectangle
+      where:
+        shift: [108.7795, 76.75]
+      size: [9.24, 7.75]
+    - operation: add
+      what: rectangle
+      where:
+        shift: [116.625, 46.32]
+      size: [7.75, 9.24]
   # Board outline (PCB edge and case): the stepped top of _stepped combined with the drawn lower half
   board:
     - what: outline
@@ -222,6 +242,15 @@ outlines:
     - operation: add
       what: outline
       name: _shape
+  # What Edge.Cuts actually gets. The case, spacer and plate keep the un-notched "board": the shell
+  # already opens for the ports through _port_host/_port_link, and expanding a notched outline by the
+  # wall thickness would tear a second gap in the case wall.
+  board_pcb:
+    - what: outline
+      name: board
+    - operation: subtract
+      what: outline
+      name: _port_slots
   # switch plate cutouts for a plate case (Choc plate hole 13.8 mm). Keys only: "where: true" would put a
   # 13.8 mm cutout on each screw point too.
   _switch_holes:
@@ -275,6 +304,19 @@ outlines:
       where:
         shift: [118.5, 46.32]
       size: [8, 10]
+  # The connector body stands usbc_above proud of the board top, so the spacer opens for it instead of
+  # fouling it. Each rectangle carries fit clearance on three sides and runs past the board edge so the
+  # pocket is open-ended. Recompute the shifts if J1/J2 move on the board.
+  _port_bodies:
+    - what: rectangle
+      where:
+        shift: [108.779, 76.375]
+      size: [usbc_body_w + 2 fit, usbc_body_l + 2 fit + 2]
+    - operation: add
+      what: rectangle
+      where:
+        shift: [116.25, 46.32]
+      size: [usbc_body_l + 2 fit + 2, usbc_body_w + 2 fit]
 
 cases:
   bottom:
@@ -282,7 +324,7 @@ cases:
       name: board
       extrude: 2
   # printed spacer that holds the FR4 plate off the PCB. Same outline as the board, opened for the switches,
-  # the screws and a pocket the OLED module drops into.
+  # the screws, a pocket the OLED module drops into and a pocket over each USB-C body.
   spacer:
     - what: outline
       name: board
@@ -297,6 +339,10 @@ cases:
       operation: subtract
     - what: outline
       name: _display_module
+      extrude: spacer_t
+      operation: subtract
+    - what: outline
+      name: _port_bodies
       extrude: spacer_t
       operation: subtract
 
@@ -356,4 +402,4 @@ pcbs:
     template: kicad8
     outlines:
       edge:
-        outline: board
+        outline: board_pcb

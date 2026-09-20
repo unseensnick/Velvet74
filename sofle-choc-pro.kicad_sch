@@ -4809,7 +4809,7 @@
 					)
 				)
 			)
-			(property "Footprint" "my-soffle:USB_C_Receptacle_HRO_TYPE-C-31-M-12_MergedPads"
+			(property "Footprint" "my-soffle:USB_C_Receptacle_HongCheng_HC-TYPE-C-16P_MidMount"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4821,7 +4821,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948"
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C19274022.html"
 				(at -2.286 0.127 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4844,7 +4844,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C165948"
+			(property "LCSC" "C19274022"
 				(at 2.54 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -22739,7 +22739,7 @@
 				)
 			)
 		)
-		(property "Footprint" "my-soffle:USB_C_Receptacle_HRO_TYPE-C-31-M-12_MergedPads"
+		(property "Footprint" "my-soffle:USB_C_Receptacle_HongCheng_HC-TYPE-C-16P_MidMount"
 			(at 26.67 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -22751,7 +22751,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C19274022.html"
 			(at 24.384 40.513 0)
 			(hide yes)
 			(show_name no)
@@ -22774,7 +22774,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C165948"
+		(property "LCSC" "C19274022"
 			(at 29.21 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -32256,7 +32256,7 @@
 				)
 			)
 		)
-		(property "Footprint" "my-soffle:USB_C_Receptacle_HRO_TYPE-C-31-M-12_MergedPads"
+		(property "Footprint" "my-soffle:USB_C_Receptacle_HongCheng_HC-TYPE-C-16P_MidMount"
 			(at 106.68 283.21 0)
 			(hide yes)
 			(show_name no)
@@ -32268,7 +32268,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C19274022.html"
 			(at 104.394 272.923 0)
 			(hide yes)
 			(show_name no)
@@ -32291,7 +32291,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C165948"
+		(property "LCSC" "C19274022"
 			(at 109.22 271.78 0)
 			(hide yes)
 			(show_name no)

@@ -44,3 +44,11 @@
 
 # No LINK_D rule: the link between halves is one-wire serial. LINK_D_N reaches only J2's two data pins and the
 # ESD array, never the MCU, so the two link nets are not a pair and pair rules on them are meaningless.
+
+# The mid-mount USB-C lands sit 0.15 mm from the connector's board cutout. That is what Hong Cheng's drawing
+# for HC-TYPE-C-16P-C16B specifies, and the connector tail sets it: pulling the land back would leave the tail
+# hanging over bare laminate. Scoped to J1/J2 pads, so everything else near the ports keeps the 0.3 mm rule.
+# JLCPCB quote 0.3 mm copper to a routed outline, so expect this to draw a query on the first order.
+(rule "usb-c land to cutout"
+  (condition "A.Type == 'Pad' && (A.memberOfFootprint('J1') || A.memberOfFootprint('J2'))")
+  (constraint edge_clearance (min 0.15mm)))
