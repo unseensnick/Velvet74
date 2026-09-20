@@ -1,6 +1,9 @@
 """Place the M2 mounting holes from Ergogen's screw points.
 
-    python place_mounting_holes.py <board.kicad_pcb> <ergogen_output_dir>
+From a shell (pcbnew closed), naming the Ergogen output folder:
+    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/place_mounting_holes.py sofle-choc-pro.kicad_pcb ergogen/output
+Right half (after `npm run build:right` in ergogen/):
+    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/place_mounting_holes.py sofle-choc-pro-right.kicad_pcb ergogen/output-right
 
 Reads screws.json (written by ergogen/export_points.js) and puts a MountingHole_2.2mm_M2 at each point, so
 the PCB holes and the switch plate's holes come from the same geometry and cannot drift apart.

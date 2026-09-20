@@ -28,11 +28,11 @@ Full detail and the reasons are in [.claude/rules/kicad.md](.claude/rules/kicad.
 
 | Path | What it is |
 | --- | --- |
-| `sofle-choc-pro.kicad_sch` / `.kicad_pcb` / `.kicad_pro` | The keyboard: audited schematic, board (key area placed from Ergogen), project with net classes |
+| `sofle-choc-pro.*` and `sofle-choc-pro-right.*` (`.kicad_sch` / `.kicad_pcb` / `.kicad_pro` / `.kicad_dru`) | The two halves, a separate KiCad project each. Netlist-identical schematics on one shared pin map, boards with the key area placed from Ergogen, net classes, and the custom DRC rules |
 | `lib/my-soffle.kicad_sym`, `lib/my-soffle.pretty/`, `lib/my-soffle.3dshapes/` | Project symbols, footprints (Choc hotswap, EC11 combo, SK6812MINI-E, reset switch) and 3D models |
 | `fp-lib-table`, `sym-lib-table` | Project library tables |
 | `templates/rp2040-inner-column/` | KiCad template: RP2040 module (schematic, placed and routed 2-layer board, `README.md` with checks and routability, `meta/info.html`, `lib/`) |
-| `ergogen/` | Pinned Ergogen 4.2.1: `config.yaml` (live layout), `export_points.js`, `npm run build`. `output/` is generated and gitignored |
+| `ergogen/` | Pinned Ergogen 4.2.1: `config.yaml` (live layout), `export_points.js`, `npm run build`. `make_right.js` derives the right half from that same config, so geometry has one source; `npm run build:right` runs it. `config.right.yaml`, `output/` and `output-right/` are generated and gitignored |
 | `soffle-*.yaml` (root) | Older standalone Ergogen configs described in `README.md` |
 | `scripts/place_from_ergogen.py` | Moves SWnn onto `ergogen/output/points.json`, runs `snap_leds.py`, **replaces Edge.Cuts** |
 | `scripts/snap_leds.py` | Snaps LEDnn, C1nn, Dnn onto each switch (back side) |
