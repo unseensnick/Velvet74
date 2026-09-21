@@ -10,11 +10,10 @@
 # neck-down at RP2040 pins. Net classes keep 0.2 mm clearance. Later rules win in KiCad, so the broad controller
 # rule comes first and the fine-pitch rule overrides it at the pads.
 
-# Controller strip (rule area "controller"): 0.15 mm, as on Raspberry Pi's RP2040 minimal design, so 0.2 mm lanes
-# at 0.4 mm pitch can bend without violations. Zones keep their own clearances. The right half gets its own
-# area when its controller block is placed.
+# Controller strips (rule areas "controller" and "controller (right)"): 0.15 mm, as on Raspberry Pi's RP2040
+# minimal design, so 0.2 mm lanes at 0.4 mm pitch can bend without violations. Zones keep their own clearances.
 (rule "controller clearance"
-  (condition "A.intersectsArea('controller') && A.Type != 'Zone' && B.Type != 'Zone'")
+  (condition "(A.intersectsArea('controller') || A.intersectsArea('controller (right)')) && A.Type != 'Zone' && B.Type != 'Zone'")
   (constraint clearance (min 0.15mm)))
 
 # Copper touching the RP2040 (0.4 mm pitch), USB-C (0.5 mm) or the SOT-563 ESD arrays (0.15 mm pad gaps) may go
