@@ -25,17 +25,19 @@
 # The host USB data lines are the only real pairs, named per segment so each side of R7/R8 is its own net:
 # D+/D- (J1 to R7/R8) and USB_P/USB_N (R7/R8 to U1). One rule per pair and per half, because a shared rule puts
 # the pairs in one skew group and KiCad then compares D+ against a net from another pair.
-# Spacing is checked outside the fan-out only: inside J1, U4 and U1 the pad geometry sets it, not the routing.
+# Spacing is checked outside the fan-out only: inside J1, U4, R7/R8 and U1 the pad geometry sets it (the 0402
+# pads sit 0.95 mm apart), not the routing. DRC checks every parallel overlapping pair of segments against the max
+# gap, and a segment touching an excluded courtyard leaves the rule, so its partner then counts as uncoupled.
 # Length matching skips J1 only: its pin-swap bridges are stubs the signal never runs through, but KiCad counts
 # them in net length. Excluding U4 as well compared unequal leftovers, so U4 stays in.
 # Full speed needs no impedance control at these lengths, so the gap limits are loose.
 (rule "usb pair D spacing, left"
-  (condition "A.inDiffPair('/Left/D') && !A.intersectsCourtyard('J1') && !A.intersectsCourtyard('U4')")
+  (condition "A.inDiffPair('/Left/D') && !A.intersectsCourtyard('J1') && !A.intersectsCourtyard('U4') && !A.intersectsCourtyard('R7') && !A.intersectsCourtyard('R8')")
   (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
   (constraint diff_pair_uncoupled (max 6mm)))
 
 (rule "usb pair D spacing, right"
-  (condition "A.inDiffPair('/Right/D') && !A.intersectsCourtyard('J201') && !A.intersectsCourtyard('U204')")
+  (condition "A.inDiffPair('/Right/D') && !A.intersectsCourtyard('J201') && !A.intersectsCourtyard('U204') && !A.intersectsCourtyard('R207') && !A.intersectsCourtyard('R208')")
   (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
   (constraint diff_pair_uncoupled (max 6mm)))
 
@@ -48,12 +50,12 @@
   (constraint skew (max 0.1mm)))
 
 (rule "usb pair USB spacing, left"
-  (condition "A.inDiffPair('/Left/USB') && !A.intersectsCourtyard('U1')")
+  (condition "A.inDiffPair('/Left/USB') && !A.intersectsCourtyard('U1') && !A.intersectsCourtyard('R7') && !A.intersectsCourtyard('R8')")
   (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
   (constraint diff_pair_uncoupled (max 6mm)))
 
 (rule "usb pair USB spacing, right"
-  (condition "A.inDiffPair('/Right/USB') && !A.intersectsCourtyard('U201')")
+  (condition "A.inDiffPair('/Right/USB') && !A.intersectsCourtyard('U201') && !A.intersectsCourtyard('R207') && !A.intersectsCourtyard('R208')")
   (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
   (constraint diff_pair_uncoupled (max 6mm)))
 
