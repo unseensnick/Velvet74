@@ -16,13 +16,21 @@ The detail behind the traps listed in `CLAUDE.md`. Every point here cost a sessi
 
 - **Ergogen owns geometry only**: key points, board outline, case. `ergogen/config.yaml` (Ergogen 4.2.1, pinned in `ergogen/package.json`). Rows are bottom-up; each point carries `row_code` / `col_index`, which form the schematic reference (`SW` + row + col), and `led: north|east|south|west`.
 - **The schematic owns parts, nets and LCSC fields.** It was audited against the RP2040 and part datasheets. Never move nets or part data into Ergogen, and never "fix" a part by editing the board: change the schematic, then update the PCB from it.
-- `scripts/place_from_ergogen.py` is the bridge: it moves the schematic's SWnn footprints onto `ergogen/output/points.json`, snaps LEDs, caps and diodes with `snap_leds.py`, and replaces the board's Edge.Cuts with Ergogen's outline.
+- `scripts/place_from_ergogen.py` is the bridge: on both halves it moves the schematic's SWnn footprints onto `ergogen/output/points.json` and H1-H5, J1-J3 onto `mounts.json`, snaps LEDs, caps and diodes with `snap_leds.py`, and replaces the board's Edge.Cuts with Ergogen's outline. The PCB notches, case ports, spacer pockets and display openings hang off the same J1-J3 points, so board and case cannot drift apart.
 - To change geometry: edit `ergogen/config.yaml`, run `npm run build` in `ergogen/`, then re-run the placement script (after warning the user, see below).
 - The root `soffle-*.yaml` files are the older standalone Ergogen configs described in `README.md`; `ergogen/config.yaml` is the live one.
 
+## Two halves, one project
+
+- The root sheet uses `sofle-choc-pro-half.kicad_sch` twice, as sheets Left and Right. Left keeps the references; Right adds 200 (C references reach 165, so +100 would collide). Edit the half and both follow. Never run Annotate with reset: it renumbers both halves.
+- Labels in the half are local and its power symbols are `my-soffle:` local power symbols (`(power local)`), so every net is per half: `/Left/GND`, `/Right/GND`. A global label or a stock `power:` symbol added to the half joins the two halves into one net. PWR_FLAG stays global; it names nothing.
+- Net names carry the sheet prefix, and bare names then match nothing without any error: `inDiffPair('D')` or a net-class pattern `+5V` skips `/Left/D+` and `/Left/+5V`. Write `*/+5V` for both halves and `/Left/D` for one. Keep skew rules one per half: a shared rule puts both halves' pairs in one skew group. Unlabelled nets are named after the instance's reference with no prefix (`Net-(R205-Pad2)`), so label any net a rule depends on.
+- Scripts find parts by (half, role) through `scripts/halves.py`: a footprint's path is `/<sheet>/<symbol>` and both halves share the symbol part.
+- The right half sits `half_gap` (10 mm) past the left's inner edge; the midline is KiCad x 183.5. A pour that crosses it floods the other half.
+
 ## Scripts overwrite work
 
-- `scripts/place_from_ergogen.py` replaces Edge.Cuts and moves every listed switch plus its LED, cap and diode. The user fine-tunes some positions by hand in KiCad (TH4 / SW64 in particular). **Never re-run it over hand edits without warning the user first.**
+- `scripts/place_from_ergogen.py` replaces Edge.Cuts and moves every listed switch plus its LED, cap and diode, and every hole and connector. The user fine-tunes some positions by hand in KiCad (TH4 / SW64 in particular). **Never re-run it over hand edits without warning the user first.**
 - `scripts/build_rp2040_module.py` regenerates `templates/rp2040-inner-column/RP2040InnerColumn.kicad_pcb` from the netlist and **deletes all routing** on it. The template is routed now; do not run it unless the user asks for a rebuild and has confirmed losing the routing.
 - `scripts/transfer_module_routing.py` writes tracks, vias and the GND pour onto the template from a routed test board.
 - **KiCad must be closed** (or the file not open) before a script saves a board. KiCad holds the file in memory and a later save from the GUI silently overwrites the script's result, or the script overwrites unsaved GUI work.
@@ -32,6 +40,7 @@ The detail behind the traps listed in `CLAUDE.md`. Every point here cost a sessi
 
 - The project is on **KiCad 10.0.3** (`%LOCALAPPDATA%\Programs\KiCad\10.0\bin`: `kicad-cli.exe`, `python.exe`). KiCad 8.0.9 is still installed in `C:\Program Files\KiCad\8.0` but cannot open these files; tag `kicad8-final` marks the last KiCad 8 state. Never run a script with KiCad 8's Python.
 - **`pcbnew.BOARD.Save` on a fresh `pcbnew.BOARD()` rewrites the neighbouring `.kicad_pro` with defaults**, deleting the user's net classes (Power3.3V, Power5V, USB) and rules. Any script that saves a board inside a project must back up and restore the `.kicad_pro` (see `build_rp2040_module.py`). `LoadBoard` then `Save` migrates the `.kicad_pro` properly instead.
+- `pcbnew.FootprintLoad` returns a footprint with no library nickname; set it with `SetFPIDAsString('lib:name')` before saving, or the board records a bare name that no library table resolves.
 - API: `FOOTPRINT.GetFieldByName` is gone, use `GetField(name)`; Datasheet and Description are built-in fields. Netlists put one token per indented line and write empty fields as `(field (name "X"))`. DRC adds `footprint_symbol_field_mismatch`.
 - KiCad 10 resolves `${KICAD8_3RD_PARTY}` to `Documents\KiCad\10.0\3rdparty`, so older library tables still load. The global fp-lib-table nests stock libraries as a `Table` row using `${KICAD10_FOOTPRINT_DIR}`; scripts that read tables must follow that (see `libs()` in `build_rp2040_module.py`).
 - KiCad 10 keeps a `.history/` local-history git repo in project folders. It is gitignored and must never be edited or deleted.
@@ -40,7 +49,8 @@ The detail behind the traps listed in `CLAUDE.md`. Every point here cost a sessi
 ## Verification
 
 - ERC: `kicad-cli sch erc --severity-error --exit-code-violations <file>.kicad_sch`
-- DRC: `kicad-cli pcb drc --schematic-parity --severity-error --exit-code-violations <file>.kicad_pcb`. The template has known expected items (listed in its `README.md` under Checks); compare against that list instead of treating every violation as new.
+- DRC: `kicad-cli pcb drc --schematic-parity --severity-error --exit-code-violations <file>.kicad_pcb`. The template has known expected items (listed in its `README.md` under Checks); compare against that list instead of treating every violation as new. The keyboard's known items are 26 `courtyards_overlap`: the H1-H5 holes against neighbouring switches, 13 per half.
+- Parity does not catch a pad moved to another net. After anything that rewrites nets, compare every pad's net with an exported netlist (`kicad-cli sch export netlist`).
 - Ergogen: `npm run build` in `ergogen/` must finish and write `output/points.json`.
 - **DRC-clean is not routable.** The first RP2040 placement passed DRC and could not be routed: parts sat across other pins' escapes. What works, measured on the RP2040 Community Edition controllers (Splinky, Frood, Sea-Picro, Helios in `keyboard-refs`):
   - Every signal pin keeps a straight escape lane. USB (46/47) and QSPI (51-56) always stay clear.
