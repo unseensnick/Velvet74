@@ -48,17 +48,41 @@ def libs():
     return table
 
 
+def _blocks(src, head):
+    """Every balanced '(head ...' block in src, in order."""
+    out, i = [], 0
+    pat = re.compile(r'\(' + head + r'\b')
+    while True:
+        m = pat.search(src, i)
+        if not m:
+            return out
+        depth = 0
+        for j in range(m.start(), len(src)):
+            if src[j] == '(':
+                depth += 1
+            elif src[j] == ')':
+                depth -= 1
+                if depth == 0:
+                    break
+        out.append(src[m.start():j + 1])
+        i = j + 1
+
+
 def read_netlist(path):
     # KiCad 10 writes one token per indented line; fold the line breaks so both netlist styles parse alike
     text = re.sub(r'\s+\)', ')', re.sub(r'\s*\n\s*', ' ', open(path, encoding='utf-8').read()))
     comps = {}
-    for block in re.findall(r'\(comp \(ref "[^"]+"\).*?\(tstamps "[^"]+"\)\)', text, re.S):
+    for block in _blocks(text, 'comp'):
+        # a comp holds two (tstamps): its sheet's inside (sheetpath) and the symbol's own. Take them apart by
+        # structure; matching the first one gave every part the sheet's "/" and every footprint the path "//".
+        sheet = _blocks(block, 'sheetpath')[0]
+        own = block.replace(sheet, '')
         ref = re.search(r'\(ref "([^"]+)"\)', block).group(1)
         comps[ref] = dict(
-            value=re.search(r'\(value "([^"]*)"\)', block).group(1),
-            footprint=re.search(r'\(footprint "([^"]*)"\)', block).group(1),
-            uuid=re.search(r'\(tstamps "([^"]+)"\)', block).group(1),
-            fields=dict(re.findall(r'\(field \(name "([^"]+)"\)(?: "([^"]*)")?\)', block)))   # empty fields have no value
+            value=re.search(r'\(value "([^"]*)"\)', own).group(1),
+            footprint=re.search(r'\(footprint "([^"]*)"\)', own).group(1),
+            path=re.search(r'\(tstamps "([^"]*)"\)', sheet).group(1) + re.search(r'\(tstamps "([^"]+)"\)', own).group(1),
+            fields=dict(re.findall(r'\(field \(name "([^"]+)"\)(?: "([^"]*)")?\)', own)))   # empty fields have no value
     nets = {}
     for block in re.split(r'\(net \(code', text)[1:]:
         name = re.search(r'\(name "([^"]*)"\)', block).group(1)
@@ -125,7 +149,7 @@ def main():
                 fp.SetField(k, v)
                 field = fp.GetField(k)
                 field.SetLayer(pcbnew.F_Fab); field.SetVisible(False)   # SetField defaults to visible silkscreen text
-        fp.SetPath(pcbnew.KIID_PATH('/' + c['uuid']))
+        fp.SetPath(pcbnew.KIID_PATH(c['path']))
         fp.SetSheetname('/'); fp.SetSheetfile('RP2040InnerColumn.kicad_sch')
         board.Add(fp)
         for pad in fp.Pads():
