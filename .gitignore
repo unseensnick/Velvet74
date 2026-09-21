@@ -13,8 +13,7 @@ _autosave-*
 # Ergogen
 ergogen/node_modules/
 ergogen/output/
-ergogen/output-right/
-ergogen/config.right.yaml
+ergogen/config.both.yaml
 
 # Claude Code (per-machine settings and session state)
 .claude/settings.local.json

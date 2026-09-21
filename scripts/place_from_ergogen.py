@@ -1,17 +1,16 @@
-"""Place the schematic's switches on Ergogen's key points and take its board outline.
+"""Place both halves' switches, holes and connectors on Ergogen's points and take its board outline.
 
-Run `npm run build` in ergogen/ first; it writes ergogen/output/points.json and the
-outline board. Then, with the PCB updated from the schematic:
+Run `npm run build` in ergogen/ first; it writes ergogen/output/points.json, mounts.json and the
+outline board, all holding both halves. Then, with the PCB updated from the schematic:
 
 Inside pcbnew:  Tools > Scripting Console, then
     exec(open(r"<project>/scripts/place_from_ergogen.py").read())
 From a shell (pcbnew closed):
     "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/place_from_ergogen.py sofle-choc-pro.kicad_pcb
-Right half (after `npm run build:right`), naming the Ergogen output folder:
-    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/place_from_ergogen.py sofle-choc-pro-right.kicad_pcb output-right
 
-Each run replaces the board-level Edge.Cuts outline, moves every SWnn listed in
-points.json, then snaps LEDs, caps and diodes with snap_leds.py.
+Each run replaces the board-level Edge.Cuts outline, moves every SWnn on both halves and snaps their
+LEDs, caps and diodes with snap_leds.py, and moves H1-H5 and J1-J3 onto their mount points (position and
+rotation; the side a part sits on is left alone). Parts are found by (half, role) through halves.py.
 """
 import json
 import os
@@ -32,7 +31,9 @@ except NameError:  # exec() from the scripting console has no __file__
     HERE = os.path.dirname(os.path.abspath(pcbnew.GetBoard().GetFileName()))
     HERE = os.path.join(HERE, 'scripts')
 PROJECT = os.path.dirname(HERE)
-ERGOGEN_OUT = os.path.join(PROJECT, 'ergogen', sys.argv[2] if len(sys.argv) > 2 else 'output')
+ERGOGEN_OUT = os.path.join(PROJECT, 'ergogen', 'output')
+sys.path.insert(0, HERE)
+import halves
 
 
 def _mm(x, y):
@@ -40,20 +41,38 @@ def _mm(x, y):
     return pcbnew.VECTOR2I(pcbnew.FromMM(ORIGIN[0] + x), pcbnew.FromMM(ORIGIN[1] - y))
 
 
-def place_switches(board):
-    points = json.load(open(os.path.join(ERGOGEN_OUT, 'points.json'), encoding='utf-8'))
-    by_ref = {fp.GetReference(): fp for fp in board.GetFootprints()}
+def _load(name):
+    return json.load(open(os.path.join(ERGOGEN_OUT, name), encoding='utf-8'))
+
+
+def place_switches(board, parts):
+    points = _load('points.json')
     missing = []
     for p in points:
-        fp = by_ref.get(p['ref'])
+        fp = parts.get((p['half'], p['ref']))
         if fp is None:
-            missing.append(p['ref'])
+            missing.append(f"{p['half']} {p['ref']}")
             continue
         if fp.IsFlipped():
             fp.Flip(fp.GetPosition(), False)  # switches sit on the front
         fp.SetOrientationDegrees(p['r'] + LED_FACING_ROTATION[p['led']])  # both tools rotate counter-clockwise as seen from the top
         fp.SetPosition(_mm(p['x'], p['y']))
     return len(points) - len(missing), missing
+
+
+def place_mounts(board, parts):
+    # holes and connectors: the footprint origin sits on the point (USB-C origins are the mouth on the
+    # board edge, J3's is pin 1), turned by the point's rotation, on whichever side it already is
+    mounts = _load('mounts.json')
+    missing = []
+    for m in mounts:
+        fp = parts.get((m['half'], m['ref']))
+        if fp is None:
+            missing.append(f"{m['half']} {m['ref']}")
+            continue
+        fp.SetOrientationDegrees(m['r'])
+        fp.SetPosition(_mm(m['x'], m['y']))
+    return len(mounts) - len(missing), missing
 
 
 def _pt(x, y):
@@ -95,13 +114,18 @@ def replace_outline(board):
 
 
 def run(board):
-    placed, missing = place_switches(board)
-    snap_ns = {'__name__': 'snap_leds_module', 'SNAP_LEDS_NO_MAIN': True}
-    exec(open(os.path.join(HERE, 'snap_leds.py'), encoding='utf-8').read(), snap_ns)
+    parts = halves.by_role(board)
+    placed, missing = place_switches(board, parts)
+    mounted, mount_missing = place_mounts(board, parts)
+    snap_path = os.path.join(HERE, 'snap_leds.py')
+    snap_ns = {'__name__': 'snap_leds_module', '__file__': snap_path, 'SNAP_LEDS_NO_MAIN': True}
+    exec(open(snap_path, encoding='utf-8').read(), snap_ns)
     snapped, snap_missing = snap_ns['snap'](board)
     outline, removed = replace_outline(board)
-    print(f'placed {placed} switches, snapped {snapped} parts, outline: {outline} segments (replaced {removed} old Edge.Cuts items)')
-    for label, refs in (('switches not on board', missing), ('snap targets not on board', snap_missing)):
+    print(f'placed {placed} switches and {mounted} holes/connectors, snapped {snapped} parts, '
+          f'outline: {outline} segments (replaced {removed} old Edge.Cuts items)')
+    for label, refs in (('switches not on board', missing), ('mounts not on board', mount_missing),
+                        ('snap targets not on board', snap_missing)):
         if refs:
             print(f'{label}: {", ".join(refs)}')
 

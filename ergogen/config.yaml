@@ -62,23 +62,35 @@ units:
   usbc_above: usbc_h - usbc_sink  # 1.66 proud of the board top, which is why the spacer is pocketed
   usbc_body_w: 11.24
   usbc_body_l: 6.5
+  usbc_slot_w: 9.24  # board cutout from the manufacturer drawing, opening onto the edge
+  usbc_slot_d: 5.75
+  runout: 2          # how far past the board edge the cutouts run, so they open cleanly onto it
   port_margin: 0.75  # slack around the connector so a plug nose enters without fouling the wall
   port_h: usbc_h + 2 port_margin
   port_z: floor + standoff - usbc_below - port_margin
   # 0.91 inch OLED 128x32 (SSD1306) soldered flat on the 4-pin J3, face up, reaching from the header row
   # toward the top edge. Module drawing (lcdwiki MC091GX): PCB 38 x 12 mm, pin row 1.5 mm from one short end,
-  # glass 30 x 11.5 mm from 3.5 to 33.5 mm past the pin row. Centre is in Ergogen coordinates (KiCad x - 60,
-  # 140 - KiCad y).
+  # glass 30 x 11.5 mm from 3.5 to 33.5 mm past the pin row. The openings hang off the oled_header point
+  # (J3 pin 1), so they follow J3 and mirror with it.
   # The plate OVERLAPS the glass by a 0.75 mm lip and rests on it, which is the dip you see around the screen
   # on the Keebart board. So the opening is smaller than the glass, not larger. It still has to clear the
   # active area (about 22.4 x 5.6 mm on this panel), which it does with room to spare.
   display_lip: 0.75
   display_w: 11.5 - 2 display_lip   # across the header row, glass is 11.5 mm
   display_l: 30 - 2 display_lip     # along the module, glass is 30 mm
-  display_cx: 110.25 # J3 pin row centre, KiCad x 170.25
-  display_cy: 57.6   # 18.5 mm past the pin row (KiCad y 100.9), KiCad y 82.4
+  display_row: 3.81    # J3 pin 1 to the middle of its 4-pin, 2.54 mm pitch row
+  display_glass: 18.5  # pin row to the glass centre (3.5 + 30 / 2)
+  # The right half is the left mirrored, sitting half_gap past the left half's inner edge so both halves
+  # share one board file with room for tabs between them.
+  half_gap: 10
 
 points:
+  # Every point is mirrored for the right half, across a vertical line half_gap / 2 past the left half's
+  # inner edge. That edge is _shape's matrix_outer_fn + kx + 10.5; keep the two in step.
+  mirror:
+    ref: matrix_outer_fn
+    shift: [kx + 10.5, 0]
+    distance: half_gap
   zones:
     matrix:
       key:
@@ -134,7 +146,8 @@ points:
     thumb4: # 1.5u tall key, LED west like Keebart's. The user's placement in KiCad to follow Keebart's thumb
       # cluster; keycap gaps 2.16 mm to TH3, 1.22 mm to SW55 and 0.88 mm to encoder 1.
       anchor: {ref: matrix_pinky_bottom, shift: [105.060, -16.630 - pinky_lift], rotate: -19.63}
-      key: {row_code: 6, col_index: 4, width: kx, height: 1.5 ky, led: west}
+      # Ergogen copies meta onto the mirror unchanged, so the right TH4's LED has to be told to face east
+      key: {row_code: 6, col_index: 4, width: kx, height: 1.5 ky, led: west, mirror: {led: east}}
     encoder1: # Keebart's knob position moved 2.875 mm down for knob room (SW65), set by the user in KiCad with
       # the thumb cluster; x stays on encoder 2's column. Electrically thumb row column 5.
       anchor: {ref: matrix_pinky_bottom, shift: [6 kx, 0.625 ky - 2.875 - pinky_lift]}
@@ -157,6 +170,19 @@ points:
     screw_bl:
       anchor: {ref: matrix_pinky_bottom, shift: [17.080, -10.280]}
       key: {mount_ref: H4}
+    # Connector points: the footprint origins of J1 and J2 (the mouth centre on the board edge, see the USB-C
+    # footprint) and J3 (pin 1). The PCB notches, case ports, spacer pockets and display openings hang off
+    # them, and the placement script puts the footprints on them, so board and case cannot drift apart.
+    # rotate is the footprint's KiCad orientation; J2 and J3 face the inner edge.
+    usbc_host:
+      anchor: {ref: matrix_pinky_bottom, shift: [108.779481, 78.625]}
+      key: {mount_ref: J1}
+    usbc_link:
+      anchor: {ref: matrix_pinky_bottom, shift: [118.5, 46.32], rotate: -90}
+      key: {mount_ref: J2}
+    oled_header:
+      anchor: {ref: matrix_pinky_bottom, shift: [114.06, 39.1], rotate: -90}
+      key: {mount_ref: J3}
 
     encoder2: # above encoder 1 (SW16), 21.5 mm apart. Never closer than 18: at 17 the combo footprints short,
       # and turning one 180 instead shorts its socket pad into the outer column key's socket
@@ -223,18 +249,16 @@ outlines:
         - {ref: matrix_pinky_bottom, shift: [-10.5, -10]}
   # The two mid-mount USB-C cutouts. They have to be part of the board outline rather than Edge.Cuts
   # inside the connector footprint: a notch drawn in the footprint only T-joins the edge, and KiCad
-  # rejects that as a malformed outline and falls back to the bounding box. Each rectangle runs past
-  # the edge so the notch opens onto it. Recompute the shifts if J1/J2 move on the board.
+  # rejects that as a malformed outline and falls back to the bounding box. Drawn in each connector's
+  # frame (mouth toward +y), so one shape serves J1 and J2 and mirrors with them.
   _port_slots:
     - what: rectangle
-      where:
-        shift: [108.7795, 76.75]
-      size: [9.24, 7.75]
+      where: {ref: usbc_host, shift: [0, (runout - usbc_slot_d) / 2]}
+      size: [usbc_slot_w, usbc_slot_d + runout]
     - operation: add
       what: rectangle
-      where:
-        shift: [116.625, 46.32]
-      size: [7.75, 9.24]
+      where: {ref: usbc_link, shift: [0, (runout - usbc_slot_d) / 2]}
+      size: [usbc_slot_w, usbc_slot_d + runout]
   # Board outline (PCB edge and case): the stepped top of _stepped combined with the drawn lower half
   board:
     - what: outline
@@ -273,14 +297,13 @@ outlines:
       radius: pilot_r
   # the whole OLED module, not just its glass: it lies in a pocket through the printed spacer, which is why
   # spacer_t matches the module's 1.2 mm PCB. The FR4 plate above only opens for the glass (_display_hole).
+  # orient cancels J3's turn so the shift and size read in board axes (mirrored points negate both)
   _display_module:
     - what: rectangle
-      where:
-        shift: [display_cx, display_cy - 2.5]
+      where: {ref: oled_header, orient: 90, shift: [-display_row, display_glass - 2.5]}
       size: [13, 39]
 
-  # case shell outlines. Port rectangles are centred on the board edge at each USB-C, in Ergogen
-  # coordinates (KiCad x - 60, 140 - KiCad y). Recompute them if J1/J2 move on the board.
+  # case shell outlines. Port rectangles are centred on each USB-C's mouth, in the connector's frame.
   _case_outer:
     - what: outline
       name: board
@@ -291,32 +314,27 @@ outlines:
       expand: fit
   _display_hole:
     - what: rectangle
-      where:
-        shift: [display_cx, display_cy]
+      where: {ref: oled_header, orient: 90, shift: [-display_row, display_glass]}
       size: [display_w, display_l]
   _port_host:
     - what: rectangle
-      where:
-        shift: [108.78, 78.62]
+      where: {ref: usbc_host}
       size: [10, 8]
   _port_link:
     - what: rectangle
-      where:
-        shift: [118.5, 46.32]
-      size: [8, 10]
+      where: {ref: usbc_link}
+      size: [10, 8]
   # The connector body stands usbc_above proud of the board top, so the spacer opens for it instead of
   # fouling it. Each rectangle carries fit clearance on three sides and runs past the board edge so the
-  # pocket is open-ended. Recompute the shifts if J1/J2 move on the board.
+  # pocket is open-ended.
   _port_bodies:
     - what: rectangle
-      where:
-        shift: [108.779, 76.375]
-      size: [usbc_body_w + 2 fit, usbc_body_l + 2 fit + 2]
+      where: {ref: usbc_host, shift: [0, (runout - usbc_body_l) / 2]}
+      size: [usbc_body_w + 2 fit, usbc_body_l + 2 fit + runout]
     - operation: add
       what: rectangle
-      where:
-        shift: [116.25, 46.32]
-      size: [usbc_body_l + 2 fit + 2, usbc_body_w + 2 fit]
+      where: {ref: usbc_link, shift: [0, (runout - usbc_body_l) / 2]}
+      size: [usbc_body_w + 2 fit, usbc_body_l + 2 fit + runout]
 
 cases:
   bottom:

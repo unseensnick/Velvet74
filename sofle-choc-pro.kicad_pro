@@ -627,39 +627,39 @@
     "netclass_patterns": [
       {
         "netclass": "Power5V",
-        "pattern": "+5V"
+        "pattern": "*/+5V"
       },
       {
         "netclass": "Power5V",
-        "pattern": "Net-(D1-*)"
+        "pattern": "*/VBUS_FUSED"
       },
       {
         "netclass": "Power5V",
-        "pattern": "VBUS"
+        "pattern": "*/VBUS"
       },
       {
         "netclass": "Power5V",
-        "pattern": "LINK_VBUS"
+        "pattern": "*/LINK_VBUS"
       },
       {
         "netclass": "Power3.3V",
-        "pattern": "+3.3V"
+        "pattern": "*/+3.3V"
       },
       {
         "netclass": "Power3.3V",
-        "pattern": "+1V1"
+        "pattern": "*/+1V1"
       },
       {
         "netclass": "USB",
-        "pattern": "D?"
+        "pattern": "*/D?"
       },
       {
         "netclass": "USB",
-        "pattern": "USB_?"
+        "pattern": "*/USB_?"
       },
       {
         "netclass": "USB",
-        "pattern": "LINK_D_*"
+        "pattern": "*/LINK_D_*"
       }
     ]
   },
@@ -1018,7 +1018,15 @@
   "sheets": [
     [
       "e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71",
-      "sofle-choc-pro"
+      "Root"
+    ],
+    [
+      "01cbd731-1f18-4a1a-abea-0f887c2f0944",
+      "Left"
+    ],
+    [
+      "5a796789-2c8e-428e-ab34-f513ad0d5772",
+      "Right"
     ]
   ],
   "text_variables": {},

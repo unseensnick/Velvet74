@@ -1,7 +1,8 @@
 """Snap each key's LED, LED decoupling cap and matrix diode onto its switch.
 
 Place and rotate only the switches (SWnn), then run this. Pairing comes from the
-reference numbers the schematic uses: SWnn -> LEDnn, C1nn, Dnn.
+reference numbers the schematic uses, SWnn -> LEDnn, C1nn, Dnn, within each half:
+parts are matched by (half, role) through halves.py, so SW210 pairs with LED210.
 
 Inside pcbnew:  Tools > Scripting Console, then
     exec(open(r"<project>/scripts/snap_leds.py").read())
@@ -9,10 +10,17 @@ From a shell (pcbnew closed):
     "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/snap_leds.py sofle-choc-pro.kicad_pcb
 """
 import math
+import os
 import re
 import sys
 
 import pcbnew
+
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+except NameError:  # exec() from the scripting console has no __file__
+    sys.path.insert(0, os.path.join(os.path.dirname(pcbnew.GetBoard().GetFileName()), 'scripts'))
+import halves
 
 # Offsets in the switch's own frame (mm, KiCad y down, 0,0 = key centre). Checked
 # with DRC against the plain hotswap footprint, the Choc/EC11 combo footprint and
@@ -45,20 +53,20 @@ def _put(fp, sw, offset, extra_rotation):
 
 
 def snap(board):
-    by_ref = {fp.GetReference(): fp for fp in board.GetFootprints()}
+    parts = halves.by_role(board)
     moved, missing = 0, []
-    for ref, sw in sorted(by_ref.items()):
-        m = re.fullmatch(r'SW(\d{2})', ref)
+    for (half, role), sw in sorted(parts.items()):
+        m = re.fullmatch(r'SW(\d{2})', role)
         if not m:
             continue
         n = m.group(1)
         diode = DIODE_COMBO if 'EC11_Combo' in sw.GetFPIDAsString() else DIODE
         for other, offset, rotation in ((f'LED{n}', LED, 0), (f'C1{n}', CAP, 90), (f'D{n}', diode, DIODE_ROTATION)):
-            if other in by_ref:
-                _put(by_ref[other], sw, offset, rotation)
+            if (half, other) in parts:
+                _put(parts[(half, other)], sw, offset, rotation)
                 moved += 1
             else:
-                missing.append(other)
+                missing.append(f'{half} {other}')
     return moved, missing
 
 

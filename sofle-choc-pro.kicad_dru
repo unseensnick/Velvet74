@@ -1,12 +1,18 @@
 (version 1)
 
+# Both halves live on one board as two instances of sofle-choc-pro-half.kicad_sch: sheet Left keeps the
+# schematic's references (U1, J1), sheet Right adds 200 (U201, J201), and every net carries its sheet's
+# prefix (/Left/D+, /Right/D+). So a rule about a part names both instances, and a rule about a net uses
+# the sheet-prefixed name: a bare inDiffPair('D') matches nothing once nets are prefixed.
+
 # Track widths: 0.2 mm for signals, +3.3V and +1V1 (under 100 mA each: RP2040 datasheet p.156/p.624; IPC-2221
 # needs 0.3 mm only at 1 A), 0.5 mm for +5V/VBUS (up to about 1 A of LEDs), and 0.127 mm only as a short
 # neck-down at RP2040 pins. Net classes keep 0.2 mm clearance. Later rules win in KiCad, so the broad controller
 # rule comes first and the fine-pitch rule overrides it at the pads.
 
 # Controller strip (rule area "controller"): 0.15 mm, as on Raspberry Pi's RP2040 minimal design, so 0.2 mm lanes
-# at 0.4 mm pitch can bend without violations. Zones keep their own clearances.
+# at 0.4 mm pitch can bend without violations. Zones keep their own clearances. The right half gets its own
+# area when its controller block is placed.
 (rule "controller clearance"
   (condition "A.intersectsArea('controller') && A.Type != 'Zone' && B.Type != 'Zone'")
   (constraint clearance (min 0.15mm)))
@@ -14,32 +20,50 @@
 # Copper touching the RP2040 (0.4 mm pitch), USB-C (0.5 mm) or the SOT-563 ESD arrays (0.15 mm pad gaps) may go
 # down to 0.127 mm, JLCPCB's standard (0.09 mm minimum).
 (rule "fine pitch fanout"
-  (condition "A.intersectsCourtyard('U1') || A.intersectsCourtyard('J1') || A.intersectsCourtyard('J2') || A.intersectsCourtyard('U2') || A.intersectsCourtyard('U4')")
+  (condition "A.intersectsCourtyard('U1') || A.intersectsCourtyard('J1') || A.intersectsCourtyard('J2') || A.intersectsCourtyard('U2') || A.intersectsCourtyard('U4') || A.intersectsCourtyard('U201') || A.intersectsCourtyard('J201') || A.intersectsCourtyard('J202') || A.intersectsCourtyard('U202') || A.intersectsCourtyard('U204')")
   (constraint clearance (min 0.127mm)))
 
 # The host USB data lines are the only real pairs, named per segment so each side of R7/R8 is its own net:
-# D+/D- (J1 to R7/R8) and USB_P/USB_N (R7/R8 to U1). One rule per pair, because a shared rule puts both pairs in
-# one skew group and KiCad then compares D+ against a net from the other pair.
+# D+/D- (J1 to R7/R8) and USB_P/USB_N (R7/R8 to U1). One rule per pair and per half, because a shared rule puts
+# the pairs in one skew group and KiCad then compares D+ against a net from another pair.
 # Spacing is checked outside the fan-out only: inside J1, U4 and U1 the pad geometry sets it, not the routing.
 # Length matching skips J1 only: its pin-swap bridges are stubs the signal never runs through, but KiCad counts
 # them in net length. Excluding U4 as well compared unequal leftovers, so U4 stays in.
 # Full speed needs no impedance control at these lengths, so the gap limits are loose.
-(rule "usb pair D spacing"
-  (condition "A.inDiffPair('D') && !A.intersectsCourtyard('J1') && !A.intersectsCourtyard('U4')")
+(rule "usb pair D spacing, left"
+  (condition "A.inDiffPair('/Left/D') && !A.intersectsCourtyard('J1') && !A.intersectsCourtyard('U4')")
   (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
   (constraint diff_pair_uncoupled (max 6mm)))
 
-(rule "usb pair D length"
-  (condition "A.inDiffPair('D') && !A.intersectsCourtyard('J1')")
+(rule "usb pair D spacing, right"
+  (condition "A.inDiffPair('/Right/D') && !A.intersectsCourtyard('J201') && !A.intersectsCourtyard('U204')")
+  (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
+  (constraint diff_pair_uncoupled (max 6mm)))
+
+(rule "usb pair D length, left"
+  (condition "A.inDiffPair('/Left/D') && !A.intersectsCourtyard('J1')")
   (constraint skew (max 0.1mm)))
 
-(rule "usb pair USB spacing"
-  (condition "A.inDiffPair('USB') && !A.intersectsCourtyard('U1')")
+(rule "usb pair D length, right"
+  (condition "A.inDiffPair('/Right/D') && !A.intersectsCourtyard('J201')")
+  (constraint skew (max 0.1mm)))
+
+(rule "usb pair USB spacing, left"
+  (condition "A.inDiffPair('/Left/USB') && !A.intersectsCourtyard('U1')")
   (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
   (constraint diff_pair_uncoupled (max 6mm)))
 
-(rule "usb pair USB length"
-  (condition "A.inDiffPair('USB')")
+(rule "usb pair USB spacing, right"
+  (condition "A.inDiffPair('/Right/USB') && !A.intersectsCourtyard('U201')")
+  (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.35mm))
+  (constraint diff_pair_uncoupled (max 6mm)))
+
+(rule "usb pair USB length, left"
+  (condition "A.inDiffPair('/Left/USB')")
+  (constraint skew (max 0.1mm)))
+
+(rule "usb pair USB length, right"
+  (condition "A.inDiffPair('/Right/USB')")
   (constraint skew (max 0.1mm)))
 
 # No LINK_D rule: the link between halves is one-wire serial. LINK_D_N reaches only J2's two data pins and the
@@ -47,8 +71,8 @@
 
 # The mid-mount USB-C lands sit 0.15 mm from the connector's board cutout. That is what Hong Cheng's drawing
 # for HC-TYPE-C-16P-C16B specifies, and the connector tail sets it: pulling the land back would leave the tail
-# hanging over bare laminate. Scoped to J1/J2 pads, so everything else near the ports keeps the 0.3 mm rule.
-# JLCPCB quote 0.3 mm copper to a routed outline, so expect this to draw a query on the first order.
+# hanging over bare laminate. Scoped to the connectors' pads, so everything else near the ports keeps the
+# 0.3 mm rule. JLCPCB quote 0.3 mm copper to a routed outline, so expect this to draw a query on the first order.
 (rule "usb-c land to cutout"
-  (condition "A.Type == 'Pad' && (A.memberOfFootprint('J1') || A.memberOfFootprint('J2'))")
+  (condition "A.Type == 'Pad' && (A.memberOfFootprint('J1') || A.memberOfFootprint('J2') || A.memberOfFootprint('J201') || A.memberOfFootprint('J202'))")
   (constraint edge_clearance (min 0.15mm)))
