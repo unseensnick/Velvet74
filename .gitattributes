@@ -4,11 +4,11 @@
 *.sh text eol=lf
 .githooks/* text eol=lf
 
-# KiCad writes LF on every platform and every committed blob is LF already, so checking these out as
-# LF stops the "LF will be replaced by CRLF" warnings after each save without changing any blob.
-*.kicad_* text eol=lf
-fp-lib-table text eol=lf
-sym-lib-table text eol=lf
+# KiCad on Windows saves boards with CRLF. Checking these out as CRLF keeps the working files CRLF and
+# stops the "CRLF will be replaced by LF" warning; committed blobs stay LF (text normalisation).
+*.kicad_* text eol=crlf
+fp-lib-table text eol=crlf
+sym-lib-table text eol=crlf
 # Large and machine-written, so GitHub collapses them in PR diffs. Local git diff is unaffected.
 *.kicad_pcb linguist-generated=true
 
