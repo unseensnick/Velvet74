@@ -27557,7 +27557,18 @@
 			)
 		)
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+		(fp_rect
+			(start -0.75 -0.75)
+			(end 0.75 0.75)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill yes)
+			(layer "F.Mask")
+			(uuid "951c4d8c-989c-4753-8e26-f1eabd2b2f2f")
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.3 -1.25)
@@ -55575,7 +55586,18 @@
 			)
 		)
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+		(fp_rect
+			(start -0.75 -0.75)
+			(end 0.75 0.75)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill yes)
+			(layer "F.Mask")
+			(uuid "7e287057-4770-483f-8dff-a24fc2ac8c90")
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 2.3 1.25)
