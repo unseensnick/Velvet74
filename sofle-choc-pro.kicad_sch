@@ -17,11 +17,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "01cbd731-1f18-4a1a-abea-0f887c2f0944")
 		(property "Sheetname" "Left"
 			(at 40 39.2 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -31,6 +33,8 @@
 		)
 		(property "Sheetfile" "sofle-choc-pro-half.kicad_sch"
 			(at 40 80.6 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -58,11 +62,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "5a796789-2c8e-428e-ab34-f513ad0d5772")
 		(property "Sheetname" "Right"
 			(at 140 39.2 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -72,6 +78,8 @@
 		)
 		(property "Sheetfile" "sofle-choc-pro-half.kicad_sch"
 			(at 140 80.6 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
