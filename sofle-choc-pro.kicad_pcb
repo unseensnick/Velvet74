@@ -125687,6 +125687,10 @@
 		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
+		(jumper_pad_groups
+			("1" "6")
+			("3" "4")
+		)
 		(fp_line
 			(start 0.71 -0.935)
 			(end -0.71 -0.935)
@@ -126168,6 +126172,10 @@
 		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
+		(jumper_pad_groups
+			("1" "6")
+			("3" "4")
+		)
 		(fp_line
 			(start 0.71 -0.935)
 			(end -0.71 -0.935)
@@ -143107,6 +143115,10 @@
 		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
+		(jumper_pad_groups
+			("1" "6")
+			("3" "4")
+		)
 		(fp_line
 			(start -0.425568 0.935)
 			(end 0.71 0.935)
@@ -200802,6 +200814,10 @@
 		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
+		(jumper_pad_groups
+			("1" "6")
+			("3" "4")
+		)
 		(fp_line
 			(start 0.71 -0.935)
 			(end -0.71 -0.935)
