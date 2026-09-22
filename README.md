@@ -76,8 +76,11 @@ Ergogen 4.2.1 is pinned in `ergogen/package.json`; the output lands in `ergogen/
 **To run the scripts in `scripts/`:** KiCad's bundled Python (`<KiCad>/10.0/bin/python.exe` on Windows), with KiCad
 closed. Each script's docstring says how to run it and what it overwrites.
 
-**To regenerate `production/`:** the Fabrication Toolkit plugin (from the KiCad Plugin and Content Manager). Its
-defaults produce the JLCPCB Gerbers, drill files, BOM and placement.
+**To regenerate `production/`:** the Fabrication Toolkit plugin (from the KiCad Plugin and Content Manager), with
+its automatic translation left **off**. JLCPCB's zero degrees is the part's orientation in its own LCSC package
+drawing, which differs from KiCad's for some packages, so each affected part carries an `FT Rotation Offset` or
+`FT Position Offset` field checked against JLC's own footprint. The plugin's name-matching rules would rotate parts
+that are already right.
 
 **To commit:** activate the tracked commit-message hook once per clone with `git config core.hooksPath .githooks`
 (see `CLAUDE.md` for the message format).

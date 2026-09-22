@@ -112031,7 +112031,7 @@
 				)
 			)
 		)
-		(property "FT Position Offset" "0,1.394"
+		(property "FT Position Offset" "0,3.945"
 			(at 0 2.43 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -118657,7 +118657,7 @@
 				)
 			)
 		)
-		(property "FT Position Offset" "0,1.394"
+		(property "FT Position Offset" "0,3.945"
 			(at 0 2.43 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -148861,7 +148861,7 @@
 				)
 			)
 		)
-		(property "FT Position Offset" "0,1.394"
+		(property "FT Position Offset" "0,3.945"
 			(at 0 2.43 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -205453,7 +205453,7 @@
 				)
 			)
 		)
-		(property "FT Position Offset" "0,1.394"
+		(property "FT Position Offset" "0,3.945"
 			(at 0 2.43 0)
 			(layer "B.Fab")
 			(hide yes)

@@ -20231,7 +20231,7 @@
 				)
 			)
 		)
-		(property "FT Position Offset" "0,1.394"
+		(property "FT Position Offset" "0,3.945"
 			(at 29.21 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -30110,7 +30110,7 @@
 				)
 			)
 		)
-		(property "FT Position Offset" "0,1.394"
+		(property "FT Position Offset" "0,3.945"
 			(at 109.22 271.78 0)
 			(hide yes)
 			(show_name no)

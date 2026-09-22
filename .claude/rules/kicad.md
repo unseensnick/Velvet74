@@ -46,6 +46,12 @@ The detail behind the traps listed in `CLAUDE.md`. Every point here cost a sessi
 - KiCad 10 keeps a `.history/` local-history git repo in project folders. It is gitignored and must never be edited or deleted.
 - `kicad-cli pcb drc --refill-zones --save-board` writes the board. A read-only check never passes `--save-board`.
 
+## Fabrication outputs
+
+- `production/` comes from the Fabrication Toolkit plugin, run **without auto-translate**. Its footprint-name rules would turn parts that are already right: `^SOT-23` would rotate U5's `SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL` (needs 0) and `^QFN-` would rotate U1.
+- JLCPCB's zero degrees is the part's orientation in its own LCSC package drawing, so the correction per part is the angle between our footprint and JLC's. Corrections live in the schematic as `FT Rotation Offset` and `FT Position Offset` fields and must be copied onto the board footprints as well, or DRC parity flags the difference. Verified: 270 on U2/U4 (SOT-563), 270 on U3 (WSON-8), 180 on U6 (stock SOT-23-5), 0 everywhere else, and position `0,3.945` on J1/J2, whose mid-mount footprint anchors at the connector mouth rather than the pad field.
+- **A part or footprint swap invalidates the correction.** J1's old `0,1.394` was measured for C165948 and stayed behind when the connector became the mid-mount C19274022, putting all four USB-C connectors 2.55 mm off in the CPL. Re-derive after any swap: `uvx --from easyeda2kicad easyeda2kicad --footprint --lcsc_id <code>` gives JLC's own footprint, then fit its pads onto ours.
+
 ## Verification
 
 - ERC: `kicad-cli sch erc --severity-error --exit-code-violations <file>.kicad_sch`
