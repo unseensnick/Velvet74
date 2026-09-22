@@ -38,6 +38,7 @@ Full detail and the reasons are in [.claude/rules/kicad.md](.claude/rules/kicad.
 | `ergogen/` | Pinned Ergogen 4.2.1: `config.yaml` (live layout; `points.mirror` puts the right half `half_gap` past the left's inner edge), `make_both.js` (twins every outline and case for the right half, since Ergogen cannot mirror a polygon), `export_points.js`, `npm run build`. One run writes both halves to `output/`; it and `config.both.yaml` are generated and gitignored |
 | `scripts/place_from_ergogen.py` | On both halves: moves SWnn onto `points.json` and H1-H5, J1-J3 onto `mounts.json`, runs `snap_leds.py`, **replaces Edge.Cuts** |
 | `scripts/snap_leds.py` | Snaps LEDnn, C1nn, Dnn onto each switch (back side), within each half |
+| `scripts/place_panel.py` | Panel hardware for the rails and tabs that `make_both.js` adds to the outline: 10 mouse bites, 2 tooling holes, 3 fiducials, and the keepouts that hold the pours off the rails and tabs. All board-only, so parity ignores them; run after `place_from_ergogen.py`, which replaces Edge.Cuts but leaves footprints alone |
 | `scripts/halves.py` | Finds a footprint's (half, role) from its sheet path, so scripts say ('Right', 'SW10') and never compute SW210 |
 | `scripts/render_keycaps.py` | Stdlib SVG render of keycaps and knobs from Ergogen output (read-only for the board) |
 | `scripts/strip_signals.py` | **Deletes every track and via that is not on GND, +5V, +3.3V, +1V1, VBUS, VBUS_FUSED or LINK_VBUS** (either half), to clear a board for hand routing; zones are untouched; restores `.kicad_pro` |

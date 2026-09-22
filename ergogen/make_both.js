@@ -29,9 +29,33 @@ const outlines = Object.keys(cfg.outlines)
 const cases = Object.keys(cfg.cases)
 for (const n of outlines) cfg.outlines[right(n)] = twin(cfg.outlines[n], outlines)
 for (const n of cases) cfg.cases[right(n)] = twin(cfg.cases[n], [...outlines, ...cases])
+// Assembly panel, so the fab does not choose it: a 5 mm process edge above and below both halves, joined to them
+// by 5 mm breakoff tabs. Both halves hang from the same two rails, so the file is one board. Anchors are absolute
+// Ergogen coordinates (y up, an anchor with no ref starts at the origin and shifts); KiCad x = 60 + x, y = 140 - y,
+// the ORIGIN in scripts/place_from_ergogen.py. Every piece overlaps what it joins by 0.5 mm, because a rectangle
+// that only touches an edge leaves a hairline T-joint.
+//
+// Tab positions are the windows where no track or pad comes within 3 mm of the board edge, and they stay clear of
+// the USB-C cutouts in the top inner corners. The mouse bites, tooling holes, fiducials and the keepouts that hold
+// the pours off the rails are footprints and rule areas, from scripts/place_panel.py.
+const PANEL = [
+    {name: 'rail top', where: {shift: [123.5, 87]}, size: [268, 5]},          // KiCad y 50.5..55.5
+    {name: 'rail bottom', where: {shift: [123.5, -39]}, size: [268, 5]},      // KiCad y 176.5..181.5
+    {name: 'tab top x77', where: {shift: [17, 81.25]}, size: [5, 7.5]},
+    {name: 'tab top x113', where: {shift: [53, 83.69]}, size: [5, 2.62]},
+    {name: 'tab top x149', where: {shift: [89, 81.56]}, size: [5, 6.88]},
+    {name: 'tab top x218', where: {shift: [158, 81.56]}, size: [5, 6.88]},
+    {name: 'tab top x254', where: {shift: [194, 83.69]}, size: [5, 2.62]},
+    {name: 'tab top x290', where: {shift: [230, 81.25]}, size: [5, 7.5]},
+    {name: 'tab bottom x95', where: {shift: [35, -32.86]}, size: [5, 8.28]},
+    {name: 'tab bottom x135', where: {shift: [75, -32.86]}, size: [5, 8.28]},
+    {name: 'tab bottom x232', where: {shift: [172, -32.86]}, size: [5, 8.28]},
+    {name: 'tab bottom x272', where: {shift: [212, -32.86]}, size: [5, 8.28]},
+]
 cfg.outlines.board_pcb_both = [
     {what: 'outline', name: 'board_pcb'},
     {operation: 'add', what: 'outline', name: right('board_pcb')},
+    ...PANEL.map(p => ({operation: 'add', what: 'rectangle', where: p.where, size: p.size})),
 ]
 cfg.pcbs.outline_only.outlines.edge.outline = 'board_pcb_both'
 
