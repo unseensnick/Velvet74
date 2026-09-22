@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# my-soffle commit-message standard (see .claude/rules/workflow.md).
+# Velvet74 commit-message standard (see .claude/rules/workflow.md).
 # Rejects a commit whose message breaks the standard. Tracked here as the source of
 # truth; activate on a clone with:  git config core.hooksPath .githooks
 msg_file="$1"
@@ -31,12 +31,12 @@ echo "$msg" | grep -qiE 'co-authored-by:.*(claude|anthropic)|generated with|clau
 #    ending at a non-alphanumeric (so a hex colour like #0058A0 is not a false positive).
 stripped=$(echo "$msg" | sed -E 's@[A-Za-z0-9._-]+/[A-Za-z0-9._-]+#[0-9]+@@g')
 echo "$stripped" | grep -qE '#[0-9]+([^0-9A-Za-z]|$)' \
-  && errors+=("bare '#<number>' is ambiguous; link a real issue or PR as 'unseensnick/my-soffle#N'")
+  && errors+=("bare '#<number>' is ambiguous; link a real issue or PR as 'unseensnick/Velvet74#N'")
 
 if [ "${#errors[@]}" -gt 0 ]; then
   {
     echo ""
-    echo "x Commit rejected: message breaks the my-soffle standard (.claude/rules/workflow.md):"
+    echo "x Commit rejected: message breaks the Velvet74 standard (.claude/rules/workflow.md):"
     for e in "${errors[@]}"; do echo "    - $e"; done
     echo ""
     echo "  Subject: $subject"

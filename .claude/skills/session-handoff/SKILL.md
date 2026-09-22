@@ -1,6 +1,6 @@
 ---
 name: session-handoff
-description: Write my-soffle's Handoff.md so a fresh session resumes cleanly, and update memory when this session produced durable facts. Use when the session is wrapping up ("I'm stepping away", "continue tomorrow", "wrap up"), before a `/clear`, when a long session has accumulated state that would be lost, or when the session is looping on a broken approach and a fresh agent would do better. Offer it proactively on those signals; do not wait to be asked.
+description: Write Velvet74's Handoff.md so a fresh session resumes cleanly, and update memory when this session produced durable facts. Use when the session is wrapping up ("I'm stepping away", "continue tomorrow", "wrap up"), before a `/clear`, when a long session has accumulated state that would be lost, or when the session is looping on a broken approach and a fresh agent would do better. Offer it proactively on those signals; do not wait to be asked.
 argument-hint: "[optional: a narrower scope, e.g. 'handoff only']"
 disable-model-invocation: false
 allowed-tools:

@@ -16,7 +16,7 @@ Write commits the user could skim later and understand. Scale the structure to t
 
 - Types: `feat`, `fix`, `docs`, `chore`, `refactor`, `test`, `perf`, `build`, `ci`, `style`, `revert`. Scope optional, lower-case (`pcb`, `sch`, `lib`, `ergogen`, `scripts`, `templates`, `kicad`, `claude`).
 - Imperative mood, lower-case, no trailing period, `<=72` chars.
-- Never a bare `#N`: GitHub auto-links it to an issue or PR of this repo. Link a real one as `owner/repo#N` (`unseensnick/my-soffle#N`).
+- Never a bare `#N`: GitHub auto-links it to an issue or PR of this repo. Link a real one as `owner/repo#N` (`unseensnick/Velvet74#N`).
 
 **Body (omit only for trivial commits; wrap ~72 cols):**
 

@@ -1,4 +1,6 @@
-# my-soffle
+# Velvet74
+
+The GitHub repo is `unseensnick/Velvet74` (renamed from `my-soffle`); the local folder and the `my-soffle` KiCad library keep the old name, because every part in the design references `my-soffle:...`.
 
 A personal Sofle-style split keyboard with Choc switches and a chip-down RP2040 controller on the PCB. Key positions, board outline and case come from Ergogen; parts, nets and fabrication data live in a KiCad 10 project aimed at JLCPCB assembly. The user owns a Keebart Sofle Choc Pro and uses it as the physical reference.
 
