@@ -52,7 +52,7 @@ Ship the current changes through commit, push, and PR creation. Confirm with the
 - Draft a title (under 72 chars) and body with `## Summary` (2-4 bullets) plus, when the board changed, the verification run (ERC/DRC counts, routability proof).
 - **No `## Test plan` section. No "Generated with Claude Code" footer or any AI attribution.**
 - **ASK the user to confirm or edit** the title and body.
-- Only after confirmation: `gh pr create --repo unseensnick/my-soffle --base main --title "..." --body "..."`.
+- Only after confirmation: `gh pr create --repo unseensnick/Velvet74 --base main --title "..." --body "..."`.
 - Show the PR URL. **Stop there: merging is the user's call** (`gh pr merge` is blocked by the command hook).
 
 ## Rules

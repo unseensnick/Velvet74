@@ -1,6 +1,6 @@
-# my-soffle
+# Velvet74
 
-A personal Sofle-style split keyboard with Choc switches and a chip-down RP2040 on each half. Key positions,
+A 74-key split keyboard with Choc switches and a chip-down RP2040 on each half, in the Sofle layout. Key positions,
 the board outline and the case come from [Ergogen](https://github.com/ergogen/ergogen); parts, nets and
 fabrication data live in a KiCad 10 project aimed at JLCPCB assembly.
 
