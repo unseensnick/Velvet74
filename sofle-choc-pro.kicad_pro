@@ -52,8 +52,8 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 0.0,
-          "corner_smoothing": 0,
+          "corner_radius": 0.2,
+          "corner_smoothing": 2,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
@@ -63,7 +63,7 @@
           "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -219,8 +219,11 @@
         0.0,
         0.127,
         0.2,
+        0.25,
         0.3,
         0.35,
+        0.4,
+        0.45,
         0.5
       ],
       "tuning_pattern_settings": {
@@ -571,7 +574,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
+        "track_width": 0.2,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -624,35 +627,39 @@
     "netclass_patterns": [
       {
         "netclass": "Power5V",
-        "pattern": "+5V"
+        "pattern": "*/+5V"
       },
       {
         "netclass": "Power5V",
-        "pattern": "Net-(D1-*)"
+        "pattern": "*/VBUS_FUSED"
       },
       {
         "netclass": "Power5V",
-        "pattern": "VBUS"
+        "pattern": "*/VBUS"
+      },
+      {
+        "netclass": "Power5V",
+        "pattern": "*/LINK_VBUS"
       },
       {
         "netclass": "Power3.3V",
-        "pattern": "+3.3V"
+        "pattern": "*/+3.3V"
       },
       {
         "netclass": "Power3.3V",
-        "pattern": "+1V1"
+        "pattern": "*/+1V1"
       },
       {
         "netclass": "USB",
-        "pattern": "D?"
+        "pattern": "*/D?"
       },
       {
         "netclass": "USB",
-        "pattern": "USB_?"
+        "pattern": "*/USB_?"
       },
       {
         "netclass": "USB",
-        "pattern": "LINK_D_*"
+        "pattern": "*/LINK_D_*"
       }
     ]
   },
@@ -1012,6 +1019,14 @@
     [
       "e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71",
       "sofle-choc-pro"
+    ],
+    [
+      "01cbd731-1f18-4a1a-abea-0f887c2f0944",
+      "Left"
+    ],
+    [
+      "5a796789-2c8e-428e-ab34-f513ad0d5772",
+      "Right"
     ]
   ],
   "text_variables": {},

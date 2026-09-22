@@ -20,7 +20,7 @@ for s, x1, y1, x2, y2, net, *w in r['tracks']:
     b.Add(t); t.SetNet(b.FindNet(net))
 for x, y, net in r['vias']:
     v = pcbnew.PCB_VIA(b); v.SetPosition(pcbnew.VECTOR2I(mm(x), mm(y)))
-    v.SetWidth(pcbnew.F_Cu, mm(0.45)); v.SetDrill(mm(0.2)); v.SetLayerPair(pcbnew.F_Cu, pcbnew.B_Cu)
+    v.SetWidth(pcbnew.F_Cu, mm(0.6)); v.SetDrill(mm(0.3)); v.SetLayerPair(pcbnew.F_Cu, pcbnew.B_Cu)
     b.Add(v); v.SetNet(b.FindNet(net))
 b.Save(dst)
 shutil.copy(src.replace('.kicad_pcb', '.kicad_pro'), pro)

@@ -38,7 +38,7 @@ items = [('pad', p['net'], p['geom']) for p in pads]
 for s, x1, y1, x2, y2, net, *w in prior['tracks']:
     items.append(('track', net, LineString([(x1, y1), (x2, y2)]).buffer((w[0] if w else 0.2) / 2)))
 for x, y, net in prior['vias']:
-    items.append(('via', net, Point(x, y).buffer(0.225)))
+    items.append(('via', net, Point(x, y).buffer(0.3)))
 parent = list(range(len(items)))
 
 

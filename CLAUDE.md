@@ -28,17 +28,20 @@ Full detail and the reasons are in [.claude/rules/kicad.md](.claude/rules/kicad.
 
 | Path | What it is |
 | --- | --- |
-| `sofle-choc-pro.kicad_sch` / `.kicad_pcb` / `.kicad_pro` | The keyboard: audited schematic, board (key area placed from Ergogen), project with net classes |
+| `sofle-choc-pro.kicad_sch`, `sofle-choc-pro-half.kicad_sch` | The root sheet and the half it uses twice, as sheets Left and Right. **Edit the half**: both halves follow. Left keeps the references (U1, SW10), Right adds 200 (U201, SW210); every net is per half (`/Left/GP0`, `/Right/GND`), power included, through local power symbols |
+| `sofle-choc-pro.kicad_pcb` / `.kicad_pro` / `.kicad_dru` | One board holding both halves 10 mm apart, the key area placed from Ergogen; net classes; custom DRC rules |
 | `lib/my-soffle.kicad_sym`, `lib/my-soffle.pretty/`, `lib/my-soffle.3dshapes/` | Project symbols, footprints (Choc hotswap, EC11 combo, SK6812MINI-E, reset switch) and 3D models |
 | `fp-lib-table`, `sym-lib-table` | Project library tables |
 | `templates/rp2040-inner-column/` | KiCad template: RP2040 module (schematic, placed and routed 2-layer board, `README.md` with checks and routability, `meta/info.html`, `lib/`) |
-| `ergogen/` | Pinned Ergogen 4.2.1: `config.yaml` (live layout), `export_points.js`, `npm run build`. `output/` is generated and gitignored |
-| `soffle-*.yaml` (root) | Older standalone Ergogen configs described in `README.md` |
-| `scripts/place_from_ergogen.py` | Moves SWnn onto `ergogen/output/points.json`, runs `snap_leds.py`, **replaces Edge.Cuts** |
-| `scripts/snap_leds.py` | Snaps LEDnn, C1nn, Dnn onto each switch (back side) |
+| `ergogen/` | Pinned Ergogen 4.2.1: `config.yaml` (live layout; `points.mirror` puts the right half `half_gap` past the left's inner edge), `make_both.js` (twins every outline and case for the right half, since Ergogen cannot mirror a polygon), `export_points.js`, `npm run build`. One run writes both halves to `output/`; it and `config.both.yaml` are generated and gitignored |
+| `scripts/place_from_ergogen.py` | On both halves: moves SWnn onto `points.json` and H1-H5, J1-J3 onto `mounts.json`, runs `snap_leds.py`, **replaces Edge.Cuts** |
+| `scripts/snap_leds.py` | Snaps LEDnn, C1nn, Dnn onto each switch (back side), within each half |
+| `scripts/halves.py` | Finds a footprint's (half, role) from its sheet path, so scripts say ('Right', 'SW10') and never compute SW210 |
 | `scripts/render_keycaps.py` | Stdlib SVG render of keycaps and knobs from Ergogen output (read-only for the board) |
+| `scripts/strip_signals.py` | **Deletes every track and via that is not on GND, +5V, +3.3V, +1V1, VBUS, VBUS_FUSED or LINK_VBUS** (either half), to clear a board for hand routing; zones are untouched; restores `.kicad_pro` |
 | `scripts/build_rp2040_module.py` | Rebuilds the template board from a netlist and places parts; **overwrites the template board, routing included**; restores `.kicad_pro` |
 | `scripts/transfer_module_routing.py` | Copies routing from a routed test board onto the template; **writes the template board** |
+| `scripts/ribbon/` | Parked experiment: an octilinear router for the parallel-lane look, with its own pipeline and `README.md`. No script in it writes the project board (`apply.py` writes a copy) |
 | `sofle-choc-pro-backups/`, `templates/rp2040-inner-column/RP2040InnerColumn-backups/` | KiCad's project backup zips, tracked in git on purpose (the user wants them kept) |
 
 Run KiCad scripts from a shell with KiCad closed: `"%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/<script>.py <args>` (each docstring has the exact form). Plain-Python tooling: `uv run --no-project python`.
@@ -46,7 +49,7 @@ Run KiCad scripts from a shell with KiCad closed: `"%LOCALAPPDATA%/Programs/KiCa
 ## Checks
 
 - ERC: `kicad-cli sch erc --severity-error --exit-code-violations sofle-choc-pro.kicad_sch`
-- DRC: `kicad-cli pcb drc --schematic-parity --severity-error --exit-code-violations sofle-choc-pro.kicad_pcb` (template: compare against the expected items in its README)
+- DRC: `kicad-cli pcb drc --schematic-parity --severity-error --exit-code-violations sofle-choc-pro.kicad_pcb` (template: compare against the expected items in its README). Known items: 26 `courtyards_overlap`, the H1-H5 holes against their neighbouring switches, 13 per half
 - Ergogen: `npm run build` in `ergogen/`
 
 ## Commit messages

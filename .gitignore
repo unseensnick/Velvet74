@@ -13,9 +13,16 @@ _autosave-*
 # Ergogen
 ergogen/node_modules/
 ergogen/output/
+ergogen/config.both.yaml
 
 # Claude Code (per-machine settings and session state)
 .claude/settings.local.json
 .claude/worktrees/
 .claude/launch.json
 Handoff.md
+
+# Python
+__pycache__/
+
+# Fabrication Toolkit keeps copies of earlier runs here
+production/backups/

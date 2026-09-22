@@ -11,6 +11,6 @@ Pipeline (KiCad 10 Python for pcbnew steps, `uv run --no-project --with shapely`
 5. `apply.py in.kicad_pcb routes.json out.kicad_pcb`: writes tracks and vias onto a copy, restores the `.kicad_pro`.
 6. `dump_board.py` and `render_crop.py`: PNG review renders.
 
-Rules baked in: 0.2 mm tracks at 0.4 mm pitch, 0.45/0.2 mm vias, clearances 0.205 / 0.26 / 0.5 mm (small margins over DRC because pads are polygonised), no turn sharper than 90 degrees including through a via.
+Rules baked in: 0.2 mm tracks at 0.4 mm pitch, 0.6/0.3 mm vias, clearances 0.205 copper / 0.36 hole / 0.5 edge mm (small margins over the JLCPCB-recommended rules because pads are polygonised; 0.13 inside the U1, J1, J2, U2 and U4 courtyards, matching `sofle-choc-pro.kicad_dru`), no turn sharper than 90 degrees including through a via.
 
 Status: the 2-layer key matrix routes completely (136 links, 124 vias, DRC 0 clearance errors on a scratch copy). Power, controller area and U1-to-matrix bundles are not done.
