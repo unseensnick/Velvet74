@@ -34,7 +34,6 @@ Full detail and the reasons are in [.claude/rules/kicad.md](.claude/rules/kicad.
 | `fp-lib-table`, `sym-lib-table` | Project library tables |
 | `templates/rp2040-inner-column/` | KiCad template: RP2040 module (schematic, placed and routed 2-layer board, `README.md` with checks and routability, `meta/info.html`, `lib/`) |
 | `ergogen/` | Pinned Ergogen 4.2.1: `config.yaml` (live layout; `points.mirror` puts the right half `half_gap` past the left's inner edge), `make_both.js` (twins every outline and case for the right half, since Ergogen cannot mirror a polygon), `export_points.js`, `npm run build`. One run writes both halves to `output/`; it and `config.both.yaml` are generated and gitignored |
-| `soffle-*.yaml` (root) | Older standalone Ergogen configs described in `README.md` |
 | `scripts/place_from_ergogen.py` | On both halves: moves SWnn onto `points.json` and H1-H5, J1-J3 onto `mounts.json`, runs `snap_leds.py`, **replaces Edge.Cuts** |
 | `scripts/snap_leds.py` | Snaps LEDnn, C1nn, Dnn onto each switch (back side), within each half |
 | `scripts/halves.py` | Finds a footprint's (half, role) from its sheet path, so scripts say ('Right', 'SW10') and never compute SW210 |
