@@ -1282,7 +1282,7 @@
 		(uuid "95413af7-9aef-48c8-8a4a-9627ed8f034b")
 	)
 	(embedded_fonts no)
-	(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+	(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 		(offset
 			(xyz 0 0 0)
 		)

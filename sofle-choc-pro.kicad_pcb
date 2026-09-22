@@ -159,7 +159,7 @@
 		(layer "F.Cu")
 		(uuid "01ba9a8d-07f8-4b3a-bdfd-c30d6ab34925")
 		(at 78 106 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW31"
 			(at 0 -9 180)
@@ -1376,7 +1376,7 @@
 			(uuid "2d86c0ee-8236-46ce-9969-0987e85e5e1e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1392,7 +1392,7 @@
 		(layer "F.Cu")
 		(uuid "01e9f43f-1966-46c1-950a-d59b1144da09")
 		(at 78 123 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW41"
 			(at 0 -9 180)
@@ -2609,7 +2609,7 @@
 			(uuid "9c5b6691-5c62-4fee-a6d7-dbc1cf410505")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2625,7 +2625,7 @@
 		(layer "F.Cu")
 		(uuid "0369545a-b45a-4f46-a9f2-647beef387d7")
 		(at 60 140 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW50"
 			(at 0 -9 180)
@@ -3842,7 +3842,7 @@
 			(uuid "3779f56e-741b-46a5-b228-8054c396a3a4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3858,7 +3858,7 @@
 		(layer "F.Cu")
 		(uuid "041523f7-b159-47b2-9955-bb516414ca23")
 		(at 271 86.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW222"
 			(at 0 -9 180)
@@ -5075,7 +5075,7 @@
 			(uuid "0ea26121-761f-4580-b13f-648ee6dcacf6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5091,7 +5091,7 @@
 		(layer "F.Cu")
 		(uuid "04f6283f-5c04-4b5f-919c-96e8366bd339")
 		(at 96 86.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW22"
 			(at 0 -9 180)
@@ -6308,7 +6308,7 @@
 			(uuid "5e8e8868-6eb8-43ed-bd28-10fa033be75e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6324,7 +6324,7 @@
 		(layer "F.Cu")
 		(uuid "0e4e19f4-5543-4891-8fba-19517011158f")
 		(at 271 103.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW232"
 			(at 0 -9 180)
@@ -7541,7 +7541,7 @@
 			(uuid "5729ae98-a79c-419b-8ef9-a53b466dbb6f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8867,7 +8867,7 @@
 			(uuid "038539f7-5848-4c75-9540-72601c8f9de5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8883,7 +8883,7 @@
 		(layer "F.Cu")
 		(uuid "14598a50-67d7-40a7-a14f-da632522f1f8")
 		(at 114 67.125 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW13"
 			(at 0 -9 180)
@@ -10100,7 +10100,7 @@
 			(uuid "fe4d15b4-60e2-4957-b1f0-9bebea4c403b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10116,7 +10116,7 @@
 		(layer "F.Cu")
 		(uuid "194768b4-20dd-40e8-b557-31408761da8a")
 		(at 307 123 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW240"
 			(at 0 -9 180)
@@ -11333,7 +11333,7 @@
 			(uuid "501f1d6c-dbe5-4847-8783-132bf4acaeba")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11349,7 +11349,7 @@
 		(layer "F.Cu")
 		(uuid "274cfbc7-40b3-429b-a423-18fd4214b340")
 		(at 217 105.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW235"
 			(at 0 -9 180)
@@ -12566,7 +12566,7 @@
 			(uuid "c3718ed8-9bfa-41c3-9254-ae497a509ef0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12582,7 +12582,7 @@
 		(layer "F.Cu")
 		(uuid "2a376bab-ab3a-4a56-89b7-09a1dbb29424")
 		(at 307 106 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW230"
 			(at 0 -9 180)
@@ -13799,7 +13799,7 @@
 			(uuid "be55616e-c70a-40fd-987c-042416b9ba05")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13815,7 +13815,7 @@
 		(layer "F.Cu")
 		(uuid "2b4be068-07b7-47d8-98d4-f8416f00c980")
 		(at 114 84.125 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW23"
 			(at 0 -9 180)
@@ -15032,7 +15032,7 @@
 			(uuid "e683dd8e-9555-4545-8224-622fa8acd5fa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15048,7 +15048,7 @@
 		(layer "F.Cu")
 		(uuid "2c30ee3d-7a03-4fec-af92-9473b30277c5")
 		(at 96 137.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW52"
 			(at 0 -9 180)
@@ -16265,7 +16265,7 @@
 			(uuid "7ee055c5-0441-497e-8c62-f45bb5c06f6c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16281,7 +16281,7 @@
 		(layer "F.Cu")
 		(uuid "2cedef32-8043-43bb-b806-0295e856cb2d")
 		(at 132 137.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW54"
 			(at 0 -9 180)
@@ -17498,7 +17498,7 @@
 			(uuid "02af6d48-f6b0-40c5-a91e-53913696a2f2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17514,7 +17514,7 @@
 		(layer "F.Cu")
 		(uuid "3255f3f2-07c2-435d-b4a5-52c4a369237f")
 		(at 289 72 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW211"
 			(at 0 -9 180)
@@ -18731,7 +18731,7 @@
 			(uuid "d0a0e52b-deb5-4806-860a-cfcd420a6a08")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18747,7 +18747,7 @@
 		(layer "F.Cu")
 		(uuid "33d47a64-a4da-4c4f-bf86-15564dc53bda")
 		(at 235 86.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW224"
 			(at 0 -9 180)
@@ -19964,7 +19964,7 @@
 			(uuid "0fb4422c-70c8-453a-b4f3-902f65f12d18")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19980,7 +19980,7 @@
 		(layer "F.Cu")
 		(uuid "361f11ba-2094-4695-996f-2ba7fc1e8525")
 		(at 289 140 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW251"
 			(at 0 -9 180)
@@ -21197,7 +21197,7 @@
 			(uuid "6b2a5f8e-e037-4c79-9c98-f1ed83fd33b4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21213,7 +21213,7 @@
 		(layer "F.Cu")
 		(uuid "380c7f80-1584-4c51-8ebb-c87f0924b071")
 		(at 60 123 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW40"
 			(at 0 -9 180)
@@ -22430,7 +22430,7 @@
 			(uuid "f00239a4-2381-4c39-a93a-037633311a65")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22446,7 +22446,7 @@
 		(layer "F.Cu")
 		(uuid "39620577-a3f3-48c6-84fa-72bf05e37c6f")
 		(at 244 156.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW262"
 			(at 0 -9 180)
@@ -23663,7 +23663,7 @@
 			(uuid "1473918c-4604-4aa8-9408-c566a38f309c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23679,7 +23679,7 @@
 		(layer "F.Cu")
 		(uuid "3f3636cf-7da1-420f-b1f9-8341213377ab")
 		(at 60 106 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW30"
 			(at 0 -9 180)
@@ -24896,7 +24896,7 @@
 			(uuid "236d4b28-d6af-40d7-9407-35f9d2abcdc5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24912,7 +24912,7 @@
 		(layer "F.Cu")
 		(uuid "45565984-1529-4ea2-be94-4260680f4447")
 		(at 87 157.5 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW60"
 			(at 0 -9 180)
@@ -26129,7 +26129,7 @@
 			(uuid "e72db409-26fd-4c21-a458-d104263a3454")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26262,7 +26262,7 @@
 		(layer "F.Cu")
 		(uuid "4ac82f74-0b23-4f17-9c8a-9e5d66421835")
 		(at 271 137.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW252"
 			(at 0 -9 180)
@@ -27479,7 +27479,7 @@
 			(uuid "16aa8cc1-2c0e-400c-ad85-5a0dfecc7d26")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27909,7 +27909,7 @@
 		(layer "F.Cu")
 		(uuid "52127bc8-bd41-4ade-8741-21e934a21b2d")
 		(at 96 103.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW32"
 			(at 0 -9 180)
@@ -29126,7 +29126,7 @@
 			(uuid "0b588986-e822-45e2-9cdf-494413a482ee")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29142,7 +29142,7 @@
 		(layer "F.Cu")
 		(uuid "52200cbf-96f2-47b0-85b6-766ace5e00a2")
 		(at 132 86.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW24"
 			(at 0 -9 180)
@@ -30359,7 +30359,7 @@
 			(uuid "9c922e8a-0caa-49be-98ea-9c6c9a7bfbae")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30609,7 +30609,7 @@
 		(layer "F.Cu")
 		(uuid "5636f80e-674f-49a9-bb91-cb83775fd2a2")
 		(at 262 156.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW261"
 			(at 0 -9 180)
@@ -31826,7 +31826,7 @@
 			(uuid "f671e047-a352-4a7b-bcc6-a9ce12f1de4a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31959,7 +31959,7 @@
 		(layer "F.Cu")
 		(uuid "640fc116-3378-49ea-9d80-ac00a31a54e8")
 		(at 217 122.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW245"
 			(at 0 -9 180)
@@ -33176,7 +33176,7 @@
 			(uuid "5499aa05-6f10-46cb-ac7e-2a84cd2345af")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33192,7 +33192,7 @@
 		(layer "F.Cu")
 		(uuid "66f0d9d8-3b13-4980-b13c-6637fd86cfc8")
 		(at 132 120.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW44"
 			(at 0 -9 180)
@@ -34409,7 +34409,7 @@
 			(uuid "00916024-6b81-42cf-98d5-8b09b338402a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34425,7 +34425,7 @@
 		(layer "F.Cu")
 		(uuid "68e42125-9ba5-4908-ac05-fe240219c844")
 		(at 289 123 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW241"
 			(at 0 -9 180)
@@ -35642,7 +35642,7 @@
 			(uuid "750a80e6-4d7d-4410-b29e-881f8ed65cdf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -35658,7 +35658,7 @@
 		(layer "F.Cu")
 		(uuid "6e6a25be-3745-4372-b29f-a00c6101e845")
 		(at 217 88.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW225"
 			(at 0 -9 180)
@@ -36875,7 +36875,7 @@
 			(uuid "98058fd1-1db1-4887-87fd-707abdf16ad7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36891,7 +36891,7 @@
 		(layer "F.Cu")
 		(uuid "713e7d67-f3f8-4668-8757-3f5ab4cca738")
 		(at 114 118.125 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW43"
 			(at 0 -9 180)
@@ -38108,7 +38108,7 @@
 			(uuid "b688f22d-7080-4e0e-9ad8-afdf6942f15a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38124,7 +38124,7 @@
 		(layer "F.Cu")
 		(uuid "71b1e06d-c00a-42e1-9888-b8c09cc885d3")
 		(at 114 101.125 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW33"
 			(at 0 -9 180)
@@ -39341,7 +39341,7 @@
 			(uuid "884f9f02-34e1-42f1-8de4-fec0f6d1cf96")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39474,7 +39474,7 @@
 		(layer "F.Cu")
 		(uuid "750b0b8f-73cf-4465-a411-b67b3c9cf70b")
 		(at 96 69.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW12"
 			(at 0 -9 180)
@@ -40691,7 +40691,7 @@
 			(uuid "0400a3a3-39f1-4f55-8012-84b45177c0cb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40707,7 +40707,7 @@
 		(layer "F.Cu")
 		(uuid "754a8ed9-7746-4141-9db0-9a99c5dd94c6")
 		(at 150 71.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW15"
 			(at 0 -9 180)
@@ -41924,7 +41924,7 @@
 			(uuid "3e886a21-228f-43b7-bfc9-5ce6ef1a427c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41940,7 +41940,7 @@
 		(layer "F.Cu")
 		(uuid "76909c8d-07bf-4d91-a23a-5c33afd8c92e")
 		(at 150 139.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW55"
 			(at 0 -9 180)
@@ -43157,7 +43157,7 @@
 			(uuid "bc3d7c35-46da-4016-afcb-29a93bc058b0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43173,7 +43173,7 @@
 		(layer "F.Cu")
 		(uuid "7ffe28a1-8b5e-4296-a19c-13405db5bad4")
 		(at 235 120.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW244"
 			(at 0 -9 180)
@@ -44390,7 +44390,7 @@
 			(uuid "7f57691d-3b24-4947-bc28-0faa0a08606c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44406,7 +44406,7 @@
 		(layer "F.Cu")
 		(uuid "80e5e903-4148-44af-bbe8-b6651f616a5e")
 		(at 307 72 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW210"
 			(at 0 -9 180)
@@ -45623,7 +45623,7 @@
 			(uuid "6bbbeac2-907e-482a-9796-e57295abac71")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45639,7 +45639,7 @@
 		(layer "F.Cu")
 		(uuid "8bca9c80-bf03-48fc-a641-32259359380a")
 		(at 271 120.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW242"
 			(at 0 -9 180)
@@ -46856,7 +46856,7 @@
 			(uuid "3bf31ef2-bda8-421e-bfb5-a1f388cd6257")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46872,7 +46872,7 @@
 		(layer "F.Cu")
 		(uuid "8ce9c947-5c80-4a7f-a14d-9b01f7389e72")
 		(at 223.75 157.85 -171.94)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW263"
 			(at -0.000001 -9 188.06)
@@ -48090,7 +48090,7 @@
 			(uuid "aac5ff3d-8e92-408d-aa28-eac60d54f737")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -48106,7 +48106,7 @@
 		(layer "F.Cu")
 		(uuid "8f098150-e871-4ccb-adb5-c1b91bb0a351")
 		(at 235 137.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW254"
 			(at 0 -9 180)
@@ -49323,7 +49323,7 @@
 			(uuid "8d10787d-2d36-44ef-b28e-36ce0093c8e6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -49339,7 +49339,7 @@
 		(layer "F.Cu")
 		(uuid "8f3888ff-90bb-411a-8bfc-f720d22419e2")
 		(at 150 122.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW45"
 			(at 0 -9 180)
@@ -50556,7 +50556,7 @@
 			(uuid "02d41cc6-ed6d-48f1-86f2-24ff2051c116")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -51882,7 +51882,7 @@
 			(uuid "b4b4b2a9-1c0a-4e1f-a00b-6c8ec2f36201")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -51898,7 +51898,7 @@
 		(layer "F.Cu")
 		(uuid "94ac68f4-68a7-476a-b33b-40d3bdd96f1d")
 		(at 105 156.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW61"
 			(at 0 -9 180)
@@ -53115,7 +53115,7 @@
 			(uuid "998139d3-c49a-443f-a0bb-e9928a34c093")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -53131,7 +53131,7 @@
 		(layer "F.Cu")
 		(uuid "961f4a4d-7deb-401e-86b4-92aa239c65ce")
 		(at 253 84.125 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW223"
 			(at 0 -9 180)
@@ -54348,7 +54348,7 @@
 			(uuid "f7e4064f-3471-4bf7-b11c-7f1f7ac343f5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -54364,7 +54364,7 @@
 		(layer "F.Cu")
 		(uuid "9738855f-9044-4e44-a876-7a370ae42ccd")
 		(at 150 88.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW25"
 			(at 0 -9 180)
@@ -55581,7 +55581,7 @@
 			(uuid "e7ce455b-8554-4a2d-827b-b1b8380c7bd8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -55894,7 +55894,7 @@
 		(layer "F.Cu")
 		(uuid "9cc63a6f-faec-4754-8bf2-fefd1ae12f39")
 		(at 235 103.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW234"
 			(at 0 -9 180)
@@ -57111,7 +57111,7 @@
 			(uuid "f5d7b1f0-5097-42f7-9a96-c320047e3ba5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -58437,7 +58437,7 @@
 			(uuid "880cf84c-78e9-48af-9d1d-253e12cfd677")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -58453,7 +58453,7 @@
 		(layer "F.Cu")
 		(uuid "a18a466c-4421-4c92-bb97-1f3115b0103a")
 		(at 201.94 158.13 109.63)
-		(descr "Kailh Choc V1/V2 hotswap 1.50u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.50u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.50u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.50u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.50u")
 		(property "Reference" "SW264"
 			(at 0 -9 109.63)
@@ -59671,7 +59671,7 @@
 			(uuid "20d06ccc-43c9-45b6-9e5f-563fc34eb745")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -59951,7 +59951,7 @@
 		(layer "F.Cu")
 		(uuid "a6b55e11-3b10-45fd-aeb5-7bedfb5839d1")
 		(at 132 69.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW14"
 			(at 0 -9 180)
@@ -61168,7 +61168,7 @@
 			(uuid "60f6bbdf-9078-44e6-986e-da8f8d05b6d3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -61184,7 +61184,7 @@
 		(layer "F.Cu")
 		(uuid "a78b6600-4add-4ac3-b46d-210687b9f043")
 		(at 235 69.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW214"
 			(at 0 -9 180)
@@ -62401,7 +62401,7 @@
 			(uuid "80a9b0fa-9367-4d81-8221-22063715bea8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -62417,7 +62417,7 @@
 		(layer "F.Cu")
 		(uuid "a8b0a4e3-895e-4acf-84c2-9e147b1aa1e2")
 		(at 280 157.5 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW260"
 			(at 0 -9 180)
@@ -63634,7 +63634,7 @@
 			(uuid "42a4dcfe-ba0f-4265-9a4c-00f56fcad7b0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -63650,7 +63650,7 @@
 		(layer "F.Cu")
 		(uuid "aa2e6451-9b79-4db7-97bb-486295e4ac52")
 		(at 253 101.125 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW233"
 			(at 0 -9 180)
@@ -64867,7 +64867,7 @@
 			(uuid "263bd53f-8a01-4181-accf-ffc196c10f55")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -64883,7 +64883,7 @@
 		(layer "F.Cu")
 		(uuid "aad48e42-4b50-40af-bae5-86fa8fda1191")
 		(at 289 89 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW221"
 			(at 0 -9 180)
@@ -66100,7 +66100,7 @@
 			(uuid "3b8c791d-7c70-45ad-adde-aa408f8056b5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -66116,7 +66116,7 @@
 		(layer "F.Cu")
 		(uuid "ad8e9a34-4c86-4803-bfaf-72b2338a446a")
 		(at 217 139.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW255"
 			(at 0 -9 180)
@@ -67333,7 +67333,7 @@
 			(uuid "744a3a57-2026-4271-9a24-9d9bf6adde09")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -68659,7 +68659,7 @@
 			(uuid "d9d9bd53-036e-498a-a295-e8d1a2dc7918")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -68675,7 +68675,7 @@
 		(layer "F.Cu")
 		(uuid "b248e012-8b37-4a42-9378-57216f695e75")
 		(at 78 140 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW51"
 			(at 0 -9 180)
@@ -69892,7 +69892,7 @@
 			(uuid "12a6e250-7d82-4626-8587-1700800adfdf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -69908,7 +69908,7 @@
 		(layer "F.Cu")
 		(uuid "b660352c-9c09-4738-8b27-875061c0307a")
 		(at 271 69.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW212"
 			(at 0 -9 180)
@@ -71125,7 +71125,7 @@
 			(uuid "7daa3b21-fe68-4607-8052-f2d71d124d04")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -71141,7 +71141,7 @@
 		(layer "F.Cu")
 		(uuid "bd0d733b-ddcd-4b87-b0dc-0cd3f99ac716")
 		(at 60 72 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW10"
 			(at 0 -9 180)
@@ -72358,7 +72358,7 @@
 			(uuid "99e4a1f1-6011-4ec2-a9af-f63528ae1f58")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -72374,7 +72374,7 @@
 		(layer "F.Cu")
 		(uuid "bec667ef-d0c1-406f-acfd-32a3b3f562b0")
 		(at 96 120.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW42"
 			(at 0 -9 180)
@@ -73591,7 +73591,7 @@
 			(uuid "21565b75-f8e3-473f-84ce-49c565f4f6a0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -73724,7 +73724,7 @@
 		(layer "F.Cu")
 		(uuid "c240cfd1-8a75-4238-a6e5-55cb4da5d3fb")
 		(at 78 72 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW11"
 			(at 0 -9 180)
@@ -74941,7 +74941,7 @@
 			(uuid "51cf5a2a-efdb-48ec-9dad-f01d50b3cc03")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -74957,7 +74957,7 @@
 		(layer "F.Cu")
 		(uuid "c396c81c-00ef-4121-9dd7-d0a41fd2b707")
 		(at 307 89 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW220"
 			(at 0 -9 180)
@@ -76174,7 +76174,7 @@
 			(uuid "8528b647-4e03-4928-bf7f-0fe48f412120")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -76190,7 +76190,7 @@
 		(layer "F.Cu")
 		(uuid "c55ff5cf-edf2-490e-8b8e-205637ed3157")
 		(at 253 67.125 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW213"
 			(at 0 -9 180)
@@ -77407,7 +77407,7 @@
 			(uuid "bfc87c77-e3d2-4b7d-927f-9156bdccdfe8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -77423,7 +77423,7 @@
 		(layer "F.Cu")
 		(uuid "c6bd35fe-95b4-49bf-b1f0-cfe669a34d6c")
 		(at 150 105.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW35"
 			(at 0 -9 180)
@@ -78640,7 +78640,7 @@
 			(uuid "628cb161-07e8-4c38-9861-67d27ba5ea95")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -78656,7 +78656,7 @@
 		(layer "F.Cu")
 		(uuid "c8ee7212-b8f5-4004-ae3b-6792e3b6b2fa")
 		(at 217 71.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW215"
 			(at 0 -9 180)
@@ -79873,7 +79873,7 @@
 			(uuid "f0c1eab7-6376-47fb-b969-f5061f5ef923")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -79889,7 +79889,7 @@
 		(layer "F.Cu")
 		(uuid "c97a36ce-c987-4b26-94e2-61ae4f42fdd4")
 		(at 123 156.375 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW62"
 			(at 0 -9 180)
@@ -81106,7 +81106,7 @@
 			(uuid "606a6d18-d457-4347-9af7-54406c4f2957")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -81122,7 +81122,7 @@
 		(layer "F.Cu")
 		(uuid "cbf7146c-92b8-4592-b756-18a9a37d2244")
 		(at 165.06 158.13 -109.63)
-		(descr "Kailh Choc V1/V2 hotswap 1.50u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.50u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.50u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.50u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.50u")
 		(property "Reference" "SW64"
 			(at 0 -9 250.37)
@@ -82340,7 +82340,7 @@
 			(uuid "6951dc64-fc0c-4472-9ace-9e973ca19f42")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -82356,7 +82356,7 @@
 		(layer "F.Cu")
 		(uuid "d0935d71-54d9-4295-bcfe-53951fd88ecd")
 		(at 307 140 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW250"
 			(at 0 -9 180)
@@ -83573,7 +83573,7 @@
 			(uuid "e1691b83-1069-42f3-b77e-31c9896009f1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -83589,7 +83589,7 @@
 		(layer "F.Cu")
 		(uuid "d1e6c72b-7663-4415-82ce-e2daa324b86b")
 		(at 143.25 157.85 171.94)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW63"
 			(at 0 -9 171.94)
@@ -84807,7 +84807,7 @@
 			(uuid "331b5243-eae0-4e20-8bea-e79ee8d6d1ca")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -84823,7 +84823,7 @@
 		(layer "F.Cu")
 		(uuid "d7f0470c-1d36-4f85-a55d-801806fed4b1")
 		(at 253 118.125 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW243"
 			(at 0 -9 180)
@@ -86040,7 +86040,7 @@
 			(uuid "651c84be-da11-4d8b-9dbc-2003d30c12bf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -86056,7 +86056,7 @@
 		(layer "F.Cu")
 		(uuid "da0d63b2-510b-47de-a92c-4b6fa619e39d")
 		(at 60 89 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW20"
 			(at 0 -9 180)
@@ -87273,7 +87273,7 @@
 			(uuid "6df4127f-021f-4bd2-8095-dab2969fe375")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -87289,7 +87289,7 @@
 		(layer "F.Cu")
 		(uuid "e9ed01d1-7972-450b-9c40-a6013594d885")
 		(at 78 89 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW21"
 			(at 0 -9 180)
@@ -88506,7 +88506,7 @@
 			(uuid "33a10e5d-7613-44db-905b-fef7f6eb3b06")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -88522,7 +88522,7 @@
 		(layer "F.Cu")
 		(uuid "ea247da0-a559-4aa9-bdf5-075235511754")
 		(at 132 103.25 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW34"
 			(at 0 -9 180)
@@ -89739,7 +89739,7 @@
 			(uuid "cd338d76-a913-4ce5-b5eb-f351aa7738e3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -89872,7 +89872,7 @@
 		(layer "F.Cu")
 		(uuid "ec103015-eb33-455f-ba0f-3596cd31c042")
 		(at 289 106 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW231"
 			(at 0 -9 180)
@@ -91089,7 +91089,7 @@
 			(uuid "96297479-a7ac-4828-9616-ddcf68b9f600")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -91105,7 +91105,7 @@
 		(layer "F.Cu")
 		(uuid "f4b69b0c-8ad9-4d12-963b-8e6b94448a18")
 		(at 253 135.125 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW253"
 			(at 0 -9 180)
@@ -92322,7 +92322,7 @@
 			(uuid "5faeeac0-429b-4674-83cb-40324c777189")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -92720,7 +92720,7 @@
 		(layer "F.Cu")
 		(uuid "f9223f47-0dec-47a8-b18f-ddd99b6dfb1a")
 		(at 114 135.125 180)
-		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+		(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 		(property "Reference" "SW53"
 			(at 0 -9 180)
@@ -93937,7 +93937,7 @@
 			(uuid "d9adf381-0003-4104-abf7-0833dacf7afb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+		(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -94573,7 +94573,7 @@
 			(uuid "1706bb37-ebfc-4043-8608-7484f26e4cc2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -94964,7 +94964,7 @@
 			(uuid "f81e7a50-e301-43c5-acc2-063428254dfa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -95483,7 +95483,7 @@
 			(uuid "491f2758-0535-440b-a79e-a80abf7de8cf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -96002,7 +96002,7 @@
 			(uuid "5ab4b42e-2325-418a-82c3-37ccb77d171f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -96393,7 +96393,7 @@
 			(uuid "6b3c9ec6-9239-4b6d-ab30-25c0afe860a2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -97260,7 +97260,7 @@
 			(uuid "5fabd258-7156-441b-9cf2-3bb9b3403165")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -97651,7 +97651,7 @@
 			(uuid "28283282-c766-4f85-9005-8fff89b04f79")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -98042,7 +98042,7 @@
 			(uuid "cc8a306f-3fe5-4908-ba29-161c4baf8397")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -98433,7 +98433,7 @@
 			(uuid "0d2c7d60-4777-4703-ab4f-e05070912547")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -98824,7 +98824,7 @@
 			(uuid "d0f576d8-2225-4927-b0f7-2928fe84b8e5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -99343,7 +99343,7 @@
 			(uuid "697d9056-208a-41c0-baa6-4db9677c5d28")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -100559,7 +100559,7 @@
 			(uuid "c711e73c-b978-4c4f-8be8-73020a00ba64")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -101078,7 +101078,7 @@
 			(uuid "19aad1fa-3df9-439f-a66c-1f875ee27e4d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -101469,7 +101469,7 @@
 			(uuid "a26e0302-0bdc-403d-8e04-bc1ec4c439ff")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0603.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0603.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -102208,7 +102208,7 @@
 			(uuid "0fba3074-475b-4e60-9d87-19b3d880b994")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -102599,7 +102599,7 @@
 			(uuid "86ae55dd-3a4d-4a40-b7c8-cab53960f671")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -102990,7 +102990,7 @@
 			(uuid "c965cd86-342b-484f-bdf7-e476c86e2a24")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -104324,7 +104324,7 @@
 			(uuid "3825eeab-2b16-4b43-8eae-250223b0eb76")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -104843,7 +104843,7 @@
 			(uuid "833ef805-1d3b-456a-ae8d-3ad2a40454bf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -105234,7 +105234,7 @@
 			(uuid "135d59bb-8f1e-4731-b8b1-eeb1c90c4db4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -105625,7 +105625,7 @@
 			(uuid "90681504-7632-4ac5-8730-c081ec1aafd4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -106144,7 +106144,7 @@
 			(uuid "3f2c62c3-8e86-4dd0-af8b-cf0469a1da6b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -106663,7 +106663,7 @@
 			(uuid "fdcce0c3-1d8d-43c6-8573-f822e27f7f3b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -107140,7 +107140,7 @@
 			(uuid "a815c76a-87c4-4e00-9d62-9ea2bac7c74c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -107391,7 +107391,7 @@
 			(uuid "b488b802-96d2-4fbf-a55d-2afedc63dcbe")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0603.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0603.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -107910,7 +107910,7 @@
 			(uuid "6f9188f5-76cc-4ada-8730-e4d1e0de2f12")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -108301,7 +108301,7 @@
 			(uuid "dd70eb3a-4e60-44ed-8248-420f5111f5a8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -108820,7 +108820,7 @@
 			(uuid "28f28cdd-2158-4594-80e8-e4fab8ddc9ff")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -109211,7 +109211,7 @@
 			(uuid "77906fec-fbf0-4dbb-bfd4-38a05144781c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -109602,7 +109602,7 @@
 			(uuid "604f9cad-63e5-4983-8e5b-54556993e19c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -110341,7 +110341,7 @@
 			(uuid "d925125b-1ca4-4277-9c17-c0435a80573f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -110860,7 +110860,7 @@
 			(uuid "0c9792b0-ace5-4a9d-ba4c-d7173f5b5317")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -111959,7 +111959,7 @@
 			(uuid "cc5f5d0d-0597-4d9e-ad0c-ad1e9a4ad5cc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -112698,7 +112698,7 @@
 			(uuid "d7361092-5981-40c3-93cf-5f69757d0d45")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -113089,7 +113089,7 @@
 			(uuid "b75ff1cd-ccfe-4072-953f-2ea0d8cd374a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -113480,7 +113480,7 @@
 			(uuid "d47ca1c1-ebce-4877-b8b0-c55e45fa63bc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -113871,7 +113871,7 @@
 			(uuid "13911b6f-8e1b-4d4d-8ee7-8c09bcce96ff")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -114390,7 +114390,7 @@
 			(uuid "df33b4fd-d539-4849-ac79-8c2d203a7a7c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -114781,7 +114781,7 @@
 			(uuid "2a86679f-f5aa-4e50-ad7c-33d2d368d782")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -115172,7 +115172,7 @@
 			(uuid "b5ec248a-d515-4c67-bfaa-5f136efb28ed")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -115563,7 +115563,7 @@
 			(uuid "c9863c91-72e1-4e90-bb65-7abd4ccaa3bf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -116210,7 +116210,7 @@
 			(uuid "96d7c8ec-3ad0-47f0-afff-bab26f905f99")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -117077,7 +117077,7 @@
 			(uuid "8d7baa06-d5b3-494a-bf67-c44a3af9283e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -117483,7 +117483,7 @@
 			(uuid "2df1f413-b976-4f90-a611-4e3fcdb1033b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -118361,7 +118361,7 @@
 			(uuid "3e1d4b89-a6c5-449c-9bb4-2feb19c9322b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -118752,7 +118752,7 @@
 			(uuid "b70e87a0-a88f-4702-9c88-df5ba8100338")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -119143,7 +119143,7 @@
 			(uuid "64424362-0ab5-461c-91ee-c77115c6c604")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -120358,7 +120358,7 @@
 			(uuid "6d38f297-907f-4bcf-a3c0-1a728989e702")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -120877,7 +120877,7 @@
 			(uuid "88023da3-aa35-4351-b0cc-f02433ec161c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -121744,7 +121744,7 @@
 			(uuid "ea3d0a2e-7a29-47b8-bc50-d02a4898117d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -122391,7 +122391,7 @@
 			(uuid "6924702b-e3a2-40c1-be5b-3157d6f8eddf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -122910,7 +122910,7 @@
 			(uuid "3fe782de-4a79-4475-aded-205be52ff3c2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -124014,7 +124014,7 @@
 			(uuid "335256ad-93a7-453a-a98f-016a879e5bfa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -124405,7 +124405,7 @@
 			(uuid "1b6f10ec-23d6-45b8-8b13-cc840884ac45")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -124924,7 +124924,7 @@
 			(uuid "ef30a9dc-cb53-431b-b198-09a23e74f381")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -125443,7 +125443,7 @@
 			(uuid "04faf6dc-3992-4954-9480-95edb2852aaf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -126804,7 +126804,7 @@
 			(uuid "c1a37603-1b70-45ef-9c3f-216de66beadb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -127323,7 +127323,7 @@
 			(uuid "04c606bf-b317-409c-8222-8b51e9103ea8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -127714,7 +127714,7 @@
 			(uuid "19e030da-46e7-4afd-a447-be1c4b185bcd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -128233,7 +128233,7 @@
 			(uuid "76ce9f1f-d71d-4abe-96ca-6113d4647525")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -129335,7 +129335,7 @@
 			(uuid "bc1d5276-1f78-471c-8835-309feaee467c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -129726,7 +129726,7 @@
 			(uuid "26f85f0f-8cde-41a8-bf46-32f0690e8865")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -130685,7 +130685,7 @@
 			(uuid "e6f522f7-47b2-4456-87b8-4706ae7d2182")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -131091,7 +131091,7 @@
 			(uuid "2c3ab198-7d9f-4546-a5b8-734d56992cdb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -131857,7 +131857,7 @@
 			(uuid "4eab5f13-f258-4deb-a383-bb3e15393450")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -132376,7 +132376,7 @@
 			(uuid "bb1b7653-7fd9-413a-8fa4-65cfe22bfe80")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -132767,7 +132767,7 @@
 			(uuid "a9d0e1ae-61bd-443e-8dc0-4f7d78d9a2a8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -132825,7 +132825,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "27Ω ±1% 62.5mW 0402 thick film resistor (USB series termination)"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -132977,7 +132977,7 @@
 			(uuid "9bab637e-2303-4fbd-87e0-ade30e04e69c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -133496,7 +133496,7 @@
 			(uuid "ecd4bb08-ef7e-4b00-972f-56f1293ed2fd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -134235,7 +134235,7 @@
 			(uuid "32061e7c-e831-4225-a1f0-7ab6f217a252")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -134754,7 +134754,7 @@
 			(uuid "7233a660-6628-4591-89bb-5f88368a2681")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -135818,7 +135818,7 @@
 			(uuid "6142d50c-3e1f-4467-8fbd-45b94f9bf955")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -136390,7 +136390,7 @@
 			(uuid "b8ae1bbf-e93c-4738-8315-255e84fd24ea")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -136909,7 +136909,7 @@
 			(uuid "84f5b2cd-c77a-4416-8cdf-5bd809f2b672")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -137300,7 +137300,7 @@
 			(uuid "73b01bfd-4bef-4da4-bbe2-a23a9e17af90")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -137691,7 +137691,7 @@
 			(uuid "91a36dfe-115e-4727-b7a8-92b0cad6e310")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -138558,7 +138558,7 @@
 			(uuid "c4b268c9-04c8-46d2-8a43-78b3a2a38eaa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -138949,7 +138949,7 @@
 			(uuid "0a290376-0e3f-47c2-9637-28474586fad0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -139340,7 +139340,7 @@
 			(uuid "bade712a-014c-4361-a430-ac291db2a8e4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -139859,7 +139859,7 @@
 			(uuid "4db812c5-03b6-444e-9d38-1a337f390113")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -140378,7 +140378,7 @@
 			(uuid "f3593e73-0ece-4031-888f-a31206ef0512")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -140784,7 +140784,7 @@
 			(uuid "747fea89-2805-4379-9bbd-623646c2e2b5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -141303,7 +141303,7 @@
 			(uuid "c4ffe6b4-ac56-4bf1-99e8-5183f983ba16")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -141694,7 +141694,7 @@
 			(uuid "be96d3c8-1362-4d38-9b9f-c7a86b5087e6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -142523,7 +142523,7 @@
 			(uuid "ed24f27e-8ff9-46e5-ad90-97855ca91409")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -144095,7 +144095,7 @@
 			(uuid "54ac8438-bff4-4a4c-877c-7baa9cf073a5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -144501,7 +144501,7 @@
 			(uuid "6f740998-5871-43fc-b2a1-6a42a5f6433e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -144892,7 +144892,7 @@
 			(uuid "73d838ce-3264-4462-8a16-a3d5fcffcd91")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -145283,7 +145283,7 @@
 			(uuid "3c3cb3b7-ae43-49ed-a1f3-821905dfd57c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -145674,7 +145674,7 @@
 			(uuid "3fd89cf5-206d-429f-b98a-ff409e45fc4a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -146065,7 +146065,7 @@
 			(uuid "2ae24a9c-489f-4da0-afca-3079a6651242")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -146584,7 +146584,7 @@
 			(uuid "28e44b35-868f-4af9-8acc-51c8f6b60298")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -146975,7 +146975,7 @@
 			(uuid "8d77fb24-fa8d-462c-9592-eea072bf6b51")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -148320,7 +148320,7 @@
 			(uuid "826b83f0-3a4f-4293-bfa4-0861eefb9847")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -148711,7 +148711,7 @@
 			(uuid "02b99f06-556a-4b23-9608-df01ec6d3182")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -149102,7 +149102,7 @@
 			(uuid "1c2adc3c-d330-4293-abff-3e1fc53efb81")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -149493,7 +149493,7 @@
 			(uuid "a21c561e-e006-40d7-ae49-bea6c2b33018")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -150232,7 +150232,7 @@
 			(uuid "37dd34b9-3ffe-4b1e-9a09-990fd9deb2e5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -150751,7 +150751,7 @@
 			(uuid "dc0a357c-2356-444a-a406-d044ed92eaa5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -151142,7 +151142,7 @@
 			(uuid "728da081-5874-46af-ac23-bce926465de3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -151548,7 +151548,7 @@
 			(uuid "0f30961b-d085-443b-815a-c2ebb9bac01f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -152067,7 +152067,7 @@
 			(uuid "2eaf5860-39ad-48e8-9adc-c3e28c743a2d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -152586,7 +152586,7 @@
 			(uuid "05236097-1191-4552-84e6-09cb4330507f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -152977,7 +152977,7 @@
 			(uuid "ff78135f-99d2-4967-a664-92189bc59adb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -153368,7 +153368,7 @@
 			(uuid "44a5aee5-4b4c-4560-bb91-7381ea43ae0a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -153887,7 +153887,7 @@
 			(uuid "11c0b713-521e-4d1c-8150-c71212911a47")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -154278,7 +154278,7 @@
 			(uuid "66450fee-523d-4bc1-8420-f6cf51d3047c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -154669,7 +154669,7 @@
 			(uuid "cd508087-ae90-4ff0-890a-56e263b79cc1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -155884,7 +155884,7 @@
 			(uuid "82a2cd4a-6dda-46a8-8386-dd514b911780")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -156403,7 +156403,7 @@
 			(uuid "d218312f-8bd2-4396-bdbb-793e6739d238")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -156794,7 +156794,7 @@
 			(uuid "5e34e0e5-1dc0-486d-b796-73fd80565459")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -157185,7 +157185,7 @@
 			(uuid "f8c9b446-04ae-4fce-8f63-fb5364d07e34")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -157924,7 +157924,7 @@
 			(uuid "18e7c804-739d-4225-a72b-8f33d1396062")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -158315,7 +158315,7 @@
 			(uuid "6e511296-b6f3-40d8-95b3-9460674242fd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -158834,7 +158834,7 @@
 			(uuid "f888c6f4-1cf6-4461-be3a-e50909209a9b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -159058,7 +159058,7 @@
 			(uuid "1e858ef4-a719-49d5-84a5-e8f73e3eeef4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -160274,7 +160274,7 @@
 			(uuid "b0cc0d33-90dd-417a-b84d-c44c623bf69f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -160793,7 +160793,7 @@
 			(uuid "ba5ce267-9f35-4c6b-8118-e1f376e93683")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -162228,7 +162228,7 @@
 			(uuid "8c484ad4-fad4-44e2-abb9-1e7001e79cb7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -162747,7 +162747,7 @@
 			(uuid "6559301c-58bf-477e-80d4-21458b8ce034")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -163138,7 +163138,7 @@
 			(uuid "48cf6e18-dad8-47ff-a946-d983cc4d2224")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -163877,7 +163877,7 @@
 			(uuid "eea0fe39-3839-4167-a7cc-a9d84845b89e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -164744,7 +164744,7 @@
 			(uuid "12e8bea4-e67c-4396-9962-c5c14f118522")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -165483,7 +165483,7 @@
 			(uuid "5454e7eb-33cd-4029-b036-55f5295c0e98")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -166237,7 +166237,7 @@
 			(uuid "83f4f7b0-8cff-4df6-a6a2-601f314e6240")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123FL.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123FL.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -166628,7 +166628,7 @@
 			(uuid "64a8e410-493a-4b8e-93bf-64d9f8f7781f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -167367,7 +167367,7 @@
 			(uuid "79c06ec3-99dd-406b-9c60-804fd1b81941")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -167758,7 +167758,7 @@
 			(uuid "5392e24e-5470-426b-8a2d-7a78d67a28e9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -168277,7 +168277,7 @@
 			(uuid "fbf2f8e8-31ff-46e4-813e-8d23bb7d0b07")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -168668,7 +168668,7 @@
 			(uuid "22f115ce-56be-4a01-bef8-22bf103e557d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -169059,7 +169059,7 @@
 			(uuid "152e8650-4429-4b85-93d4-046e8ca11eb7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -169450,7 +169450,7 @@
 			(uuid "a2f21465-8e3b-4768-bf61-0eb90c941cde")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -170665,7 +170665,7 @@
 			(uuid "08e22932-1964-43f9-b0d1-d1b4e76e438a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -171532,7 +171532,7 @@
 			(uuid "b07e4918-3af3-4e96-8764-a9d3d1f2497b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -172399,7 +172399,7 @@
 			(uuid "83f0d5d4-1539-49c8-a04e-643a915aed65")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -172918,7 +172918,7 @@
 			(uuid "b86f6d62-17d8-4d02-b350-9e1140cd9b5a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -174133,7 +174133,7 @@
 			(uuid "53ca8d80-b21c-4d78-bce1-bd656d1a6ea5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -174524,7 +174524,7 @@
 			(uuid "867a4c02-5d1b-4195-9a79-877d8710a002")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -174915,7 +174915,7 @@
 			(uuid "88394f30-89c7-4e64-9302-ff325b39d232")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0603.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0603.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -175306,7 +175306,7 @@
 			(uuid "e7745e4a-6a67-45f2-aa7e-552aaa1bbf0f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -176393,7 +176393,7 @@
 			(uuid "bd2d74fc-f22a-429f-a19e-38719a42337c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -176912,7 +176912,7 @@
 			(uuid "9caade74-0195-4453-b71f-0ae947b1db8f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -177431,7 +177431,7 @@
 			(uuid "d7ee8129-f982-4604-8eb6-d555b4dee98d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -177822,7 +177822,7 @@
 			(uuid "c12ab4e7-9fe7-46fb-9d00-70f15123d071")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -178341,7 +178341,7 @@
 			(uuid "91ab8d80-4588-4d1b-ac43-fca8afa0fa2f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -178399,7 +178399,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "27Ω ±1% 62.5mW 0402 thick film resistor (USB series termination)"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -178551,7 +178551,7 @@
 			(uuid "3a6a765f-15e5-4b09-8291-b21a006bec19")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -178942,7 +178942,7 @@
 			(uuid "44eeb2b4-cf97-4770-b1f4-55e0712956c6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -179333,7 +179333,7 @@
 			(uuid "b4c52b64-2a4f-48a0-add4-04d18d6c559b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -180343,7 +180343,7 @@
 			(uuid "d31e3a87-7c01-475c-bfd1-c6f915f8c7c5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -180862,7 +180862,7 @@
 			(uuid "dfac9415-a79a-42ab-b719-e93b59cd1451")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -181381,7 +181381,7 @@
 			(uuid "ec475652-a991-42d8-93af-06ce74a510f8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -181772,7 +181772,7 @@
 			(uuid "718609cb-f74f-4270-b069-9a12164759c7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -182291,7 +182291,7 @@
 			(uuid "320af9f9-fb7b-4faa-8228-54db54121338")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -182682,7 +182682,7 @@
 			(uuid "9d64b95d-e701-4053-8239-b3314316b709")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -183073,7 +183073,7 @@
 			(uuid "066bbd9c-d23f-4875-b3b7-782fd982580a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -183464,7 +183464,7 @@
 			(uuid "8ac33c29-f2dd-4728-94dc-e481da243a38")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -183920,7 +183920,7 @@
 			(uuid "ed90bc8b-5e93-42b5-ba90-1bbbb7bfb9b2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/CRYSTAL-SMD_4P-L3.2-W2.5-BL.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/CRYSTAL-SMD_4P-L3.2-W2.5-BL.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -184659,7 +184659,7 @@
 			(uuid "fdaf5ee5-9432-4bfe-a561-1d227b67d138")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -185050,7 +185050,7 @@
 			(uuid "3f56ccf2-ba16-4462-8403-5ebf8d74833a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -185804,7 +185804,7 @@
 			(uuid "c0e7add6-79ed-471c-a3ae-afaf0e1b3944")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -186543,7 +186543,7 @@
 			(uuid "2773e9c0-f4d1-4dad-a834-9f6ce9414625")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -187282,7 +187282,7 @@
 			(uuid "d68c11fb-61cc-4583-8e29-de86b52c8c21")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -187690,7 +187690,7 @@
 			(uuid "5dbbcc45-0680-47ac-9718-3958ade15d3c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -188081,7 +188081,7 @@
 			(uuid "f726fda8-5af8-4957-9a99-7d14a2248967")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -188537,7 +188537,7 @@
 			(uuid "3b522af1-68e7-459d-8919-71339577ce88")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/CRYSTAL-SMD_4P-L3.2-W2.5-BL.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/CRYSTAL-SMD_4P-L3.2-W2.5-BL.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -189056,7 +189056,7 @@
 			(uuid "ebba1e8d-9aa6-451d-89d3-5b5a72d9767a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -190619,7 +190619,7 @@
 			(uuid "edae36c3-ff6d-46b6-a6df-a189b22277f5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -191706,7 +191706,7 @@
 			(uuid "07832623-bd5f-4de6-8429-effd924e7a34")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -192225,7 +192225,7 @@
 			(uuid "8ebd388a-a163-4cb8-8605-0cf7c5283d6f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -192872,7 +192872,7 @@
 			(uuid "732f6e1e-96b6-41f7-a52e-7494c4b29d76")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -193263,7 +193263,7 @@
 			(uuid "34a1eb72-c1ad-4691-85bc-edf85ffbc0da")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -194002,7 +194002,7 @@
 			(uuid "01a5cf1c-ae1c-48e7-886c-00d9e2f738bf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -195414,7 +195414,7 @@
 			(uuid "de9ed5f8-2d60-493c-873f-d63167db41aa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -195805,7 +195805,7 @@
 			(uuid "f5cdd968-71be-408e-ab1c-1acce737ec6d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -196196,7 +196196,7 @@
 			(uuid "57a193b3-151d-460c-b16d-4754204558e6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -196587,7 +196587,7 @@
 			(uuid "69a685a8-bed2-41d0-9d18-3e3eae5d10e3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -197106,7 +197106,7 @@
 			(uuid "88203080-d0c3-4874-a927-d2b32d09d067")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -197625,7 +197625,7 @@
 			(uuid "cbfdcd5d-68b4-4ca0-aa59-6302d1a56c6c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -198016,7 +198016,7 @@
 			(uuid "b2897434-7adc-4f21-bf52-e721a8cbb02d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -198240,7 +198240,7 @@
 			(uuid "56803be7-d976-4fb3-af57-902a897cf9c5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -198646,7 +198646,7 @@
 			(uuid "61bcfc16-9a58-42b5-ab3a-4bdff0e6328f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123FL.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123FL.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -199385,7 +199385,7 @@
 			(uuid "4280addf-696a-4731-93f2-dc4535a6b5d6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -200252,7 +200252,7 @@
 			(uuid "e60ea3be-7e98-4d0b-b4ca-011fc190d058")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -200991,7 +200991,7 @@
 			(uuid "8168c749-798d-4c5b-8b03-3a6edbefadeb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -201382,7 +201382,7 @@
 			(uuid "25c7c9a1-a281-46f0-bb6e-b0888f439c21")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -202787,7 +202787,7 @@
 			(uuid "6af430c1-b74c-4259-992e-2937728ebd54")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -203306,7 +203306,7 @@
 			(uuid "04d7a80e-22d9-494c-884b-d66f9d0d02b9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -203697,7 +203697,7 @@
 			(uuid "d39d7706-b1e8-4104-991c-3434a14b5204")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -205271,7 +205271,7 @@
 			(uuid "68c33c19-d6f4-4748-bfd5-a8ce882b2341")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -205662,7 +205662,7 @@
 			(uuid "e1856ce4-300a-4032-9152-4fdd2ebe769d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -206491,7 +206491,7 @@
 			(uuid "bae32cb2-19ff-4508-8dab-d117c3bda973")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -206882,7 +206882,7 @@
 			(uuid "1f572d3e-0903-4ffa-ad79-492afb2e5b3b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -207401,7 +207401,7 @@
 			(uuid "d009883d-70a9-4993-b5aa-9efb489ca0aa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -207807,7 +207807,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "27Ω ±1% 62.5mW 0402 thick film resistor (USB series termination)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -207959,7 +207959,7 @@
 			(uuid "770f7dac-2983-4b81-bfb8-b067df1ad620")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -208365,7 +208365,7 @@
 			(uuid "122c8cff-fa95-4879-a072-3acbdb6f1dff")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -208756,7 +208756,7 @@
 			(uuid "f0bd6d2a-d7c0-4182-8803-140498329ea0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -209233,7 +209233,7 @@
 			(uuid "a504704a-940b-4796-bdb3-df73bb2f445f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -209624,7 +209624,7 @@
 			(uuid "50c09b9f-fd88-436d-9c15-2a5a15ce6468")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -210143,7 +210143,7 @@
 			(uuid "bada93fd-80e9-40d4-ae9e-c3c5ead5eb75")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -210534,7 +210534,7 @@
 			(uuid "b6162ea4-845e-4228-acc0-ae99cf87b192")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -210925,7 +210925,7 @@
 			(uuid "2bab29f4-6143-425b-9529-fdbacf479c8f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -211316,7 +211316,7 @@
 			(uuid "4613af22-2846-4162-831d-c0650c082471")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -212055,7 +212055,7 @@
 			(uuid "29f6de63-be23-411f-882c-1b5b26b08dde")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -212794,7 +212794,7 @@
 			(uuid "f041582f-0044-47bb-8758-083bff628e67")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -213313,7 +213313,7 @@
 			(uuid "534ff5ed-5974-40c5-82bd-211f305d70c3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -213564,7 +213564,7 @@
 			(uuid "c0b2ed79-5ca3-4564-bd06-e5dc973b39e9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0603.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0603.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -215128,7 +215128,7 @@
 			(uuid "61f54edc-15e2-4035-a2c4-7ff6bec9152c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -215534,7 +215534,7 @@
 			(uuid "240ea343-f476-4549-8143-e0d2e08fa573")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -216273,7 +216273,7 @@
 			(uuid "46a0ece4-61a4-41c7-83a8-d74739bdae55")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -217140,7 +217140,7 @@
 			(uuid "5fa0c5a8-200f-47db-b39e-fed86730e1a7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -217766,7 +217766,7 @@
 			(uuid "5644c87a-075b-4068-a41b-0e720fcedd19")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -218404,7 +218404,7 @@
 			(uuid "750fbc81-db5a-409f-a743-8e5523eb94d3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -218810,7 +218810,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "27Ω ±1% 62.5mW 0402 thick film resistor (USB series termination)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -218962,7 +218962,7 @@
 			(uuid "f5950d52-221f-4ed7-9cc8-3503774e3d2d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/R_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -219481,7 +219481,7 @@
 			(uuid "14850c5b-e9eb-4b45-95ed-395b4f3297d0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_SOD-123.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/D_SOD-123.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -219872,7 +219872,7 @@
 			(uuid "4f2322df-ecd2-46ac-969b-eb4185696ca6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -220263,7 +220263,7 @@
 			(uuid "a8f37065-22ea-49a4-bd3c-1e9c514e7936")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -221237,7 +221237,7 @@
 			(uuid "9cfda6d4-7cb0-4b66-9b86-ef620d88cdf7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -221628,7 +221628,7 @@
 			(uuid "7794d3a4-b741-4c71-ad3a-f44fc8e63450")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/C_0402.step"
+		(model "${KIPRJMOD}/lib/jlcpcb/JLCPCB.3dshapes/C_0402.step"
 			(offset
 				(xyz 0 0 0)
 			)

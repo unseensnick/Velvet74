@@ -41,7 +41,8 @@ Left references are plain (U1, SW10); right ones add 200 (U201, SW210). Both hal
 
 - `sofle-choc-pro.kicad_pro` / `.kicad_sch` / `.kicad_pcb` / `.kicad_dru`: the KiCad project, with the half sheet
   above.
-- `lib/`: project symbols, footprints and 3D models.
+- `lib/`: project symbols, footprints and 3D models (`my-soffle.*`), and the used JLCPCB library parts (`jlcpcb/`).
+- `datasheets/`: manufacturer datasheets for every part on the board, synced from LCSC.
 - `ergogen/`: the live layout (`config.yaml`). `npm run build` writes both halves' points, outline and case to
   `ergogen/output/`.
 - `scripts/`: KiCad Python scripts that place parts from the Ergogen points and snap LEDs, diodes and caps to their
@@ -51,6 +52,33 @@ Left references are plain (U1, SW10); right ones add 200 (U201, SW210). Both hal
 
 `CLAUDE.md` has the detailed file map, the rules for editing the design safely, and the checks.
 
+## Getting started
+
+**To open, review or edit the design** you need only [KiCad 10](https://www.kicad.org/download/) (made with
+10.0.3); open `sofle-choc-pro.kicad_pro`. Every library part the design uses is in the repo: the project's own parts
+in `lib/my-soffle.*`, and the JLCPCB parts it uses in `lib/jlcpcb/` (copied from the JLCPCB library, MIT). The
+remaining parts and 3D models are KiCad's stock ones. No Plugin and Content Manager packages, environment variables
+or library setup are needed, and the 3D viewer shows every part. KiCad 8 cannot open these files; tag
+`kicad8-final` is the last KiCad 8 state.
+
+**To regenerate the layout** (key positions, outline, case): [Node.js](https://nodejs.org/) 18 or newer (Ergogen's `mathjs` dependency
+requires it), then
+
+```bash
+cd ergogen && npm install && npm run build
+```
+
+Ergogen 4.2.1 is pinned in `ergogen/package.json`; the output lands in `ergogen/output/`.
+
+**To run the scripts in `scripts/`:** KiCad's bundled Python (`<KiCad>/10.0/bin/python.exe` on Windows), with KiCad
+closed. Each script's docstring says how to run it and what it overwrites.
+
+**To regenerate `production/`:** the Fabrication Toolkit plugin (from the KiCad Plugin and Content Manager). Its
+defaults produce the JLCPCB Gerbers, drill files, BOM and placement.
+
+**To commit:** activate the tracked commit-message hook once per clone with `git config core.hooksPath .githooks`
+(see `CLAUDE.md` for the message format).
+
 ## Checks
 
 ```bash
@@ -58,11 +86,7 @@ kicad-cli sch erc --severity-error --exit-code-violations sofle-choc-pro.kicad_s
 kicad-cli pcb drc --schematic-parity --severity-error --exit-code-violations sofle-choc-pro.kicad_pcb
 ```
 
-ERC is clean. DRC reports 26 known `courtyards_overlap` items: mounting holes H1-H5 against their neighbouring
-switches, 13 per half.
-
-## Requirements
-
-- KiCad 10.0.3. Tag `kicad8-final` is the last state KiCad 8 can open.
-- The JLCPCB symbol and footprint libraries (`PCM_JLCPCB-*`), from the KiCad Plugin and Content Manager.
-- Node.js for Ergogen (pinned in `ergogen/package.json`).
+Expected: ERC has no errors. DRC has 26 known `courtyards_overlap` errors (mounting holes H1-H5 against their
+neighbouring switches, 13 per half) and no unconnected items or parity issues. With all severities shown there are
+also known warnings: 24 ERC `pin_to_pin` warnings and 3 `lib_symbol_mismatch` (J201, J202 and JP201 differ from their
+library copies), and DRC silkscreen and `lib_footprint_mismatch` warnings for parts edited on the board.

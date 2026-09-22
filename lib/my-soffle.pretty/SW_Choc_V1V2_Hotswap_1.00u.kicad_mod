@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model path moved to KICAD8_3RD_PARTY. scripts/snap_leds.py places LED, cap and diode from this origin.")
+	(descr "Kailh Choc V1/V2 hotswap 1.00u, copy of kiswitch SW_Hotswap_Kailh_Choc_V1V2_1.00u with a B.Fab marker for the reverse-mount SK6812MINI-E at 0,+4.7 and the 3D model vendored into lib/my-soffle.3dshapes. scripts/snap_leds.py places LED, cap and diode from this origin.")
 	(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout Keycap 1.00u")
 	(property "Reference" "REF**"
 		(at 0 -9 0)
@@ -1204,7 +1204,7 @@
 		(uuid "64f02a66-ced7-428f-bd94-79d25a1fcbaa")
 	)
 	(embedded_fonts no)
-	(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+	(model "${KIPRJMOD}/lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 		(offset
 			(xyz 0 0 0)
 		)
