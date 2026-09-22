@@ -69230,7 +69230,7 @@
 				)
 			)
 		)
-		(property "Value" "W25Q128JVPIQ"
+		(property "Value" "ZD25Q128CWIGR"
 			(at 55.88 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -69252,7 +69252,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811151432_Winbond-Elec-W25Q128JVPIQ_C190862.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C53959302.pdf"
 			(at 53.594 171.323 0)
 			(hide yes)
 			(show_name no)
@@ -69264,7 +69264,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "128Mbit SOIC-8-208mil NOR FLASH ROHS"
+		(property "Description" "128Mbit WSON-8-EP(6x5) NOR FLASH ROHS"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -69275,7 +69275,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C190862"
+		(property "LCSC" "C53959302"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -69286,7 +69286,7 @@
 				)
 			)
 		)
-		(property "FT Rotation Offset" "270"
+		(property "FT Rotation Offset" "0"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -69297,7 +69297,7 @@
 				)
 			)
 		)
-		(property "Stock" "80440"
+		(property "Stock" "2193"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -69308,7 +69308,7 @@
 				)
 			)
 		)
-		(property "Price" "0.896USD"
+		(property "Price" "0.9687USD"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -69352,7 +69352,7 @@
 				)
 			)
 		)
-		(property "Class" "Basic Component"
+		(property "Class" "Extended Component"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -69374,7 +69374,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Winbond Elec"
+		(property "Manufacturer" "Zetta"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -69385,7 +69385,7 @@
 				)
 			)
 		)
-		(property "Part" "W25Q128JVPIQ"
+		(property "Part" "ZD25Q128CWIGR"
 			(at 55.88 171.45 0)
 			(hide yes)
 			(show_name no)

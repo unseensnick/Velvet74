@@ -1,6 +1,6 @@
 {
   "schematic": "sofle-choc-pro.kicad_sch",
-  "last_sync": "2026-09-22T15:36:55.494780+00:00",
+  "last_sync": "2026-09-22T20:16:57.318973+00:00",
   "parts": {
     "C1548": {
       "file": "0402CG150J500NT_15pF_\u00b15%_50V_Ceramic_Capacitor_C0G_0402.pdf",
@@ -558,23 +558,6 @@
       "size_bytes": 5301205,
       "verification": "unverified"
     },
-    "C190862": {
-      "file": "W25Q128JVPIQ_-40\u2103~+85\u2103_100_000_cycles_10uA_120ms@(32KB)_128Mbit_133MHz_2.7V~3.6V_20_Years.pdf",
-      "manufacturer": "Winbond",
-      "description": "-40\u2103~+85\u2103 100,000 cycles 10uA 120ms@(32KB) 128Mbit 133MHz 2.7V~3.6V 20 Years Power-on reset\u3001Hardware write protection\u3001Software write protection\u3001Write enable latch\u3001Absolute write protection\u3001Power lock protection SPI WSON-8-EP(5x6) NOR FLASH ROHS",
-      "value": "W25Q128JVPIQ",
-      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/29be038ba9c4afd78f5b33186e84a099.pdf?productCode=C190862",
-      "downloaded_date": "2026-09-22T15:36:44.296066+00:00",
-      "source": "lcsc",
-      "lcsc": "C190862",
-      "status": "ok",
-      "references": [
-        "U3",
-        "U203"
-      ],
-      "size_bytes": 2462647,
-      "verification": "unverified"
-    },
     "C49451919": {
       "file": "USBLC6-2P6_-55\u2103~+150\u2103_0.5pF_14V_2_5.5A_5V_6V_80W_80nA_ESD_Unidirectional_SOT-563_ESD.pdf",
       "manufacturer": "R+O",
@@ -644,6 +627,39 @@
       "size_bytes": 691102,
       "verification": "wrong",
       "verification_details": "No MPN, manufacturer, or description keywords found in PDF (0/11 keywords)"
+    },
+    "C19077497": {
+      "file": "C19077497_27.4A_7.3V_200W_6.4V_Unidirectional_5V_SOD-123FL_ESD_and_Surge_Protection.pdf",
+      "manufacturer": "hongjiacheng",
+      "description": "27.4A 7.3V 200W 6.4V Unidirectional 5V SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS",
+      "value": "SMF5.0A",
+      "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312041000_hongjiacheng-SMF5-0A_C19077497.pdf",
+      "downloaded_date": "2026-09-22T20:16:53.916379+00:00",
+      "source": "schematic",
+      "status": "ok",
+      "references": [
+        "D2",
+        "D202"
+      ],
+      "size_bytes": 452593,
+      "verification": "likely"
+    },
+    "C53959302": {
+      "file": "ZD25Q128CWIGR_128Mbit_133MHz_2.7V~3.6V_SPI_WSON-8(5x6)_NOR_FLASH_ROHS.pdf",
+      "manufacturer": "Zetta",
+      "description": "128Mbit 133MHz 2.7V~3.6V SPI WSON-8(5x6) NOR FLASH ROHS",
+      "value": "ZD25Q128CWIGR",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/3d183cc3dc8d8f2c8f62bdea8d7d1f52.pdf?productCode=C53959302",
+      "downloaded_date": "2026-09-22T20:16:54.569056+00:00",
+      "source": "lcsc",
+      "lcsc": "C53959302",
+      "status": "ok",
+      "references": [
+        "U3",
+        "U203"
+      ],
+      "size_bytes": 3774454,
+      "verification": "unverified"
     }
   }
 }

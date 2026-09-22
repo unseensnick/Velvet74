@@ -103999,7 +103999,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "W25Q128JVPIQ"
+		(property "Value" "ZD25Q128CWIGR"
 			(at 0 -3.449999 0)
 			(layer "B.Fab")
 			(uuid "bca16c80-e269-4297-9ae5-c5a0af3bab1f")
@@ -104011,7 +104011,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811151432_Winbond-Elec-W25Q128JVPIQ_C190862.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C53959302.pdf"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -104023,7 +104023,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "128Mbit SOIC-8-208mil NOR FLASH ROHS"
+		(property "Description" "128Mbit WSON-8-EP(6x5) NOR FLASH ROHS"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -104048,7 +104048,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C190862"
+		(property "LCSC" "C53959302"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -104060,7 +104060,7 @@
 				)
 			)
 		)
-		(property "Stock" "80440"
+		(property "Stock" "2193"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -104072,7 +104072,7 @@
 				)
 			)
 		)
-		(property "Price" "0.896USD"
+		(property "Price" "0.9687USD"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -104120,7 +104120,7 @@
 				)
 			)
 		)
-		(property "Class" "Basic Component"
+		(property "Class" "Extended Component"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -104144,7 +104144,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Winbond Elec"
+		(property "Manufacturer" "Zetta"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -104156,7 +104156,7 @@
 				)
 			)
 		)
-		(property "Part" "W25Q128JVPIQ"
+		(property "Part" "ZD25Q128CWIGR"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -104180,7 +104180,7 @@
 				)
 			)
 		)
-		(property "FT Rotation Offset" "270"
+		(property "FT Rotation Offset" "0"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -130855,7 +130855,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "W25Q128JVPIQ"
+		(property "Value" "ZD25Q128CWIGR"
 			(at -24.969998 1.210001 90)
 			(layer "B.Fab")
 			(uuid "ba45b6a5-c3b3-4482-8dbe-9029b82bc371")
@@ -130867,7 +130867,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1811151432_Winbond-Elec-W25Q128JVPIQ_C190862.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C53959302.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -130879,7 +130879,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "128Mbit SOIC-8-208mil NOR FLASH ROHS"
+		(property "Description" "128Mbit WSON-8-EP(6x5) NOR FLASH ROHS"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -130904,7 +130904,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C190862"
+		(property "LCSC" "C53959302"
 			(at 0 0 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -130916,7 +130916,7 @@
 				)
 			)
 		)
-		(property "Stock" "80440"
+		(property "Stock" "2193"
 			(at 0 0 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -130928,7 +130928,7 @@
 				)
 			)
 		)
-		(property "Price" "0.896USD"
+		(property "Price" "0.9687USD"
 			(at 0 0 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -130976,7 +130976,7 @@
 				)
 			)
 		)
-		(property "Class" "Basic Component"
+		(property "Class" "Extended Component"
 			(at 0 0 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -131000,7 +131000,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Winbond Elec"
+		(property "Manufacturer" "Zetta"
 			(at 0 0 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -131012,7 +131012,7 @@
 				)
 			)
 		)
-		(property "Part" "W25Q128JVPIQ"
+		(property "Part" "ZD25Q128CWIGR"
 			(at 0 0 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -131036,7 +131036,7 @@
 				)
 			)
 		)
-		(property "FT Rotation Offset" "270"
+		(property "FT Rotation Offset" "0"
 			(at 0 0 90)
 			(layer "B.SilkS")
 			(hide yes)
