@@ -183687,7 +183687,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Frequency Stability" "±20ppm"
+		(property "Frequency Stability" "±30ppm"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -183757,7 +183757,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Normal Temperature Frequency Tolerance" "±10ppm"
+		(property "Normal Temperature Frequency Tolerance" "±30ppm"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -188304,7 +188304,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Frequency Stability" "±20ppm"
+		(property "Frequency Stability" "±30ppm"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -188374,7 +188374,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Normal Temperature Frequency Tolerance" "±10ppm"
+		(property "Normal Temperature Frequency Tolerance" "±30ppm"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
