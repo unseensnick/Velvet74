@@ -90,3 +90,20 @@ Expected: ERC has no errors. DRC has 26 known `courtyards_overlap` errors (mount
 neighbouring switches, 13 per half) and no unconnected items or parity issues. With all severities shown there are
 also known warnings: 24 ERC `pin_to_pin` warnings and 3 `lib_symbol_mismatch` (J201, J202 and JP201 differ from their
 library copies), and DRC silkscreen and `lib_footprint_mismatch` warnings for parts edited on the board.
+
+## License
+
+The design files, scripts and documentation are released under the MIT license (see `LICENSE`): you may use,
+modify, build and sell them as long as the copyright notice is kept. The design comes with no warranty; check it
+yourself before ordering boards.
+
+Credits and third-party parts:
+
+- The layout follows the [Sofle keyboard](https://github.com/josefadamcik/SofleKeyboard) by Josef Adamcik
+  (MIT, (c) 2019 Josef Adamcik).
+- `lib/jlcpcb/` holds parts of [CDFER/JLCPCB-Kicad-Library](https://github.com/CDFER/JLCPCB-Kicad-Library)
+  (MIT, (c) 2024 Chris Dirks, license in `lib/jlcpcb/LICENSE`).
+- `lib/my-soffle.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl` and the Choc hotswap footprints derive from
+  [kiswitch/keyswitch-kicad-library](https://github.com/kiswitch/keyswitch-kicad-library) (MIT and CC-BY-SA 4.0).
+- `datasheets/` holds the manufacturers' datasheets. They are the manufacturers' copyright, included for reference
+  only, and are not covered by this project's license.
