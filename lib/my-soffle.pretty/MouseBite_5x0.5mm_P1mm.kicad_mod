@@ -1,0 +1,61 @@
+(footprint "MouseBite_5x0.5mm_P1mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Breakoff perforation: a row of five 0.5 mm non-plated holes on a 1 mm pitch, 4 mm long. Straddle a 5 mm breakoff tab's junction with the board so the tab snaps there, leaving 0.5 mm of solid board at each end and 0.5 mm webs between holes. Board only: it is not in the schematic.")
+	(tags "mouse bite breakoff panel")
+	(attr exclude_from_pos_files exclude_from_bom board_only)
+	(fp_text reference "REF**"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text value "MouseBite_5x0.5mm_P1mm"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 -2)
+		(size 0.5 0.5)
+		(drill 0.5)
+		(layers "F&B.Cu" "*.Mask")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 -1)
+		(size 0.5 0.5)
+		(drill 0.5)
+		(layers "F&B.Cu" "*.Mask")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 0.5 0.5)
+		(drill 0.5)
+		(layers "F&B.Cu" "*.Mask")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 1)
+		(size 0.5 0.5)
+		(drill 0.5)
+		(layers "F&B.Cu" "*.Mask")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 2)
+		(size 0.5 0.5)
+		(drill 0.5)
+		(layers "F&B.Cu" "*.Mask")
+	)
+)

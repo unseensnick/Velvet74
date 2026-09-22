@@ -6,7 +6,7 @@ fabrication data live in a KiCad 10 project aimed at JLCPCB assembly.
 
 ## The board
 
-One 4-layer board, 268 x 118 mm, holds both halves 10 mm apart. Each half has 37 keys: a 6 x 5 matrix, 5 thumb
+One 4-layer board, 268 x 118 mm before the panel rails, holds both halves 10 mm apart. Each half has 37 keys: a 6 x 5 matrix, 5 thumb
 keys and 2 EC11 encoders that double as keys, each with an SK6812MINI-E under it.
 
 - **Controller (per half):** RP2040, W25Q128JV 16 MB QSPI flash, 12 MHz ABM8-272-T3 crystal, AP2112K-3.3 LDO,
@@ -17,6 +17,9 @@ keys and 2 EC11 encoders that double as keys, each with an SK6812MINI-E under it
 - **Display:** a 0.91" SSD1306 module on the 4-pin J3 header (I2C1).
 - **Stackup:** signals on F.Cu and B.Cu, the +5V plane on In1 (with a +3.3V island under the controller), GND on
   In2. Power runs through the planes.
+- **Panel:** the halves ship as one 268 x 131 mm panel. A 5 mm rail above and below carries the 2 mm tooling holes
+  and three fiducials, and ten 5 mm tabs hold the halves, five per half, away from the USB-C cutouts. Mouse bites
+  perforate each tab at the board edge: snap the tabs, then file the nubs flat. Nothing is left on the keyboard.
 
 The schematic draws one half (`sofle-choc-pro-half.kicad_sch`) and uses it twice, as sheets `Left` and `Right`.
 Left references are plain (U1, SW10); right ones add 200 (U201, SW210). Both halves share one pin map.
