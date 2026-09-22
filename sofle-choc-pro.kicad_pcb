@@ -27560,90 +27560,6 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -2.05 0.3)
-			(end -2.05 -0.3)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8f5b7ec1-caf8-46f6-bc18-7f6c9002a9e8")
-		)
-		(fp_line
-			(start -1.4 -1)
-			(end 1.4 -1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e16dbd3b-a200-4a68-b1b9-3143af9fa466")
-		)
-		(fp_line
-			(start 1.4 1)
-			(end -1.4 1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5f523467-79c4-4e2f-beb6-a325df7da6e8")
-		)
-		(fp_line
-			(start 2.05 -0.3)
-			(end 2.05 0.3)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a59476a4-9462-41bd-bd8a-34b1bb8c8f25")
-		)
-		(fp_arc
-			(start -2.05 -0.3)
-			(mid -1.844975 -0.794975)
-			(end -1.35 -1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "37a41e57-66b5-4521-bdf0-4a12740e622d")
-		)
-		(fp_arc
-			(start -1.35 1)
-			(mid -1.844975 0.794975)
-			(end -2.05 0.3)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "54b98443-a0b7-47fa-9521-fc574943f77f")
-		)
-		(fp_arc
-			(start 1.35 -1)
-			(mid 1.844975 -0.794975)
-			(end 2.05 -0.3)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "38476722-ce96-4a72-a9c3-de6f85e4dcfa")
-		)
-		(fp_arc
-			(start 2.05 0.3)
-			(mid 1.844975 0.794975)
-			(end 1.35 1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "52295eea-ab0b-4c33-bb22-8ba33a59610b")
-		)
-		(fp_line
 			(start -2.3 -1.25)
 			(end -2.3 1.25)
 			(stroke
@@ -27684,7 +27600,7 @@
 			(uuid "5b68772f-f284-462d-b976-d326f647617a")
 		)
 		(fp_text user "1"
-			(at -2.6 0 0)
+			(at -1.3 -1.6 0)
 			(layer "F.SilkS")
 			(uuid "93eb614c-0dfe-4595-a323-266eddcf93c3")
 			(effects
@@ -27695,7 +27611,7 @@
 			)
 		)
 		(fp_text user "3"
-			(at 2.6 0 0)
+			(at 1.3 -1.6 0)
 			(layer "F.SilkS")
 			(uuid "38251620-e7f8-48cc-bd90-b3e0ea820f24")
 			(effects
@@ -55661,90 +55577,6 @@
 		(zone_connect 1)
 		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start 1.4 1)
-			(end -1.4 1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "988033ac-b9ca-440e-91a1-b5ffbc9ac1c8")
-		)
-		(fp_line
-			(start -2.05 0.3)
-			(end -2.05 -0.3)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7d98050d-947a-4a47-8ad2-f0686ba2d6aa")
-		)
-		(fp_line
-			(start 2.05 -0.3)
-			(end 2.05 0.3)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b9df6d0c-1b66-4388-ac7f-21bdf01b2d97")
-		)
-		(fp_line
-			(start -1.4 -1)
-			(end 1.4 -1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "aa48df96-3045-4f09-963c-a7243e46ebc3")
-		)
-		(fp_arc
-			(start -1.35 1)
-			(mid -1.844975 0.794975)
-			(end -2.05 0.3)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "24ebc36f-026f-432f-b904-78a70727c424")
-		)
-		(fp_arc
-			(start 2.05 0.3)
-			(mid 1.844975 0.794975)
-			(end 1.35 1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "993dc9f0-9972-43d4-9bcb-7a417956bbdf")
-		)
-		(fp_arc
-			(start -2.05 -0.3)
-			(mid -1.844975 -0.794975)
-			(end -1.35 -1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ef194c73-bfe4-4254-8dab-928f1a1926a9")
-		)
-		(fp_arc
-			(start 1.35 -1)
-			(mid 1.844975 -0.794975)
-			(end 2.05 -0.3)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4fd105b4-0fad-4f53-91ba-556b1491425e")
-		)
 		(fp_line
 			(start 2.3 1.25)
 			(end -2.3 1.25)
@@ -110881,6 +110713,7 @@
 		(property "Reference" "J1"
 			(at 0 8.075 180)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "e0071e25-e34d-4750-a690-094609903650")
 			(effects
 				(font
@@ -110928,7 +110761,8 @@
 		)
 		(property "LCSC" "C19274022"
 			(at 0 2.43 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
+			(hide yes)
 			(uuid "a9612240-a0a7-4b02-bea2-8ff80fabb240")
 			(effects
 				(font
@@ -110939,7 +110773,8 @@
 		)
 		(property "FT Position Offset" "0,1.394"
 			(at 0 2.43 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
+			(hide yes)
 			(uuid "3be14a79-0096-4438-863f-200340463222")
 			(effects
 				(font
@@ -117504,6 +117339,7 @@
 		(property "Reference" "J202"
 			(at 0 8.075 270)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "3f595945-18b0-4d36-97cb-4ff093d3c3c9")
 			(effects
 				(font
@@ -117551,7 +117387,8 @@
 		)
 		(property "LCSC" "C19274022"
 			(at 0 2.43 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
+			(hide yes)
 			(uuid "021522dc-5266-4190-bbc5-d002c0edbc7b")
 			(effects
 				(font
@@ -117562,7 +117399,8 @@
 		)
 		(property "FT Position Offset" "0,1.394"
 			(at 0 2.43 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
+			(hide yes)
 			(uuid "9b7acac5-8294-47dc-934a-059082f25127")
 			(effects
 				(font
@@ -147591,6 +147429,7 @@
 		(property "Reference" "J201"
 			(at 0 8.075 180)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "f8293e49-d24d-49e4-b6bc-b2e1ad6914d4")
 			(effects
 				(font
@@ -147638,7 +147477,8 @@
 		)
 		(property "LCSC" "C19274022"
 			(at 0 2.43 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
+			(hide yes)
 			(uuid "ebc00b8b-b535-4ade-9e67-a70f222506fb")
 			(effects
 				(font
@@ -147649,7 +147489,8 @@
 		)
 		(property "FT Position Offset" "0,1.394"
 			(at 0 2.43 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
+			(hide yes)
 			(uuid "4ee2b88b-de13-483e-8755-12ed9c843b74")
 			(effects
 				(font
@@ -204066,6 +203907,7 @@
 		(property "Reference" "J2"
 			(at 0 8.075 90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "c0117e62-8080-4d2f-9003-f5c6e7555b2c")
 			(effects
 				(font
@@ -204113,7 +203955,8 @@
 		)
 		(property "LCSC" "C19274022"
 			(at 0 2.43 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
+			(hide yes)
 			(uuid "8989a575-9312-4aab-b3eb-30dc08931a49")
 			(effects
 				(font
@@ -204124,7 +203967,8 @@
 		)
 		(property "FT Position Offset" "0,1.394"
 			(at 0 2.43 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
+			(hide yes)
 			(uuid "1787ba0f-885f-4c71-84f3-0c08f5aeb7c0")
 			(effects
 				(font
@@ -222113,7 +221957,7 @@
 		)
 	)
 	(gr_text "LINK"
-		(at 173.2 100.8 0)
+		(at 173.2 102.6 0)
 		(layer "B.SilkS")
 		(uuid "551fc9c7-e1f0-4fe9-9022-9b4e882a2b63")
 		(effects
@@ -222125,7 +221969,7 @@
 		)
 	)
 	(gr_text "LINK"
-		(at 193.8 100.8 0)
+		(at 193.8 102.6 0)
 		(layer "B.SilkS")
 		(uuid "1b8a1821-5071-4da7-901c-379605eab210")
 		(effects
