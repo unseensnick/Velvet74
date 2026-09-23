@@ -4,6 +4,16 @@
 	(generator_version "10.0")
 	(uuid "4f316a89-7c88-4ad8-b99c-37e7f4539205")
 	(paper "E")
+	(title_block
+		(title "Velvet74 half (sheets Left and Right)")
+		(date "2026-09-23")
+		(rev "1.0")
+		(company "unseensnick")
+		(comment 1 "Split Choc keyboard, 74 keys, chip-down RP2040 in each half")
+		(comment 2 "Both halves on one panel, 4-layer 1.6 mm, assembled by JLCPCB")
+		(comment 3 "Key geometry from Ergogen 4.2.1, drawn in KiCad 10.0.3")
+		(comment 4 "github.com/unseensnick/Velvet74")
+	)
 	(lib_symbols
 		(symbol "74xGxx:74LVC1G34"
 			(exclude_from_sim no)

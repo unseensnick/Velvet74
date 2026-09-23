@@ -7,6 +7,16 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Velvet74")
+		(date "2026-09-23")
+		(rev "1.0")
+		(company "unseensnick")
+		(comment 1 "Split Choc keyboard, 74 keys, chip-down RP2040 in each half")
+		(comment 2 "Both halves on one panel, 4-layer 1.6 mm, assembled by JLCPCB")
+		(comment 3 "Key geometry from Ergogen 4.2.1, drawn in KiCad 10.0.3")
+		(comment 4 "github.com/unseensnick/Velvet74")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(4 "In1.Cu" signal)
@@ -241188,14 +241198,6 @@
 		(uuid "4d75de06-de0d-43e1-acc9-721419756272")
 	)
 	(segment
-		(start 201.01 148.46)
-		(end 200.175686 148.46)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "/Right/LED_D2")
-		(uuid "60e13cf9-69ad-4f8e-b952-104d141f5689")
-	)
-	(segment
 		(start 200.175686 148.46)
 		(end 195.05 143.334314)
 		(width 0.2)
@@ -241228,8 +241230,8 @@
 		(uuid "b9d9e6cb-4164-4f40-8ba7-aaa52718179c")
 	)
 	(segment
-		(start 203.31 148.46)
-		(end 201.01 148.46)
+		(start 200.175686 148.46)
+		(end 203.31 148.46)
 		(width 0.2)
 		(layer "F.Cu")
 		(net "/Right/LED_D2")
