@@ -85,9 +85,9 @@ LCSC package drawing, which differs from KiCad's for some packages, so each affe
 `FT Rotation Offset` or `FT Position Offset` field checked against JLC's own footprint. The plugin's name-matching
 rules would rotate parts that are already right.
 
-**To regenerate `production/pcbway/`:** `kicad-cli pcb export gerbers`, `export drill`, `export pos` and
-`export pdf`. Those offset fields are JLCPCB's and must not be applied here, so the placement file keeps KiCad's
-own angles; the only correction is moving the four USB-C rows onto the part centroid.
+**To regenerate `production/pcbway/`:** `scripts/export_pcbway.py`, which drives `kicad-cli` and then writes the
+placement file and an MPN-keyed BOM. Those offset fields are JLCPCB's and must not be applied here, so the
+placement file keeps KiCad's own angles; the only correction is moving the four USB-C rows onto the part centroid.
 
 **To commit:** activate the tracked commit-message hook once per clone with `git config core.hooksPath .githooks`
 (see `CLAUDE.md` for the message format).

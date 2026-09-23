@@ -1,8 +1,8 @@
 # PCBWay production files
 
-Velvet74, one panel holding both halves. Generated from `sofle-choc-pro.kicad_pcb` with KiCad
-10.0.3's own `kicad-cli`, not the Fabrication Toolkit plugin, because that plugin writes JLCPCB's
-conventions.
+Velvet74, one panel holding both halves. Regenerate the whole folder with
+`scripts/export_pcbway.py sofle-choc-pro.kicad_pcb`, which drives KiCad 10.0.3's own `kicad-cli`
+rather than the Fabrication Toolkit plugin, because that plugin writes JLCPCB's conventions.
 
 | File | What it is |
 | --- | --- |

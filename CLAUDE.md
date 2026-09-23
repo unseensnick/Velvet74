@@ -41,6 +41,7 @@ Full detail and the reasons are in [.claude/rules/kicad.md](.claude/rules/kicad.
 | `scripts/place_panel.py` | Panel hardware for the rails and tabs that `make_both.js` adds to the outline: 10 mouse bites, 2 tooling holes, 3 fiducials, and the keepouts that hold the pours off the rails and tabs. All board-only, so parity ignores them; run after `place_from_ergogen.py`, which replaces Edge.Cuts but leaves footprints alone |
 | `scripts/halves.py` | Finds a footprint's (half, role) from its sheet path, so scripts say ('Right', 'SW10') and never compute SW210 |
 | `scripts/render_keycaps.py` | Stdlib SVG render of keycaps and knobs from Ergogen output (read-only for the board) |
+| `scripts/export_pcbway.py` | Writes `production/pcbway/`: gerbers, drills, assembly drawings, a placement file in KiCad's own rotations (**never** JLC's `FT` offsets) and a BOM keyed by MPN. Reads the board only |
 | `scripts/strip_signals.py` | **Deletes every track and via that is not on GND, +5V, +3.3V, +1V1, VBUS, VBUS_FUSED or LINK_VBUS** (either half), to clear a board for hand routing; zones are untouched; restores `.kicad_pro` |
 | `scripts/build_rp2040_module.py` | Rebuilds the template board from a netlist and places parts; **overwrites the template board, routing included**; restores `.kicad_pro` |
 | `scripts/transfer_module_routing.py` | Copies routing from a routed test board onto the template; **writes the template board** |
