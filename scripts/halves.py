@@ -24,7 +24,8 @@ def _symbol(fp):
 
 
 def by_role(board):
-    """{(half, role): footprint} for every footprint on the board."""
-    fps = list(board.GetFootprints())
+    """{(half, role): footprint} for every footprint on a half."""
+    # the panel hardware from place_panel.py is board-only and belongs to no sheet
+    fps = [fp for fp in board.GetFootprints() if fp.GetSheetname().strip('/') in HALVES]
     role = {_symbol(fp): fp.GetReference() for fp in fps if half_of(fp) == 'Left'}
     return {(half_of(fp), role[_symbol(fp)]): fp for fp in fps}
