@@ -15,13 +15,9 @@ importing them together without moving them puts every part in place.
 
 Stack heights above the case bottom: PCB underside 4.25, spacer 5.85, plate 7.45, top 8.2.
 
-## Where these differ from `ergogen/output/cases/`
+The case, spacer and plate are Ergogen's own `ergogen/output/cases/` parts, unchanged: the case's USB-C ports are
+closed 9.0 x 3.2 mm slots with a chamfer stepped in three. They were converted with manifold-3d instead of JSCAD's CSG,
+which leaves T-junctions in the mesh.
 
-- **USB-C chamfer**: the case here has a true 45 degree chamfer on the outer 1.3 mm of the wall. `config.yaml` cuts
-  the same 9.0 x 3.2 mm slot at the same height, but steps the chamfer in three, because Ergogen can only extrude
-  flat outlines.
-
-The spacer is Ergogen's own, one piece.
-
-Made with scratch tools outside the repo (Ergogen's JSCAD rebuilt as manifold solids, KiCad's board-only STL for the
-dummy), from the board at the thumb-cluster and outline change.
+The PCB dummy is KiCad's board-only STL of the left half plus blocks for the back-side parts; the stand-ins and the
+gauge are drawn from the board's footprint positions. All of it was made with scratch tools outside the repo.
