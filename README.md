@@ -51,7 +51,10 @@ Left references are plain (U1, SW10); right ones add 200 (U201, SW210). Both hal
 - `scripts/`: KiCad Python scripts that place parts from the Ergogen points and snap LEDs, diodes and caps to their
   switches.
 - `templates/rp2040-inner-column/`: the RP2040 module the controller block started from, with its own README.
-- `production/`: JLCPCB Gerbers, drill files, BOM and placement, regenerated from the board before an order.
+- `production/`: fabrication outputs, regenerated from the board before an order. `jlcpcb/` holds the
+  Fabrication Toolkit set; `pcbway/` holds a `kicad-cli` set with a manufacturer-part-number BOM and assembly
+  drawings. The two placement files use different rotation conventions, so do not mix them (see
+  `production/pcbway/README.md`).
 
 `CLAUDE.md` has the detailed file map, the rules for editing the design safely, and the checks.
 
@@ -76,11 +79,15 @@ Ergogen 4.2.1 is pinned in `ergogen/package.json`; the output lands in `ergogen/
 **To run the scripts in `scripts/`:** KiCad's bundled Python (`<KiCad>/10.0/bin/python.exe` on Windows), with KiCad
 closed. Each script's docstring says how to run it and what it overwrites.
 
-**To regenerate `production/`:** the Fabrication Toolkit plugin (from the KiCad Plugin and Content Manager), with
-its automatic translation left **off**. JLCPCB's zero degrees is the part's orientation in its own LCSC package
-drawing, which differs from KiCad's for some packages, so each affected part carries an `FT Rotation Offset` or
-`FT Position Offset` field checked against JLC's own footprint. The plugin's name-matching rules would rotate parts
-that are already right.
+**To regenerate `production/jlcpcb/`:** the Fabrication Toolkit plugin (from the KiCad Plugin and Content
+Manager), with its automatic translation left **off**. JLCPCB's zero degrees is the part's orientation in its own
+LCSC package drawing, which differs from KiCad's for some packages, so each affected part carries an
+`FT Rotation Offset` or `FT Position Offset` field checked against JLC's own footprint. The plugin's name-matching
+rules would rotate parts that are already right.
+
+**To regenerate `production/pcbway/`:** `kicad-cli pcb export gerbers`, `export drill`, `export pos` and
+`export pdf`. Those offset fields are JLCPCB's and must not be applied here, so the placement file keeps KiCad's
+own angles; the only correction is moving the four USB-C rows onto the part centroid.
 
 **To commit:** activate the tracked commit-message hook once per clone with `git config core.hooksPath .githooks`
 (see `CLAUDE.md` for the message format).
