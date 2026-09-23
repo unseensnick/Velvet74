@@ -50,24 +50,31 @@ units:
   boss_r: 1.75
   pilot_r: 0.85      # M2 self-tapping pilot; drill 0.8 and tap M2 for the aluminium version
   case_h: floor + standoff + pcb_t + spacer_t + plate_t
-  # Mid-mount USB-C, Hong Cheng HC-TYPE-C-16P-C16B (LCSC C19274022). The body sinks usbc_sink below the
-  # board top, which on a 1.6 mm PCB leaves nothing hanging underneath and takes the connector out of the
-  # standoff budget: that is what lets the whole stack reach 8.2 mm. It needs the 9.24 x 5.75 mm edge
-  # cutout that board_pcb subtracts (_port_slots).
+  # Mid-mount USB-C, Hong Cheng HC-TYPE-C-16P-C16B (LCSC C19274022), mounted on B.Cu. The body sinks
+  # usbc_sink up into the board from its underside, so on a 1.6 mm PCB it is flush with the board top and
+  # hangs usbc_below under the board, inside the standoff (2.2 mm, 0.54 mm to spare). The spacer and plate see
+  # nothing of it. It needs the 9.24 x 5.75 mm edge cutout that board_pcb subtracts (_port_slots).
   # The sink is dimensioned on the manufacturer drawing; the overall height is not, and 3.26 is scaled off
   # it (the drawing's 2.56 is the mating cavity, not the body). C10B and C08B sink 1.0 and 0.8 instead.
   usbc_h: 3.26
   usbc_sink: 1.6
-  usbc_below: usbc_sink - pcb_t   # hang below the board underside: 0 here, so the standoff is free of it
-  usbc_above: usbc_h - usbc_sink  # 1.66 proud of the board top, which is why the spacer is pocketed
-  usbc_body_w: 11.24
-  usbc_body_l: 6.5
+  usbc_below: usbc_h - usbc_sink  # 1.66 under the board underside; keep standoff above this
   usbc_slot_w: 9.24  # board cutout from the manufacturer drawing, opening onto the edge
   usbc_slot_d: 5.75
   runout: 2          # how far past the board edge the cutouts run, so they open cleanly onto it
-  port_margin: 0.75  # slack around the connector so a plug nose enters without fouling the wall
-  port_h: usbc_h + 2 port_margin
-  port_z: floor + standoff - usbc_below - port_margin
+  # Case port: a closed slot around the plug's metal shell (8.4 x 2.6 plus 0.3 mm a side), centred on the
+  # connector body, with a 45 degree chamfer on the outer cham of the wall so a cable's moulding gets
+  # closer to the connector. Ergogen only extrudes flat outlines, so the chamfer is three steps, each cut
+  # at the midpoint of its slice of the slope.
+  port_w: 9.0
+  port_h: 3.2
+  port_z: floor + standoff - usbc_below + usbc_h / 2   # body centre, 4.22 above the case bottom
+  port_run: 3        # how far the cuts carry on past the wall's outer face (and, for the slot, inside it)
+  cham: 1.3
+  cham_step: cham / 3
+  cg1: cham - cham_step / 2        # growth of each chamfer step, outermost first
+  cg2: cham - 3 * cham_step / 2
+  cg3: cham - 5 * cham_step / 2
   # 0.91 inch OLED 128x32 (SSD1306) soldered flat on the 4-pin J3, face up, reaching from the header row
   # toward the top edge. Module drawing (lcdwiki MC091GX): PCB 38 x 12 mm, pin row 1.5 mm from one short end,
   # glass 30 x 11.5 mm from 3.5 to 33.5 mm past the pin row. The openings hang off the oled_header point
@@ -270,7 +277,7 @@ outlines:
       what: outline
       name: _shape
   # What Edge.Cuts actually gets. The case, spacer and plate keep the un-notched "board": the shell
-  # already opens for the ports through _port_host/_port_link, and expanding a notched outline by the
+  # already opens for the ports through the _port_host_*/_port_link_* cuts, and expanding a notched outline by the
   # wall thickness would tear a second gap in the case wall.
   board_pcb:
     - what: outline
@@ -300,10 +307,12 @@ outlines:
       radius: pilot_r
   # the whole OLED module, not just its glass: it lies in a pocket through the printed spacer, which is why
   # spacer_t matches the module's 1.2 mm PCB. The FR4 plate above only opens for the glass (_display_hole).
+  # The module board runs from 1.5 mm behind the pin row to 36.5 mm past it; the pocket is centred on it
+  # (17.5 = display_glass - 1) with 0.5 mm clearance all round.
   # orient cancels J3's turn so the shift and size read in board axes (mirrored points negate both)
   _display_module:
     - what: rectangle
-      where: {ref: oled_header, orient: 90, shift: [-display_row, display_glass - 2.5]}
+      where: {ref: oled_header, orient: 90, shift: [-display_row, display_glass - 1]}
       size: [13, 39]
 
   # case shell outlines. Port rectangles are centred on each USB-C's mouth, in the connector's frame.
@@ -319,25 +328,27 @@ outlines:
     - what: rectangle
       where: {ref: oled_header, orient: 90, shift: [-display_row, display_glass]}
       size: [display_w, display_l]
-  _port_host:
-    - what: rectangle
-      where: {ref: usbc_host}
-      size: [10, 8]
-  _port_link:
-    - what: rectangle
-      where: {ref: usbc_link}
-      size: [10, 8]
-  # The connector body stands usbc_above proud of the board top, so the spacer opens for it instead of
-  # fouling it. Each rectangle carries fit clearance on three sides and runs past the board edge so the
-  # pocket is open-ended.
-  _port_bodies:
-    - what: rectangle
-      where: {ref: usbc_host, shift: [0, (runout - usbc_body_l) / 2]}
-      size: [usbc_body_w + 2 fit, usbc_body_l + 2 fit + runout]
-    - operation: add
-      what: rectangle
-      where: {ref: usbc_link, shift: [0, (runout - usbc_body_l) / 2]}
-      size: [usbc_body_w + 2 fit, usbc_body_l + 2 fit + runout]
+  # Port cross-sections, drawn flat in the connector's frame (mouth on the board edge, +y outward) and laid on
+  # their side by the shell. The shell cuts each one twice, turned +90 and -90, so the cut reaches equally
+  # both ways from the outline's centre: that keeps it right on the mirrored right half, where make_both.js
+  # copies a rotation unchanged. The slot is centred mid-wall and reaches port_run past the wall on each
+  # side; each chamfer step runs from its depth inside the outer face (wall) to port_run past it.
+  _port_host_slot:
+    - {what: rectangle, where: {ref: usbc_host, shift: [0, wall / 2]}, size: [port_w, port_h], corner: port_h / 2}
+  _port_host_c1:
+    - {what: rectangle, where: {ref: usbc_host, shift: [0, wall + (port_run - cham_step) / 2]}, size: [port_w + 2 cg1, port_h + 2 cg1], corner: port_h / 2 + cg1}
+  _port_host_c2:
+    - {what: rectangle, where: {ref: usbc_host, shift: [0, wall + (port_run - 2 cham_step) / 2]}, size: [port_w + 2 cg2, port_h + 2 cg2], corner: port_h / 2 + cg2}
+  _port_host_c3:
+    - {what: rectangle, where: {ref: usbc_host, shift: [0, wall + (port_run - cham) / 2]}, size: [port_w + 2 cg3, port_h + 2 cg3], corner: port_h / 2 + cg3}
+  _port_link_slot:
+    - {what: rectangle, where: {ref: usbc_link, shift: [0, wall / 2]}, size: [port_w, port_h], corner: port_h / 2}
+  _port_link_c1:
+    - {what: rectangle, where: {ref: usbc_link, shift: [0, wall + (port_run - cham_step) / 2]}, size: [port_w + 2 cg1, port_h + 2 cg1], corner: port_h / 2 + cg1}
+  _port_link_c2:
+    - {what: rectangle, where: {ref: usbc_link, shift: [0, wall + (port_run - 2 cham_step) / 2]}, size: [port_w + 2 cg2, port_h + 2 cg2], corner: port_h / 2 + cg2}
+  _port_link_c3:
+    - {what: rectangle, where: {ref: usbc_link, shift: [0, wall + (port_run - cham) / 2]}, size: [port_w + 2 cg3, port_h + 2 cg3], corner: port_h / 2 + cg3}
 
 cases:
   bottom:
@@ -345,7 +356,7 @@ cases:
       name: board
       extrude: 2
   # printed spacer that holds the FR4 plate off the PCB. Same outline as the board, opened for the switches,
-  # the screws, a pocket the OLED module drops into and a pocket over each USB-C body.
+  # the screws and a pocket the OLED module drops into.
   spacer:
     - what: outline
       name: board
@@ -360,10 +371,6 @@ cases:
       operation: subtract
     - what: outline
       name: _display_module
-      extrude: spacer_t
-      operation: subtract
-    - what: outline
-      name: _port_bodies
       extrude: spacer_t
       operation: subtract
 
@@ -395,16 +402,24 @@ cases:
       extrude: case_h
       shift: [0, 0, floor]
       operation: subtract
-    - what: outline
-      name: _port_host
-      extrude: port_h
-      shift: [0, 0, port_z]
-      operation: subtract
-    - what: outline
-      name: _port_link
-      extrude: port_h
-      shift: [0, 0, port_z]
-      operation: subtract
+    # USB-C ports: J1 faces +y, so its cuts turn about x; J2 faces +x, so its cuts turn about y. Each outline
+    # is cut at +90 and -90, extruded by half its length, so the pair spans the length centred on the outline.
+    - {what: outline, name: _port_host_slot, extrude: wall / 2 + port_run, rotate: [90, 0, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_host_slot, extrude: wall / 2 + port_run, rotate: [-90, 0, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_host_c1, extrude: (port_run + cham_step) / 2, rotate: [90, 0, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_host_c1, extrude: (port_run + cham_step) / 2, rotate: [-90, 0, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_host_c2, extrude: (port_run + 2 cham_step) / 2, rotate: [90, 0, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_host_c2, extrude: (port_run + 2 cham_step) / 2, rotate: [-90, 0, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_host_c3, extrude: (port_run + cham) / 2, rotate: [90, 0, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_host_c3, extrude: (port_run + cham) / 2, rotate: [-90, 0, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_link_slot, extrude: wall / 2 + port_run, rotate: [0, 90, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_link_slot, extrude: wall / 2 + port_run, rotate: [0, -90, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_link_c1, extrude: (port_run + cham_step) / 2, rotate: [0, 90, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_link_c1, extrude: (port_run + cham_step) / 2, rotate: [0, -90, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_link_c2, extrude: (port_run + 2 cham_step) / 2, rotate: [0, 90, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_link_c2, extrude: (port_run + 2 cham_step) / 2, rotate: [0, -90, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_link_c3, extrude: (port_run + cham) / 2, rotate: [0, 90, 0], shift: [0, 0, port_z], operation: subtract}
+    - {what: outline, name: _port_link_c3, extrude: (port_run + cham) / 2, rotate: [0, -90, 0], shift: [0, 0, port_z], operation: subtract}
     # Screw pillars, added after the cavity or it would cut them away again. A plain cylinder from the floor
     # to the PCB underside, threading between the hotswap sockets. The pilot runs the full pillar and on
     # through the floor, giving standoff + floor = 4.2 mm of engagement.

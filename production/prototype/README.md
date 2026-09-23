@@ -17,13 +17,11 @@ Stack heights above the case bottom: PCB underside 4.25, spacer 5.85, plate 7.45
 
 ## Where these differ from `ergogen/output/cases/`
 
-- **USB-C openings**: a closed 9.0 x 3.2 mm slot with a 45 degree chamfer on the outer 1.3 mm of the wall, centred
-  on the connector as the board has it (J1/J2 on B.Cu, body hanging 1.66 mm below the PCB). `config.yaml`
-  (`usbc_below`, `usbc_above`, `port_z`) still describes a top-mounted connector and cuts an open-top notch.
-- **Spacer OLED pocket**: runs 1 mm further, to 36.5 mm past J3's pin row, so the spacer does not sit on the module.
-  `_display_module` in `config.yaml` stops at 35.5 mm.
-- The spacer prints as two pieces: a 3.9 mm strip between the OLED pocket and the inner edge is cut off by the two
-  USB-C pockets.
+- **USB-C chamfer**: the case here has a true 45 degree chamfer on the outer 1.3 mm of the wall. `config.yaml` cuts
+  the same 9.0 x 3.2 mm slot at the same height, but steps the chamfer in three, because Ergogen can only extrude
+  flat outlines.
+
+The spacer is Ergogen's own, one piece.
 
 Made with scratch tools outside the repo (Ergogen's JSCAD rebuilt as manifold solids, KiCad's board-only STL for the
 dummy), from the board at the thumb-cluster and outline change.
