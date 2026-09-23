@@ -5,7 +5,7 @@ in the strip beside the inner key column, the way the Keebart Sofle Choc Pro doe
 follows the ScottoModules idea: copy the schematic and board into a keyboard project, then wire the
 GPIO labels to the matrix.
 
-The circuit is the controller half of the audited `sofle-choc-pro.kicad_sch` in the repo root, so
+The circuit is the controller half of the audited `velvet74.kicad_sch` in the repo root, so
 reference designators and LCSC part numbers match the keyboard.
 
 ## Board

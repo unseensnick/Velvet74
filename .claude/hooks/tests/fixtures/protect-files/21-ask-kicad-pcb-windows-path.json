@@ -1,6 +1,6 @@
 {
   "name": "ask before editing the board file given a full Windows backslash path",
-  "stdin": { "tool_input": { "file_path": "C:\\Users\\unseensnick\\Desktop\\projects\\my-soffle\\sofle-choc-pro.kicad_pcb" } },
+  "stdin": { "tool_input": { "file_path": "C:\\Users\\unseensnick\\Desktop\\projects\\my-soffle\\velvet74.kicad_pcb" } },
   "expect_exit": 0,
   "expect_stdout_contains": ["ask", "KiCad"]
 }

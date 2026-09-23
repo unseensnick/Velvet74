@@ -1,7 +1,7 @@
 # PCBWay production files
 
 Velvet74, one panel holding both halves. Regenerate the whole folder with
-`scripts/export_pcbway.py sofle-choc-pro.kicad_pcb`, which drives KiCad 10.0.3's own `kicad-cli`
+`scripts/export_pcbway.py velvet74.kicad_pcb`, which drives KiCad 10.0.3's own `kicad-cli`
 rather than the Fabrication Toolkit plugin, because that plugin writes JLCPCB's conventions.
 
 | File | What it is |

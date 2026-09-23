@@ -4,6 +4,13 @@
 	(generator_version "10.0")
 	(uuid "e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71")
 	(paper "A4")
+	(title_block
+		(title "Velvet74")
+		(date "2026-09-23")
+		(rev "1.0")
+		(company "unseensnick")
+		(comment 4 "github.com/unseensnick/Velvet74")
+	)
 	(lib_symbols)
 	(sheet
 		(at 40 40)
@@ -31,7 +38,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sofle-choc-pro-half.kicad_sch"
+		(property "Sheetfile" "velvet74-half.kicad_sch"
 			(at 40 80.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43,7 +50,7 @@
 			)
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "velvet74"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(page "2")
 				)
@@ -76,7 +83,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sofle-choc-pro-half.kicad_sch"
+		(property "Sheetfile" "velvet74-half.kicad_sch"
 			(at 140 80.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -88,7 +95,7 @@
 			)
 		)
 		(instances
-			(project "sofle-choc-pro"
+			(project "velvet74"
 				(path "/e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
 					(page "3")
 				)

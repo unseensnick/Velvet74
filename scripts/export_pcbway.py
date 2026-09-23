@@ -1,7 +1,7 @@
 """Write the PCBWay fabrication set: gerbers, drills, placement file, MPN BOM and assembly drawings.
 
 From a shell (pcbnew closed, though this one only reads the board):
-    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/export_pcbway.py sofle-choc-pro.kicad_pcb
+    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/export_pcbway.py velvet74.kicad_pcb
 
 Overwrites everything in production/pcbway/ beside the board. It never touches the board or the .kicad_pro.
 

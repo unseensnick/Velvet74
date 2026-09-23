@@ -21,7 +21,7 @@ keys and 2 EC11 encoders that double as keys, each with an SK6812MINI-E under it
   and three fiducials, and ten 5 mm tabs hold the halves, five per half, away from the USB-C cutouts. Mouse bites
   perforate each tab at the board edge: snap the tabs, then file the nubs flat. Nothing is left on the keyboard.
 
-The schematic draws one half (`sofle-choc-pro-half.kicad_sch`) and uses it twice, as sheets `Left` and `Right`.
+The schematic draws one half (`velvet74-half.kicad_sch`) and uses it twice, as sheets `Left` and `Right`.
 Left references are plain (U1, SW10); right ones add 200 (U201, SW210). Both halves share one pin map.
 
 ## Pin map (both halves)
@@ -42,7 +42,7 @@ Left references are plain (U1, SW10); right ones add 200 (U201, SW210). Both hal
 
 ## Layout
 
-- `sofle-choc-pro.kicad_pro` / `.kicad_sch` / `.kicad_pcb` / `.kicad_dru`: the KiCad project, with the half sheet
+- `velvet74.kicad_pro` / `.kicad_sch` / `.kicad_pcb` / `.kicad_dru`: the KiCad project, with the half sheet
   above.
 - `lib/`: project symbols, footprints and 3D models (`my-soffle.*`), and the used JLCPCB library parts (`jlcpcb/`).
 - `datasheets/`: manufacturer datasheets for every part on the board, synced from LCSC.
@@ -61,7 +61,7 @@ Left references are plain (U1, SW10); right ones add 200 (U201, SW210). Both hal
 ## Getting started
 
 **To open, review or edit the design** you need only [KiCad 10](https://www.kicad.org/download/) (made with
-10.0.3); open `sofle-choc-pro.kicad_pro`. Every library part the design uses is in the repo: the project's own parts
+10.0.3); open `velvet74.kicad_pro`. Every library part the design uses is in the repo: the project's own parts
 in `lib/my-soffle.*`, and the JLCPCB parts it uses in `lib/jlcpcb/` (copied from the JLCPCB library, MIT). The
 remaining parts and 3D models are KiCad's stock ones. No Plugin and Content Manager packages, environment variables
 or library setup are needed, and the 3D viewer shows every part. KiCad 8 cannot open these files; tag
@@ -95,8 +95,8 @@ placement file keeps KiCad's own angles; the only correction is moving the four 
 ## Checks
 
 ```bash
-kicad-cli sch erc --severity-error --exit-code-violations sofle-choc-pro.kicad_sch
-kicad-cli pcb drc --schematic-parity --severity-error --exit-code-violations sofle-choc-pro.kicad_pcb
+kicad-cli sch erc --severity-error --exit-code-violations velvet74.kicad_sch
+kicad-cli pcb drc --schematic-parity --severity-error --exit-code-violations velvet74.kicad_pcb
 ```
 
 Expected: ERC has no errors. DRC has 26 known `courtyards_overlap` errors (mounting holes H1-H5 against their

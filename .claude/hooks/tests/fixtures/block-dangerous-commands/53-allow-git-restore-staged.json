@@ -1,6 +1,6 @@
 {
   "name": "allow git restore --staged, which only unstages",
-  "stdin": { "tool_input": { "command": "git restore --staged sofle-choc-pro.kicad_sch" } },
+  "stdin": { "tool_input": { "command": "git restore --staged velvet74.kicad_sch" } },
   "expect_exit": 0,
   "expect_stdout_not_contains": ["ask"]
 }

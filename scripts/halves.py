@@ -1,6 +1,6 @@
 """Tell the keyboard's two halves apart on the combined board.
 
-The half sheet (sofle-choc-pro-half.kicad_sch) is used twice, as sheets Left and Right, so every part
+The half sheet (velvet74-half.kicad_sch) is used twice, as sheets Left and Right, so every part
 exists twice: the same symbol in two sheet instances. A footprint's half is its sheet name, and its role
 is the reference its symbol carries on the Left half, so SW10 is ('Left', 'SW10') and SW210 is
 ('Right', 'SW10'). Scripts address parts by (half, role) and never compute the Right half's numbers.
@@ -24,7 +24,8 @@ def _symbol(fp):
 
 
 def by_role(board):
-    """{(half, role): footprint} for every footprint on the board."""
-    fps = list(board.GetFootprints())
+    """{(half, role): footprint} for every footprint on a half."""
+    # the panel hardware from place_panel.py is board-only and belongs to no sheet
+    fps = [fp for fp in board.GetFootprints() if fp.GetSheetname().strip('/') in HALVES]
     role = {_symbol(fp): fp.GetReference() for fp in fps if half_of(fp) == 'Left'}
     return {(half_of(fp), role[_symbol(fp)]): fp for fp in fps}

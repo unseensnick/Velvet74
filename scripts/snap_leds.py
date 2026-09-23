@@ -7,7 +7,7 @@ parts are matched by (half, role) through halves.py, so SW210 pairs with LED210.
 Inside pcbnew:  Tools > Scripting Console, then
     exec(open(r"<project>/scripts/snap_leds.py").read())
 From a shell (pcbnew closed):
-    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/snap_leds.py sofle-choc-pro.kicad_pcb
+    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/snap_leds.py velvet74.kicad_pcb
 """
 import math
 import os

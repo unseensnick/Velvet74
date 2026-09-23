@@ -40,17 +40,17 @@ for (const n of cases) cfg.cases[right(n)] = twin(cfg.cases[n], [...outlines, ..
 // the pours off the rails are footprints and rule areas, from scripts/place_panel.py.
 const PANEL = [
     {name: 'rail top', where: {shift: [123.5, 87]}, size: [268, 5]},          // KiCad y 50.5..55.5
-    {name: 'rail bottom', where: {shift: [123.5, -39]}, size: [268, 5]},      // KiCad y 176.5..181.5
+    {name: 'rail bottom', where: {shift: [123.5, -41.25]}, size: [268, 5]},   // KiCad y 178.75..183.75
     {name: 'tab top x77', where: {shift: [17, 81.25]}, size: [5, 7.5]},
     {name: 'tab top x113', where: {shift: [53, 83.69]}, size: [5, 2.62]},
     {name: 'tab top x149', where: {shift: [89, 81.56]}, size: [5, 6.88]},
     {name: 'tab top x218', where: {shift: [158, 81.56]}, size: [5, 6.88]},
     {name: 'tab top x254', where: {shift: [194, 83.69]}, size: [5, 2.62]},
     {name: 'tab top x290', where: {shift: [230, 81.25]}, size: [5, 7.5]},
-    {name: 'tab bottom x95', where: {shift: [35, -32.86]}, size: [5, 8.28]},
-    {name: 'tab bottom x135', where: {shift: [75, -32.86]}, size: [5, 8.28]},
-    {name: 'tab bottom x232', where: {shift: [172, -32.86]}, size: [5, 8.28]},
-    {name: 'tab bottom x272', where: {shift: [212, -32.86]}, size: [5, 8.28]},
+    {name: 'tab bottom x95', where: {shift: [35, -34.59]}, size: [5, 9.33]},
+    {name: 'tab bottom x135', where: {shift: [75, -34.59]}, size: [5, 9.33]},
+    {name: 'tab bottom x232', where: {shift: [172, -34.59]}, size: [5, 9.33]},
+    {name: 'tab bottom x272', where: {shift: [212, -34.59]}, size: [5, 9.33]},
 ]
 cfg.outlines.board_pcb_both = [
     {what: 'outline', name: 'board_pcb'},

@@ -139,13 +139,14 @@ points:
     thumb2:
       anchor: {ref: matrix_pinky_bottom, shift: [3.5 kx, -0.875 ky - pinky_lift]}
       key: {row_code: 6, col_index: 2, width: kx, height: ky, led: north}
-    thumb3: # the user's placement in KiCad to follow Keebart's thumb cluster (was fitted to caliper
-      # measurements: keycap corners 1.54 mm and 3.75 mm from TH2's), 0.374 right and 0.65 up from that fit
-      anchor: {ref: matrix_pinky_bottom, shift: [4.5 kx + 2.25, -1 ky - pinky_lift + 0.65], rotate: -8.06}
+    # TH3 and TH4 are measured off the user's Keebart board: a printed gauge with a 15.4 mm window per switch
+    # dropped flush over all 17 home, bottom and thumb switches at these values. The earlier caliper fit on
+    # keycap corners (-8.06 and -19.63 degrees) turned both keys too little.
+    thumb3:
+      anchor: {ref: matrix_pinky_bottom, shift: [82.850, -16.750 - pinky_lift], rotate: -13.5}
       key: {row_code: 6, col_index: 3, width: kx, height: ky, led: north}
-    thumb4: # 1.5u tall key, LED west like Keebart's. The user's placement in KiCad to follow Keebart's thumb
-      # cluster; keycap gaps 2.16 mm to TH3, 1.22 mm to SW55 and 0.88 mm to encoder 1.
-      anchor: {ref: matrix_pinky_bottom, shift: [105.060, -16.630 - pinky_lift], rotate: -19.63}
+    thumb4: # 1.5u tall key, LED west like Keebart's
+      anchor: {ref: matrix_pinky_bottom, shift: [103.700, -18.400 - pinky_lift], rotate: -26}
       # Ergogen copies meta onto the mirror unchanged, so the right TH4's LED has to be told to face east
       key: {row_code: 6, col_index: 4, width: kx, height: 1.5 ky, led: west, mirror: {led: east}}
     encoder1: # Keebart's knob position moved 2.875 mm down for knob room (SW65), set by the user in KiCad with
@@ -225,7 +226,7 @@ outlines:
       expand: -3
       joints: pointy
   # Lower half of the board outline, drawn by the user: straight right edge
-  # down to TH4, along TH4's outer and bottom edges, a straight bottom under the thumbs and a chamfer up to the
+  # down to TH4, along TH4's outer edge to its lowest corner, a slanted edge up to a straight bottom under the thumbs and a chamfer up to the
   # pinky column. Margin is 1.5 mm past the 18 x 17 key pitch. Corners on keys are anchored to them; the three
   # marked "fitted" points are where edges cross and were computed for the current thumb positions, so
   # recompute them if TH0-TH4 or the encoder column move.
@@ -242,10 +243,12 @@ outlines:
         - {ref: matrix_index_fn, shift: [9, 10]}
         - {ref: matrix_outer_fn, shift: [-9, 10]}
         - {ref: matrix_outer_fn, shift: [kx + 10.5, 10]}
-        - {ref: matrix_pinky_bottom, shift: [118.500, -11.704]} # fitted: right edge meets TH4's outer edge
+        - {ref: matrix_pinky_bottom, shift: [118.500, -13.508]} # fitted: right edge meets TH4's outer edge
         - {ref: thumb4, shift: [10.5, -14.25]}
-        - {ref: matrix_pinky_bottom, shift: [93.745, -29.223]} # fitted: TH4's bottom edge meets the bottom line
-        - {ref: matrix_pinky_bottom, shift: [16.500, -29.223]} # fitted: bottom line under TH3's lowest corner
+        # The two slanted edges take Keebart's angles, measured off their product photo through the switch holes:
+        # 19.7 degrees from TH4's corner up to the bottom line, and a 33.2 degree chamfer from the pinky corner.
+        - {ref: matrix_pinky_bottom, shift: [87.660, -30.425]} # fitted: 19.7 deg edge from TH4's corner meets the bottom line
+        - {ref: matrix_pinky_bottom, shift: [20.713, -30.425]} # fitted: 33.2 deg chamfer meets the bottom line
         - {ref: matrix_pinky_bottom, shift: [-10.5, -10]}
   # The two mid-mount USB-C cutouts. They have to be part of the board outline rather than Edge.Cuts
   # inside the connector footprint: a notch drawn in the footprint only T-joins the edge, and KiCad

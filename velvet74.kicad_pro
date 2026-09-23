@@ -537,7 +537,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "sofle-choc-pro.kicad_pro",
+    "filename": "velvet74.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -1007,8 +1007,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "sofle-choc-pro.kicad_sch",
-        "name": "sofle-choc-pro",
+        "filename": "velvet74.kicad_sch",
+        "name": "velvet74",
         "uuid": "e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71"
       }
     ],
@@ -1018,7 +1018,7 @@
   "sheets": [
     [
       "e5c77dc8-4b5b-41bb-9e67-dc9e7d30dc71",
-      "sofle-choc-pro"
+      "velvet74"
     ],
     [
       "01cbd731-1f18-4a1a-abea-0f887c2f0944",

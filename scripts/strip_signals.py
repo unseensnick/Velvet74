@@ -1,7 +1,7 @@
 """Delete signal copper, keeping the power nets.
 
 From a shell (pcbnew closed), one or more boards:
-    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/strip_signals.py sofle-choc-pro.kicad_pcb
+    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/strip_signals.py velvet74.kicad_pcb
 
 Clears the board for hand routing while leaving the power architecture in place: the B.Cu rings round U1, the
 In1 planes and island and the copper that ties them together. Those are built to the rules in
