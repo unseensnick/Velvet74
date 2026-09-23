@@ -30,8 +30,8 @@ Full detail and the reasons are in [.claude/rules/kicad.md](.claude/rules/kicad.
 
 | Path | What it is |
 | --- | --- |
-| `sofle-choc-pro.kicad_sch`, `sofle-choc-pro-half.kicad_sch` | The root sheet and the half it uses twice, as sheets Left and Right. **Edit the half**: both halves follow. Left keeps the references (U1, SW10), Right adds 200 (U201, SW210); every net is per half (`/Left/GP0`, `/Right/GND`), power included, through local power symbols |
-| `sofle-choc-pro.kicad_pcb` / `.kicad_pro` / `.kicad_dru` | One board holding both halves 10 mm apart, the key area placed from Ergogen; net classes; custom DRC rules |
+| `velvet74.kicad_sch`, `velvet74-half.kicad_sch` | The root sheet and the half it uses twice, as sheets Left and Right. **Edit the half**: both halves follow. Left keeps the references (U1, SW10), Right adds 200 (U201, SW210); every net is per half (`/Left/GP0`, `/Right/GND`), power included, through local power symbols |
+| `velvet74.kicad_pcb` / `.kicad_pro` / `.kicad_dru` | One board holding both halves 10 mm apart, the key area placed from Ergogen; net classes; custom DRC rules |
 | `lib/my-soffle.kicad_sym`, `lib/my-soffle.pretty/`, `lib/my-soffle.3dshapes/` | Project symbols, footprints (Choc hotswap, EC11 combo, SK6812MINI-E, reset switch) and 3D models |
 | `fp-lib-table`, `sym-lib-table` | Project library tables |
 | `templates/rp2040-inner-column/` | KiCad template: RP2040 module (schematic, placed and routed 2-layer board, `README.md` with checks and routability, `meta/info.html`, `lib/`) |
@@ -46,14 +46,14 @@ Full detail and the reasons are in [.claude/rules/kicad.md](.claude/rules/kicad.
 | `scripts/build_rp2040_module.py` | Rebuilds the template board from a netlist and places parts; **overwrites the template board, routing included**; restores `.kicad_pro` |
 | `scripts/transfer_module_routing.py` | Copies routing from a routed test board onto the template; **writes the template board** |
 | `scripts/ribbon/` | Parked experiment: an octilinear router for the parallel-lane look, with its own pipeline and `README.md`. No script in it writes the project board (`apply.py` writes a copy) |
-| `sofle-choc-pro-backups/`, `templates/rp2040-inner-column/RP2040InnerColumn-backups/` | KiCad's project backup zips, tracked in git on purpose (the user wants them kept) |
+| `velvet74-backups/`, `templates/rp2040-inner-column/RP2040InnerColumn-backups/` | KiCad's project backup zips, tracked in git on purpose (the user wants them kept) |
 
 Run KiCad scripts from a shell with KiCad closed: `"%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/<script>.py <args>` (each docstring has the exact form). Plain-Python tooling: `uv run --no-project python`.
 
 ## Checks
 
-- ERC: `kicad-cli sch erc --severity-error --exit-code-violations sofle-choc-pro.kicad_sch`
-- DRC: `kicad-cli pcb drc --schematic-parity --severity-error --exit-code-violations sofle-choc-pro.kicad_pcb` (template: compare against the expected items in its README). Known items: 26 `courtyards_overlap`, the H1-H5 holes against their neighbouring switches, 13 per half
+- ERC: `kicad-cli sch erc --severity-error --exit-code-violations velvet74.kicad_sch`
+- DRC: `kicad-cli pcb drc --schematic-parity --severity-error --exit-code-violations velvet74.kicad_pcb` (template: compare against the expected items in its README). Known items: 26 `courtyards_overlap`, the H1-H5 holes against their neighbouring switches, 13 per half
 - Ergogen: `npm run build` in `ergogen/`
 
 ## Commit messages

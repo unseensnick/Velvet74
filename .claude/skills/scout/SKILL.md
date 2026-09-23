@@ -20,7 +20,7 @@ Investigate the task described by `$ARGUMENTS` deeply enough that the resulting 
 ## When to use this
 
 - Changing a script in `scripts/`, especially one that saves boards (it may overwrite routing or hand placement).
-- Moving parts or groups between `templates/rp2040-inner-column/` and `sofle-choc-pro.kicad_pcb`.
+- Moving parts or groups between `templates/rp2040-inner-column/` and `velvet74.kicad_pcb`.
 - Changing Ergogen geometry that feeds the placement script.
 - Acting on a claim from memory or a Handoff that names specific files, parts, coordinates or functions.
 

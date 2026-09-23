@@ -1,6 +1,6 @@
 """Tell the keyboard's two halves apart on the combined board.
 
-The half sheet (sofle-choc-pro-half.kicad_sch) is used twice, as sheets Left and Right, so every part
+The half sheet (velvet74-half.kicad_sch) is used twice, as sheets Left and Right, so every part
 exists twice: the same symbol in two sheet instances. A footprint's half is its sheet name, and its role
 is the reference its symbol carries on the Left half, so SW10 is ('Left', 'SW10') and SW210 is
 ('Right', 'SW10'). Scripts address parts by (half, role) and never compute the Right half's numbers.

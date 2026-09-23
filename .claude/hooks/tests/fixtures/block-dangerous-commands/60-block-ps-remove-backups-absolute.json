@@ -2,7 +2,7 @@
   "name": "block PowerShell delete of backup zips by absolute profile path",
   "stdin": {
     "tool_input": {
-      "command": "Remove-Item C:\\Users\\unseensnick\\Desktop\\projects\\my-soffle\\sofle-choc-pro-backups\\*.zip"
+      "command": "Remove-Item C:\\Users\\unseensnick\\Desktop\\projects\\my-soffle\\velvet74-backups\\*.zip"
     }
   },
   "expect_exit": 2,

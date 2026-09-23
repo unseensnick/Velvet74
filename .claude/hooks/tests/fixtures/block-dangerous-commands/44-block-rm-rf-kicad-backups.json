@@ -1,6 +1,6 @@
 {
   "name": "block recursive delete of the KiCad backups folder",
-  "stdin": { "tool_input": { "command": "rm -rf sofle-choc-pro-backups" } },
+  "stdin": { "tool_input": { "command": "rm -rf velvet74-backups" } },
   "expect_exit": 2,
   "expect_stdout_contains": ["deny", "KiCad backups"]
 }

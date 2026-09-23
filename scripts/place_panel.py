@@ -1,7 +1,7 @@
 """Place the panel hardware on the breakoff tabs and rails: mouse bites, tooling holes and fiducials.
 
 From a shell (pcbnew closed):
-    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/place_panel.py sofle-choc-pro.kicad_pcb
+    "%LOCALAPPDATA%/Programs/KiCad/10.0/bin/python.exe" scripts/place_panel.py velvet74.kicad_pcb
 
 Re-running it fails rather than duplicating parts. It overwrites the board it is given and rewrites the
 neighbouring .kicad_pro, so run it on a scratch copy and put the board back.

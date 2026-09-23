@@ -1,6 +1,6 @@
 {
   "name": "block writing a zip archive (KiCad backup format)",
-  "stdin": { "tool_input": { "file_path": "C:\\tmp\\sofle-choc-pro-2026-09-13_102519.ZIP" } },
+  "stdin": { "tool_input": { "file_path": "C:\\tmp\\velvet74-2026-09-13_102519.ZIP" } },
   "expect_exit": 2,
   "expect_stdout_contains": ["deny", "archive"]
 }
