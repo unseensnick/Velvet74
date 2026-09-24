@@ -221717,30 +221717,6 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "LINK"
-		(at 173.2 102.6 0)
-		(layer "B.SilkS")
-		(uuid "551fc9c7-e1f0-4fe9-9022-9b4e882a2b63")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "LINK"
-		(at 193.8 102.6 0)
-		(layer "B.SilkS")
-		(uuid "1b8a1821-5071-4da7-901c-379605eab210")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
 	(gr_text "HOST"
 		(at 203.8 72.3 0)
 		(layer "B.SilkS")
