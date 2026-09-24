@@ -185,8 +185,11 @@ points:
     usbc_host:
       anchor: {ref: matrix_pinky_bottom, shift: [108.779481, 78.625]}
       key: {mount_ref: J1}
+    # J2 sits on the inner edge below the encoder. y -7.1 leaves about 0.3 mm from its shield legs to a hotswap
+    # socket pad on both halves: SW65's above it on the left, SW264's below it on the right (sockets are not
+    # mirrored, so no single y is roomier on both).
     usbc_link:
-      anchor: {ref: matrix_pinky_bottom, shift: [118.5, 46.32], rotate: -90}
+      anchor: {ref: matrix_pinky_bottom, shift: [118.5, -7.1], rotate: -90}
       key: {mount_ref: J2}
     # J3 sits so the screen lines up over the encoder column (x 108), as on Keebart's board: the module's
     # centre is at 111.52 - display_row = 107.71. It moved from 114.06 by exactly one 2.54 mm pin pitch rather
