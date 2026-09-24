@@ -194,6 +194,15 @@ points:
     oled_header:
       anchor: {ref: matrix_pinky_bottom, shift: [111.52, 39.1], rotate: -90}
       key: {mount_ref: J3}
+    # BOOT (SW1) and RESET (SW2) side by side, turned upright, in the gap between the middle column's bottom key and
+    # TH2, mirrored on the right half so one case floor opening (_button_hole) serves both buttons on either half.
+    # The centre was searched for clearance from every bottom-side pad, hole, courtyard and hotswap socket.
+    button_boot:
+      anchor: {ref: matrix_pinky_bottom, shift: [58.25, -6.0], rotate: 90}
+      key: {mount_ref: SW1}
+    button_reset:
+      anchor: {ref: matrix_pinky_bottom, shift: [62.25, -6.0], rotate: 90}
+      key: {mount_ref: SW2}
 
     encoder2: # above encoder 1 (SW16), 21.5 mm apart. Never closer than 18: at 17 the combo footprints short,
       # and turning one 180 instead shorts its socket pad into the outer column key's socket
@@ -308,6 +317,13 @@ outlines:
     - what: circle
       where: /^screw/
       radius: pilot_r
+  # One floor opening under BOOT and RESET (both on B.Cu, facing the floor): a piece per button in its upright
+  # frame, 4.5 mm along the pair so the two 4 mm apart merge into one slot, 3.5 mm across
+  _button_hole:
+    - what: rectangle
+      where: /^button_/
+      size: [3.5, 4.5]
+      corner: 0.5
   # the whole OLED module, not just its glass: it lies in a pocket through the printed spacer, which is why
   # spacer_t matches the module's 1.2 mm PCB. The FR4 plate above only opens for the glass (_display_hole).
   # The module board runs from 1.5 mm behind the pin row to 36.5 mm past it; the pocket is centred on it
@@ -434,6 +450,10 @@ cases:
     - what: outline
       name: _pilot
       extrude: standoff + floor
+      operation: subtract
+    - what: outline
+      name: _button_hole
+      extrude: floor
       operation: subtract
 
 pcbs:
