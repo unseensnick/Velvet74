@@ -188,8 +188,11 @@ points:
     usbc_link:
       anchor: {ref: matrix_pinky_bottom, shift: [118.5, 46.32], rotate: -90}
       key: {mount_ref: J2}
+    # J3 sits so the screen lines up over the encoder column (x 108), as on Keebart's board: the module's
+    # centre is at 111.52 - display_row = 107.71. It moved from 114.06 by exactly one 2.54 mm pin pitch rather
+    # than the 2.25 an exact centre needs, so the routing lanes between the header pins stayed lanes.
     oled_header:
-      anchor: {ref: matrix_pinky_bottom, shift: [114.06, 39.1], rotate: -90}
+      anchor: {ref: matrix_pinky_bottom, shift: [111.52, 39.1], rotate: -90}
       key: {mount_ref: J3}
 
     encoder2: # above encoder 1 (SW16), 21.5 mm apart. Never closer than 18: at 17 the combo footprints short,
