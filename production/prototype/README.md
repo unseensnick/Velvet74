@@ -5,7 +5,7 @@ importing them together without moving them puts every part in place.
 
 | File | Part | Print |
 | --- | --- | --- |
-| `velvet74-left-1-case.stl` | Case: 2.05 mm floor, M2 pillars, closed USB-C slots | open side up |
+| `velvet74-left-1-case.stl` | Case: 2.05 mm floor, pillars with blind 3.2 mm holes for CNC Kitchen M2 x 3.0 heat-set inserts, closed USB-C slots, SIM-pin holes under BOOT and RESET, 1 mm rounded top and bottom outer edges | open side up |
 | `velvet74-left-2-pcb-dummy.stl` | PCB stand-in cut from the real board: every hole, LED window and USB-C slot, plus the back-side hotswap sockets, USB-C bodies and reset/boot buttons | already flipped, top face on the bed |
 | `velvet74-left-3-spacer.stl` | 1.6 mm spacer between PCB and plate | flat |
 | `velvet74-left-4-plate.stl` | 0.75 mm top plate (FR4 in the real build) | flat, about 0.15 mm layers |
