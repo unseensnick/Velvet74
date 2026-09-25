@@ -40,8 +40,9 @@ PARTS = [
     (os.path.join(STOCK, 'Fiducial.pretty'), 'Fiducial_1mm_Mask2mm', 'FID3', 183.5, 181.25, True, 0),
 ]
 
-b = pcbnew.LoadBoard(sys.argv[1])
-for lib, name, ref, x, y, flip, rot in PARTS:
+
+def add_part(b, lib, name, ref, x, y, flip, rot):
+    """Add one board-only panel footprint; scripts/export_plate.py uses it for the plate panel too."""
     assert b.FindFootprintByReference(ref) is None, ref + ' already placed'
     fp = pcbnew.FootprintLoad(lib, name)
     assert fp, name
@@ -58,31 +59,41 @@ for lib, name, ref, x, y, flip, rot in PARTS:
     fp.Reference().SetVisible(False)
     fp.SetAttributes(fp.GetAttributes() | pcbnew.FP_BOARD_ONLY | pcbnew.FP_EXCLUDE_FROM_POS_FILES | pcbnew.FP_EXCLUDE_FROM_BOM)
     print(ref, name, 'at', x, y, 'bottom' if flip else 'top')
-# The pours would flood the rails and tabs, leaving exposed copper and burrs where they snap, so keep every layer
-# clear there: a band over each rail (both sit clear of the board, so no pour inside the board is touched) and one
-# rectangle per tab, reaching 0.1 mm into the board edge.
-KEEPOUTS = [('rail top keepout', 49.0, 50.0, 318.0, 56.0), ('rail bottom keepout', 49.0, 178.25, 318.0, 184.25)]
-for x, edge in ((77.0, 62.0), (113.0, 57.12), (149.0, 61.38), (218.0, 61.38), (254.0, 57.12), (290.0, 62.0)):
-    KEEPOUTS.append(('tab keepout x%g' % x, x - 2.6, 55.4, x + 2.6, edge + 0.1))
-for x in (95.0, 135.0, 232.0, 272.0):
-    KEEPOUTS.append(('tab keepout x%g' % x, x - 2.6, 170.325, x + 2.6, 178.85))
-for name, x0, y0, x1, y1 in KEEPOUTS:
-    z = pcbnew.ZONE(b)
-    z.SetIsRuleArea(True)
-    z.SetDoNotAllowZoneFills(True)   # KiCad 10 name for "keep out copper pours"
-    z.SetDoNotAllowTracks(True)
-    z.SetDoNotAllowVias(True)
-    z.SetDoNotAllowPads(False)          # the tooling hole and fiducial live here
-    z.SetDoNotAllowFootprints(False)
-    z.SetLayerSet(pcbnew.LSET.AllCuMask())
-    z.SetZoneName(name)
-    pts = z.Outline()
-    pts.NewOutline()
-    for x, y in ((x0, y0), (x1, y0), (x1, y1), (x0, y1)):
-        pts.Append(F(x), F(y))
-    b.Add(z)
-    print(name, 'added')
 
-for z in b.Zones():
-    z.UnFill()
-b.Save(sys.argv[1])
+
+def main():
+    b = pcbnew.LoadBoard(sys.argv[1])
+    for part in PARTS:
+        add_part(b, *part)
+    # The pours would flood the rails and tabs, leaving exposed copper and burrs where they snap, so keep every layer
+    # clear there: a band over each rail (both sit clear of the board, so no pour inside the board is touched) and one
+    # rectangle per tab, reaching 0.1 mm into the board edge.
+    KEEPOUTS = [('rail top keepout', 49.0, 50.0, 318.0, 56.0), ('rail bottom keepout', 49.0, 178.25, 318.0, 184.25)]
+    for x, edge in ((77.0, 62.0), (113.0, 57.12), (149.0, 61.38), (218.0, 61.38), (254.0, 57.12), (290.0, 62.0)):
+        KEEPOUTS.append(('tab keepout x%g' % x, x - 2.6, 55.4, x + 2.6, edge + 0.1))
+    for x in (95.0, 135.0, 232.0, 272.0):
+        KEEPOUTS.append(('tab keepout x%g' % x, x - 2.6, 170.325, x + 2.6, 178.85))
+    for name, x0, y0, x1, y1 in KEEPOUTS:
+        z = pcbnew.ZONE(b)
+        z.SetIsRuleArea(True)
+        z.SetDoNotAllowZoneFills(True)   # KiCad 10 name for "keep out copper pours"
+        z.SetDoNotAllowTracks(True)
+        z.SetDoNotAllowVias(True)
+        z.SetDoNotAllowPads(False)          # the tooling hole and fiducial live here
+        z.SetDoNotAllowFootprints(False)
+        z.SetLayerSet(pcbnew.LSET.AllCuMask())
+        z.SetZoneName(name)
+        pts = z.Outline()
+        pts.NewOutline()
+        for x, y in ((x0, y0), (x1, y0), (x1, y1), (x0, y1)):
+            pts.Append(F(x), F(y))
+        b.Add(z)
+        print(name, 'added')
+
+    for z in b.Zones():
+        z.UnFill()
+    b.Save(sys.argv[1])
+
+
+if __name__ == '__main__':
+    main()

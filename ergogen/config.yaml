@@ -35,9 +35,12 @@ units:
   # The spacer's thickness is set by the OLED module: the plate rests on the module's glass, so module
   # PCB + glass must come to spacer_t. Confirm the module's total thickness before printing one.
   spacer_t: 1.6      # 3D printed spacer between PCB and plate; the OLED module lies in a pocket in it
-  # 0.75 mm is too thin to retain a Choc switch by its clips, so the switch is held by its hotswap socket
-  # and the plate is a cover rather than a structural switch plate. That is how the measured board does it.
-  plate_t: 0.75      # FR4 top plate
+  # FR4 top plate, 0.8 mm: JLC's nearest to the measured 0.75 (0.6 is not offered). Kailh's drawings put the
+  # switch's rim 2.20 mm above its bottom (Choc v1 PG1350 and v2 PG1353 alike), so any plate top above
+  # spacer_t + 0.6 lifts the switches off the PCB onto the rim: 0.2 mm here, 0.15 on the Keebart. Do not go
+  # thicker. The clips grip plates up to 1.30 (v1) or 1.65 mm (v2), so they do not hold on 0.8 mm: the switch
+  # is held by its hotswap socket and the plate is a cover rather than a structural switch plate.
+  plate_t: 0.8
   # M2 countersunk screws down through the plate into a pillar or threaded insert in the case. Countersunk
   # because a proud head has nowhere to sit: keycaps cover 79% of the board, so only a flush head clears them.
   screw_d: 2.2       # M2 clearance hole
@@ -172,7 +175,7 @@ points:
       anchor: {ref: matrix_pinky_bottom, shift: [6 kx, 0.625 ky - 2.875 - pinky_lift]}
       key: {row_code: 6, col_index: 5, width: kx, height: ky, combo: true, led: north}
     # M2 screw points: four around the key field plus an optional centre, picked on a render of the placed
-    # board. Each keeps 1.0 mm of plate web to the nearest 13.8 mm switch cutout and 0.4 mm to the nearest
+    # board. Each keeps 0.9 mm of plate web to the nearest 14.0 mm switch cutout and 0.4 mm to the nearest
     # copper. They are points rather than bare shifts so they mirror with every other point for the right half.
     screw_tr:
       anchor: {ref: matrix_pinky_bottom, shift: [80.990, 60.970]}
@@ -317,12 +320,17 @@ outlines:
     - operation: subtract
       what: outline
       name: _port_slots
-  # switch plate cutouts for a plate case (Choc plate hole 13.8 mm). Keys only: "where: true" would put a
-  # 13.8 mm cutout on each screw point too.
-  _switch_holes:
+  # Switch cutouts, keys only ("where: true" would put one on each screw point too). Sized so Choc v1 and v2 both
+  # fit (Kailh drawings): the plate at 14.0 takes v2's 13.95 mm body (v1 is 13.80); the spacer at 14.7 clears
+  # the clip hooks, 14.50 across on both, which sit 0.55 to 1.1 mm above the PCB, inside the spacer layer.
+  _plate_holes:
     - what: rectangle
       where: /^(matrix|thumb|encoder)/
-      size: [13.8, 13.8]
+      size: [14.0, 14.0]
+  _spacer_holes:
+    - what: rectangle
+      where: /^(matrix|thumb|encoder)/
+      size: [14.7, 14.7]
   # M2 clearance holes through the plate. The PCB gets its own NPTH holes from the schematic's H1-H5
   # mounting-hole footprints, placed on these same points, so plate and board cannot drift apart.
   _screw_holes:
@@ -375,6 +383,20 @@ outlines:
     - what: rectangle
       where: {ref: oled_header, orient: 90, shift: [-display_row, display_glass]}
       size: [display_w, display_l]
+  # The FR4 plate as a flat shape, for its fab outline (pcbs plate_only, through make_both.js and
+  # scripts/export_plate.py); the plate case part cuts the same holes.
+  plate_outline:
+    - what: outline
+      name: board
+    - operation: subtract
+      what: outline
+      name: _plate_holes
+    - operation: subtract
+      what: outline
+      name: _screw_holes
+    - operation: subtract
+      what: outline
+      name: _display_hole
   # Port cross-sections, drawn flat in the connector's frame (mouth on the board edge, +y outward) and laid on
   # their side by the shell. The shell cuts each one twice, turned +90 and -90, so the cut reaches equally
   # both ways from the outline's centre: that keeps it right on the mirrored right half, where make_both.js
@@ -409,7 +431,7 @@ cases:
       name: board
       extrude: spacer_t
     - what: outline
-      name: _switch_holes
+      name: _spacer_holes
       extrude: spacer_t
       operation: subtract
     - what: outline
@@ -426,7 +448,7 @@ cases:
       name: board
       extrude: plate_t
     - what: outline
-      name: _switch_holes
+      name: _plate_holes
       extrude: plate_t
       operation: subtract
     - what: outline
@@ -500,3 +522,9 @@ pcbs:
     outlines:
       edge:
         outline: board_pcb
+  # the FR4 plate panel; make_both.js points it at both halves on the PCB panel's rails and tabs
+  plate_only:
+    template: kicad8
+    outlines:
+      edge:
+        outline: plate_outline

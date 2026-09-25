@@ -42,6 +42,7 @@ Full detail and the reasons are in [.claude/rules/kicad.md](.claude/rules/kicad.
 | `scripts/halves.py` | Finds a footprint's (half, role) from its sheet path, so scripts say ('Right', 'SW10') and never compute SW210 |
 | `scripts/render_keycaps.py` | Stdlib SVG render of keycaps and knobs from Ergogen output (read-only for the board) |
 | `scripts/export_pcbway.py` | Writes `production/pcbway/`: gerbers, drills, assembly drawings, a placement file in KiCad's own rotations (**never** JLC's `FT` offsets) and a BOM keyed by MPN. Reads the board only |
+| `scripts/export_plate.py` | Writes `production/plate/velvet74-plate.zip`: the 0.8 mm FR4 top plate for both halves on the PCB panel's rails, tabs, mouse bites and tooling holes (reuses `place_panel.py`'s parts). Builds its board in a temp folder |
 | `scripts/strip_signals.py` | **Deletes every track and via that is not on GND, +5V, +3.3V, +1V1, VBUS, VBUS_FUSED or LINK_VBUS** (either half), to clear a board for hand routing; zones are untouched; restores `.kicad_pro` |
 | `scripts/build_rp2040_module.py` | Rebuilds the template board from a netlist and places parts; **overwrites the template board, routing included**; restores `.kicad_pro` |
 | `scripts/transfer_module_routing.py` | Copies routing from a routed test board onto the template; **writes the template board** |
